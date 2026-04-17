@@ -1,0 +1,48 @@
+{
+  "_info": {
+    "testCaseId": "47721fea-d529-4ad8-be32-a8c5eb3ce236",
+    "endpoint": "GET /hub/rewards-vault/api/billing/planDetails/{workspaceId}",
+    "method": "GET",
+    "module": "rewards-vault",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": {
+    "pathParams": {
+      "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+    },
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        503
+      ],
+      "requiredResponsePaths": [],
+      "ignoreResponsePaths": [],
+      "equals": {}
+    }
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "pathParams": {
+      "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+    },
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        503
+      ],
+      "requiredResponsePaths": [],
+      "ignoreResponsePaths": [],
+      "equals": {}
+    }
+  }
+}
