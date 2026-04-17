@@ -1,0 +1,66 @@
+{
+  "_info": {
+    "testCaseId": "d764489d-964a-441b-a882-a6c6bbf92d05",
+    "endpoint": "GET /hub/orgs/api/user-preference",
+    "method": "GET",
+    "module": "orgs",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&screenName=ORDER_LIST",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$.preference.pageSize",
+        "$.preference.sort.sortBy",
+        "$.preference.sort.sortDirection",
+        "$.preference.screenName",
+        "$.preference.additionalColumns[0]",
+        "$.screenName"
+      ],
+      "ignoreResponsePaths": [
+        "$.preference.dateRange.endDate",
+        "$.preference.dateRange.startDate",
+        "$.inviteId"
+      ],
+      "equals": {}
+    }
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&screenName=ORDER_LIST",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$.preference.pageSize",
+        "$.preference.sort.sortBy",
+        "$.preference.sort.sortDirection",
+        "$.preference.screenName",
+        "$.preference.additionalColumns[0]",
+        "$.screenName"
+      ],
+      "ignoreResponsePaths": [
+        "$.preference.dateRange.endDate",
+        "$.preference.dateRange.startDate",
+        "$.inviteId"
+      ],
+      "equals": {}
+    }
+  }
+}
