@@ -1,0 +1,18 @@
+{
+  "default": {
+    "body": null,
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&screenName=CAMPAIGN_LIST",
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "pathParams": {}
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "body": null,
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&screenName=CAMPAIGN_LIST",
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "pathParams": {}
+  }
+}

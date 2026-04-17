@@ -1,0 +1,36 @@
+{
+  "default": {
+    "body": {
+      "imagePreview": [
+        "LIST",
+        "GALLERY",
+        "CUSTOM"
+      ]
+    },
+    "query": "?pageNo=1&pageSize=10&startDate=2026-03-18+00%3A00%3A00&endDate=2026-04-17+23%3A59%3A59&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.5971037169290152",
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "pathParams": {
+      "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+    }
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "body": {
+      "imagePreview": [
+        "LIST",
+        "GALLERY",
+        "CUSTOM"
+      ]
+    },
+    "query": "?pageNo=1&pageSize=10&startDate=2026-03-18+00%3A00%3A00&endDate=2026-04-17+23%3A59%3A59&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.5971037169290152",
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "pathParams": {
+      "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+    }
+  }
+}
