@@ -1,0 +1,10 @@
+{
+  "default": {
+    "body": null,
+    "query": "?isSeller=true",
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "pathParams": {}
+  }
+}
