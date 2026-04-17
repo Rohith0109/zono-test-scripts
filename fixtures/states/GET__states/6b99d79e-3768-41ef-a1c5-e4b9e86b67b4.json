@@ -1,0 +1,18 @@
+{
+  "default": {
+    "body": null,
+    "query": "",
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "pathParams": {}
+  },
+  "unknown": {
+    "body": null,
+    "query": "",
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "pathParams": {}
+  }
+}

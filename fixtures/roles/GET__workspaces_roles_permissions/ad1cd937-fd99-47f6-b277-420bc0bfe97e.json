@@ -1,0 +1,18 @@
+{
+  "default": {
+    "body": null,
+    "query": "?isSeller=true",
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "pathParams": {}
+  },
+  "unknown": {
+    "body": null,
+    "query": "?isSeller=true",
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "pathParams": {}
+  }
+}

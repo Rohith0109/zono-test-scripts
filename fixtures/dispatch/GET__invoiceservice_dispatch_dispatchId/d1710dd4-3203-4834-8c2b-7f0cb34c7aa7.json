@@ -1,0 +1,22 @@
+{
+  "default": {
+    "body": null,
+    "query": "?page=1&pageSize=20&sortBy=dispatchDate&sortDirection=DESC",
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "pathParams": {
+      "dispatchId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+    }
+  },
+  "unknown": {
+    "body": null,
+    "query": "?page=1&pageSize=20&sortBy=dispatchDate&sortDirection=DESC",
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "pathParams": {
+      "dispatchId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+    }
+  }
+}

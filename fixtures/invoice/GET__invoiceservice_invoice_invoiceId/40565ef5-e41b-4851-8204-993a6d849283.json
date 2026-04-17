@@ -1,0 +1,22 @@
+{
+  "default": {
+    "body": null,
+    "query": "?includePayment=true&workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "pathParams": {
+      "invoiceId": "f7768bc8-d365-47f4-9a3e-87402bf6cd13"
+    }
+  },
+  "unknown": {
+    "body": null,
+    "query": "?includePayment=true&workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "pathParams": {
+      "invoiceId": "f7768bc8-d365-47f4-9a3e-87402bf6cd13"
+    }
+  }
+}

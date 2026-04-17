@@ -1,0 +1,24 @@
+{
+  "default": {
+    "body": {
+      "month": "2026-04"
+    },
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "pathParams": {}
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "body": {
+      "month": "2026-04"
+    },
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "pathParams": {}
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "default": {
+    "body": {
+      "query": "query ($v1:customer_scheme_contribution_bool_exp,$v2:[customer_scheme_contribution_select_column!]){customer_scheme_contribution(where:$v1,distinct_on:$v2){customer_id}}",
+      "variables": {
+        "v1": {
+          "scheme_id": {
+            "_eq": "7101b37a-2fcb-43b2-a4d9-345745b9bc88"
+          },
+          "workspaceId": {
+            "_eq": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          }
+        },
+        "v2": [
+          "customer_id"
+        ]
+      }
+    },
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "pathParams": {}
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "body": {
+      "query": "query ($v1:customer_scheme_contribution_bool_exp,$v2:[customer_scheme_contribution_select_column!]){customer_scheme_contribution(where:$v1,distinct_on:$v2){customer_id}}",
+      "variables": {
+        "v1": {
+          "scheme_id": {
+            "_eq": "7101b37a-2fcb-43b2-a4d9-345745b9bc88"
+          },
+          "workspaceId": {
+            "_eq": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          }
+        },
+        "v2": [
+          "customer_id"
+        ]
+      }
+    },
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "pathParams": {}
+  }
+}

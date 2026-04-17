@@ -1,0 +1,42 @@
+{
+  "default": {
+    "body": {
+      "filter": {
+        "channelType": [
+          "C",
+          "CUST"
+        ]
+      },
+      "searchAfterTimestamp": null,
+      "pageSize": 100
+    },
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "pathParams": {
+      "listId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+    }
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "body": {
+      "filter": {
+        "channelType": [
+          "C",
+          "CUST"
+        ]
+      },
+      "searchAfterTimestamp": null,
+      "pageSize": 100
+    },
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "pathParams": {
+      "listId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+    }
+  }
+}

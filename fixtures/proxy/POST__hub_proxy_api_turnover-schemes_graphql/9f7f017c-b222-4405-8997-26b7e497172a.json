@@ -1,0 +1,54 @@
+{
+  "default": {
+    "body": {
+      "query": "query ($v1:turnover_scheme_slabs_bool_exp,$v2:[turnover_scheme_slabs_order_by!]){turnover_scheme_slabs(where:$v1,order_by:$v2){id,contribution,rewards,emoji,workspace_id,scheme_id}}",
+      "variables": {
+        "v1": {
+          "workspace_id": {
+            "_eq": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "scheme_id": {
+            "_eq": "7101b37a-2fcb-43b2-a4d9-345745b9bc88"
+          }
+        },
+        "v2": [
+          {
+            "contribution": "asc"
+          }
+        ]
+      }
+    },
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "pathParams": {}
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "body": {
+      "query": "query ($v1:turnover_scheme_slabs_bool_exp,$v2:[turnover_scheme_slabs_order_by!]){turnover_scheme_slabs(where:$v1,order_by:$v2){id,contribution,rewards,emoji,workspace_id,scheme_id}}",
+      "variables": {
+        "v1": {
+          "workspace_id": {
+            "_eq": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "scheme_id": {
+            "_eq": "7101b37a-2fcb-43b2-a4d9-345745b9bc88"
+          }
+        },
+        "v2": [
+          {
+            "contribution": "asc"
+          }
+        ]
+      }
+    },
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "pathParams": {}
+  }
+}
