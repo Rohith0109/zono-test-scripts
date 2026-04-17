@@ -1,0 +1,90 @@
+{
+  "default": {
+    "body": {
+      "query": "query ($v1:customer_scheme_contribution_bool_exp,$v2:customer_scheme_contribution_bool_exp,$v3:[customer_scheme_contribution_select_column!],$v4:turnoverinvoice_bool_exp){customer_scheme_contribution_aggregate(where:$v1){aggregate{count,sum{contribution,contribution_sku}}},customer_scheme_contribution(where:$v2,distinct_on:$v3){customer_id},turnoverinvoice_aggregate(where:$v4){aggregate{count,sum{invoice_amount}}}}",
+      "variables": {
+        "v1": {
+          "scheme_id": {
+            "_eq": "7101b37a-2fcb-43b2-a4d9-345745b9bc88"
+          },
+          "workspaceId": {
+            "_eq": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          }
+        },
+        "v2": {
+          "scheme_id": {
+            "_eq": "7101b37a-2fcb-43b2-a4d9-345745b9bc88"
+          },
+          "workspaceId": {
+            "_eq": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          }
+        },
+        "v3": [
+          "customer_id"
+        ],
+        "v4": {
+          "turnoverinvoice_lines": {
+            "turnover_invoice_line_schemes": {
+              "scheme_id": {
+                "_eq": "7101b37a-2fcb-43b2-a4d9-345745b9bc88"
+              }
+            }
+          },
+          "workspaceId": {
+            "_eq": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          }
+        }
+      }
+    },
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "pathParams": {}
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "body": {
+      "query": "query ($v1:customer_scheme_contribution_bool_exp,$v2:customer_scheme_contribution_bool_exp,$v3:[customer_scheme_contribution_select_column!],$v4:turnoverinvoice_bool_exp){customer_scheme_contribution_aggregate(where:$v1){aggregate{count,sum{contribution,contribution_sku}}},customer_scheme_contribution(where:$v2,distinct_on:$v3){customer_id},turnoverinvoice_aggregate(where:$v4){aggregate{count,sum{invoice_amount}}}}",
+      "variables": {
+        "v1": {
+          "scheme_id": {
+            "_eq": "7101b37a-2fcb-43b2-a4d9-345745b9bc88"
+          },
+          "workspaceId": {
+            "_eq": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          }
+        },
+        "v2": {
+          "scheme_id": {
+            "_eq": "7101b37a-2fcb-43b2-a4d9-345745b9bc88"
+          },
+          "workspaceId": {
+            "_eq": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          }
+        },
+        "v3": [
+          "customer_id"
+        ],
+        "v4": {
+          "turnoverinvoice_lines": {
+            "turnover_invoice_line_schemes": {
+              "scheme_id": {
+                "_eq": "7101b37a-2fcb-43b2-a4d9-345745b9bc88"
+              }
+            }
+          },
+          "workspaceId": {
+            "_eq": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          }
+        }
+      }
+    },
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "pathParams": {}
+  }
+}

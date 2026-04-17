@@ -1,0 +1,18 @@
+{
+  "default": {
+    "body": null,
+    "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=4b993e24-277c-42fe-a5db-8ebf08662abe&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.8766549934776529",
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "pathParams": {}
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "body": null,
+    "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=4b993e24-277c-42fe-a5db-8ebf08662abe&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.8766549934776529",
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "pathParams": {}
+  }
+}

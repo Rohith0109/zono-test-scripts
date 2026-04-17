@@ -1,0 +1,68 @@
+{
+  "default": {
+    "body": {
+      "query": "query ($v1:turnover_scheme_bool_exp,$v2:[turnover_scheme_order_by!],$v3:Int,$v4:Int,$v5:[customer_scheme_contribution_select_column!],$v6:turnover_scheme_bool_exp){turnover_scheme(where:$v1,order_by:$v2,limit:$v3,offset:$v4){id,code,name,description,start_date,end_date,workspace_id,scheme_rule,sort_order,created_at,updated_at,is_disabled,customer_scheme_contributions_aggregate{aggregate{count,sum{contribution,contribution_sku}}},customer_scheme_contributions(distinct_on:$v5){customer_id}},turnover_scheme_aggregate(where:$v6){aggregate{count}}}",
+      "variables": {
+        "v1": {
+          "workspace_id": {
+            "_eq": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          }
+        },
+        "v2": [
+          {
+            "created_at": "desc"
+          }
+        ],
+        "v3": 20,
+        "v4": 0,
+        "v5": [
+          "customer_id"
+        ],
+        "v6": {
+          "workspace_id": {
+            "_eq": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          }
+        }
+      }
+    },
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "pathParams": {}
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "body": {
+      "query": "query ($v1:turnover_scheme_bool_exp,$v2:[turnover_scheme_order_by!],$v3:Int,$v4:Int,$v5:[customer_scheme_contribution_select_column!],$v6:turnover_scheme_bool_exp){turnover_scheme(where:$v1,order_by:$v2,limit:$v3,offset:$v4){id,code,name,description,start_date,end_date,workspace_id,scheme_rule,sort_order,created_at,updated_at,is_disabled,customer_scheme_contributions_aggregate{aggregate{count,sum{contribution,contribution_sku}}},customer_scheme_contributions(distinct_on:$v5){customer_id}},turnover_scheme_aggregate(where:$v6){aggregate{count}}}",
+      "variables": {
+        "v1": {
+          "workspace_id": {
+            "_eq": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          }
+        },
+        "v2": [
+          {
+            "created_at": "desc"
+          }
+        ],
+        "v3": 20,
+        "v4": 0,
+        "v5": [
+          "customer_id"
+        ],
+        "v6": {
+          "workspace_id": {
+            "_eq": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          }
+        }
+      }
+    },
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "pathParams": {}
+  }
+}

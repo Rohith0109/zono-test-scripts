@@ -1,0 +1,30 @@
+{
+  "default": {
+    "body": {
+      "cfaFilter": [],
+      "divisionFilter": []
+    },
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&pageNo=1&pageSize=20&skuCode=&sortDirection=&sortBy=&includeCFA=true&includeProducts=true&triggerCondition=AT_CART&startDate=&endDate=&dispatchFilters=false&status=&promotionType=",
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "pathParams": {
+      "schemeId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+    }
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "body": {
+      "cfaFilter": [],
+      "divisionFilter": []
+    },
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&pageNo=1&pageSize=20&skuCode=&sortDirection=&sortBy=&includeCFA=true&includeProducts=true&triggerCondition=AT_CART&startDate=&endDate=&dispatchFilters=false&status=&promotionType=",
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "pathParams": {
+      "schemeId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+    }
+  }
+}

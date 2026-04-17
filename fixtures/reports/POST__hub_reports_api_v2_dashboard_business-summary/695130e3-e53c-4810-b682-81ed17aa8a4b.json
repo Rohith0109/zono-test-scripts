@@ -1,0 +1,34 @@
+{
+  "default": {
+    "body": {
+      "startDate": "2026-04-12",
+      "endDate": "2026-04-18",
+      "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "compare": true,
+      "report": "noOfInvoicesSent",
+      "filters": {}
+    },
+    "query": "",
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "pathParams": {}
+  },
+  "unknown": {
+    "body": {
+      "startDate": "2026-04-12",
+      "endDate": "2026-04-18",
+      "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "compare": true,
+      "report": "noOfInvoicesSent",
+      "filters": {}
+    },
+    "query": "",
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "pathParams": {}
+  }
+}

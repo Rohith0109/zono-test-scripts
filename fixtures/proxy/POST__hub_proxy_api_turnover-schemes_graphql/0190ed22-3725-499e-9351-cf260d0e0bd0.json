@@ -1,0 +1,78 @@
+{
+  "default": {
+    "body": {
+      "query": "query ($v1:turnoverinvoice_bool_exp,$v2:[turnoverinvoice_order_by!],$v3:Int,$v4:Int,$v5:turnoverinvoice_line_bool_exp){turnoverinvoice(where:$v1,order_by:$v2,limit:$v3,offset:$v4){id,turnoverinvoice_lines_aggregate(where:$v5){aggregate{count,sum{contribution,total_amount,total_amount_with_tax}}}}}",
+      "variables": {
+        "v1": {
+          "workspaceId": {
+            "_eq": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "status": {
+            "_in": [
+              "PENDING"
+            ]
+          }
+        },
+        "v2": [
+          {
+            "created_at": "desc"
+          }
+        ],
+        "v3": 10,
+        "v4": 0,
+        "v5": {
+          "scheme_id": {
+            "_is_null": false
+          },
+          "status": {
+            "_eq": "MAPPED"
+          }
+        }
+      }
+    },
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "pathParams": {}
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "body": {
+      "query": "query ($v1:turnoverinvoice_bool_exp,$v2:[turnoverinvoice_order_by!],$v3:Int,$v4:Int,$v5:turnoverinvoice_line_bool_exp){turnoverinvoice(where:$v1,order_by:$v2,limit:$v3,offset:$v4){id,turnoverinvoice_lines_aggregate(where:$v5){aggregate{count,sum{contribution,total_amount,total_amount_with_tax}}}}}",
+      "variables": {
+        "v1": {
+          "workspaceId": {
+            "_eq": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "status": {
+            "_in": [
+              "PENDING"
+            ]
+          }
+        },
+        "v2": [
+          {
+            "created_at": "desc"
+          }
+        ],
+        "v3": 10,
+        "v4": 0,
+        "v5": {
+          "scheme_id": {
+            "_is_null": false
+          },
+          "status": {
+            "_eq": "MAPPED"
+          }
+        }
+      }
+    },
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "pathParams": {}
+  }
+}

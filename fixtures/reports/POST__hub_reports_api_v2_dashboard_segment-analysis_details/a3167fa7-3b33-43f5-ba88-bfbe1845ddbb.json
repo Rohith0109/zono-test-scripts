@@ -1,0 +1,38 @@
+{
+  "default": {
+    "body": {
+      "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "startDate": "2026-04-12",
+      "endDate": "2026-04-18",
+      "compare": true,
+      "metric": "value",
+      "type": "category",
+      "filters": {},
+      "transactionType": "invoice"
+    },
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "pathParams": {}
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "body": {
+      "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "startDate": "2026-04-12",
+      "endDate": "2026-04-18",
+      "compare": true,
+      "metric": "value",
+      "type": "category",
+      "filters": {},
+      "transactionType": "invoice"
+    },
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "pathParams": {}
+  }
+}
