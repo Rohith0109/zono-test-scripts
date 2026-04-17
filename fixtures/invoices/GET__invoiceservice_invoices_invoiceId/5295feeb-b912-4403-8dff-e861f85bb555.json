@@ -1,0 +1,22 @@
+{
+  "default": {
+    "body": null,
+    "query": "?endDate=2026-04-17%2023%3A59%3A59&startDate=2026-03-18%2000%3A00%3A00&pageNo=1&pageSize=20&sortBy=invoiceDate&sortDirection=DESC&dispatchFilter=true",
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "pathParams": {
+      "invoiceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+    }
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "body": null,
+    "query": "?endDate=2026-04-17%2023%3A59%3A59&startDate=2026-03-18%2000%3A00%3A00&pageNo=1&pageSize=20&sortBy=invoiceDate&sortDirection=DESC&dispatchFilter=true",
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "pathParams": {
+      "invoiceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+    }
+  }
+}
