@@ -1,0 +1,44 @@
+{
+  "_info": {
+    "testCaseId": "b0927a6b-0e62-466d-b1bb-1fe1446f9cad",
+    "endpoint": "GET /signUrl/list",
+    "method": "GET",
+    "module": "list",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": {
+    "pathParams": {},
+    "query": "?id=payment&destination=workspaces&path=workspaces%2Fbe436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [],
+      "ignoreResponsePaths": [],
+      "equals": {}
+    }
+  },
+  "unknown": {
+    "pathParams": {},
+    "query": "?id=payment&destination=workspaces&path=workspaces%2Fbe436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [],
+      "ignoreResponsePaths": [],
+      "equals": {}
+    }
+  }
+}
