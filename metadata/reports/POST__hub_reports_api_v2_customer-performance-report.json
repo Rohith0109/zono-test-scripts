@@ -1,0 +1,150 @@
+{
+  "_info": {
+    "testCaseId": "b8fa140b-e58c-48de-b376-f6ec360085a1",
+    "endpoint": "POST /hub/reports/api/v2/customer-performance-report",
+    "method": "POST",
+    "module": "reports",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": {
+    "pathParams": {},
+    "query": "",
+    "body": {
+      "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "sortDirection": "DESC",
+      "orderBy": [
+        {
+          "column": "totalOrders",
+          "order": "DESC"
+        }
+      ],
+      "searchKey": "",
+      "pageNo": 1,
+      "pageSize": 20,
+      "startDate": "2026-04-12",
+      "endDate": "2026-04-17",
+      "filters": {
+        "district": [],
+        "pinCode": [],
+        "state": [],
+        "customerId": []
+      }
+    },
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        201
+      ],
+      "requiredResponsePaths": [
+        "$.data[0].sNo",
+        "$.data[0].customerName",
+        "$.data[0].customercode",
+        "$.data[0].sellerworkspacename",
+        "$.data[0].totalOrders",
+        "$.data[0].totalValue",
+        "$.data[0].totalInvoices",
+        "$.data[0].totalInvoicesValue",
+        "$.data[0].totalPendingInvoices",
+        "$.data[0].totalPendingInvoicesValue",
+        "$.data[0].outstandingAmount",
+        "$.data[0].creditLimit",
+        "$.data[0].state",
+        "$.data[0].district",
+        "$.data[0].pincode",
+        "$.data[0].companyName",
+        "$.totalNumberOfOrders",
+        "$.totalOrderValue",
+        "$.totalNumberOfInvoices",
+        "$.totalInvoiceValue",
+        "$.totalOutStanding",
+        "$.totalPendingInvoices",
+        "$.totalPendingInvoicesValue",
+        "$.totalRecords",
+        "$.startRecord",
+        "$.endRecord"
+      ],
+      "ignoreResponsePaths": [
+        "$.data[0].customerId",
+        "$.data[0].salesTeamMemberId",
+        "$.data[0].cfaId",
+        "$.updatedAt"
+      ],
+      "equals": {}
+    }
+  },
+  "unknown": {
+    "pathParams": {},
+    "query": "",
+    "body": {
+      "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "sortDirection": "DESC",
+      "orderBy": [
+        {
+          "column": "totalOrders",
+          "order": "DESC"
+        }
+      ],
+      "searchKey": "",
+      "pageNo": 1,
+      "pageSize": 20,
+      "startDate": "2026-04-12",
+      "endDate": "2026-04-17",
+      "filters": {
+        "district": [],
+        "pinCode": [],
+        "state": [],
+        "customerId": []
+      }
+    },
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        201
+      ],
+      "requiredResponsePaths": [
+        "$.data[0].sNo",
+        "$.data[0].customerName",
+        "$.data[0].customercode",
+        "$.data[0].sellerworkspacename",
+        "$.data[0].totalOrders",
+        "$.data[0].totalValue",
+        "$.data[0].totalInvoices",
+        "$.data[0].totalInvoicesValue",
+        "$.data[0].totalPendingInvoices",
+        "$.data[0].totalPendingInvoicesValue",
+        "$.data[0].outstandingAmount",
+        "$.data[0].creditLimit",
+        "$.data[0].state",
+        "$.data[0].district",
+        "$.data[0].pincode",
+        "$.data[0].companyName",
+        "$.totalNumberOfOrders",
+        "$.totalOrderValue",
+        "$.totalNumberOfInvoices",
+        "$.totalInvoiceValue",
+        "$.totalOutStanding",
+        "$.totalPendingInvoices",
+        "$.totalPendingInvoicesValue",
+        "$.totalRecords",
+        "$.startRecord",
+        "$.endRecord"
+      ],
+      "ignoreResponsePaths": [
+        "$.data[0].customerId",
+        "$.data[0].salesTeamMemberId",
+        "$.data[0].cfaId",
+        "$.updatedAt"
+      ],
+      "equals": {}
+    }
+  }
+}

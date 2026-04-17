@@ -1,0 +1,62 @@
+{
+  "_info": {
+    "testCaseId": "890178b4-44ac-45b6-a367-9c4443c1c8e7",
+    "endpoint": "GET /states",
+    "method": "GET",
+    "module": "states",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": {
+    "pathParams": {},
+    "query": "",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$[0].name",
+        "$[0].stateCode",
+        "$[0].isoCode",
+        "$[0].gstStateCode"
+      ],
+      "ignoreResponsePaths": [
+        "$[0].id",
+        "$[0].createdDate",
+        "$[0].updatedDate"
+      ],
+      "equals": {}
+    }
+  },
+  "unknown": {
+    "pathParams": {},
+    "query": "",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$[0].name",
+        "$[0].stateCode",
+        "$[0].isoCode",
+        "$[0].gstStateCode"
+      ],
+      "ignoreResponsePaths": [
+        "$[0].id",
+        "$[0].createdDate",
+        "$[0].updatedDate"
+      ],
+      "equals": {}
+    }
+  }
+}

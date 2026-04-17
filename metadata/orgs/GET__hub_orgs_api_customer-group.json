@@ -1,0 +1,54 @@
+{
+  "_info": {
+    "testCaseId": "6cf38ece-8325-42f5-bb8d-be2a53847e15",
+    "endpoint": "GET /hub/orgs/api/customer-group",
+    "method": "GET",
+    "module": "orgs",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": {
+    "pathParams": {},
+    "query": "?customerGroupTypes[]=ROUTE&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.1989141664897618",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$[0].groupType",
+        "$[0].supportsHierrarchy",
+        "$[0].folders[0]",
+        "$[0].rootCustomerGroups"
+      ],
+      "ignoreResponsePaths": [],
+      "equals": {}
+    }
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "pathParams": {},
+    "query": "?customerGroupTypes[]=ROUTE&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.1989141664897618",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$[0].groupType",
+        "$[0].supportsHierrarchy",
+        "$[0].folders[0]",
+        "$[0].rootCustomerGroups"
+      ],
+      "ignoreResponsePaths": [],
+      "equals": {}
+    }
+  }
+}

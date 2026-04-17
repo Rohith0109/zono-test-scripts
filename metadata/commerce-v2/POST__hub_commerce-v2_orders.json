@@ -1,0 +1,98 @@
+{
+  "_info": {
+    "testCaseId": "e7b3b638-705d-476c-b55a-8f62ea2a7419",
+    "endpoint": "POST /hub/commerce-v2/orders",
+    "method": "POST",
+    "module": "commerce-v2",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "body": {
+      "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "customerId": "",
+      "pageNo": 1,
+      "pageSize": 40,
+      "sortBy": "orderDate",
+      "sortDirection": "DESC",
+      "includeSummary": true,
+      "includeInvoice": true,
+      "includeCustomer": true,
+      "includeStatus": true,
+      "includeCFA": true,
+      "includeDivision": true,
+      "searchKeyword": "",
+      "startDate": "2026-04-10T21:25:52+05:30",
+      "endDate": "2026-04-17T21:25:52+05:30",
+      "filterModel": {
+        "cfaIds": [],
+        "status": [
+          "SubmittedByCustomer"
+        ],
+        "customerIds": [],
+        "tagIds": [],
+        "sourceFilter": ""
+      },
+      "skip": 1
+    },
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        201
+      ],
+      "requiredResponsePaths": [],
+      "ignoreResponsePaths": [],
+      "equals": {}
+    }
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "body": {
+      "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "customerId": "",
+      "pageNo": 1,
+      "pageSize": 40,
+      "sortBy": "orderDate",
+      "sortDirection": "DESC",
+      "includeSummary": true,
+      "includeInvoice": true,
+      "includeCustomer": true,
+      "includeStatus": true,
+      "includeCFA": true,
+      "includeDivision": true,
+      "searchKeyword": "",
+      "startDate": "2026-04-10T21:25:52+05:30",
+      "endDate": "2026-04-17T21:25:52+05:30",
+      "filterModel": {
+        "headDivisionIds": [],
+        "divisionIds": [],
+        "cfaIds": [],
+        "status": [],
+        "customerIds": [],
+        "tagIds": [],
+        "sourceFilter": ""
+      },
+      "skip": 1
+    },
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        201
+      ],
+      "requiredResponsePaths": [],
+      "ignoreResponsePaths": [],
+      "equals": {}
+    }
+  }
+}

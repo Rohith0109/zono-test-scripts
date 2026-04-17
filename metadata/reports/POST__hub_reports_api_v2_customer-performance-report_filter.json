@@ -1,0 +1,66 @@
+{
+  "_info": {
+    "testCaseId": "f65760bf-e25c-4aad-87a5-1f8eb8d809ef",
+    "endpoint": "POST /hub/reports/api/v2/customer-performance-report/filter",
+    "method": "POST",
+    "module": "reports",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": {
+    "pathParams": {},
+    "query": "",
+    "body": {
+      "startDate": "2026-04-12",
+      "endDate": "2026-04-17",
+      "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+    },
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        201
+      ],
+      "requiredResponsePaths": [
+        "$.district[0].district",
+        "$.state[0].state"
+      ],
+      "ignoreResponsePaths": [
+        "$.state[0].stateId",
+        "$.pinCode[0].inviteId"
+      ],
+      "equals": {}
+    }
+  },
+  "unknown": {
+    "pathParams": {},
+    "query": "",
+    "body": {
+      "startDate": "2026-04-12",
+      "endDate": "2026-04-17",
+      "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+    },
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        201
+      ],
+      "requiredResponsePaths": [
+        "$.district[0].district",
+        "$.state[0].state"
+      ],
+      "ignoreResponsePaths": [
+        "$.state[0].stateId",
+        "$.pinCode[0].inviteId"
+      ],
+      "equals": {}
+    }
+  }
+}
