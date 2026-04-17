@@ -1,0 +1,33 @@
+{
+  "default": {
+    "body": {
+      "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "preference": [
+        {
+          "pageSize": 40,
+          "sort": {
+            "sortBy": "orderDate",
+            "sortDirection": "DESC"
+          },
+          "screenName": "ORDER_LIST",
+          "additionalColumns": [
+            "invoicedItems",
+            "invoicedValue",
+            "cfa",
+            "orderedBy"
+          ],
+          "dateRange": {
+            "startDate": "Fri Apr 10 2026 11:53:05 GMT+0530 (India Standard Time)",
+            "endDate": "Fri Apr 17 2026 11:53:05 GMT+0530 (India Standard Time)"
+          }
+        }
+      ]
+    },
+    "query": "",
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "pathParams": {}
+  }
+}

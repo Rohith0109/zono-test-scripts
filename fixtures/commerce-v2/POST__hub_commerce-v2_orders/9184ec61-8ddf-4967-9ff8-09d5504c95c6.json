@@ -1,0 +1,37 @@
+{
+  "default": {
+    "body": {
+      "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "customerId": "",
+      "pageNo": 1,
+      "pageSize": 10,
+      "sortBy": "",
+      "sortDirection": "DESC",
+      "includeSummary": true,
+      "includeInvoice": true,
+      "includeCustomer": true,
+      "includeStatus": true,
+      "includeCFA": true,
+      "includeDivision": true,
+      "searchKeyword": "",
+      "startDate": "2026-04-10T11:53:05+05:30",
+      "endDate": "2026-04-17T11:53:05+05:30",
+      "filterModel": {
+        "cfaIds": [],
+        "status": [
+          "SubmittedByCustomer"
+        ],
+        "customerIds": [],
+        "tagIds": [],
+        "sourceFilter": ""
+      },
+      "skip": 1
+    },
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "pathParams": {}
+  }
+}
