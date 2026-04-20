@@ -1,0 +1,60 @@
+{
+  "_info": {
+    "testCaseId": "cc765f3d-6cb8-4669-94f3-3464d3aa6d02",
+    "endpoint": "GET /hub/communication-v2/api/centrifugo/token",
+    "method": "GET",
+    "module": "communication-v2",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$.websocketUrl",
+        "$.subscriptions[0].channel"
+      ],
+      "ignoreResponsePaths": [
+        "$.userId",
+        "$.sellerWorkspaceId",
+        "$.token",
+        "$.subscriptions[0].token"
+      ],
+      "equals": {}
+    }
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$.websocketUrl",
+        "$.subscriptions[0].channel"
+      ],
+      "ignoreResponsePaths": [
+        "$.userId",
+        "$.sellerWorkspaceId",
+        "$.token",
+        "$.subscriptions[0].token"
+      ],
+      "equals": {}
+    }
+  }
+}
