@@ -1,0 +1,44 @@
+{
+  "_info": {
+    "testCaseId": "a82ef54b-2709-48dd-be7e-07e7f8181e6c",
+    "endpoint": "GET /hub/orgs/api/team/list",
+    "method": "GET",
+    "module": "orgs",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeInactive=true&includePendingInvites=true&includeTeamCustomersMapping=true&userType=TeamOwner&userType=CFA&userType=M",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [],
+      "ignoreResponsePaths": [],
+      "equals": {}
+    }
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeInactive=true&includePendingInvites=true&includeTeamCustomersMapping=true&userType=TeamOwner&userType=CFA&userType=M",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [],
+      "ignoreResponsePaths": [],
+      "equals": {}
+    }
+  }
+}

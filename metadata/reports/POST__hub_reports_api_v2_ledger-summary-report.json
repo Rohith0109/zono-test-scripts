@@ -1,0 +1,83 @@
+{
+  "_info": {
+    "testCaseId": "0687523f-1424-48e6-bbd0-f451ececbf80",
+    "endpoint": "POST /hub/reports/api/v2/ledger-summary-report",
+    "method": "POST",
+    "module": "reports",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": {
+    "pathParams": {},
+    "query": "",
+    "body": {
+      "pageNo": 1,
+      "pageSize": 20,
+      "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "inviteIds": [
+        "6cec6ab9-0cb2-4074-aff8-e2caedc6a56a"
+      ]
+    },
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        201
+      ],
+      "requiredResponsePaths": [
+        "$.data",
+        "$.statusCode",
+        "$.totalRecords",
+        "$.startRecord",
+        "$.endRecord"
+      ],
+      "ignoreResponsePaths": [
+        "$.updatedAt"
+      ],
+      "equals": {}
+    }
+  },
+  "unknown": {
+    "pathParams": {},
+    "query": "",
+    "body": {
+      "pageNo": 1,
+      "pageSize": 20,
+      "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "inviteIds": [
+        "0c42ee7f-3257-45b6-98e3-8e5708ab74b8"
+      ]
+    },
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        201
+      ],
+      "requiredResponsePaths": [
+        "$.data[0].creditLimit",
+        "$.data[0].outstandingAmt",
+        "$.data[0].overdueAmt",
+        "$.data[0].availableLimit",
+        "$.statusCode",
+        "$.totalRecords",
+        "$.startRecord",
+        "$.endRecord"
+      ],
+      "ignoreResponsePaths": [
+        "$.data[0].sellerWorkspaceId",
+        "$.data[0].inviteId",
+        "$.data[0].createdAt",
+        "$.data[0].updatedAt",
+        "$.updatedAt"
+      ],
+      "equals": {}
+    }
+  }
+}

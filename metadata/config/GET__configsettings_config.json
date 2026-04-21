@@ -1,0 +1,102 @@
+{
+  "_info": {
+    "testCaseId": "ba4b0fec-39f9-4361-9ef6-800f1f05b397",
+    "endpoint": "GET /configsettings/config",
+    "method": "GET",
+    "module": "config",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": {
+    "pathParams": {},
+    "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&module=Turnover&rollback=false&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$.config.schema_type",
+        "$.config.selection_type",
+        "$.config.slab_application_level",
+        "$.module"
+      ],
+      "ignoreResponsePaths": [
+        "$.id",
+        "$.createdDate",
+        "$.updatedDate",
+        "$.workspaceId",
+        "$.divisionId",
+        "$.customerGroupId",
+        "$.customerId",
+        "$.teamMemberId"
+      ],
+      "equals": {}
+    }
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "pathParams": {},
+    "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&module=Turnover&rollback=false&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$.config.schema_type",
+        "$.config.selection_type",
+        "$.config.slab_application_level",
+        "$.module"
+      ],
+      "ignoreResponsePaths": [
+        "$.id",
+        "$.createdDate",
+        "$.updatedDate",
+        "$.workspaceId",
+        "$.divisionId",
+        "$.customerGroupId",
+        "$.customerId",
+        "$.teamMemberId"
+      ],
+      "equals": {}
+    }
+  },
+  "8b3e8707-f970-4423-8192-da53d26f15d2": {
+    "pathParams": {},
+    "query": "?workspaceId=8b3e8707-f970-4423-8192-da53d26f15d2&module=Turnover&rollback=false&sellerWorkspaceId=8b3e8707-f970-4423-8192-da53d26f15d2",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$.config.schema_type",
+        "$.config.selection_type",
+        "$.config.slab_application_level",
+        "$.module"
+      ],
+      "ignoreResponsePaths": [
+        "$.id",
+        "$.createdDate",
+        "$.updatedDate",
+        "$.workspaceId",
+        "$.divisionId",
+        "$.customerGroupId",
+        "$.customerId",
+        "$.teamMemberId"
+      ],
+      "equals": {}
+    }
+  }
+}

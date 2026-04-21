@@ -1,0 +1,72 @@
+{
+  "_info": {
+    "testCaseId": "247644f4-ff37-4d75-a573-ef8067ebfb52",
+    "endpoint": "POST /regenerate/token",
+    "method": "POST",
+    "module": "token",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": {
+    "pathParams": {},
+    "query": "",
+    "body": {
+      "refreshToken": "[REDACTED]",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiYzY4OTc1NDQtMzJiNi00YTk1LWFkZGYtYzJkNjU2Y2UwNWFjIiwid29ya3NwYWNlSWQiOiJiZTQzNmI2My02NGJhLTRmOTQtYmZjZi0zZTNlMGJjNGUzNzUiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTc3NTY1MDc4NywiZXhwIjoxNzc4MDY5OTg3fQ._wlDgLEad8KhV2OlCG1_KOZUwdWont0RW-FcAIfGwhM",
+      "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+    },
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$.workspaceRoles[0]",
+        "$.cfaIDs",
+        "$.inviteUserType"
+      ],
+      "ignoreResponsePaths": [
+        "$.refreshToken",
+        "$.token",
+        "$.id",
+        "$.workspaceId"
+      ],
+      "equals": {}
+    }
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "pathParams": {},
+    "query": "",
+    "body": {
+      "refreshToken": "[REDACTED]",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiYzY4OTc1NDQtMzJiNi00YTk1LWFkZGYtYzJkNjU2Y2UwNWFjIiwid29ya3NwYWNlSWQiOiJiZTQzNmI2My02NGJhLTRmOTQtYmZjZi0zZTNlMGJjNGUzNzUiLCJ3b3Jrc3BhY2VSb2xlcyI6WyJhZG0iXX0sImlhdCI6MTc3Njc2MDgyNSwiZXhwIjoxNzc5MTgwMDI1fQ.o2q6jUCwd9oaGe0RoJTMcf-32XDh57UutNTHvrbSvtU",
+      "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+    },
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$.workspaceRoles[0]",
+        "$.cfaIDs",
+        "$.inviteUserType"
+      ],
+      "ignoreResponsePaths": [
+        "$.refreshToken",
+        "$.token",
+        "$.id",
+        "$.workspaceId"
+      ],
+      "equals": {}
+    }
+  }
+}

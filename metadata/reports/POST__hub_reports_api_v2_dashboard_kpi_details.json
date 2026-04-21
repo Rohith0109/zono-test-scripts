@@ -1,0 +1,102 @@
+{
+  "_info": {
+    "testCaseId": "e2991b00-9d25-4a1a-a9d2-740597c7cf40",
+    "endpoint": "POST /hub/reports/api/v2/dashboard/kpi/details",
+    "method": "POST",
+    "module": "reports",
+    "apiDomain": "https://api.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=8b3e8707-f970-4423-8192-da53d26f15d2",
+    "body": {
+      "kpi_id": "average_invoice_value",
+      "startDate": "2026-04-19",
+      "endDate": "2026-04-25",
+      "isCompare": true,
+      "filters": {}
+    },
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        201
+      ],
+      "requiredResponsePaths": [
+        "$.kpi_name",
+        "$.kpi_description",
+        "$.kpi_value",
+        "$.comparison_percent"
+      ],
+      "ignoreResponsePaths": [
+        "$.kpi_id"
+      ],
+      "equals": {}
+    }
+  },
+  "8b3e8707-f970-4423-8192-da53d26f15d2": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=8b3e8707-f970-4423-8192-da53d26f15d2",
+    "body": {
+      "kpi_id": "average_number_of_invoices_per_day",
+      "startDate": "2026-04-19",
+      "endDate": "2026-04-25",
+      "isCompare": true,
+      "filters": {}
+    },
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        201
+      ],
+      "requiredResponsePaths": [
+        "$.kpi_name",
+        "$.kpi_description",
+        "$.kpi_value",
+        "$.comparison_percent"
+      ],
+      "ignoreResponsePaths": [
+        "$.kpi_id"
+      ],
+      "equals": {}
+    }
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "body": {
+      "kpi_id": "average_number_of_invoices_per_day",
+      "startDate": "2026-04-19",
+      "endDate": "2026-04-25",
+      "isCompare": true,
+      "filters": {}
+    },
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        201
+      ],
+      "requiredResponsePaths": [
+        "$.kpi_name",
+        "$.kpi_description",
+        "$.kpi_value",
+        "$.comparison_percent"
+      ],
+      "ignoreResponsePaths": [
+        "$.kpi_id"
+      ],
+      "equals": {}
+    }
+  }
+}

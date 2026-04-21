@@ -1,0 +1,78 @@
+{
+  "_info": {
+    "testCaseId": "0c8f3d9a-5894-4146-aace-c551e18b7575",
+    "endpoint": "POST /hub/orgs/api/docs/zo-file/file-operations/{workspaceId}",
+    "method": "POST",
+    "module": "orgs",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": {
+    "pathParams": {
+      "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+    },
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "body": {
+      "request": [
+        {
+          "action": "view",
+          "suffix": "e043454b-a700-4b29-89c9-317a5d5a5c6d.pdf",
+          "documentType": "turnover_schemes",
+          "type": "file"
+        }
+      ]
+    },
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        201
+      ],
+      "requiredResponsePaths": [
+        "$.data[0].fileName",
+        "$.data[0].action",
+        "$.data[0].presignedUrl",
+        "$.data[0].message"
+      ],
+      "ignoreResponsePaths": [],
+      "equals": {}
+    }
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "pathParams": {
+      "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+    },
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "body": {
+      "request": [
+        {
+          "action": "view",
+          "suffix": "e043454b-a700-4b29-89c9-317a5d5a5c6d.pdf",
+          "documentType": "turnover_schemes",
+          "type": "file"
+        }
+      ]
+    },
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        201
+      ],
+      "requiredResponsePaths": [
+        "$.data[0].fileName",
+        "$.data[0].action",
+        "$.data[0].presignedUrl",
+        "$.data[0].message"
+      ],
+      "ignoreResponsePaths": [],
+      "equals": {}
+    }
+  }
+}
