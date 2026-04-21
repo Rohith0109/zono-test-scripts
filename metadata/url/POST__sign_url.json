@@ -1,0 +1,68 @@
+{
+  "_info": {
+    "testCaseId": "df0db33c-e84b-4670-9dc6-a4fe6f951c07",
+    "endpoint": "POST /sign/url",
+    "method": "POST",
+    "module": "url",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": {
+    "pathParams": {},
+    "query": "",
+    "body": {
+      "fileName": "/Invoice RESHMI TRADERS - 8578 1 1.pdf",
+      "type": "document",
+      "contentType": "application/pdf",
+      "destination": "channels",
+      "method": "put",
+      "userId": "c6897544-32b6-4a95-addf-c2d656ce05ac",
+      "channelId": "b5f2444e-2f6f-49d4-9552-9b54c8a9f9e5",
+      "messageId": "40bf5299-6a29-40af-8c69-7a7825950971"
+    },
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$.presignedUrl"
+      ],
+      "ignoreResponsePaths": [],
+      "equals": {}
+    }
+  },
+  "unknown": {
+    "pathParams": {},
+    "query": "",
+    "body": {
+      "fileName": "/Invoice SHAWAFEL_Invoice_30870 1.pdf",
+      "type": "document",
+      "contentType": "application/pdf",
+      "destination": "channels",
+      "method": "get",
+      "userId": "c6897544-32b6-4a95-addf-c2d656ce05ac",
+      "channelId": "a93606ea-6ba2-49ab-af16-5999b9fee6bb",
+      "messageId": "d3418444-955d-40f2-be9d-7c9477d4d44a"
+    },
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$.presignedUrl"
+      ],
+      "ignoreResponsePaths": [],
+      "equals": {}
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "_info": {
-    "testCaseId": "8f83a93e-836b-420d-ba5c-93a9f6a4837e",
+    "testCaseId": "87c36b8d-2651-406d-8ef0-eda3932fd315",
     "endpoint": "POST /track",
     "method": "POST",
     "module": "track",
@@ -13,9 +13,10 @@
     "pathParams": {},
     "query": "",
     "body": {
-      "eventType": "settings-view",
+      "eventType": "campaign-list-view",
       "event": {
         "user_id": "c6897544-32b6-4a95-addf-c2d656ce05ac",
+        "email": null,
         "name": "Hda",
         "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
         "phoneNumber": "913203220232",
@@ -171,7 +172,6 @@
         "otp": "[REDACTED]",
         "emailOTP": "[REDACTED]",
         "contentType": null,
-        "email": null,
         "isVerified": true,
         "isProfileUpdate": false,
         "token": null,
@@ -229,9 +229,10 @@
     "pathParams": {},
     "query": "",
     "body": {
-      "eventType": "settings-view",
+      "eventType": "campaign-list-view",
       "event": {
         "user_id": "c6897544-32b6-4a95-addf-c2d656ce05ac",
+        "email": null,
         "name": "Hda",
         "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
         "phoneNumber": "913203220232",
@@ -387,7 +388,6 @@
         "otp": "[REDACTED]",
         "emailOTP": "[REDACTED]",
         "contentType": null,
-        "email": null,
         "isVerified": true,
         "isProfileUpdate": false,
         "token": null,
