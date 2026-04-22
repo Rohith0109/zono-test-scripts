@@ -1,0 +1,114 @@
+{
+  "_info": {
+    "testCaseId": "63e4528d-3acc-40fc-be02-e5cb8f22f7da",
+    "endpoint": "GET /hub/orgs/api/cfa/{cfaId}",
+    "method": "GET",
+    "module": "orgs",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": [
+    {
+      "pathParams": {
+        "cfaId": "01fc404f-8688-45be-9037-db36f0001677"
+      },
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.fulfillmentLocationCode",
+          "$.type[0]",
+          "$.physicalAddress",
+          "$.supplierName",
+          "$.fulfillmentAddress",
+          "$.GSTNumber",
+          "$.businessPan",
+          "$.postalCode",
+          "$.isActive",
+          "$.isDefault",
+          "$.country",
+          "$.cityName",
+          "$.phone",
+          "$.email",
+          "$.state.name",
+          "$.state.stateCode",
+          "$.state.isoCode",
+          "$.state.gstStateCode",
+          "$.priceLists",
+          "$.numberOfCustomers",
+          "$.numberOfDivisions"
+        ],
+        "ignoreResponsePaths": [
+          "$.id",
+          "$.createdDate",
+          "$.updatedDate",
+          "$.workspaceId",
+          "$.stateId",
+          "$.state.id",
+          "$.state.createdDate",
+          "$.state.updatedDate"
+        ],
+        "equals": {}
+      }
+    }
+  ],
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
+    {
+      "pathParams": {
+        "cfaId": "01fc404f-8688-45be-9037-db36f0001677"
+      },
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.fulfillmentLocationCode",
+          "$.type[0]",
+          "$.physicalAddress",
+          "$.supplierName",
+          "$.fulfillmentAddress",
+          "$.GSTNumber",
+          "$.businessPan",
+          "$.postalCode",
+          "$.isActive",
+          "$.isDefault",
+          "$.country",
+          "$.cityName",
+          "$.phone",
+          "$.email",
+          "$.state.name",
+          "$.state.stateCode",
+          "$.state.isoCode",
+          "$.state.gstStateCode",
+          "$.priceLists",
+          "$.numberOfCustomers",
+          "$.numberOfDivisions"
+        ],
+        "ignoreResponsePaths": [
+          "$.id",
+          "$.createdDate",
+          "$.updatedDate",
+          "$.workspaceId",
+          "$.stateId",
+          "$.state.id",
+          "$.state.createdDate",
+          "$.state.updatedDate"
+        ],
+        "equals": {}
+      }
+    }
+  ]
+}

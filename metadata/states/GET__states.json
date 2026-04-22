@@ -1,9 +1,9 @@
 {
   "_info": {
-    "testCaseId": "043a4040-76e7-4308-9a2b-891537cde6d7",
-    "endpoint": "GET /workspaces/roles/permissions",
+    "testCaseId": "6b12d18c-0eb3-4ca3-af3e-958013c07bf6",
+    "endpoint": "GET /states",
     "method": "GET",
-    "module": "roles",
+    "module": "states",
     "apiDomain": "https://api-qa.zotok.ai",
     "label": "",
     "suite": "Unassigned",
@@ -12,7 +12,7 @@
   "default": [
     {
       "pathParams": {},
-      "query": "?isSeller=true",
+      "query": "",
       "body": null,
       "headers": {
         "authorization": "[REDACTED]"
@@ -22,13 +22,15 @@
           200
         ],
         "requiredResponsePaths": [
-          "$.roles[0].title",
-          "$.roles[0].slug",
-          "$.roles[0].description",
-          "$.roles[0].permissions"
+          "$[0].name",
+          "$[0].stateCode",
+          "$[0].isoCode",
+          "$[0].gstStateCode"
         ],
         "ignoreResponsePaths": [
-          "$.roles[0].id"
+          "$[0].id",
+          "$[0].createdDate",
+          "$[0].updatedDate"
         ],
         "equals": {}
       }
@@ -37,7 +39,7 @@
   "unknown": [
     {
       "pathParams": {},
-      "query": "?isSeller=true",
+      "query": "",
       "body": null,
       "headers": {
         "authorization": "[REDACTED]"
@@ -47,13 +49,15 @@
           200
         ],
         "requiredResponsePaths": [
-          "$.roles[0].title",
-          "$.roles[0].slug",
-          "$.roles[0].description",
-          "$.roles[0].permissions"
+          "$[0].name",
+          "$[0].stateCode",
+          "$[0].isoCode",
+          "$[0].gstStateCode"
         ],
         "ignoreResponsePaths": [
-          "$.roles[0].id"
+          "$[0].id",
+          "$[0].createdDate",
+          "$[0].updatedDate"
         ],
         "equals": {}
       }
