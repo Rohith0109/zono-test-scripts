@@ -1,7 +1,7 @@
 {
   "_info": {
-    "testCaseId": "7211f7b8-4781-464f-8ed4-86863074444a",
-    "endpoint": "GET /hub/orgs/api/team/list",
+    "testCaseId": "4a4177f6-0f07-4b1a-ab45-9bf4b2da764d",
+    "endpoint": "GET /hub/orgs/api/workspace/documents",
     "method": "GET",
     "module": "orgs",
     "apiDomain": "https://api-qa.zotok.ai",
@@ -12,7 +12,7 @@
   "default": [
     {
       "pathParams": {},
-      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeInactive=true&includePendingInvites=true&includeTeamCustomersMapping=true&includeCfaAndDivisions=true&page=1&pageSize=20&userType=TeamOwner&userType=CFA&userType=M",
+      "query": "?documentType=customer&subType=passport_photo&sequenceNo=1&entityId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
       "body": null,
       "headers": {
         "authorization": "[REDACTED]"
@@ -21,7 +21,9 @@
         "expectedStatus": [
           200
         ],
-        "requiredResponsePaths": [],
+        "requiredResponsePaths": [
+          "$"
+        ],
         "ignoreResponsePaths": [],
         "equals": {}
       }
@@ -30,7 +32,7 @@
   "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
     {
       "pathParams": {},
-      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeInactive=true&includePendingInvites=true&includeTeamCustomersMapping=true&includeCfaAndDivisions=true&page=1&pageSize=20&userType=TeamOwner&userType=CFA&userType=M",
+      "query": "?documentType=customer&subType=passport_photo&sequenceNo=1&entityId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
       "body": null,
       "headers": {
         "authorization": "[REDACTED]"
@@ -39,7 +41,9 @@
         "expectedStatus": [
           200
         ],
-        "requiredResponsePaths": [],
+        "requiredResponsePaths": [
+          "$"
+        ],
         "ignoreResponsePaths": [],
         "equals": {}
       }

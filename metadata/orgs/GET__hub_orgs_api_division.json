@@ -1,7 +1,7 @@
 {
   "_info": {
-    "testCaseId": "7211f7b8-4781-464f-8ed4-86863074444a",
-    "endpoint": "GET /hub/orgs/api/team/list",
+    "testCaseId": "b6208df1-a7a0-44be-9aa9-62f173bf20d2",
+    "endpoint": "GET /hub/orgs/api/division",
     "method": "GET",
     "module": "orgs",
     "apiDomain": "https://api-qa.zotok.ai",
@@ -12,7 +12,7 @@
   "default": [
     {
       "pathParams": {},
-      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeInactive=true&includePendingInvites=true&includeTeamCustomersMapping=true&includeCfaAndDivisions=true&page=1&pageSize=20&userType=TeamOwner&userType=CFA&userType=M",
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeHeadDivision=true",
       "body": null,
       "headers": {
         "authorization": "[REDACTED]"
@@ -30,7 +30,7 @@
   "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
     {
       "pathParams": {},
-      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeInactive=true&includePendingInvites=true&includeTeamCustomersMapping=true&includeCfaAndDivisions=true&page=1&pageSize=20&userType=TeamOwner&userType=CFA&userType=M",
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeHeadDivision=true",
       "body": null,
       "headers": {
         "authorization": "[REDACTED]"

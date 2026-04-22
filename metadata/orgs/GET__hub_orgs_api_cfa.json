@@ -1,6 +1,6 @@
 {
   "_info": {
-    "testCaseId": "0315e311-f234-411d-af04-9aed6c40a975",
+    "testCaseId": "9d61a794-f0aa-43db-9f83-7e6f14dea7a9",
     "endpoint": "GET /hub/orgs/api/cfa",
     "method": "GET",
     "module": "orgs",
@@ -9,36 +9,96 @@
     "suite": "Unassigned",
     "disabled": false
   },
-  "default": {
-    "pathParams": {},
-    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&",
-    "body": null,
-    "headers": {
-      "authorization": "[REDACTED]"
-    },
-    "assertions": {
-      "expectedStatus": [
-        200
-      ],
-      "requiredResponsePaths": [],
-      "ignoreResponsePaths": [],
-      "equals": {}
+  "default": [
+    {
+      "pathParams": {},
+      "query": "?sellerWorkspaceId=&pageNo=1&pageSize=20&sortDirection=ASC",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          400
+        ],
+        "requiredResponsePaths": [
+          "$.message",
+          "$.statusCode"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
     }
-  },
-  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-    "pathParams": {},
-    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&",
-    "body": null,
-    "headers": {
-      "authorization": "[REDACTED]"
-    },
-    "assertions": {
-      "expectedStatus": [
-        200
-      ],
-      "requiredResponsePaths": [],
-      "ignoreResponsePaths": [],
-      "equals": {}
+  ],
+  "unknown": [
+    {
+      "pathParams": {},
+      "query": "?sellerWorkspaceId=&pageNo=1&pageSize=20&sortDirection=ASC",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          400
+        ],
+        "requiredResponsePaths": [
+          "$.message",
+          "$.statusCode"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
     }
-  }
+  ],
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
+    {
+      "pathParams": {},
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&pageNo=1&pageSize=20&sortDirection=ASC",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&disablePagination=true",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    }
+  ]
 }

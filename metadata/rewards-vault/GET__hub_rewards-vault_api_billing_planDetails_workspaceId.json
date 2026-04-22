@@ -1,0 +1,116 @@
+{
+  "_info": {
+    "testCaseId": "1cde27b9-b362-406b-b128-ef7c44cf85d1",
+    "endpoint": "GET /hub/rewards-vault/api/billing/planDetails/{workspaceId}",
+    "method": "GET",
+    "module": "rewards-vault",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": [
+    {
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.planAndSubscriptionDetails.name",
+          "$.planAndSubscriptionDetails.email",
+          "$.planAndSubscriptionDetails.subscriptionStatus",
+          "$.planAndSubscriptionDetails.subscription.amount",
+          "$.planAndSubscriptionDetails.subscription.status",
+          "$.planAndSubscriptionDetails.subscription.interval",
+          "$.planAndSubscriptionDetails.subscription.activatedAt",
+          "$.planAndSubscriptionDetails.subscription.description",
+          "$.planAndSubscriptionDetails.subscription.currencyCode",
+          "$.planAndSubscriptionDetails.subscription.interval_unit",
+          "$.planAndSubscriptionDetails.subscription.nextBillingAt",
+          "$.planAndSubscriptionDetails.subscription.subscriptionName",
+          "$.planAndSubscriptionDetails.subscription.currentTermEndsAt",
+          "$.planAndSubscriptionDetails.subscription.currentTermStartsAt",
+          "$.planAndSubscriptionDetails.addons",
+          "$.planAndSubscriptionDetails.perOrderPrice",
+          "$.planAndSubscriptionDetails.isPlanUpgraded",
+          "$.planAndSubscriptionDetails.ipAddress",
+          "$.planAndSubscriptionDetails.isAgreementAccepted",
+          "$.accountBalance",
+          "$.messageConsumption.total_auth_conversation_count"
+        ],
+        "ignoreResponsePaths": [
+          "$.planAndSubscriptionDetails.id",
+          "$.planAndSubscriptionDetails.createdDate",
+          "$.planAndSubscriptionDetails.updatedDate",
+          "$.planAndSubscriptionDetails.workspaceId",
+          "$.planAndSubscriptionDetails.zohoCustomerId",
+          "$.planAndSubscriptionDetails.planId",
+          "$.planAndSubscriptionDetails.zohoReferenceId",
+          "$.planAndSubscriptionDetails.subscription.subscriptionId",
+          "$.planAndSubscriptionDetails.agreementAcceptedTime"
+        ],
+        "equals": {}
+      }
+    }
+  ],
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
+    {
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.planAndSubscriptionDetails.name",
+          "$.planAndSubscriptionDetails.email",
+          "$.planAndSubscriptionDetails.subscriptionStatus",
+          "$.planAndSubscriptionDetails.subscription.amount",
+          "$.planAndSubscriptionDetails.subscription.status",
+          "$.planAndSubscriptionDetails.subscription.interval",
+          "$.planAndSubscriptionDetails.subscription.activatedAt",
+          "$.planAndSubscriptionDetails.subscription.description",
+          "$.planAndSubscriptionDetails.subscription.currencyCode",
+          "$.planAndSubscriptionDetails.subscription.interval_unit",
+          "$.planAndSubscriptionDetails.subscription.nextBillingAt",
+          "$.planAndSubscriptionDetails.subscription.subscriptionName",
+          "$.planAndSubscriptionDetails.subscription.currentTermEndsAt",
+          "$.planAndSubscriptionDetails.subscription.currentTermStartsAt",
+          "$.planAndSubscriptionDetails.addons",
+          "$.planAndSubscriptionDetails.perOrderPrice",
+          "$.planAndSubscriptionDetails.isPlanUpgraded",
+          "$.planAndSubscriptionDetails.ipAddress",
+          "$.planAndSubscriptionDetails.isAgreementAccepted",
+          "$.accountBalance",
+          "$.messageConsumption.total_auth_conversation_count"
+        ],
+        "ignoreResponsePaths": [
+          "$.planAndSubscriptionDetails.id",
+          "$.planAndSubscriptionDetails.createdDate",
+          "$.planAndSubscriptionDetails.updatedDate",
+          "$.planAndSubscriptionDetails.workspaceId",
+          "$.planAndSubscriptionDetails.zohoCustomerId",
+          "$.planAndSubscriptionDetails.planId",
+          "$.planAndSubscriptionDetails.zohoReferenceId",
+          "$.planAndSubscriptionDetails.subscription.subscriptionId",
+          "$.planAndSubscriptionDetails.agreementAcceptedTime"
+        ],
+        "equals": {}
+      }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "_info": {
-    "testCaseId": "3fe5aafa-9dcc-4f32-9511-a6c918607238",
+    "testCaseId": "766b0cf6-e75e-42c4-9e09-c972dcd5c880",
     "endpoint": "GET /hub/communication-v2/api/channel/member",
     "method": "GET",
     "module": "communication-v2",
@@ -9,52 +9,152 @@
     "suite": "Unassigned",
     "disabled": false
   },
-  "default": {
-    "pathParams": {},
-    "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=57be40ff-2238-441e-95c7-f62e797b923a&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.6198177756563643",
-    "body": null,
-    "headers": {
-      "authorization": "[REDACTED]"
-    },
-    "assertions": {
-      "expectedStatus": [
-        200
-      ],
-      "requiredResponsePaths": [],
-      "ignoreResponsePaths": [],
-      "equals": {}
+  "default": [
+    {
+      "pathParams": {},
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=4b993e24-277c-42fe-a5db-8ebf08662abe&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.999828238645406",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.channelName",
+          "$.accessType",
+          "$.profilePic",
+          "$.description",
+          "$.isDefault",
+          "$.channelType",
+          "$.entityType",
+          "$.channelSubType",
+          "$.isActive",
+          "$.enableWhatsappNotification",
+          "$.issueStatus",
+          "$.inviteLink",
+          "$.channelRole"
+        ],
+        "ignoreResponsePaths": [
+          "$.id",
+          "$.createdAt",
+          "$.updatedAt",
+          "$.linkedWorkspaceId",
+          "$.updatedBy",
+          "$.emojiId",
+          "$.messageId",
+          "$.ownerId",
+          "$.appId",
+          "$.entityId",
+          "$.customerId",
+          "$.workspaceId",
+          "$.folderId",
+          "$.waGroupId",
+          "$.waRequestId",
+          "$.teamMembers[0].id",
+          "$.teamMembers[0].inviteId"
+        ],
+        "equals": {}
+      }
     }
-  },
-  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-    "pathParams": {},
-    "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=a93606ea-6ba2-49ab-af16-5999b9fee6bb&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.7649373888245099",
-    "body": null,
-    "headers": {
-      "authorization": "[REDACTED]"
+  ],
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
+    {
+      "pathParams": {},
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=4b993e24-277c-42fe-a5db-8ebf08662abe&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.999828238645406",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.channelName",
+          "$.accessType",
+          "$.profilePic",
+          "$.description",
+          "$.isDefault",
+          "$.channelType",
+          "$.entityType",
+          "$.channelSubType",
+          "$.isActive",
+          "$.enableWhatsappNotification",
+          "$.issueStatus",
+          "$.inviteLink",
+          "$.channelRole"
+        ],
+        "ignoreResponsePaths": [
+          "$.id",
+          "$.createdAt",
+          "$.updatedAt",
+          "$.linkedWorkspaceId",
+          "$.updatedBy",
+          "$.emojiId",
+          "$.messageId",
+          "$.ownerId",
+          "$.appId",
+          "$.entityId",
+          "$.customerId",
+          "$.workspaceId",
+          "$.folderId",
+          "$.waGroupId",
+          "$.waRequestId",
+          "$.teamMembers[0].id",
+          "$.teamMembers[0].inviteId"
+        ],
+        "equals": {}
+      }
     },
-    "assertions": {
-      "expectedStatus": [
-        200
-      ],
-      "requiredResponsePaths": [],
-      "ignoreResponsePaths": [],
-      "equals": {}
+    {
+      "pathParams": {},
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=4b993e24-277c-42fe-a5db-8ebf08662abe&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.842974463360754",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.channelName",
+          "$.accessType",
+          "$.profilePic",
+          "$.description",
+          "$.isDefault",
+          "$.channelType",
+          "$.entityType",
+          "$.channelSubType",
+          "$.isActive",
+          "$.enableWhatsappNotification",
+          "$.issueStatus",
+          "$.inviteLink",
+          "$.channelRole"
+        ],
+        "ignoreResponsePaths": [
+          "$.id",
+          "$.createdAt",
+          "$.updatedAt",
+          "$.linkedWorkspaceId",
+          "$.updatedBy",
+          "$.emojiId",
+          "$.messageId",
+          "$.ownerId",
+          "$.appId",
+          "$.entityId",
+          "$.customerId",
+          "$.workspaceId",
+          "$.folderId",
+          "$.waGroupId",
+          "$.waRequestId",
+          "$.teamMembers[0].id",
+          "$.teamMembers[0].inviteId"
+        ],
+        "equals": {}
+      }
     }
-  },
-  "8b3e8707-f970-4423-8192-da53d26f15d2": {
-    "pathParams": {},
-    "query": "?workspaceId=8b3e8707-f970-4423-8192-da53d26f15d2&id=fe4f56c5-92af-4bdc-bbb3-4415bc24470d&sellerWorkspaceId=8b3e8707-f970-4423-8192-da53d26f15d2&random=0.48520067242275466",
-    "body": null,
-    "headers": {
-      "authorization": "[REDACTED]"
-    },
-    "assertions": {
-      "expectedStatus": [
-        200
-      ],
-      "requiredResponsePaths": [],
-      "ignoreResponsePaths": [],
-      "equals": {}
-    }
-  }
+  ]
 }

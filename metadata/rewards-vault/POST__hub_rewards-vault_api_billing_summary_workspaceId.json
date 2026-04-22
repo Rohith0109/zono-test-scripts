@@ -1,0 +1,68 @@
+{
+  "_info": {
+    "testCaseId": "aa8500fb-4839-4e2c-9ff0-673ca967bae7",
+    "endpoint": "POST /hub/rewards-vault/api/billing/summary/{workspaceId}",
+    "method": "POST",
+    "module": "rewards-vault",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": [
+    {
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": {
+        "filters": {
+          "startDate": "2026-03-23",
+          "endDate": "2026-04-22",
+          "pageNo": 0,
+          "pageSize": 20
+        }
+      },
+      "headers": {
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    }
+  ],
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
+    {
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": {
+        "filters": {
+          "startDate": "2026-03-23",
+          "endDate": "2026-04-22",
+          "pageNo": 0,
+          "pageSize": 20
+        }
+      },
+      "headers": {
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    }
+  ]
+}

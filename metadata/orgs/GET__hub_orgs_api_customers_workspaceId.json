@@ -1,0 +1,54 @@
+{
+  "_info": {
+    "testCaseId": "ea75da57-4dbe-447a-a89a-e9c2a937fae6",
+    "endpoint": "GET /hub/orgs/api/customers/{workspaceId}",
+    "method": "GET",
+    "module": "orgs",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": [
+    {
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "query": "?includeCustomerGroupAssignments=1&includeWorkspaceMembers=1&includeTeamCustomersMapping=true&pageNo=1&pageSize=20&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]",
+        "cache-control": "no-cache"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    }
+  ],
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
+    {
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "query": "?includeCustomerGroupAssignments=1&includeWorkspaceMembers=1&includeTeamCustomersMapping=true&pageNo=1&pageSize=20&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]",
+        "cache-control": "no-cache"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    }
+  ]
+}

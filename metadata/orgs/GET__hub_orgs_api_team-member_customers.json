@@ -1,9 +1,9 @@
 {
   "_info": {
-    "testCaseId": "5c119688-ee62-4af6-96c9-9bb328dad075",
-    "endpoint": "GET /hub/communication-v2/api/centrifugo/token",
+    "testCaseId": "2d27c548-8b6f-4102-b259-2c43ae0286f4",
+    "endpoint": "GET /hub/orgs/api/team-member/customers",
     "method": "GET",
-    "module": "communication-v2",
+    "module": "orgs",
     "apiDomain": "https://api-qa.zotok.ai",
     "label": "",
     "suite": "Unassigned",
@@ -12,24 +12,22 @@
   "default": [
     {
       "pathParams": {},
-      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "query": "?teamMemberId=&includePendingInvites=true&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&pageSize=20&pageNo=1",
       "body": null,
       "headers": {
         "authorization": "[REDACTED]"
       },
       "assertions": {
         "expectedStatus": [
-          200
+          400
         ],
         "requiredResponsePaths": [
-          "$.websocketUrl",
-          "$.subscriptions[0].channel"
+          "$.statusCode",
+          "$.path",
+          "$.message[0]"
         ],
         "ignoreResponsePaths": [
-          "$.userId",
-          "$.sellerWorkspaceId",
-          "$.token",
-          "$.subscriptions[0].token"
+          "$.timestamp"
         ],
         "equals": {}
       }
@@ -38,48 +36,44 @@
   "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
     {
       "pathParams": {},
-      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "query": "?teamMemberId=&includePendingInvites=true&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&pageSize=20&pageNo=1",
       "body": null,
       "headers": {
         "authorization": "[REDACTED]"
       },
       "assertions": {
         "expectedStatus": [
-          200
+          400
         ],
         "requiredResponsePaths": [
-          "$.websocketUrl",
-          "$.subscriptions[0].channel"
+          "$.statusCode",
+          "$.path",
+          "$.message[0]"
         ],
         "ignoreResponsePaths": [
-          "$.userId",
-          "$.sellerWorkspaceId",
-          "$.token",
-          "$.subscriptions[0].token"
+          "$.timestamp"
         ],
         "equals": {}
       }
     },
     {
       "pathParams": {},
-      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "query": "?teamMemberId=&includePendingInvites=true&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&pageSize=20&pageNo=1",
       "body": null,
       "headers": {
         "authorization": "[REDACTED]"
       },
       "assertions": {
         "expectedStatus": [
-          200
+          400
         ],
         "requiredResponsePaths": [
-          "$.websocketUrl",
-          "$.subscriptions[0].channel"
+          "$.statusCode",
+          "$.path",
+          "$.message[0]"
         ],
         "ignoreResponsePaths": [
-          "$.userId",
-          "$.sellerWorkspaceId",
-          "$.token",
-          "$.subscriptions[0].token"
+          "$.timestamp"
         ],
         "equals": {}
       }
