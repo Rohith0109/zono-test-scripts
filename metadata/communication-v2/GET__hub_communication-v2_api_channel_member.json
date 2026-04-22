@@ -62,54 +62,6 @@
   "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
     {
       "pathParams": {},
-      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=4b993e24-277c-42fe-a5db-8ebf08662abe&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.999828238645406",
-      "body": null,
-      "headers": {
-        "authorization": "[REDACTED]"
-      },
-      "assertions": {
-        "expectedStatus": [
-          200
-        ],
-        "requiredResponsePaths": [
-          "$.channelName",
-          "$.accessType",
-          "$.profilePic",
-          "$.description",
-          "$.isDefault",
-          "$.channelType",
-          "$.entityType",
-          "$.channelSubType",
-          "$.isActive",
-          "$.enableWhatsappNotification",
-          "$.issueStatus",
-          "$.inviteLink",
-          "$.channelRole"
-        ],
-        "ignoreResponsePaths": [
-          "$.id",
-          "$.createdAt",
-          "$.updatedAt",
-          "$.linkedWorkspaceId",
-          "$.updatedBy",
-          "$.emojiId",
-          "$.messageId",
-          "$.ownerId",
-          "$.appId",
-          "$.entityId",
-          "$.customerId",
-          "$.workspaceId",
-          "$.folderId",
-          "$.waGroupId",
-          "$.waRequestId",
-          "$.teamMembers[0].id",
-          "$.teamMembers[0].inviteId"
-        ],
-        "equals": {}
-      }
-    },
-    {
-      "pathParams": {},
       "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=4b993e24-277c-42fe-a5db-8ebf08662abe&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.842974463360754",
       "body": null,
       "headers": {
