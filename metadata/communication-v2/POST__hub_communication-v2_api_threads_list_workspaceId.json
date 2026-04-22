@@ -1,6 +1,6 @@
 {
   "_info": {
-    "testCaseId": "c78e8b79-92bb-4961-8450-90582761c6f1",
+    "testCaseId": "db15d949-682d-45f2-87bb-e31eb4e15ec3",
     "endpoint": "POST /hub/communication-v2/api/threads/list/{workspaceId}",
     "method": "POST",
     "module": "communication-v2",

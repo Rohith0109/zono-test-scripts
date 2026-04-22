@@ -1,10 +1,10 @@
 {
   "_info": {
-    "testCaseId": "6f34bab7-c784-43ae-a5e2-147bd04c4cf6",
+    "testCaseId": "494e1fac-6ff5-4aad-88cc-c31ef325d9a1",
     "endpoint": "POST /hub/reports/api/v2/dashboard/business-summary",
     "method": "POST",
     "module": "reports",
-    "apiDomain": "https://api.zotok.ai",
+    "apiDomain": "https://api-qa.zotok.ai",
     "label": "",
     "suite": "Unassigned",
     "disabled": false
@@ -15,7 +15,7 @@
     "body": {
       "startDate": "2026-04-19",
       "endDate": "2026-04-25",
-      "sellerWorkspaceId": "8b3e8707-f970-4423-8192-da53d26f15d2",
+      "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
       "compare": true,
       "report": "noOfInvoicesSent",
       "filters": {}
@@ -51,7 +51,7 @@
       "endDate": "2026-04-25",
       "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
       "compare": true,
-      "report": "totalPaymentsReceived",
+      "report": "totalInvoiceAmount",
       "filters": {}
     },
     "headers": {

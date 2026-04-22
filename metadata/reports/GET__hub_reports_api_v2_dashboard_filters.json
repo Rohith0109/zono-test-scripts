@@ -1,17 +1,17 @@
 {
   "_info": {
-    "testCaseId": "d8d0c966-c842-41b9-bd70-22201bfb6976",
+    "testCaseId": "2ef309d2-e99a-4c9b-9eb2-d8a8195ebe6b",
     "endpoint": "GET /hub/reports/api/v2/dashboard/filters",
     "method": "GET",
     "module": "reports",
-    "apiDomain": "https://api.zotok.ai",
+    "apiDomain": "https://api-qa.zotok.ai",
     "label": "",
     "suite": "Unassigned",
     "disabled": false
   },
   "default": {
     "pathParams": {},
-    "query": "?sellerWorkspaceId=8b3e8707-f970-4423-8192-da53d26f15d2&type=ZC",
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&type=BS",
     "body": null,
     "headers": {
       "authorization": "[REDACTED]"
@@ -21,24 +21,15 @@
         200
       ],
       "requiredResponsePaths": [
-        "$.data.type",
-        "$.data.filters.state",
-        "$.data.filters.product",
-        "$.data.filters.category"
+        "$.data"
       ],
-      "ignoreResponsePaths": [
-        "$.data.id",
-        "$.data.createdDate",
-        "$.data.updatedDate",
-        "$.data.sellerWorkspaceId",
-        "$.data.userId"
-      ],
+      "ignoreResponsePaths": [],
       "equals": {}
     }
   },
-  "8b3e8707-f970-4423-8192-da53d26f15d2": {
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
     "pathParams": {},
-    "query": "?sellerWorkspaceId=8b3e8707-f970-4423-8192-da53d26f15d2&type=BS",
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&type=ZC",
     "body": null,
     "headers": {
       "authorization": "[REDACTED]"
@@ -58,24 +49,6 @@
         "$.data.sellerWorkspaceId",
         "$.data.userId"
       ],
-      "equals": {}
-    }
-  },
-  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-    "pathParams": {},
-    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&type=SA",
-    "body": null,
-    "headers": {
-      "authorization": "[REDACTED]"
-    },
-    "assertions": {
-      "expectedStatus": [
-        200
-      ],
-      "requiredResponsePaths": [
-        "$.data"
-      ],
-      "ignoreResponsePaths": [],
       "equals": {}
     }
   }

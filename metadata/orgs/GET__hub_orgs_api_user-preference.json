@@ -1,0 +1,54 @@
+{
+  "_info": {
+    "testCaseId": "794f5c19-9139-4aba-a234-79c8fd7c0237",
+    "endpoint": "GET /hub/orgs/api/user-preference",
+    "method": "GET",
+    "module": "orgs",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&screenName=CUSTOMER_LIST",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$.preference.screenName",
+        "$.screenName"
+      ],
+      "ignoreResponsePaths": [
+        "$.inviteId"
+      ],
+      "equals": {}
+    }
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&screenName=CUSTOMER_LIST",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$.preference.screenName",
+        "$.screenName"
+      ],
+      "ignoreResponsePaths": [
+        "$.inviteId"
+      ],
+      "equals": {}
+    }
+  }
+}

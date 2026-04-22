@@ -1,6 +1,6 @@
 {
   "_info": {
-    "testCaseId": "5daa119c-7005-4a8c-a135-7d3b7415e2f2",
+    "testCaseId": "cc539eec-92d2-40d5-bed1-a71936ef28a8",
     "endpoint": "GET /hub/orgs/api/whatsapp-config",
     "method": "GET",
     "module": "orgs",
@@ -9,104 +9,100 @@
     "suite": "Unassigned",
     "disabled": false
   },
-  "default": [
-    {
-      "pathParams": {},
-      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-      "body": null,
-      "headers": {
-        "authorization": "[REDACTED]"
-      },
-      "assertions": {
-        "expectedStatus": [
-          200
-        ],
-        "requiredResponsePaths": [
-          "$[0].whatsappPhoneNo",
-          "$[0].provider",
-          "$[0].qualityRating",
-          "$[0].messageLimit",
-          "$[0].isDefault",
-          "$[0].isShared",
-          "$[0].isDeleted",
-          "$[0].deletedAt",
-          "$[0].status",
-          "$[0].displayName",
-          "$[0].authCode",
-          "$[0].profilePic",
-          "$[0].isCoexistence",
-          "$[0].branch",
-          "$[0].tag",
-          "$[0].info",
-          "$[0].isCatalogueSyncEnable",
-          "$[0].languages[0]"
-        ],
-        "ignoreResponsePaths": [
-          "$[0].id",
-          "$[0].createdDate",
-          "$[0].updatedDate",
-          "$[0].workspaceId",
-          "$[0].wabaId",
-          "$[0].whatsappPhoneNoId",
-          "$[0].namespaceId",
-          "$[0].metaBusinessToken",
-          "$[0].sid",
-          "$[0].projectId",
-          "$[0].esLinkID",
-          "$[0].fbmId"
-        ],
-        "equals": {}
-      }
+  "default": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$[0].whatsappPhoneNo",
+        "$[0].provider",
+        "$[0].qualityRating",
+        "$[0].messageLimit",
+        "$[0].isDefault",
+        "$[0].isShared",
+        "$[0].isDeleted",
+        "$[0].deletedAt",
+        "$[0].status",
+        "$[0].displayName",
+        "$[0].authCode",
+        "$[0].profilePic",
+        "$[0].isCoexistence",
+        "$[0].branch",
+        "$[0].tag",
+        "$[0].info",
+        "$[0].isCatalogueSyncEnable",
+        "$[0].languages[0]"
+      ],
+      "ignoreResponsePaths": [
+        "$[0].id",
+        "$[0].createdDate",
+        "$[0].updatedDate",
+        "$[0].workspaceId",
+        "$[0].wabaId",
+        "$[0].whatsappPhoneNoId",
+        "$[0].namespaceId",
+        "$[0].metaBusinessToken",
+        "$[0].sid",
+        "$[0].projectId",
+        "$[0].esLinkID",
+        "$[0].fbmId"
+      ],
+      "equals": {}
     }
-  ],
-  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
-    {
-      "pathParams": {},
-      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-      "body": null,
-      "headers": {
-        "authorization": "[REDACTED]"
-      },
-      "assertions": {
-        "expectedStatus": [
-          200
-        ],
-        "requiredResponsePaths": [
-          "$[0].whatsappPhoneNo",
-          "$[0].provider",
-          "$[0].qualityRating",
-          "$[0].messageLimit",
-          "$[0].isDefault",
-          "$[0].isShared",
-          "$[0].isDeleted",
-          "$[0].deletedAt",
-          "$[0].status",
-          "$[0].displayName",
-          "$[0].authCode",
-          "$[0].profilePic",
-          "$[0].isCoexistence",
-          "$[0].branch",
-          "$[0].tag",
-          "$[0].info",
-          "$[0].isCatalogueSyncEnable",
-          "$[0].languages[0]"
-        ],
-        "ignoreResponsePaths": [
-          "$[0].id",
-          "$[0].createdDate",
-          "$[0].updatedDate",
-          "$[0].workspaceId",
-          "$[0].wabaId",
-          "$[0].whatsappPhoneNoId",
-          "$[0].namespaceId",
-          "$[0].metaBusinessToken",
-          "$[0].sid",
-          "$[0].projectId",
-          "$[0].esLinkID",
-          "$[0].fbmId"
-        ],
-        "equals": {}
-      }
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$[0].whatsappPhoneNo",
+        "$[0].provider",
+        "$[0].qualityRating",
+        "$[0].messageLimit",
+        "$[0].isDefault",
+        "$[0].isShared",
+        "$[0].isDeleted",
+        "$[0].deletedAt",
+        "$[0].status",
+        "$[0].displayName",
+        "$[0].authCode",
+        "$[0].profilePic",
+        "$[0].isCoexistence",
+        "$[0].branch",
+        "$[0].tag",
+        "$[0].info",
+        "$[0].isCatalogueSyncEnable",
+        "$[0].languages[0]"
+      ],
+      "ignoreResponsePaths": [
+        "$[0].id",
+        "$[0].createdDate",
+        "$[0].updatedDate",
+        "$[0].workspaceId",
+        "$[0].wabaId",
+        "$[0].whatsappPhoneNoId",
+        "$[0].namespaceId",
+        "$[0].metaBusinessToken",
+        "$[0].sid",
+        "$[0].projectId",
+        "$[0].esLinkID",
+        "$[0].fbmId"
+      ],
+      "equals": {}
     }
-  ]
+  }
 }

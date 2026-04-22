@@ -1,6 +1,6 @@
 {
   "_info": {
-    "testCaseId": "7211f7b8-4781-464f-8ed4-86863074444a",
+    "testCaseId": "83caca3b-a145-4bd3-965a-b0d16c7c6103",
     "endpoint": "GET /hub/orgs/api/team/list",
     "method": "GET",
     "module": "orgs",
@@ -9,40 +9,36 @@
     "suite": "Unassigned",
     "disabled": false
   },
-  "default": [
-    {
-      "pathParams": {},
-      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeInactive=true&includePendingInvites=true&includeTeamCustomersMapping=true&includeCfaAndDivisions=true&page=1&pageSize=20&userType=TeamOwner&userType=CFA&userType=M",
-      "body": null,
-      "headers": {
-        "authorization": "[REDACTED]"
-      },
-      "assertions": {
-        "expectedStatus": [
-          200
-        ],
-        "requiredResponsePaths": [],
-        "ignoreResponsePaths": [],
-        "equals": {}
-      }
+  "default": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&page=1&pageSize=20&includeInactive=false&includePendingInvites=false&includeTeamCustomersMapping=true&userType=TeamOwner&userType=CFA&userType=M",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [],
+      "ignoreResponsePaths": [],
+      "equals": {}
     }
-  ],
-  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
-    {
-      "pathParams": {},
-      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeInactive=true&includePendingInvites=true&includeTeamCustomersMapping=true&includeCfaAndDivisions=true&page=1&pageSize=20&userType=TeamOwner&userType=CFA&userType=M",
-      "body": null,
-      "headers": {
-        "authorization": "[REDACTED]"
-      },
-      "assertions": {
-        "expectedStatus": [
-          200
-        ],
-        "requiredResponsePaths": [],
-        "ignoreResponsePaths": [],
-        "equals": {}
-      }
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&page=1&pageSize=20&includeInactive=false&includePendingInvites=false&includeTeamCustomersMapping=true&userType=TeamOwner&userType=CFA&userType=M",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [],
+      "ignoreResponsePaths": [],
+      "equals": {}
     }
-  ]
+  }
 }

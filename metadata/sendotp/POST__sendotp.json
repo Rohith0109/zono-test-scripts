@@ -1,0 +1,86 @@
+{
+  "_info": {
+    "testCaseId": "069e6188-49b4-4275-b3a6-1c9804466e74",
+    "endpoint": "POST /sendotp",
+    "method": "POST",
+    "module": "sendotp",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": {
+    "pathParams": {},
+    "query": "",
+    "body": {
+      "authChannel": "mobile",
+      "mobile": "+913203220232",
+      "doCreateUser": false
+    },
+    "headers": {
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$.mobile.resendOtpCount",
+        "$.mobile.lastResendAttempt",
+        "$.mobile.message",
+        "$.mobile.attemptsLeft",
+        "$.mobile.resendAttemptsLeft",
+        "$.mobile.uom",
+        "$.mobile.sendOtp",
+        "$.mobile.otp",
+        "$.mobile.status",
+        "$.mobile.communicationUp",
+        "$.mfaStatus",
+        "$.email",
+        "$.authChannel"
+      ],
+      "ignoreResponsePaths": [
+        "$.mobile.timeLeft",
+        "$.temptoken"
+      ],
+      "equals": {}
+    }
+  },
+  "unknown": {
+    "pathParams": {},
+    "query": "",
+    "body": {
+      "authChannel": "mobile",
+      "mobile": "+913203220232",
+      "doCreateUser": false
+    },
+    "headers": {
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$.mobile.resendOtpCount",
+        "$.mobile.lastResendAttempt",
+        "$.mobile.message",
+        "$.mobile.attemptsLeft",
+        "$.mobile.resendAttemptsLeft",
+        "$.mobile.uom",
+        "$.mobile.sendOtp",
+        "$.mobile.otp",
+        "$.mobile.status",
+        "$.mobile.communicationUp",
+        "$.mfaStatus",
+        "$.email",
+        "$.authChannel"
+      ],
+      "ignoreResponsePaths": [
+        "$.mobile.timeLeft",
+        "$.temptoken"
+      ],
+      "equals": {}
+    }
+  }
+}

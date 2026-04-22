@@ -1,0 +1,110 @@
+{
+  "_info": {
+    "testCaseId": "245e4cda-1b29-4b61-93c3-4ebca5207ba3",
+    "endpoint": "POST /verifyotp",
+    "method": "POST",
+    "module": "verifyotp",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": {
+    "pathParams": {},
+    "query": "",
+    "body": {
+      "mfaStatus": false,
+      "otp": "[REDACTED]",
+      "authChannel": "mobile",
+      "mobile": "+913203220232"
+    },
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$.inviteUserType",
+        "$.mobile",
+        "$.firstName",
+        "$.lastName",
+        "$.email",
+        "$.role",
+        "$.profilePic",
+        "$.contentType",
+        "$.systemFirstName",
+        "$.systemLastName",
+        "$.city",
+        "$.subtitle",
+        "$.registeredOn",
+        "$.address",
+        "$.userType",
+        "$.isVerified",
+        "$.isEmailVerified",
+        "$.workspaceRoles[0]"
+      ],
+      "ignoreResponsePaths": [
+        "$.inviteId",
+        "$.id",
+        "$.token",
+        "$.refreshToken",
+        "$.integrationToken",
+        "$.workspaceId",
+        "$.isOtpValid"
+      ],
+      "equals": {}
+    }
+  },
+  "unknown": {
+    "pathParams": {},
+    "query": "",
+    "body": {
+      "mfaStatus": false,
+      "otp": "[REDACTED]",
+      "authChannel": "mobile",
+      "mobile": "+913203220232"
+    },
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$.inviteUserType",
+        "$.mobile",
+        "$.firstName",
+        "$.lastName",
+        "$.email",
+        "$.role",
+        "$.profilePic",
+        "$.contentType",
+        "$.systemFirstName",
+        "$.systemLastName",
+        "$.city",
+        "$.subtitle",
+        "$.registeredOn",
+        "$.address",
+        "$.userType",
+        "$.isVerified",
+        "$.isEmailVerified",
+        "$.workspaceRoles[0]"
+      ],
+      "ignoreResponsePaths": [
+        "$.inviteId",
+        "$.id",
+        "$.token",
+        "$.refreshToken",
+        "$.integrationToken",
+        "$.workspaceId",
+        "$.isOtpValid"
+      ],
+      "equals": {}
+    }
+  }
+}

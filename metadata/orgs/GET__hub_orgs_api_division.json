@@ -1,6 +1,6 @@
 {
   "_info": {
-    "testCaseId": "b6208df1-a7a0-44be-9aa9-62f173bf20d2",
+    "testCaseId": "173cef71-478b-4897-bec3-f4d5db7bd34f",
     "endpoint": "GET /hub/orgs/api/division",
     "method": "GET",
     "module": "orgs",
@@ -9,40 +9,36 @@
     "suite": "Unassigned",
     "disabled": false
   },
-  "default": [
-    {
-      "pathParams": {},
-      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeHeadDivision=true",
-      "body": null,
-      "headers": {
-        "authorization": "[REDACTED]"
-      },
-      "assertions": {
-        "expectedStatus": [
-          200
-        ],
-        "requiredResponsePaths": [],
-        "ignoreResponsePaths": [],
-        "equals": {}
-      }
+  "default": {
+    "pathParams": {},
+    "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&sortBy=createdDate&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeHeadDivision=true",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [],
+      "ignoreResponsePaths": [],
+      "equals": {}
     }
-  ],
-  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
-    {
-      "pathParams": {},
-      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeHeadDivision=true",
-      "body": null,
-      "headers": {
-        "authorization": "[REDACTED]"
-      },
-      "assertions": {
-        "expectedStatus": [
-          200
-        ],
-        "requiredResponsePaths": [],
-        "ignoreResponsePaths": [],
-        "equals": {}
-      }
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "pathParams": {},
+    "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&sortBy=createdDate&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeHeadDivision=true",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [],
+      "ignoreResponsePaths": [],
+      "equals": {}
     }
-  ]
+  }
 }

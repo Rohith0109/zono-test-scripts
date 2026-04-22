@@ -1,6 +1,6 @@
 {
   "_info": {
-    "testCaseId": "043a4040-76e7-4308-9a2b-891537cde6d7",
+    "testCaseId": "be0238ce-d9d4-449a-a791-66b4d99dccaa",
     "endpoint": "GET /workspaces/roles/permissions",
     "method": "GET",
     "module": "roles",
@@ -9,54 +9,50 @@
     "suite": "Unassigned",
     "disabled": false
   },
-  "default": [
-    {
-      "pathParams": {},
-      "query": "?isSeller=true",
-      "body": null,
-      "headers": {
-        "authorization": "[REDACTED]"
-      },
-      "assertions": {
-        "expectedStatus": [
-          200
-        ],
-        "requiredResponsePaths": [
-          "$.roles[0].title",
-          "$.roles[0].slug",
-          "$.roles[0].description",
-          "$.roles[0].permissions"
-        ],
-        "ignoreResponsePaths": [
-          "$.roles[0].id"
-        ],
-        "equals": {}
-      }
+  "default": {
+    "pathParams": {},
+    "query": "?isSeller=true",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$.roles[0].title",
+        "$.roles[0].slug",
+        "$.roles[0].description",
+        "$.roles[0].permissions"
+      ],
+      "ignoreResponsePaths": [
+        "$.roles[0].id"
+      ],
+      "equals": {}
     }
-  ],
-  "unknown": [
-    {
-      "pathParams": {},
-      "query": "?isSeller=true",
-      "body": null,
-      "headers": {
-        "authorization": "[REDACTED]"
-      },
-      "assertions": {
-        "expectedStatus": [
-          200
-        ],
-        "requiredResponsePaths": [
-          "$.roles[0].title",
-          "$.roles[0].slug",
-          "$.roles[0].description",
-          "$.roles[0].permissions"
-        ],
-        "ignoreResponsePaths": [
-          "$.roles[0].id"
-        ],
-        "equals": {}
-      }
+  },
+  "unknown": {
+    "pathParams": {},
+    "query": "?isSeller=true",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$.roles[0].title",
+        "$.roles[0].slug",
+        "$.roles[0].description",
+        "$.roles[0].permissions"
+      ],
+      "ignoreResponsePaths": [
+        "$.roles[0].id"
+      ],
+      "equals": {}
     }
-  ]
+  }
 }

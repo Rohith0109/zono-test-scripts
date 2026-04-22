@@ -1,6 +1,6 @@
 {
   "_info": {
-    "testCaseId": "5c119688-ee62-4af6-96c9-9bb328dad075",
+    "testCaseId": "16c7ed47-ca6d-4b51-ae0c-38a563cf920f",
     "endpoint": "GET /hub/communication-v2/api/centrifugo/token",
     "method": "GET",
     "module": "communication-v2",
@@ -9,80 +9,52 @@
     "suite": "Unassigned",
     "disabled": false
   },
-  "default": [
-    {
-      "pathParams": {},
-      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-      "body": null,
-      "headers": {
-        "authorization": "[REDACTED]"
-      },
-      "assertions": {
-        "expectedStatus": [
-          200
-        ],
-        "requiredResponsePaths": [
-          "$.websocketUrl",
-          "$.subscriptions[0].channel"
-        ],
-        "ignoreResponsePaths": [
-          "$.userId",
-          "$.sellerWorkspaceId",
-          "$.token",
-          "$.subscriptions[0].token"
-        ],
-        "equals": {}
-      }
-    }
-  ],
-  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
-    {
-      "pathParams": {},
-      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-      "body": null,
-      "headers": {
-        "authorization": "[REDACTED]"
-      },
-      "assertions": {
-        "expectedStatus": [
-          200
-        ],
-        "requiredResponsePaths": [
-          "$.websocketUrl",
-          "$.subscriptions[0].channel"
-        ],
-        "ignoreResponsePaths": [
-          "$.userId",
-          "$.sellerWorkspaceId",
-          "$.token",
-          "$.subscriptions[0].token"
-        ],
-        "equals": {}
-      }
+  "default": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
     },
-    {
-      "pathParams": {},
-      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-      "body": null,
-      "headers": {
-        "authorization": "[REDACTED]"
-      },
-      "assertions": {
-        "expectedStatus": [
-          200
-        ],
-        "requiredResponsePaths": [
-          "$.websocketUrl",
-          "$.subscriptions[0].channel"
-        ],
-        "ignoreResponsePaths": [
-          "$.userId",
-          "$.sellerWorkspaceId",
-          "$.token",
-          "$.subscriptions[0].token"
-        ],
-        "equals": {}
-      }
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$.websocketUrl",
+        "$.subscriptions[0].channel"
+      ],
+      "ignoreResponsePaths": [
+        "$.userId",
+        "$.sellerWorkspaceId",
+        "$.token",
+        "$.subscriptions[0].token"
+      ],
+      "equals": {}
     }
-  ]
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$.websocketUrl",
+        "$.subscriptions[0].channel"
+      ],
+      "ignoreResponsePaths": [
+        "$.userId",
+        "$.sellerWorkspaceId",
+        "$.token",
+        "$.subscriptions[0].token"
+      ],
+      "equals": {}
+    }
+  }
 }

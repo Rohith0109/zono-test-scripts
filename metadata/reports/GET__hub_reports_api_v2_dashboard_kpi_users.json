@@ -1,39 +1,17 @@
 {
   "_info": {
-    "testCaseId": "ca15875c-6a6c-4dae-84bf-b5c0d29b7b34",
+    "testCaseId": "301792ea-5b8d-4f1d-a9dd-2a6f2651a59b",
     "endpoint": "GET /hub/reports/api/v2/dashboard/kpi/users",
     "method": "GET",
     "module": "reports",
-    "apiDomain": "https://api.zotok.ai",
+    "apiDomain": "https://api-qa.zotok.ai",
     "label": "",
     "suite": "Unassigned",
     "disabled": false
   },
   "default": {
     "pathParams": {},
-    "query": "?sellerWorkspaceId=8b3e8707-f970-4423-8192-da53d26f15d2",
-    "body": null,
-    "headers": {
-      "authorization": "[REDACTED]"
-    },
-    "assertions": {
-      "expectedStatus": [
-        200
-      ],
-      "requiredResponsePaths": [
-        "$[0].kpi_name",
-        "$[0].position",
-        "$[0].pinned"
-      ],
-      "ignoreResponsePaths": [
-        "$[0].kpi_id"
-      ],
-      "equals": {}
-    }
-  },
-  "8b3e8707-f970-4423-8192-da53d26f15d2": {
-    "pathParams": {},
-    "query": "?sellerWorkspaceId=8b3e8707-f970-4423-8192-da53d26f15d2",
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
     "body": null,
     "headers": {
       "authorization": "[REDACTED]"

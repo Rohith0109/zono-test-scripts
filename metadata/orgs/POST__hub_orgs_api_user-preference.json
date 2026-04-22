@@ -1,0 +1,64 @@
+{
+  "_info": {
+    "testCaseId": "3655135c-a04b-4fa9-8dd0-0aede23dd9a9",
+    "endpoint": "POST /hub/orgs/api/user-preference",
+    "method": "POST",
+    "module": "orgs",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": {
+    "pathParams": {},
+    "query": "",
+    "body": {
+      "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "preference": [
+        {
+          "screenName": "CUSTOMER_LIST"
+        }
+      ]
+    },
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        201
+      ],
+      "requiredResponsePaths": [
+        "$.message"
+      ],
+      "ignoreResponsePaths": [],
+      "equals": {}
+    }
+  },
+  "unknown": {
+    "pathParams": {},
+    "query": "",
+    "body": {
+      "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "preference": [
+        {
+          "screenName": "CUSTOMER_LIST"
+        }
+      ]
+    },
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        201
+      ],
+      "requiredResponsePaths": [
+        "$.message"
+      ],
+      "ignoreResponsePaths": [],
+      "equals": {}
+    }
+  }
+}

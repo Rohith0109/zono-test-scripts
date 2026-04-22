@@ -1,0 +1,138 @@
+{
+  "_info": {
+    "testCaseId": "6831fe99-7733-4c2a-90d2-29412dd10241",
+    "endpoint": "POST /hub/orgs/api/customers/create",
+    "method": "POST",
+    "module": "orgs",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "body": {
+      "senderWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "phone": "912208965067",
+      "customerDetails": {
+        "name": "Testuser",
+        "companyName": "Testuser",
+        "telephone": "912208965067",
+        "customerCode": "Test22",
+        "shippingAddress": {
+          "countryCode": "IN"
+        },
+        "countryCode": "IN"
+      },
+      "contacts": []
+    },
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        201
+      ],
+      "requiredResponsePaths": [
+        "$.statusCode",
+        "$.message",
+        "$.data.priceListCriteria",
+        "$.data.phone",
+        "$.data.customerDetails.name",
+        "$.data.customerDetails.companyName",
+        "$.data.customerDetails.telephone",
+        "$.data.customerDetails.customerCode",
+        "$.data.customerDetails.shippingAddress",
+        "$.data.customerDetails.countryCode",
+        "$.data.customerDetails.languageCode",
+        "$.data.contacts",
+        "$.data.distributorCode",
+        "$.data.workspace.spaceName",
+        "$.data.workspace.location",
+        "$.data.workspace.address",
+        "$.data.workspace.profilePic",
+        "$.data.workspace.defaultCurrencyCode",
+        "$.data.workspace.isoLanguageCode",
+        "$.data.workspace.isSelfOnboarded"
+      ],
+      "ignoreResponsePaths": [
+        "$.data.senderWorkspaceId",
+        "$.data.senderUserId",
+        "$.data.cfaWithId[0]",
+        "$.data.inviteId",
+        "$.data.workspace.id",
+        "$.data.workspace.createdDate",
+        "$.data.workspace.updatedDate",
+        "$.data.workspace.userId",
+        "$.data.workspace.updatedBy",
+        "$.data.workspace.timeZone"
+      ],
+      "equals": {}
+    }
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "body": {
+      "senderWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "phone": "912208965067",
+      "customerDetails": {
+        "name": "Testuser",
+        "companyName": "Testuser",
+        "telephone": "912208965067",
+        "customerCode": "Test22",
+        "shippingAddress": {
+          "countryCode": "IN"
+        },
+        "countryCode": "IN"
+      },
+      "contacts": []
+    },
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        201
+      ],
+      "requiredResponsePaths": [
+        "$.statusCode",
+        "$.message",
+        "$.data.priceListCriteria",
+        "$.data.phone",
+        "$.data.customerDetails.name",
+        "$.data.customerDetails.companyName",
+        "$.data.customerDetails.telephone",
+        "$.data.customerDetails.customerCode",
+        "$.data.customerDetails.shippingAddress",
+        "$.data.customerDetails.countryCode",
+        "$.data.customerDetails.languageCode",
+        "$.data.contacts",
+        "$.data.distributorCode",
+        "$.data.workspace.spaceName",
+        "$.data.workspace.location",
+        "$.data.workspace.address",
+        "$.data.workspace.profilePic",
+        "$.data.workspace.defaultCurrencyCode",
+        "$.data.workspace.isoLanguageCode",
+        "$.data.workspace.isSelfOnboarded"
+      ],
+      "ignoreResponsePaths": [
+        "$.data.senderWorkspaceId",
+        "$.data.senderUserId",
+        "$.data.cfaWithId[0]",
+        "$.data.inviteId",
+        "$.data.workspace.id",
+        "$.data.workspace.createdDate",
+        "$.data.workspace.updatedDate",
+        "$.data.workspace.userId",
+        "$.data.workspace.updatedBy",
+        "$.data.workspace.timeZone"
+      ],
+      "equals": {}
+    }
+  }
+}

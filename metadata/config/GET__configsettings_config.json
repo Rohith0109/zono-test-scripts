@@ -1,6 +1,6 @@
 {
   "_info": {
-    "testCaseId": "2d7af198-de0d-43f2-9d66-cb7b2521dc6d",
+    "testCaseId": "7f798bb5-2e1c-40d5-96a8-8c24f2000197",
     "endpoint": "GET /configsettings/config",
     "method": "GET",
     "module": "config",
@@ -9,76 +9,72 @@
     "suite": "Unassigned",
     "disabled": false
   },
-  "default": [
-    {
-      "pathParams": {},
-      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&module=Catalogue&rollback=false",
-      "body": null,
-      "headers": {
-        "authorization": "[REDACTED]"
-      },
-      "assertions": {
-        "expectedStatus": [
-          200
-        ],
-        "requiredResponsePaths": [
-          "$.config.catalogueView",
-          "$.config.displayOutOfStock",
-          "$.config.productDetailsPage",
-          "$.config.productDetailsView",
-          "$.config.displayCataloguePrices",
-          "$.config.displayPricesInCatalogue",
-          "$.config.displayOutOfStockTagIfStockIsNotAvailable",
-          "$.module"
-        ],
-        "ignoreResponsePaths": [
-          "$.id",
-          "$.createdDate",
-          "$.updatedDate",
-          "$.workspaceId",
-          "$.divisionId",
-          "$.customerGroupId",
-          "$.customerId",
-          "$.teamMemberId"
-        ],
-        "equals": {}
-      }
+  "default": {
+    "pathParams": {},
+    "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&module=Order&rollback=false",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$.config.orderSplitBy",
+        "$.config.priceRoundOff",
+        "$.config.salesRepAutoAccept",
+        "$.config.cfaApprovalRequired",
+        "$.config.priceRoundOffStrategy",
+        "$.config.considerMoqWhenQtyNotFound",
+        "$.module"
+      ],
+      "ignoreResponsePaths": [
+        "$.id",
+        "$.createdDate",
+        "$.updatedDate",
+        "$.config.orderCutOffTime",
+        "$.workspaceId",
+        "$.divisionId",
+        "$.customerGroupId",
+        "$.customerId",
+        "$.teamMemberId"
+      ],
+      "equals": {}
     }
-  ],
-  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
-    {
-      "pathParams": {},
-      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&module=Catalogue&rollback=false",
-      "body": null,
-      "headers": {
-        "authorization": "[REDACTED]"
-      },
-      "assertions": {
-        "expectedStatus": [
-          200
-        ],
-        "requiredResponsePaths": [
-          "$.config.catalogueView",
-          "$.config.displayOutOfStock",
-          "$.config.productDetailsPage",
-          "$.config.productDetailsView",
-          "$.config.displayCataloguePrices",
-          "$.config.displayPricesInCatalogue",
-          "$.config.displayOutOfStockTagIfStockIsNotAvailable",
-          "$.module"
-        ],
-        "ignoreResponsePaths": [
-          "$.id",
-          "$.createdDate",
-          "$.updatedDate",
-          "$.workspaceId",
-          "$.divisionId",
-          "$.customerGroupId",
-          "$.customerId",
-          "$.teamMemberId"
-        ],
-        "equals": {}
-      }
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "pathParams": {},
+    "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&module=Catalogue&rollback=false",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$.config.catalogueView",
+        "$.config.displayOutOfStock",
+        "$.config.productDetailsPage",
+        "$.config.productDetailsView",
+        "$.config.displayCataloguePrices",
+        "$.config.displayPricesInCatalogue",
+        "$.config.displayOutOfStockTagIfStockIsNotAvailable",
+        "$.module"
+      ],
+      "ignoreResponsePaths": [
+        "$.id",
+        "$.createdDate",
+        "$.updatedDate",
+        "$.workspaceId",
+        "$.divisionId",
+        "$.customerGroupId",
+        "$.customerId",
+        "$.teamMemberId"
+      ],
+      "equals": {}
     }
-  ]
+  }
 }
