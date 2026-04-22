@@ -1,0 +1,48 @@
+{
+  "_info": {
+    "testCaseId": "83493a7d-c59e-481f-9d62-0f95750b331c",
+    "endpoint": "GET /invoiceservice/invoices/{workspaceId}",
+    "method": "GET",
+    "module": "invoices",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": {
+    "pathParams": {
+      "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+    },
+    "query": "?endDate=2026-04-21%2023%3A59%3A59&startDate=2026-03-22%2000%3A00%3A00&pageNo=1&pageSize=20&sortBy=invoiceDate&sortDirection=DESC&dispatchFilter=true",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [],
+      "ignoreResponsePaths": [],
+      "equals": {}
+    }
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "pathParams": {
+      "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+    },
+    "query": "?startDate=2026-03-21%2000%3A00%3A00&endDate=2026-04-21%2023%3A59%3A59&pageNo=1&pageSize=2&sortBy=orderDate&sortDirection=DESC&inviteId=0c42ee7f-3257-45b6-98e3-8e5708ab74b8",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [],
+      "ignoreResponsePaths": [],
+      "equals": {}
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "_info": {
+    "testCaseId": "007bb2a3-be8b-47cb-91a3-35b2ce806370",
+    "endpoint": "GET /invoiceservice/invoices/",
+    "method": "GET",
+    "module": "invoices",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": {
+    "pathParams": {},
+    "query": "?endDate=2026-04-20%2023%3A59%3A59&startDate=2026-03-21%2000%3A00%3A00&pageNo=1&pageSize=20&sortBy=invoiceDate&sortDirection=DESC&dispatchFilter=true",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        404
+      ],
+      "requiredResponsePaths": [
+        "$.statusCode",
+        "$.message",
+        "$.responseStatus"
+      ],
+      "ignoreResponsePaths": [],
+      "equals": {}
+    }
+  },
+  "unknown": {
+    "pathParams": {},
+    "query": "?endDate=2026-04-20%2023%3A59%3A59&startDate=2026-03-21%2000%3A00%3A00&pageNo=1&pageSize=20&sortBy=invoiceDate&sortDirection=DESC&dispatchFilter=true",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        404
+      ],
+      "requiredResponsePaths": [
+        "$.statusCode",
+        "$.message",
+        "$.responseStatus"
+      ],
+      "ignoreResponsePaths": [],
+      "equals": {}
+    }
+  }
+}

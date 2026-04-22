@@ -1,0 +1,84 @@
+{
+  "_info": {
+    "testCaseId": "13c4d7f4-0069-41d0-a2be-2406f9634ff1",
+    "endpoint": "GET /hub/communication-v2/api/centrifugo/token",
+    "method": "GET",
+    "module": "communication-v2",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$.websocketUrl",
+        "$.subscriptions[0].channel"
+      ],
+      "ignoreResponsePaths": [
+        "$.userId",
+        "$.sellerWorkspaceId",
+        "$.token",
+        "$.subscriptions[0].token"
+      ],
+      "equals": {}
+    }
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$.websocketUrl",
+        "$.subscriptions[0].channel"
+      ],
+      "ignoreResponsePaths": [
+        "$.userId",
+        "$.sellerWorkspaceId",
+        "$.token",
+        "$.subscriptions[0].token"
+      ],
+      "equals": {}
+    }
+  },
+  "8b3e8707-f970-4423-8192-da53d26f15d2": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=8b3e8707-f970-4423-8192-da53d26f15d2",
+    "body": null,
+    "headers": {
+      "authorization": "[REDACTED]"
+    },
+    "assertions": {
+      "expectedStatus": [
+        200
+      ],
+      "requiredResponsePaths": [
+        "$.websocketUrl",
+        "$.subscriptions[0].channel"
+      ],
+      "ignoreResponsePaths": [
+        "$.userId",
+        "$.sellerWorkspaceId",
+        "$.token",
+        "$.subscriptions[0].token"
+      ],
+      "equals": {}
+    }
+  }
+}

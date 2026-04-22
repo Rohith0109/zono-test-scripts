@@ -1,0 +1,109 @@
+{
+  "_info": {
+    "testCaseId": "d58f89b3-f153-4bce-863a-c257b85ebb1b",
+    "endpoint": "POST /hub/reports/api/v2/dashboard/segment-analysis/details",
+    "method": "POST",
+    "module": "reports",
+    "apiDomain": "https://api.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=8b3e8707-f970-4423-8192-da53d26f15d2",
+    "body": {
+      "sellerWorkspaceId": "8b3e8707-f970-4423-8192-da53d26f15d2",
+      "startDate": "2026-04-19",
+      "endDate": "2026-04-25",
+      "compare": true,
+      "metric": "value",
+      "type": "category",
+      "filters": {},
+      "transactionType": "invoice"
+    },
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        201
+      ],
+      "requiredResponsePaths": [
+        "$"
+      ],
+      "ignoreResponsePaths": [],
+      "equals": {}
+    }
+  },
+  "8b3e8707-f970-4423-8192-da53d26f15d2": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=8b3e8707-f970-4423-8192-da53d26f15d2",
+    "body": {
+      "sellerWorkspaceId": "8b3e8707-f970-4423-8192-da53d26f15d2",
+      "startDate": "2026-04-19",
+      "endDate": "2026-04-25",
+      "compare": true,
+      "metric": "value",
+      "type": "product",
+      "filters": {},
+      "transactionType": "invoice",
+      "drilldownBy": {
+        "type": "category",
+        "id": ""
+      }
+    },
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        201
+      ],
+      "requiredResponsePaths": [
+        "$"
+      ],
+      "ignoreResponsePaths": [],
+      "equals": {}
+    }
+  },
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+    "pathParams": {},
+    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+    "body": {
+      "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "startDate": "2026-04-19",
+      "endDate": "2026-04-25",
+      "compare": true,
+      "metric": "value",
+      "type": "product",
+      "filters": {},
+      "transactionType": "invoice",
+      "drilldownBy": {
+        "type": "category",
+        "id": ""
+      }
+    },
+    "headers": {
+      "authorization": "[REDACTED]",
+      "content-type": "application/json"
+    },
+    "assertions": {
+      "expectedStatus": [
+        201
+      ],
+      "requiredResponsePaths": [
+        "$[0].name",
+        "$[0].currPercent",
+        "$[0].percentInc"
+      ],
+      "ignoreResponsePaths": [
+        "$[0].id",
+        "$[0].cfaid"
+      ],
+      "equals": {}
+    }
+  }
+}
