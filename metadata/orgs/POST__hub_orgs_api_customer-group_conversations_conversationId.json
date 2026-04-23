@@ -1,0 +1,215 @@
+{
+  "_info": {
+    "testCaseId": "401e4043-027f-437d-9f46-e8b6ead0471c",
+    "endpoint": "POST /hub/orgs/api/customer-group/conversations/{conversationId}",
+    "method": "POST",
+    "module": "orgs",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": [
+    {
+      "pathParams": {
+        "conversationId": "7af09d17-ec3c-40bd-924f-72dbeaf5eba8"
+      },
+      "query": "?pageNo=1&pageSize=20&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": {
+        "pageNo": 1,
+        "pageSize": 20,
+        "status": [],
+        "tag": [],
+        "teamMemberIds": [],
+        "conversationPageNo": 1,
+        "conversationPageSize": 4
+      },
+      "headers": {
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.customerGroupMembers[0].customerGroupAssignmentHistory",
+          "$.customerGroupMembers[0]._score",
+          "$.customerGroupMembers[0].name",
+          "$.customerGroupMembers[0].companyName",
+          "$.customerGroupMembers[0].phone",
+          "$.customerGroupMembers[0].mobile",
+          "$.customerGroupMembers[0].address",
+          "$.customerGroupMembers[0].distributorCode",
+          "$.customerGroupMembers[0].email",
+          "$.customerGroupMembers[0].customerCode",
+          "$.customerGroupMembers[0].gstin",
+          "$.customerGroupMembers[0].languageCode",
+          "$.customerGroupMembers[0].inviteStatus",
+          "$.customerGroupMembers[0].isActive",
+          "$.customerGroupMembers[0].isArchive",
+          "$.customerGroupMembers[0].customerAttributes",
+          "$.customerGroupMembers[0].cfas",
+          "$.customerGroupMembers[0].assignedMembers",
+          "$.customerGroupMembers[0].divisionIds",
+          "$.customerGroupMembers[0].cfaIds",
+          "$.customerGroupMembers[0].conversations",
+          "$.customerGroupMembers[0].totalConversations",
+          "$.customerGroupMembers[0].conversationStartRecord",
+          "$.customerGroupMembers[0].conversationEndRecord",
+          "$.customerGroupMembers[0].conversationTotalPages"
+        ],
+        "ignoreResponsePaths": [
+          "$.customerGroupMembers[0].id",
+          "$.customerGroupMembers[0].customerId",
+          "$.customerGroupMembers[0].workspaceId",
+          "$.customerGroupMembers[0].latestMessageTimeToken",
+          "$.customerGroupMembers[0]._id"
+        ],
+        "equals": {}
+      }
+    }
+  ],
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
+    {
+      "pathParams": {
+        "conversationId": "7af09d17-ec3c-40bd-924f-72dbeaf5eba8"
+      },
+      "query": "?pageNo=1&pageSize=20&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": {
+        "pageNo": 1,
+        "pageSize": 20,
+        "status": [],
+        "tag": [],
+        "teamMemberIds": [],
+        "conversationPageNo": 1,
+        "conversationPageSize": 4
+      },
+      "headers": {
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.customerGroupMembers[0].customerGroupAssignmentHistory",
+          "$.customerGroupMembers[0]._score",
+          "$.customerGroupMembers[0].name",
+          "$.customerGroupMembers[0].companyName",
+          "$.customerGroupMembers[0].phone",
+          "$.customerGroupMembers[0].mobile",
+          "$.customerGroupMembers[0].address",
+          "$.customerGroupMembers[0].distributorCode",
+          "$.customerGroupMembers[0].email",
+          "$.customerGroupMembers[0].customerCode",
+          "$.customerGroupMembers[0].gstin",
+          "$.customerGroupMembers[0].languageCode",
+          "$.customerGroupMembers[0].inviteStatus",
+          "$.customerGroupMembers[0].isActive",
+          "$.customerGroupMembers[0].isArchive",
+          "$.customerGroupMembers[0].customerAttributes",
+          "$.customerGroupMembers[0].cfas",
+          "$.customerGroupMembers[0].assignedMembers",
+          "$.customerGroupMembers[0].divisionIds",
+          "$.customerGroupMembers[0].cfaIds",
+          "$.customerGroupMembers[0].conversations",
+          "$.customerGroupMembers[0].totalConversations",
+          "$.customerGroupMembers[0].conversationStartRecord",
+          "$.customerGroupMembers[0].conversationEndRecord",
+          "$.customerGroupMembers[0].conversationTotalPages"
+        ],
+        "ignoreResponsePaths": [
+          "$.customerGroupMembers[0].id",
+          "$.customerGroupMembers[0].customerId",
+          "$.customerGroupMembers[0].workspaceId",
+          "$.customerGroupMembers[0].latestMessageTimeToken",
+          "$.customerGroupMembers[0]._id"
+        ],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {
+        "conversationId": "f705aa84-6f75-46d0-aaa4-4161b4933a2f"
+      },
+      "query": "?pageNo=1&pageSize=20&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": {
+        "pageNo": 1,
+        "pageSize": 20,
+        "status": [],
+        "tag": [],
+        "teamMemberIds": [],
+        "conversationPageNo": 1,
+        "conversationPageSize": 4
+      },
+      "headers": {
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {
+        "conversationId": "9497bcf8-2b32-46f9-a429-b2f99239b5e1"
+      },
+      "query": "?pageNo=1&pageSize=20&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": {
+        "pageNo": 1,
+        "pageSize": 20,
+        "status": [],
+        "tag": [],
+        "teamMemberIds": [],
+        "conversationPageNo": 1,
+        "conversationPageSize": 4
+      },
+      "headers": {
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {
+        "conversationId": "40f1c302-da31-4edf-9cc0-82f786878026"
+      },
+      "query": "?pageNo=1&pageSize=20&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": {
+        "pageNo": 1,
+        "pageSize": 20,
+        "status": [],
+        "tag": [],
+        "teamMemberIds": [],
+        "conversationPageNo": 1,
+        "conversationPageSize": 4
+      },
+      "headers": {
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    }
+  ]
+}

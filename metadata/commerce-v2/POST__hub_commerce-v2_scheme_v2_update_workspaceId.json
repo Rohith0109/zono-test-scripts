@@ -1,9 +1,9 @@
 {
   "_info": {
-    "testCaseId": "d8de0467-fd16-443d-a3c3-fd69fa3f530d",
-    "endpoint": "GET /invoiceservice/invoices/{workspaceId}",
-    "method": "GET",
-    "module": "invoices",
+    "testCaseId": "668db9ee-ac8d-43ec-8ee0-fa16d448993b",
+    "endpoint": "POST /hub/commerce-v2/scheme/v2/update/{workspaceId}",
+    "method": "POST",
+    "module": "commerce-v2",
     "apiDomain": "https://api-qa.zotok.ai",
     "label": "",
     "suite": "Unassigned",
@@ -14,14 +14,18 @@
       "pathParams": {
         "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
       },
-      "query": "?startDate=2026-03-23%2000%3A00%3A00&endDate=2026-04-23%2023%3A59%3A59&pageNo=1&pageSize=2&sortBy=orderDate&sortDirection=DESC&inviteId=b9f4b3f7-bc4a-4d98-9853-407a3cb28c27",
-      "body": null,
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": {
+        "promotionCode": "ALLprod002",
+        "enabled": false
+      },
       "headers": {
-        "authorization": "[REDACTED]"
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
       },
       "assertions": {
         "expectedStatus": [
-          200
+          201
         ],
         "requiredResponsePaths": [],
         "ignoreResponsePaths": [],
@@ -34,14 +38,18 @@
       "pathParams": {
         "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
       },
-      "query": "?startDate=2026-03-23%2000%3A00%3A00&endDate=2026-04-23%2023%3A59%3A59&pageNo=1&pageSize=2&sortBy=orderDate&sortDirection=DESC&inviteId=b9f4b3f7-bc4a-4d98-9853-407a3cb28c27",
-      "body": null,
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": {
+        "promotionCode": "ALLprod002",
+        "enabled": false
+      },
       "headers": {
-        "authorization": "[REDACTED]"
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
       },
       "assertions": {
         "expectedStatus": [
-          200
+          201
         ],
         "requiredResponsePaths": [],
         "ignoreResponsePaths": [],

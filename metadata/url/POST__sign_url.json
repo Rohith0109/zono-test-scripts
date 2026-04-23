@@ -1,6 +1,6 @@
 {
   "_info": {
-    "testCaseId": "df0db33c-e84b-4670-9dc6-a4fe6f951c07",
+    "testCaseId": "44f5cb83-e6ce-4f63-874c-7ce85ab62bc9",
     "endpoint": "POST /sign/url",
     "method": "POST",
     "module": "url",
@@ -9,60 +9,316 @@
     "suite": "Unassigned",
     "disabled": false
   },
-  "default": {
-    "pathParams": {},
-    "query": "",
-    "body": {
-      "fileName": "/Invoice RESHMI TRADERS - 8578 1 1.pdf",
-      "type": "document",
-      "contentType": "application/pdf",
-      "destination": "channels",
-      "method": "put",
-      "userId": "c6897544-32b6-4a95-addf-c2d656ce05ac",
-      "channelId": "b5f2444e-2f6f-49d4-9552-9b54c8a9f9e5",
-      "messageId": "40bf5299-6a29-40af-8c69-7a7825950971"
-    },
-    "headers": {
-      "authorization": "[REDACTED]",
-      "content-type": "application/json"
-    },
-    "assertions": {
-      "expectedStatus": [
-        200
-      ],
-      "requiredResponsePaths": [
-        "$.presignedUrl"
-      ],
-      "ignoreResponsePaths": [],
-      "equals": {}
+  "default": [
+    {
+      "pathParams": {},
+      "query": "",
+      "body": {
+        "fileName": "/5936c904-e24f-46c1-bba6-7485cf69649a.png",
+        "type": "image/png",
+        "contentType": "image/png",
+        "destination": "channels",
+        "method": "get",
+        "userId": "c6897544-32b6-4a95-addf-c2d656ce05ac",
+        "channelId": "8d4a3b91-66e0-411e-9da2-40f12dbe5ddc",
+        "messageId": "0d63cac9-e567-46ee-a02c-3a0db110c684"
+      },
+      "headers": {
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.presignedUrl"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
     }
-  },
-  "unknown": {
-    "pathParams": {},
-    "query": "",
-    "body": {
-      "fileName": "/Invoice SHAWAFEL_Invoice_30870 1.pdf",
-      "type": "document",
-      "contentType": "application/pdf",
-      "destination": "channels",
-      "method": "get",
-      "userId": "c6897544-32b6-4a95-addf-c2d656ce05ac",
-      "channelId": "a93606ea-6ba2-49ab-af16-5999b9fee6bb",
-      "messageId": "d3418444-955d-40f2-be9d-7c9477d4d44a"
+  ],
+  "unknown": [
+    {
+      "pathParams": {},
+      "query": "",
+      "body": {
+        "fileName": "/5936c904-e24f-46c1-bba6-7485cf69649a.png",
+        "type": "image/png",
+        "contentType": "image/png",
+        "destination": "channels",
+        "method": "get",
+        "userId": "c6897544-32b6-4a95-addf-c2d656ce05ac",
+        "channelId": "8d4a3b91-66e0-411e-9da2-40f12dbe5ddc",
+        "messageId": "0d63cac9-e567-46ee-a02c-3a0db110c684"
+      },
+      "headers": {
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.presignedUrl"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
     },
-    "headers": {
-      "authorization": "[REDACTED]",
-      "content-type": "application/json"
+    {
+      "pathParams": {},
+      "query": "",
+      "body": {
+        "fileName": "/5936c904-e24f-46c1-bba6-7485cf69649a.png",
+        "type": "image/png",
+        "contentType": "image/png",
+        "destination": "channels",
+        "method": "get",
+        "userId": "c6897544-32b6-4a95-addf-c2d656ce05ac",
+        "channelId": "8d4a3b91-66e0-411e-9da2-40f12dbe5ddc",
+        "messageId": "0ee9dded-6c8b-4356-ba8f-da55ea404cbd"
+      },
+      "headers": {
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.presignedUrl"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
     },
-    "assertions": {
-      "expectedStatus": [
-        200
-      ],
-      "requiredResponsePaths": [
-        "$.presignedUrl"
-      ],
-      "ignoreResponsePaths": [],
-      "equals": {}
+    {
+      "pathParams": {},
+      "query": "",
+      "body": {
+        "fileName": "/5936c904-e24f-46c1-bba6-7485cf69649a.png",
+        "type": "image/png",
+        "contentType": "image/png",
+        "destination": "channels",
+        "method": "get",
+        "userId": "c6897544-32b6-4a95-addf-c2d656ce05ac",
+        "channelId": "8d4a3b91-66e0-411e-9da2-40f12dbe5ddc",
+        "messageId": "7fda3483-f05d-45c7-9127-ae35a40c28ca"
+      },
+      "headers": {
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.presignedUrl"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "",
+      "body": {
+        "fileName": "/5936c904-e24f-46c1-bba6-7485cf69649a.png",
+        "type": "image/png",
+        "contentType": "image/png",
+        "destination": "channels",
+        "method": "get",
+        "userId": "c6897544-32b6-4a95-addf-c2d656ce05ac",
+        "channelId": "8d4a3b91-66e0-411e-9da2-40f12dbe5ddc",
+        "messageId": "d092a99b-7150-472c-bc50-f43fdcf0a53e"
+      },
+      "headers": {
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.presignedUrl"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "",
+      "body": {
+        "fileName": "/5936c904-e24f-46c1-bba6-7485cf69649a.png",
+        "type": "image/png",
+        "contentType": "image/png",
+        "destination": "channels",
+        "method": "get",
+        "userId": "c6897544-32b6-4a95-addf-c2d656ce05ac",
+        "channelId": "8d4a3b91-66e0-411e-9da2-40f12dbe5ddc",
+        "messageId": "4f5a04d3-f725-4f41-bdd6-08e3f0f4926b"
+      },
+      "headers": {
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.presignedUrl"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "",
+      "body": {
+        "fileName": "/5936c904-e24f-46c1-bba6-7485cf69649a.png",
+        "type": "image/png",
+        "contentType": "image/png",
+        "destination": "channels",
+        "method": "get",
+        "userId": "c6897544-32b6-4a95-addf-c2d656ce05ac",
+        "channelId": "8d4a3b91-66e0-411e-9da2-40f12dbe5ddc",
+        "messageId": "9bb4cc18-1ae0-49a0-8860-a4eab752e107"
+      },
+      "headers": {
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.presignedUrl"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "",
+      "body": {
+        "fileName": "/5936c904-e24f-46c1-bba6-7485cf69649a.png",
+        "type": "image/png",
+        "contentType": "image/png",
+        "destination": "channels",
+        "method": "get",
+        "userId": "c6897544-32b6-4a95-addf-c2d656ce05ac",
+        "channelId": "8d4a3b91-66e0-411e-9da2-40f12dbe5ddc",
+        "messageId": "cb0853ac-b1de-4db6-86f5-b428ae65fbd1"
+      },
+      "headers": {
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.presignedUrl"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "",
+      "body": {
+        "fileName": "/5936c904-e24f-46c1-bba6-7485cf69649a.png",
+        "type": "image/png",
+        "contentType": "image/png",
+        "destination": "channels",
+        "method": "get",
+        "userId": "c6897544-32b6-4a95-addf-c2d656ce05ac",
+        "channelId": "8d4a3b91-66e0-411e-9da2-40f12dbe5ddc",
+        "messageId": "ff25ba42-c4a8-4ce2-8c31-fcded1ffd564"
+      },
+      "headers": {
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.presignedUrl"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "",
+      "body": {
+        "fileName": "/5936c904-e24f-46c1-bba6-7485cf69649a.png",
+        "type": "image/png",
+        "contentType": "image/png",
+        "destination": "channels",
+        "method": "get",
+        "userId": "c6897544-32b6-4a95-addf-c2d656ce05ac",
+        "channelId": "8d4a3b91-66e0-411e-9da2-40f12dbe5ddc",
+        "messageId": "9a6fff9e-4fd5-4ad8-92e0-a86ed0e21d09"
+      },
+      "headers": {
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.presignedUrl"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "",
+      "body": {
+        "fileName": "/5936c904-e24f-46c1-bba6-7485cf69649a.png",
+        "type": "image/png",
+        "contentType": "image/png",
+        "destination": "channels",
+        "method": "get",
+        "userId": "c6897544-32b6-4a95-addf-c2d656ce05ac",
+        "channelId": "8d4a3b91-66e0-411e-9da2-40f12dbe5ddc",
+        "messageId": "82dc3107-d4bc-4c7b-9a9f-b75c10e8cc6c"
+      },
+      "headers": {
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.presignedUrl"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
     }
-  }
+  ]
 }

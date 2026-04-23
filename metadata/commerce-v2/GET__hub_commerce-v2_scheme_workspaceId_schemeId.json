@@ -1,0 +1,169 @@
+{
+  "_info": {
+    "testCaseId": "b2e9ecf1-2dc8-4c75-a186-64bef055990d",
+    "endpoint": "GET /hub/commerce-v2/scheme/{workspaceId}/{schemeId}",
+    "method": "GET",
+    "module": "commerce-v2",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": [
+    {
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "schemeId": "3970"
+      },
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.startsAt",
+          "$.endsAt",
+          "$.couponCode",
+          "$.perCustomerUsageLimit",
+          "$.name",
+          "$.enabled",
+          "$.promotionCode",
+          "$.promotionType",
+          "$.sku[0]",
+          "$.skusX[0]",
+          "$.skusY[0]",
+          "$.title",
+          "$.slabs[0].code",
+          "$.slabs[0].args",
+          "$.maximumQty",
+          "$.discountPercentage",
+          "$.productVariantIds",
+          "$.qtyY",
+          "$.discountPercentageUpto",
+          "$.stateCodes[0]",
+          "$.customerCodes[0]",
+          "$.product.minOrderQty",
+          "$.product.maxOrderQty",
+          "$.product.qtyMultiplier",
+          "$.product.assetUrl",
+          "$.product.facets",
+          "$.productSelectorType",
+          "$.productSelectorItems[0].name"
+        ],
+        "ignoreResponsePaths": [
+          "$.id",
+          "$.productSelectorItems[0].id"
+        ],
+        "equals": {}
+      }
+    }
+  ],
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
+    {
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "schemeId": "3970"
+      },
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.startsAt",
+          "$.endsAt",
+          "$.couponCode",
+          "$.perCustomerUsageLimit",
+          "$.name",
+          "$.enabled",
+          "$.promotionCode",
+          "$.promotionType",
+          "$.sku[0]",
+          "$.skusX[0]",
+          "$.skusY[0]",
+          "$.title",
+          "$.slabs[0].code",
+          "$.slabs[0].args",
+          "$.maximumQty",
+          "$.discountPercentage",
+          "$.productVariantIds",
+          "$.qtyY",
+          "$.discountPercentageUpto",
+          "$.stateCodes[0]",
+          "$.customerCodes[0]",
+          "$.product.minOrderQty",
+          "$.product.maxOrderQty",
+          "$.product.qtyMultiplier",
+          "$.product.assetUrl",
+          "$.product.facets",
+          "$.productSelectorType",
+          "$.productSelectorItems[0].name"
+        ],
+        "ignoreResponsePaths": [
+          "$.id",
+          "$.productSelectorItems[0].id"
+        ],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "schemeId": "3757"
+      },
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.startsAt",
+          "$.endsAt",
+          "$.couponCode",
+          "$.perCustomerUsageLimit",
+          "$.name",
+          "$.enabled",
+          "$.promotionCode",
+          "$.promotionType",
+          "$.sku[0]",
+          "$.skusX[0]",
+          "$.skusY[0]",
+          "$.pts",
+          "$.upc",
+          "$.baseUom",
+          "$.title",
+          "$.packSize",
+          "$.ptr",
+          "$.mrp",
+          "$.slabs[0].code",
+          "$.slabs[0].args",
+          "$.maximumQty",
+          "$.discountPercentage",
+          "$.variantIdsX",
+          "$.variantIdsY",
+          "$.qtyXFrom",
+          "$.qtyXTo",
+          "$.qtyY",
+          "$.discountPercentageUpto",
+          "$.stateCodes[0]"
+        ],
+        "ignoreResponsePaths": [
+          "$.id"
+        ],
+        "equals": {}
+      }
+    }
+  ]
+}

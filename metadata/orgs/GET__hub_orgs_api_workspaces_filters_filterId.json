@@ -1,9 +1,9 @@
 {
   "_info": {
-    "testCaseId": "380073d7-e5d7-414c-8d01-7e277b62a705",
-    "endpoint": "GET /hub/commerce-v2/scheme/filters/{workspaceId}",
+    "testCaseId": "ef377f04-7327-42b1-b729-3864b9f66f08",
+    "endpoint": "GET /hub/orgs/api/workspaces/filters/{filterId}",
     "method": "GET",
-    "module": "commerce-v2",
+    "module": "orgs",
     "apiDomain": "https://api-qa.zotok.ai",
     "label": "",
     "suite": "Unassigned",
@@ -12,7 +12,7 @@
   "default": [
     {
       "pathParams": {
-        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        "filterId": "f9338b29-fa87-4d98-bb12-752114f7f28e"
       },
       "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
       "body": null,
@@ -24,18 +24,14 @@
           200
         ],
         "requiredResponsePaths": [
-          "$.statuses[0]",
-          "$.schemeTypes[0]",
-          "$.cfas[0].name",
-          "$.divisions[0].name",
-          "$.customers[0].code",
-          "$.customers[0].name",
-          "$.categories[0].name"
+          "$.cfas[0].fulfillmentLocationCode",
+          "$.cfas[0].supplierName",
+          "$.members[0].memberName",
+          "$.members[0].employeeCode"
         ],
         "ignoreResponsePaths": [
-          "$.cfas[0].id",
-          "$.divisions[0].id",
-          "$.categories[0].id"
+          "$.cfas[0].fulfillmentLocationId",
+          "$.members[0].id"
         ],
         "equals": {}
       }
@@ -44,7 +40,7 @@
   "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
     {
       "pathParams": {
-        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        "filterId": "f9338b29-fa87-4d98-bb12-752114f7f28e"
       },
       "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
       "body": null,
@@ -56,18 +52,14 @@
           200
         ],
         "requiredResponsePaths": [
-          "$.statuses[0]",
-          "$.schemeTypes[0]",
-          "$.cfas[0].name",
-          "$.divisions[0].name",
-          "$.customers[0].code",
-          "$.customers[0].name",
-          "$.categories[0].name"
+          "$.cfas[0].fulfillmentLocationCode",
+          "$.cfas[0].supplierName",
+          "$.members[0].memberName",
+          "$.members[0].employeeCode"
         ],
         "ignoreResponsePaths": [
-          "$.cfas[0].id",
-          "$.divisions[0].id",
-          "$.categories[0].id"
+          "$.cfas[0].fulfillmentLocationId",
+          "$.members[0].id"
         ],
         "equals": {}
       }

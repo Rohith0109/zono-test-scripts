@@ -1,6 +1,6 @@
 {
   "_info": {
-    "testCaseId": "2d7af198-de0d-43f2-9d66-cb7b2521dc6d",
+    "testCaseId": "4b404247-ee41-4ad2-ba9b-26488aeada94",
     "endpoint": "GET /configsettings/config",
     "method": "GET",
     "module": "config",

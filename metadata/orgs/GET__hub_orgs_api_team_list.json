@@ -1,6 +1,6 @@
 {
   "_info": {
-    "testCaseId": "7211f7b8-4781-464f-8ed4-86863074444a",
+    "testCaseId": "abb24824-2a58-4f74-bb7a-e1983be57272",
     "endpoint": "GET /hub/orgs/api/team/list",
     "method": "GET",
     "module": "orgs",
@@ -12,7 +12,7 @@
   "default": [
     {
       "pathParams": {},
-      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeInactive=true&includePendingInvites=true&includeTeamCustomersMapping=true&includeCfaAndDivisions=true&page=1&pageSize=20&userType=TeamOwner&userType=CFA&userType=M",
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeInactive=true&includePendingInvites=true&includeTeamCustomersMapping=true&userType=TeamOwner&userType=CFA&userType=M",
       "body": null,
       "headers": {
         "authorization": "[REDACTED]"
@@ -30,7 +30,7 @@
   "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
     {
       "pathParams": {},
-      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeInactive=true&includePendingInvites=true&includeTeamCustomersMapping=true&includeCfaAndDivisions=true&page=1&pageSize=20&userType=TeamOwner&userType=CFA&userType=M",
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeInactive=true&includePendingInvites=true&includeTeamCustomersMapping=true&userType=TeamOwner&userType=CFA&userType=M",
       "body": null,
       "headers": {
         "authorization": "[REDACTED]"

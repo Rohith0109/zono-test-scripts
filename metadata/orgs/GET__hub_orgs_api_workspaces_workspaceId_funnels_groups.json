@@ -1,0 +1,88 @@
+{
+  "_info": {
+    "testCaseId": "5b56bfdd-edbe-45d5-bcfe-e43df00a3c95",
+    "endpoint": "GET /hub/orgs/api/workspaces/{workspaceId}/funnels/groups",
+    "method": "GET",
+    "module": "orgs",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": [
+    {
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "query": "?funnel_id=f9338b29-fa87-4d98-bb12-752114f7f28e&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.success",
+          "$.data.funnel.name",
+          "$.data.funnel.type",
+          "$.data.funnel.sequence",
+          "$.data.funnel.has_groups",
+          "$.data.groups[0]",
+          "$.data.total_stats.total_customers",
+          "$.data.total_stats.open_conversations",
+          "$.data.total_stats.closed_conversations",
+          "$.data.total_stats.total_conversations",
+          "$.data.available_filters.statuses",
+          "$.data.available_filters.tags",
+          "$.data.available_filters.team_members"
+        ],
+        "ignoreResponsePaths": [
+          "$.data.funnel.id"
+        ],
+        "equals": {
+          "success": true
+        }
+      }
+    }
+  ],
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
+    {
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "query": "?funnel_id=f9338b29-fa87-4d98-bb12-752114f7f28e&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.success",
+          "$.data.funnel.name",
+          "$.data.funnel.type",
+          "$.data.funnel.sequence",
+          "$.data.funnel.has_groups",
+          "$.data.groups[0]",
+          "$.data.total_stats.total_customers",
+          "$.data.total_stats.open_conversations",
+          "$.data.total_stats.closed_conversations",
+          "$.data.total_stats.total_conversations",
+          "$.data.available_filters.statuses",
+          "$.data.available_filters.tags",
+          "$.data.available_filters.team_members"
+        ],
+        "ignoreResponsePaths": [
+          "$.data.funnel.id"
+        ],
+        "equals": {
+          "success": true
+        }
+      }
+    }
+  ]
+}

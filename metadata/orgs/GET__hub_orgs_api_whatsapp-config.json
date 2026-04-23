@@ -1,6 +1,6 @@
 {
   "_info": {
-    "testCaseId": "5daa119c-7005-4a8c-a135-7d3b7415e2f2",
+    "testCaseId": "981e9a71-9533-42d0-98ac-b761e684d910",
     "endpoint": "GET /hub/orgs/api/whatsapp-config",
     "method": "GET",
     "module": "orgs",

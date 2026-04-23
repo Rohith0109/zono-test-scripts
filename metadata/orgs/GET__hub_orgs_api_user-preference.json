@@ -1,9 +1,9 @@
 {
   "_info": {
-    "testCaseId": "96bceaf9-9c38-4009-b114-f8f4a19315a6",
-    "endpoint": "GET /workspaces/roles/permissions",
+    "testCaseId": "6794c97e-96fe-4eb7-b827-24541d00ba55",
+    "endpoint": "GET /hub/orgs/api/user-preference",
     "method": "GET",
-    "module": "roles",
+    "module": "orgs",
     "apiDomain": "https://api-qa.zotok.ai",
     "label": "",
     "suite": "Unassigned",
@@ -12,7 +12,7 @@
   "default": [
     {
       "pathParams": {},
-      "query": "?isSeller=true",
+      "query": "?screenName=GROW&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
       "body": null,
       "headers": {
         "authorization": "[REDACTED]"
@@ -22,22 +22,21 @@
           200
         ],
         "requiredResponsePaths": [
-          "$.roles[0].title",
-          "$.roles[0].slug",
-          "$.roles[0].description",
-          "$.roles[0].permissions"
+          "$.preference.pinnedFunnel",
+          "$.preference.screenName",
+          "$.screenName"
         ],
         "ignoreResponsePaths": [
-          "$.roles[0].id"
+          "$.inviteId"
         ],
         "equals": {}
       }
     }
   ],
-  "unknown": [
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
     {
       "pathParams": {},
-      "query": "?isSeller=true",
+      "query": "?screenName=GROW&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
       "body": null,
       "headers": {
         "authorization": "[REDACTED]"
@@ -47,13 +46,12 @@
           200
         ],
         "requiredResponsePaths": [
-          "$.roles[0].title",
-          "$.roles[0].slug",
-          "$.roles[0].description",
-          "$.roles[0].permissions"
+          "$.preference.pinnedFunnel",
+          "$.preference.screenName",
+          "$.screenName"
         ],
         "ignoreResponsePaths": [
-          "$.roles[0].id"
+          "$.inviteId"
         ],
         "equals": {}
       }

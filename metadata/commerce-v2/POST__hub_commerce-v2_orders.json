@@ -1,0 +1,136 @@
+{
+  "_info": {
+    "testCaseId": "d41145c2-f257-4957-a9f6-802cac5ce6a1",
+    "endpoint": "POST /hub/commerce-v2/orders",
+    "method": "POST",
+    "module": "commerce-v2",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": [
+    {
+      "pathParams": {},
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "customerId": "b9f4b3f7-bc4a-4d98-9853-407a3cb28c27",
+        "pageNo": 1,
+        "skip": 0,
+        "pageSize": 2,
+        "sortBy": "orderDate",
+        "sortDirection": "DESC",
+        "includeInvoice": true,
+        "includeStatus": true,
+        "startDate": "2026-03-23T11:48:42.505Z",
+        "endDate": "2026-04-23T11:48:42.505Z",
+        "searchKeyword": "",
+        "filterModel": {
+          "customerIds": [
+            "b9f4b3f7-bc4a-4d98-9853-407a3cb28c27"
+          ]
+        }
+      },
+      "headers": {
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
+      },
+      "assertions": {
+        "expectedStatus": [
+          400
+        ],
+        "requiredResponsePaths": [
+          "$.statusCode",
+          "$.message.method",
+          "$.message.body.pageNo",
+          "$.message.body.skip",
+          "$.message.body.pageSize",
+          "$.message.body.sortBy",
+          "$.message.body.sortDirection",
+          "$.message.body.includeInvoice",
+          "$.message.body.includeStatus",
+          "$.message.body.searchKeyword",
+          "$.message.body.filterModel",
+          "$.message.url",
+          "$.message.message"
+        ],
+        "ignoreResponsePaths": [
+          "$.message.body.workspaceId",
+          "$.message.body.customerId",
+          "$.message.body.startDate",
+          "$.message.body.endDate",
+          "$.message.query.sellerWorkspaceId",
+          "$.message.query.workspaceId",
+          "$.message.channelId",
+          "$.message.requestId",
+          "$.message.workspaceId",
+          "$.timestamp"
+        ],
+        "equals": {}
+      }
+    }
+  ],
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
+    {
+      "pathParams": {},
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "customerId": "b9f4b3f7-bc4a-4d98-9853-407a3cb28c27",
+        "pageNo": 1,
+        "skip": 0,
+        "pageSize": 2,
+        "sortBy": "orderDate",
+        "sortDirection": "DESC",
+        "includeInvoice": true,
+        "includeStatus": true,
+        "startDate": "2026-03-23T11:48:42.505Z",
+        "endDate": "2026-04-23T11:48:42.505Z",
+        "searchKeyword": "",
+        "filterModel": {
+          "customerIds": [
+            "b9f4b3f7-bc4a-4d98-9853-407a3cb28c27"
+          ]
+        }
+      },
+      "headers": {
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
+      },
+      "assertions": {
+        "expectedStatus": [
+          400
+        ],
+        "requiredResponsePaths": [
+          "$.statusCode",
+          "$.message.method",
+          "$.message.body.pageNo",
+          "$.message.body.skip",
+          "$.message.body.pageSize",
+          "$.message.body.sortBy",
+          "$.message.body.sortDirection",
+          "$.message.body.includeInvoice",
+          "$.message.body.includeStatus",
+          "$.message.body.searchKeyword",
+          "$.message.body.filterModel",
+          "$.message.url",
+          "$.message.message"
+        ],
+        "ignoreResponsePaths": [
+          "$.message.body.workspaceId",
+          "$.message.body.customerId",
+          "$.message.body.startDate",
+          "$.message.body.endDate",
+          "$.message.query.sellerWorkspaceId",
+          "$.message.query.workspaceId",
+          "$.message.channelId",
+          "$.message.requestId",
+          "$.message.workspaceId",
+          "$.timestamp"
+        ],
+        "equals": {}
+      }
+    }
+  ]
+}

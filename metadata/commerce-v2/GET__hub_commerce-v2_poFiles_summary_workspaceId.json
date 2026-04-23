@@ -1,6 +1,6 @@
 {
   "_info": {
-    "testCaseId": "5f3158f4-2b79-4d3d-a7bb-75a96fc0f666",
+    "testCaseId": "b63260d1-2d33-44e8-b6e4-705a96fbf383",
     "endpoint": "GET /hub/commerce-v2/poFiles/summary/{workspaceId}",
     "method": "GET",
     "module": "commerce-v2",
@@ -9,51 +9,60 @@
     "suite": "Unassigned",
     "disabled": false
   },
-  "default": {
-    "pathParams": {
-      "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-    },
-    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&customerId=6cec6ab9-0cb2-4074-aff8-e2caedc6a56a",
-    "body": null,
-    "headers": {
-      "authorization": "[REDACTED]"
-    },
-    "assertions": {
-      "expectedStatus": [
-        404
-      ],
-      "requiredResponsePaths": [
-        "$.message",
-        "$.statusCode"
-      ],
-      "ignoreResponsePaths": [],
-      "equals": {}
+  "default": [
+    {
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&customerId=b9f4b3f7-bc4a-4d98-9853-407a3cb28c27",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.totalSKUCount",
+          "$.grossOrderValue",
+          "$.totalDiscount",
+          "$.totalTax",
+          "$.totalItemsCount",
+          "$.totalOrderValue",
+          "$.grossOrderNumber"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
     }
-  },
-  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-    "pathParams": {
-      "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-    },
-    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&customerId=0c42ee7f-3257-45b6-98e3-8e5708ab74b8",
-    "body": null,
-    "headers": {
-      "authorization": "[REDACTED]"
-    },
-    "assertions": {
-      "expectedStatus": [
-        200
-      ],
-      "requiredResponsePaths": [
-        "$.totalSKUCount",
-        "$.grossOrderValue",
-        "$.totalDiscount",
-        "$.totalTax",
-        "$.totalItemsCount",
-        "$.totalOrderValue",
-        "$.grossOrderNumber"
-      ],
-      "ignoreResponsePaths": [],
-      "equals": {}
+  ],
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
+    {
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&customerId=b9f4b3f7-bc4a-4d98-9853-407a3cb28c27",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.totalSKUCount",
+          "$.grossOrderValue",
+          "$.totalDiscount",
+          "$.totalTax",
+          "$.totalItemsCount",
+          "$.totalOrderValue",
+          "$.grossOrderNumber"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
     }
-  }
+  ]
 }

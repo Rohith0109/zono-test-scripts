@@ -1,9 +1,9 @@
 {
   "_info": {
-    "testCaseId": "d8de0467-fd16-443d-a3c3-fd69fa3f530d",
-    "endpoint": "GET /invoiceservice/invoices/{workspaceId}",
+    "testCaseId": "345fdbbd-9745-4d05-80d3-c8c7ca127ceb",
+    "endpoint": "GET /hub/orgs/api/workspaces/{workspaceId}/funnels",
     "method": "GET",
-    "module": "invoices",
+    "module": "orgs",
     "apiDomain": "https://api-qa.zotok.ai",
     "label": "",
     "suite": "Unassigned",
@@ -14,7 +14,7 @@
       "pathParams": {
         "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
       },
-      "query": "?startDate=2026-03-23%2000%3A00%3A00&endDate=2026-04-23%2023%3A59%3A59&pageNo=1&pageSize=2&sortBy=orderDate&sortDirection=DESC&inviteId=b9f4b3f7-bc4a-4d98-9853-407a3cb28c27",
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
       "body": null,
       "headers": {
         "authorization": "[REDACTED]"
@@ -23,9 +23,14 @@
         "expectedStatus": [
           200
         ],
-        "requiredResponsePaths": [],
+        "requiredResponsePaths": [
+          "$.success",
+          "$.data.funnels[0]"
+        ],
         "ignoreResponsePaths": [],
-        "equals": {}
+        "equals": {
+          "success": true
+        }
       }
     }
   ],
@@ -34,7 +39,7 @@
       "pathParams": {
         "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
       },
-      "query": "?startDate=2026-03-23%2000%3A00%3A00&endDate=2026-04-23%2023%3A59%3A59&pageNo=1&pageSize=2&sortBy=orderDate&sortDirection=DESC&inviteId=b9f4b3f7-bc4a-4d98-9853-407a3cb28c27",
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
       "body": null,
       "headers": {
         "authorization": "[REDACTED]"
@@ -43,9 +48,14 @@
         "expectedStatus": [
           200
         ],
-        "requiredResponsePaths": [],
+        "requiredResponsePaths": [
+          "$.success",
+          "$.data.funnels[0]"
+        ],
         "ignoreResponsePaths": [],
-        "equals": {}
+        "equals": {
+          "success": true
+        }
       }
     }
   ]

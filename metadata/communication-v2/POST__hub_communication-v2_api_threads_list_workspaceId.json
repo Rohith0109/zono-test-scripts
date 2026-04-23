@@ -1,6 +1,6 @@
 {
   "_info": {
-    "testCaseId": "c78e8b79-92bb-4961-8450-90582761c6f1",
+    "testCaseId": "5fb2e36f-935e-48d3-b0fb-b0f907f57918",
     "endpoint": "POST /hub/communication-v2/api/threads/list/{workspaceId}",
     "method": "POST",
     "module": "communication-v2",
@@ -9,75 +9,206 @@
     "suite": "Unassigned",
     "disabled": false
   },
-  "default": {
-    "pathParams": {
-      "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-    },
-    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-    "body": {
-      "filter": {
-        "channelType": [
-          "C",
-          "CUST"
-        ],
-        "teamMemberIds": [],
-        "divisionIds": [],
-        "cfaIds": [],
-        "status": {
-          "campaign": [],
-          "dispatch": [],
-          "invoice": [],
-          "order": [],
-          "payment": [],
-          "priceList": [],
-          "transactionType": []
+  "default": [
+    {
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": {
+        "filter": {
+          "channelType": [
+            "C",
+            "CUST"
+          ]
         },
-        "routes": [],
-        "customerSegment": [],
-        "customers": []
+        "searchAfterTimestamp": null,
+        "pageSize": 100
       },
-      "searchAfterTimestamp": null,
-      "pageSize": 100
-    },
-    "headers": {
-      "authorization": "[REDACTED]",
-      "content-type": "application/json"
-    },
-    "assertions": {
-      "expectedStatus": [
-        201
-      ],
-      "requiredResponsePaths": [],
-      "ignoreResponsePaths": [],
-      "equals": {}
-    }
-  },
-  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-    "pathParams": {
-      "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-    },
-    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-    "body": {
-      "filter": {
-        "channelType": [
-          "C",
-          "CUST"
-        ]
+      "headers": {
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
       },
-      "searchAfterTimestamp": null,
-      "pageSize": 100
-    },
-    "headers": {
-      "authorization": "[REDACTED]",
-      "content-type": "application/json"
-    },
-    "assertions": {
-      "expectedStatus": [
-        201
-      ],
-      "requiredResponsePaths": [],
-      "ignoreResponsePaths": [],
-      "equals": {}
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
     }
-  }
+  ],
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
+    {
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": {
+        "filter": {
+          "channelType": [
+            "C",
+            "CUST"
+          ]
+        },
+        "searchAfterTimestamp": null,
+        "pageSize": 100
+      },
+      "headers": {
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": {
+        "filter": {
+          "channelType": [
+            "C",
+            "CUST"
+          ],
+          "teamMemberIds": [],
+          "divisionIds": [],
+          "cfaIds": [],
+          "status": {
+            "campaign": [],
+            "dispatch": [],
+            "invoice": [],
+            "order": [],
+            "payment": [],
+            "priceList": [],
+            "transactionType": []
+          },
+          "routes": [],
+          "customerSegment": [],
+          "customers": []
+        },
+        "searchAfterTimestamp": null,
+        "pageSize": 100
+      },
+      "headers": {
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": {
+        "filter": {
+          "channelType": [
+            "C",
+            "CUST"
+          ],
+          "teamMemberIds": [],
+          "divisionIds": [],
+          "cfaIds": [],
+          "status": {
+            "campaign": [],
+            "dispatch": [],
+            "invoice": [],
+            "order": [],
+            "payment": [],
+            "priceList": [],
+            "transactionType": []
+          },
+          "routes": [],
+          "customerSegment": [],
+          "customers": []
+        },
+        "searchAfterTimestamp": null,
+        "pageSize": 100
+      },
+      "headers": {
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": {
+        "filter": {
+          "channelType": [
+            "C",
+            "CUST"
+          ]
+        },
+        "searchAfterTimestamp": null,
+        "pageSize": 100
+      },
+      "headers": {
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": {
+        "filter": {
+          "channelType": [
+            "C",
+            "CUST"
+          ]
+        },
+        "searchAfterTimestamp": null,
+        "pageSize": 100
+      },
+      "headers": {
+        "authorization": "[REDACTED]",
+        "content-type": "application/json"
+      },
+      "assertions": {
+        "expectedStatus": [
+          502
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    }
+  ]
 }

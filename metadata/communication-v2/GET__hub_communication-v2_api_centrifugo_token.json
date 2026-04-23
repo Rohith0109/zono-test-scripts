@@ -1,6 +1,6 @@
 {
   "_info": {
-    "testCaseId": "5c119688-ee62-4af6-96c9-9bb328dad075",
+    "testCaseId": "ac0079af-26b6-4127-9b2f-963a2ae89299",
     "endpoint": "GET /hub/communication-v2/api/centrifugo/token",
     "method": "GET",
     "module": "communication-v2",
@@ -36,6 +36,126 @@
     }
   ],
   "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
+    {
+      "pathParams": {},
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.websocketUrl",
+          "$.subscriptions[0].channel"
+        ],
+        "ignoreResponsePaths": [
+          "$.userId",
+          "$.sellerWorkspaceId",
+          "$.token",
+          "$.subscriptions[0].token"
+        ],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.websocketUrl",
+          "$.subscriptions[0].channel"
+        ],
+        "ignoreResponsePaths": [
+          "$.userId",
+          "$.sellerWorkspaceId",
+          "$.token",
+          "$.subscriptions[0].token"
+        ],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.websocketUrl",
+          "$.subscriptions[0].channel"
+        ],
+        "ignoreResponsePaths": [
+          "$.userId",
+          "$.sellerWorkspaceId",
+          "$.token",
+          "$.subscriptions[0].token"
+        ],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.websocketUrl",
+          "$.subscriptions[0].channel"
+        ],
+        "ignoreResponsePaths": [
+          "$.userId",
+          "$.sellerWorkspaceId",
+          "$.token",
+          "$.subscriptions[0].token"
+        ],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.websocketUrl",
+          "$.subscriptions[0].channel"
+        ],
+        "ignoreResponsePaths": [
+          "$.userId",
+          "$.sellerWorkspaceId",
+          "$.token",
+          "$.subscriptions[0].token"
+        ],
+        "equals": {}
+      }
+    },
     {
       "pathParams": {},
       "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",

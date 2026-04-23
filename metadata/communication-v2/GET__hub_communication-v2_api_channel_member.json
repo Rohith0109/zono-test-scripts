@@ -1,6 +1,6 @@
 {
   "_info": {
-    "testCaseId": "766b0cf6-e75e-42c4-9e09-c972dcd5c880",
+    "testCaseId": "0bfe543c-0eef-44cc-806e-71a8943cba1e",
     "endpoint": "GET /hub/communication-v2/api/channel/member",
     "method": "GET",
     "module": "communication-v2",
@@ -12,7 +12,7 @@
   "default": [
     {
       "pathParams": {},
-      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=4b993e24-277c-42fe-a5db-8ebf08662abe&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.999828238645406",
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=9e0b1632-34f6-4708-9961-b20b1e8ffb15&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.2854400824812796",
       "body": null,
       "headers": {
         "authorization": "[REDACTED]"
@@ -62,7 +62,7 @@
   "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
     {
       "pathParams": {},
-      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=4b993e24-277c-42fe-a5db-8ebf08662abe&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.999828238645406",
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=9e0b1632-34f6-4708-9961-b20b1e8ffb15&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.2854400824812796",
       "body": null,
       "headers": {
         "authorization": "[REDACTED]"
@@ -110,7 +110,7 @@
     },
     {
       "pathParams": {},
-      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=4b993e24-277c-42fe-a5db-8ebf08662abe&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.842974463360754",
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=4b993e24-277c-42fe-a5db-8ebf08662abe&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.7148304355051037",
       "body": null,
       "headers": {
         "authorization": "[REDACTED]"
@@ -153,6 +153,518 @@
           "$.teamMembers[0].id",
           "$.teamMembers[0].inviteId"
         ],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=cda1d94f-659c-4d3d-abe6-0365b75635e4&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.3085732817854392",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=0a6a51dc-5091-4b65-9c15-38fd0e970dba&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.30771501463063256",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=34ab962d-c772-4f58-bdf3-b0fc939bc64a&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.1064664737148201",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.channelName",
+          "$.accessType",
+          "$.profilePic",
+          "$.description",
+          "$.isDefault",
+          "$.channelType",
+          "$.entityType",
+          "$.channelSubType",
+          "$.isActive",
+          "$.enableWhatsappNotification",
+          "$.issueStatus",
+          "$.inviteLink",
+          "$.channelRole"
+        ],
+        "ignoreResponsePaths": [
+          "$.id",
+          "$.createdAt",
+          "$.updatedAt",
+          "$.linkedWorkspaceId",
+          "$.updatedBy",
+          "$.emojiId",
+          "$.messageId",
+          "$.ownerId",
+          "$.appId",
+          "$.entityId",
+          "$.customerId",
+          "$.workspaceId",
+          "$.folderId",
+          "$.waGroupId",
+          "$.waRequestId",
+          "$.teamMembers[0].id",
+          "$.teamMembers[0].inviteId"
+        ],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=a0da988c-b196-4c15-b406-be981e6c29f1&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.887860432605162",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=227bead3-2a8f-4add-88c3-09279c612690&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.8265940046626491",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=cd8841d8-8976-469e-baf4-2e1aa715731d&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.7808660483174017",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=8d4a3b91-66e0-411e-9da2-40f12dbe5ddc&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.9610066332540865",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=d2d86b84-bc2a-4c53-9af2-abff2122fdac&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.2674379868509119",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=4565ffd8-ca53-43df-82c6-945b0ddbb854&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.39984321444584536",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=0364b804-cbe7-41bd-8142-b1af249c061d&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.5466386075808877",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=1073cf9f-7574-4753-9309-3adb3c3085c6&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.4997345423611441",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=8502ef54-90c6-46ee-b3c0-cb659b2c49ad&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.3687738572258441",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=8d4a3b91-66e0-411e-9da2-40f12dbe5ddc&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.8362795110626198",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=4b993e24-277c-42fe-a5db-8ebf08662abe&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.4145341692425559",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.channelName",
+          "$.accessType",
+          "$.profilePic",
+          "$.description",
+          "$.isDefault",
+          "$.channelType",
+          "$.entityType",
+          "$.channelSubType",
+          "$.isActive",
+          "$.enableWhatsappNotification",
+          "$.issueStatus",
+          "$.inviteLink",
+          "$.channelRole"
+        ],
+        "ignoreResponsePaths": [
+          "$.id",
+          "$.createdAt",
+          "$.updatedAt",
+          "$.linkedWorkspaceId",
+          "$.updatedBy",
+          "$.emojiId",
+          "$.messageId",
+          "$.ownerId",
+          "$.appId",
+          "$.entityId",
+          "$.customerId",
+          "$.workspaceId",
+          "$.folderId",
+          "$.waGroupId",
+          "$.waRequestId",
+          "$.teamMembers[0].id",
+          "$.teamMembers[0].inviteId"
+        ],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=0a6a51dc-5091-4b65-9c15-38fd0e970dba&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.24148965531680455",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=4b993e24-277c-42fe-a5db-8ebf08662abe&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.9200983686047324",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.channelName",
+          "$.accessType",
+          "$.profilePic",
+          "$.description",
+          "$.isDefault",
+          "$.channelType",
+          "$.entityType",
+          "$.channelSubType",
+          "$.isActive",
+          "$.enableWhatsappNotification",
+          "$.issueStatus",
+          "$.inviteLink",
+          "$.channelRole"
+        ],
+        "ignoreResponsePaths": [
+          "$.id",
+          "$.createdAt",
+          "$.updatedAt",
+          "$.linkedWorkspaceId",
+          "$.updatedBy",
+          "$.emojiId",
+          "$.messageId",
+          "$.ownerId",
+          "$.appId",
+          "$.entityId",
+          "$.customerId",
+          "$.workspaceId",
+          "$.folderId",
+          "$.waGroupId",
+          "$.waRequestId",
+          "$.teamMembers[0].id",
+          "$.teamMembers[0].inviteId"
+        ],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=4b993e24-277c-42fe-a5db-8ebf08662abe&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.7189369005594425",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.channelName",
+          "$.accessType",
+          "$.profilePic",
+          "$.description",
+          "$.isDefault",
+          "$.channelType",
+          "$.entityType",
+          "$.channelSubType",
+          "$.isActive",
+          "$.enableWhatsappNotification",
+          "$.issueStatus",
+          "$.inviteLink",
+          "$.channelRole"
+        ],
+        "ignoreResponsePaths": [
+          "$.id",
+          "$.createdAt",
+          "$.updatedAt",
+          "$.linkedWorkspaceId",
+          "$.updatedBy",
+          "$.emojiId",
+          "$.messageId",
+          "$.ownerId",
+          "$.appId",
+          "$.entityId",
+          "$.customerId",
+          "$.workspaceId",
+          "$.folderId",
+          "$.waGroupId",
+          "$.waRequestId",
+          "$.teamMembers[0].id",
+          "$.teamMembers[0].inviteId"
+        ],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=9e0b1632-34f6-4708-9961-b20b1e8ffb15&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.8133579266197968",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.channelName",
+          "$.accessType",
+          "$.profilePic",
+          "$.description",
+          "$.isDefault",
+          "$.channelType",
+          "$.entityType",
+          "$.channelSubType",
+          "$.isActive",
+          "$.enableWhatsappNotification",
+          "$.issueStatus",
+          "$.inviteLink",
+          "$.channelRole"
+        ],
+        "ignoreResponsePaths": [
+          "$.id",
+          "$.createdAt",
+          "$.updatedAt",
+          "$.linkedWorkspaceId",
+          "$.updatedBy",
+          "$.emojiId",
+          "$.messageId",
+          "$.ownerId",
+          "$.appId",
+          "$.entityId",
+          "$.customerId",
+          "$.workspaceId",
+          "$.folderId",
+          "$.waGroupId",
+          "$.waRequestId",
+          "$.teamMembers[0].id",
+          "$.teamMembers[0].inviteId"
+        ],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=4b993e24-277c-42fe-a5db-8ebf08662abe&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.09299541060926331",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.channelName",
+          "$.accessType",
+          "$.profilePic",
+          "$.description",
+          "$.isDefault",
+          "$.channelType",
+          "$.entityType",
+          "$.channelSubType",
+          "$.isActive",
+          "$.enableWhatsappNotification",
+          "$.issueStatus",
+          "$.inviteLink",
+          "$.channelRole"
+        ],
+        "ignoreResponsePaths": [
+          "$.id",
+          "$.createdAt",
+          "$.updatedAt",
+          "$.linkedWorkspaceId",
+          "$.updatedBy",
+          "$.emojiId",
+          "$.messageId",
+          "$.ownerId",
+          "$.appId",
+          "$.entityId",
+          "$.customerId",
+          "$.workspaceId",
+          "$.folderId",
+          "$.waGroupId",
+          "$.waRequestId",
+          "$.teamMembers[0].id",
+          "$.teamMembers[0].inviteId"
+        ],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {},
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=1073cf9f-7574-4753-9309-3adb3c3085c6&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.45395609350717314",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
         "equals": {}
       }
     }

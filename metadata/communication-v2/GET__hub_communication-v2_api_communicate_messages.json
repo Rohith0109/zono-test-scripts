@@ -1,6 +1,6 @@
 {
   "_info": {
-    "testCaseId": "aac9e4b3-3fe7-41b8-8fb5-0c06b89d09e7",
+    "testCaseId": "988ef6da-a9ec-44c0-8805-659afe09e00c",
     "endpoint": "GET /hub/communication-v2/api/communicate/messages",
     "method": "GET",
     "module": "communication-v2",
@@ -9,36 +9,40 @@
     "suite": "Unassigned",
     "disabled": false
   },
-  "default": {
-    "pathParams": {},
-    "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&channelId=b5f2444e-2f6f-49d4-9552-9b54c8a9f9e5&startTimeToken=0&endTimeToken=17767608242340000&limit=25&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-    "body": null,
-    "headers": {
-      "authorization": "[REDACTED]"
-    },
-    "assertions": {
-      "expectedStatus": [
-        200
-      ],
-      "requiredResponsePaths": [],
-      "ignoreResponsePaths": [],
-      "equals": {}
+  "default": [
+    {
+      "pathParams": {},
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&channelId=8d4a3b91-66e0-411e-9da2-40f12dbe5ddc&startTimeToken=0&endTimeToken=17769449224630000&limit=25&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
     }
-  },
-  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-    "pathParams": {},
-    "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&channelId=a93606ea-6ba2-49ab-af16-5999b9fee6bb&startTimeToken=0&endTimeToken=17767608824400000&limit=25&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-    "body": null,
-    "headers": {
-      "authorization": "[REDACTED]"
-    },
-    "assertions": {
-      "expectedStatus": [
-        200
-      ],
-      "requiredResponsePaths": [],
-      "ignoreResponsePaths": [],
-      "equals": {}
+  ],
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
+    {
+      "pathParams": {},
+      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&channelId=8d4a3b91-66e0-411e-9da2-40f12dbe5ddc&startTimeToken=0&endTimeToken=17769449224630000&limit=25&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {}
+      }
     }
-  }
+  ]
 }

@@ -1,0 +1,91 @@
+{
+  "_info": {
+    "testCaseId": "7f563f9f-32cf-4dd9-9031-ac75dceb0231",
+    "endpoint": "GET /hub/communication-v2/api/conversation-threads/query-types/{workspaceId}",
+    "method": "GET",
+    "module": "communication-v2",
+    "apiDomain": "https://api-qa.zotok.ai",
+    "label": "",
+    "suite": "Unassigned",
+    "disabled": false
+  },
+  "default": [
+    {
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&startTime=2026-04-22T12%3A05%3A11.691000Z&endTime=2026-04-23T12%3A05%3A11.691000Z&pageNo=1&pageSize=20",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.data",
+          "$.pagination.pageNo",
+          "$.pagination.pageSize",
+          "$.pagination.total"
+        ],
+        "ignoreResponsePaths": [
+          "$.pagination.lastUpdatedAt"
+        ],
+        "equals": {}
+      }
+    }
+  ],
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
+    {
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&startTime=2026-04-22T12%3A05%3A11.691000Z&endTime=2026-04-23T12%3A05%3A11.691000Z&pageNo=1&pageSize=20",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.data",
+          "$.pagination.pageNo",
+          "$.pagination.pageSize",
+          "$.pagination.total"
+        ],
+        "ignoreResponsePaths": [
+          "$.pagination.lastUpdatedAt"
+        ],
+        "equals": {}
+      }
+    },
+    {
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&startTime=2026-04-22T12%3A21%3A03.805000Z&endTime=2026-04-23T12%3A21%3A03.805000Z&pageNo=1&pageSize=20",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.data",
+          "$.pagination.pageNo",
+          "$.pagination.pageSize",
+          "$.pagination.total"
+        ],
+        "ignoreResponsePaths": [
+          "$.pagination.lastUpdatedAt"
+        ],
+        "equals": {}
+      }
+    }
+  ]
+}

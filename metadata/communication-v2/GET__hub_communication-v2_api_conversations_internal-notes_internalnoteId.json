@@ -1,6 +1,6 @@
 {
   "_info": {
-    "testCaseId": "a4f56ab8-919a-4567-89fc-35f25567311f",
+    "testCaseId": "66e28135-d221-44f9-bc8d-724d8a4e8639",
     "endpoint": "GET /hub/communication-v2/api/conversations/internal-notes/{internalnoteId}",
     "method": "GET",
     "module": "communication-v2",
@@ -9,52 +9,56 @@
     "suite": "Unassigned",
     "disabled": false
   },
-  "default": {
-    "pathParams": {
-      "internalnoteId": "6cec6ab9-0cb2-4074-aff8-e2caedc6a56a"
-    },
-    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-    "body": null,
-    "headers": {
-      "authorization": "[REDACTED]"
-    },
-    "assertions": {
-      "expectedStatus": [
-        200
-      ],
-      "requiredResponsePaths": [
-        "$.success",
-        "$.data.messages",
-        "$.message"
-      ],
-      "ignoreResponsePaths": [],
-      "equals": {
-        "success": true
+  "default": [
+    {
+      "pathParams": {
+        "internalnoteId": "b9f4b3f7-bc4a-4d98-9853-407a3cb28c27"
+      },
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.success",
+          "$.data.messages",
+          "$.message"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {
+          "success": true
+        }
       }
     }
-  },
-  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-    "pathParams": {
-      "internalnoteId": "6cec6ab9-0cb2-4074-aff8-e2caedc6a56a"
-    },
-    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-    "body": null,
-    "headers": {
-      "authorization": "[REDACTED]"
-    },
-    "assertions": {
-      "expectedStatus": [
-        200
-      ],
-      "requiredResponsePaths": [
-        "$.success",
-        "$.data.messages",
-        "$.message"
-      ],
-      "ignoreResponsePaths": [],
-      "equals": {
-        "success": true
+  ],
+  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
+    {
+      "pathParams": {
+        "internalnoteId": "b9f4b3f7-bc4a-4d98-9853-407a3cb28c27"
+      },
+      "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+      "body": null,
+      "headers": {
+        "authorization": "[REDACTED]"
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.success",
+          "$.data.messages",
+          "$.message"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {
+          "success": true
+        }
       }
     }
-  }
+  ]
 }
