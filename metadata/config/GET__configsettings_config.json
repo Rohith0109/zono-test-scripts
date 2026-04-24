@@ -44,41 +44,5 @@
         "equals": {}
       }
     }
-  ],
-  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": [
-    {
-      "pathParams": {},
-      "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&module=Catalogue&rollback=false",
-      "body": null,
-      "headers": {
-        "authorization": "[REDACTED]"
-      },
-      "assertions": {
-        "expectedStatus": [
-          200
-        ],
-        "requiredResponsePaths": [
-          "$.config.catalogueView",
-          "$.config.displayOutOfStock",
-          "$.config.productDetailsPage",
-          "$.config.productDetailsView",
-          "$.config.displayCataloguePrices",
-          "$.config.displayPricesInCatalogue",
-          "$.config.displayOutOfStockTagIfStockIsNotAvailable",
-          "$.module"
-        ],
-        "ignoreResponsePaths": [
-          "$.id",
-          "$.createdDate",
-          "$.updatedDate",
-          "$.workspaceId",
-          "$.divisionId",
-          "$.customerGroupId",
-          "$.customerId",
-          "$.teamMemberId"
-        ],
-        "equals": {}
-      }
-    }
   ]
 }

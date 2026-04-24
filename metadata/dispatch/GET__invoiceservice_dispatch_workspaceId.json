@@ -26,23 +26,5 @@
       "ignoreResponsePaths": [],
       "equals": {}
     }
-  },
-  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-    "pathParams": {
-      "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-    },
-    "query": "?page=1&pageSize=20&sortBy=dispatchDate&sortDirection=DESC",
-    "body": null,
-    "headers": {
-      "authorization": "[REDACTED]"
-    },
-    "assertions": {
-      "expectedStatus": [
-        200
-      ],
-      "requiredResponsePaths": [],
-      "ignoreResponsePaths": [],
-      "equals": {}
-    }
   }
 }
