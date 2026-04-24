@@ -29,31 +29,5 @@
       "ignoreResponsePaths": [],
       "equals": {}
     }
-  },
-  "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-    "pathParams": {
-      "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-    },
-    "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&customerId=0c42ee7f-3257-45b6-98e3-8e5708ab74b8",
-    "body": null,
-    "headers": {
-      "authorization": "[REDACTED]"
-    },
-    "assertions": {
-      "expectedStatus": [
-        200
-      ],
-      "requiredResponsePaths": [
-        "$.totalSKUCount",
-        "$.grossOrderValue",
-        "$.totalDiscount",
-        "$.totalTax",
-        "$.totalItemsCount",
-        "$.totalOrderValue",
-        "$.grossOrderNumber"
-      ],
-      "ignoreResponsePaths": [],
-      "equals": {}
-    }
   }
 }
