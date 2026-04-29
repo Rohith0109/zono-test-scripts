@@ -1,0 +1,65 @@
+{
+  "version": 2,
+  "endpointKey": "POST /hub/commerce-v2/categories/{workspaceId}",
+  "module": "commerce-v2",
+  "method": "POST",
+  "path": "/hub/commerce-v2/categories/{workspaceId}",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "38e8b2c6-6946-4a78-a85e-314d4a0bf8ce",
+      "name": "POST /hub/commerce-v2/categories/{workspaceId}",
+      "createdAt": "2026-04-29T06:13:29.588Z",
+      "updatedAt": "2026-04-29T06:13:29.588Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "pageSize": 20,
+          "pageNo": 1,
+          "toplevelOnly": false,
+          "includeProductCount": true,
+          "sortOrder": ""
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "pageSize": 20,
+            "pageNo": 1,
+            "toplevelOnly": false,
+            "includeProductCount": true,
+            "sortOrder": ""
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "38e8b2c6-6946-4a78-a85e-314d4a0bf8ce"
+}
