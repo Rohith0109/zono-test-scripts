@@ -1,0 +1,417 @@
+{
+  "version": 2,
+  "endpointKey": "POST /hub/proxy/api/turnover-schemes/graphql",
+  "module": "proxy",
+  "method": "POST",
+  "path": "/hub/proxy/api/turnover-schemes/graphql",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "972a5621-939c-47d6-95e4-bc318c1e2530",
+      "name": "POST /hub/proxy/api/turnover-schemes/graphql",
+      "createdAt": "2026-04-29T06:13:27.748Z",
+      "updatedAt": "2026-04-29T06:13:27.748Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "query": "query ($v1:turnoverinvoice_bool_exp,$v2:[turnoverinvoice_order_by!],$v3:Int,$v4:Int){turnoverinvoice(where:$v1,order_by:$v2,limit:$v3,offset:$v4){turnoverinvoice_detail{matched_buyer_name,matched_distributor_name},sellername,buyername}}",
+          "variables": {
+            "v1": {
+              "workspaceId": {
+                "_eq": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+              },
+              "status": {
+                "_in": [
+                  "PENDING",
+                  "APPROVED",
+                  "REJECTED"
+                ]
+              },
+              "created_at": {
+                "_gte": "2026-04-22",
+                "_lt": "2026-04-30"
+              },
+              "_and": [
+                {
+                  "_not": {
+                    "invoice_validation_status": {
+                      "validation_status": {
+                        "_eq": "PARSING_FAILED"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "v2": [
+              {
+                "created_at": "desc"
+              }
+            ],
+            "v3": 10000,
+            "v4": 0
+          }
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.data.turnoverinvoice[0]"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "query": "query ($v1:turnoverinvoice_bool_exp,$v2:[turnoverinvoice_order_by!],$v3:Int,$v4:Int){turnoverinvoice(where:$v1,order_by:$v2,limit:$v3,offset:$v4){turnoverinvoice_detail{matched_buyer_name,matched_distributor_name},sellername,buyername}}",
+            "variables": {
+              "v1": {
+                "workspaceId": {
+                  "_eq": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+                },
+                "status": {
+                  "_in": [
+                    "PENDING",
+                    "APPROVED",
+                    "REJECTED"
+                  ]
+                },
+                "created_at": {
+                  "_gte": "2026-04-22",
+                  "_lt": "2026-04-30"
+                },
+                "_and": [
+                  {
+                    "_not": {
+                      "invoice_validation_status": {
+                        "validation_status": {
+                          "_eq": "PARSING_FAILED"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "v2": [
+                {
+                  "created_at": "desc"
+                }
+              ],
+              "v3": 10000,
+              "v4": 0
+            }
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "3b4f44ca-7679-426f-8537-829b7ba6d88e",
+      "name": "POST /hub/proxy/api/turnover-schemes/graphql",
+      "createdAt": "2026-04-29T06:13:27.748Z",
+      "updatedAt": "2026-04-29T06:13:27.748Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "query": "query ($v1:turnoverinvoice_bool_exp,$v2:[turnoverinvoice_order_by!],$v3:Int,$v4:Int,$v5:turnoverinvoice_line_bool_exp){turnoverinvoice(where:$v1,order_by:$v2,limit:$v3,offset:$v4){id,turnoverinvoice_lines_aggregate(where:$v5){aggregate{count,sum{contribution,total_amount,total_amount_with_tax}}}}}",
+          "variables": {
+            "v1": {
+              "workspaceId": {
+                "_eq": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+              },
+              "status": {
+                "_in": [
+                  "PENDING",
+                  "APPROVED",
+                  "REJECTED"
+                ]
+              },
+              "_and": [
+                {
+                  "_not": {
+                    "invoice_validation_status": {
+                      "validation_status": {
+                        "_eq": "PARSING_FAILED"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "v2": [
+              {
+                "created_at": "desc"
+              }
+            ],
+            "v3": 10,
+            "v4": 0,
+            "v5": {
+              "turnover_invoice_line_schemes": {
+                "scheme_id": {
+                  "_is_null": false
+                }
+              },
+              "status": {
+                "_eq": "MAPPED"
+              }
+            }
+          }
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.data.turnoverinvoice[0]"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "query": "query ($v1:turnoverinvoice_bool_exp,$v2:[turnoverinvoice_order_by!],$v3:Int,$v4:Int,$v5:turnoverinvoice_line_bool_exp){turnoverinvoice(where:$v1,order_by:$v2,limit:$v3,offset:$v4){id,turnoverinvoice_lines_aggregate(where:$v5){aggregate{count,sum{contribution,total_amount,total_amount_with_tax}}}}}",
+            "variables": {
+              "v1": {
+                "workspaceId": {
+                  "_eq": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+                },
+                "status": {
+                  "_in": [
+                    "PENDING",
+                    "APPROVED",
+                    "REJECTED"
+                  ]
+                },
+                "_and": [
+                  {
+                    "_not": {
+                      "invoice_validation_status": {
+                        "validation_status": {
+                          "_eq": "PARSING_FAILED"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "v2": [
+                {
+                  "created_at": "desc"
+                }
+              ],
+              "v3": 10,
+              "v4": 0,
+              "v5": {
+                "turnover_invoice_line_schemes": {
+                  "scheme_id": {
+                    "_is_null": false
+                  }
+                },
+                "status": {
+                  "_eq": "MAPPED"
+                }
+              }
+            }
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "a98aff76-fb70-4480-bf38-bd74a73d0e3f",
+      "name": "POST /hub/proxy/api/turnover-schemes/graphql",
+      "createdAt": "2026-04-29T06:13:27.748Z",
+      "updatedAt": "2026-04-29T06:13:27.748Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "query": "query ($v1:turnoverinvoice_bool_exp,$v2:[turnoverinvoice_order_by!],$v3:Int,$v4:Int,$v5:invoice_validation_status_bool_exp,$v6:turnoverinvoice_bool_exp){turnoverinvoice(where:$v1,order_by:$v2,limit:$v3,offset:$v4){workspaceId,id,invoice_number,invoice_amount,invoice_date,submittedby,status,validationStatus,invoice_validation_status(where:$v5){validation_status},turnoverinvoice_detail{buyerdetails,distributordetails,matched_buyer_name,matched_distributor_name},buyername,customerId,sellername,created_at,updated_at,taxableValue,gst_percentage,gst_amount,discount,secondary_discount,cumulative_discount,discount_amount,cess,approved_rejected_by,remark,turnoverinvoice_lines_aggregate{aggregate{count}},turnoverinvoice_lines{status}},turnoverinvoice_aggregate(where:$v6){aggregate{count}}}",
+          "variables": {
+            "v1": {
+              "workspaceId": {
+                "_eq": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+              },
+              "status": {
+                "_in": [
+                  "PENDING",
+                  "APPROVED",
+                  "REJECTED"
+                ]
+              },
+              "_and": [
+                {
+                  "_not": {
+                    "invoice_validation_status": {
+                      "validation_status": {
+                        "_eq": "PARSING_FAILED"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "v2": [
+              {
+                "created_at": "desc"
+              }
+            ],
+            "v3": 10,
+            "v4": 0,
+            "v5": {
+              "validation_status": {
+                "_neq": "PARSING_FAILED"
+              }
+            },
+            "v6": {
+              "workspaceId": {
+                "_eq": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+              },
+              "status": {
+                "_in": [
+                  "PENDING",
+                  "APPROVED",
+                  "REJECTED"
+                ]
+              },
+              "_and": [
+                {
+                  "_not": {
+                    "invoice_validation_status": {
+                      "validation_status": {
+                        "_eq": "PARSING_FAILED"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "query": "query ($v1:turnoverinvoice_bool_exp,$v2:[turnoverinvoice_order_by!],$v3:Int,$v4:Int,$v5:invoice_validation_status_bool_exp,$v6:turnoverinvoice_bool_exp){turnoverinvoice(where:$v1,order_by:$v2,limit:$v3,offset:$v4){workspaceId,id,invoice_number,invoice_amount,invoice_date,submittedby,status,validationStatus,invoice_validation_status(where:$v5){validation_status},turnoverinvoice_detail{buyerdetails,distributordetails,matched_buyer_name,matched_distributor_name},buyername,customerId,sellername,created_at,updated_at,taxableValue,gst_percentage,gst_amount,discount,secondary_discount,cumulative_discount,discount_amount,cess,approved_rejected_by,remark,turnoverinvoice_lines_aggregate{aggregate{count}},turnoverinvoice_lines{status}},turnoverinvoice_aggregate(where:$v6){aggregate{count}}}",
+            "variables": {
+              "v1": {
+                "workspaceId": {
+                  "_eq": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+                },
+                "status": {
+                  "_in": [
+                    "PENDING",
+                    "APPROVED",
+                    "REJECTED"
+                  ]
+                },
+                "_and": [
+                  {
+                    "_not": {
+                      "invoice_validation_status": {
+                        "validation_status": {
+                          "_eq": "PARSING_FAILED"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              "v2": [
+                {
+                  "created_at": "desc"
+                }
+              ],
+              "v3": 10,
+              "v4": 0,
+              "v5": {
+                "validation_status": {
+                  "_neq": "PARSING_FAILED"
+                }
+              },
+              "v6": {
+                "workspaceId": {
+                  "_eq": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+                },
+                "status": {
+                  "_in": [
+                    "PENDING",
+                    "APPROVED",
+                    "REJECTED"
+                  ]
+                },
+                "_and": [
+                  {
+                    "_not": {
+                      "invoice_validation_status": {
+                        "validation_status": {
+                          "_eq": "PARSING_FAILED"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "972a5621-939c-47d6-95e4-bc318c1e2530"
+}

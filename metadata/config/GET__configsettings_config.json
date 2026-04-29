@@ -1,0 +1,115 @@
+{
+  "version": 2,
+  "endpointKey": "GET /configsettings/config",
+  "module": "config",
+  "method": "GET",
+  "path": "/configsettings/config",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "22b1f02e-e8a2-4f32-b1ff-b5d5ec2dcc29",
+      "name": "GET /configsettings/config",
+      "createdAt": "2026-04-29T06:13:27.235Z",
+      "updatedAt": "2026-04-29T06:13:27.235Z",
+      "request": {
+        "pathParams": {},
+        "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&module=Catalogue&rollback=false",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.config.catalogueView",
+          "$.config.displayOutOfStock",
+          "$.config.productDetailsPage",
+          "$.config.productDetailsView",
+          "$.config.displayCataloguePrices",
+          "$.config.displayPricesInCatalogue",
+          "$.config.displayOutOfStockTagIfStockIsNotAvailable",
+          "$.module"
+        ],
+        "ignoreResponsePaths": [
+          "$.id",
+          "$.createdDate",
+          "$.updatedDate",
+          "$.workspaceId",
+          "$.divisionId",
+          "$.customerGroupId",
+          "$.customerId",
+          "$.teamMemberId"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&module=Catalogue&rollback=false",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "a0bd908b-586c-45a0-901a-744aee3f89b1",
+      "name": "GET /configsettings/config",
+      "createdAt": "2026-04-29T06:13:27.235Z",
+      "updatedAt": "2026-04-29T06:13:27.235Z",
+      "request": {
+        "pathParams": {},
+        "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&module=Turnover&rollback=false&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.config.schema_type",
+          "$.config.selection_type",
+          "$.config.slab_application_level",
+          "$.module"
+        ],
+        "ignoreResponsePaths": [
+          "$.id",
+          "$.createdDate",
+          "$.updatedDate",
+          "$.workspaceId",
+          "$.divisionId",
+          "$.customerGroupId",
+          "$.customerId",
+          "$.teamMemberId"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&module=Turnover&rollback=false&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "22b1f02e-e8a2-4f32-b1ff-b5d5ec2dcc29"
+}
