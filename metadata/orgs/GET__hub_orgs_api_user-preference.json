@@ -1,0 +1,53 @@
+{
+  "version": 2,
+  "endpointKey": "GET /hub/orgs/api/user-preference",
+  "module": "orgs",
+  "method": "GET",
+  "path": "/hub/orgs/api/user-preference",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "8edf1ffd-5e86-4b69-a4c7-873531cc6dbd",
+      "name": "GET /hub/orgs/api/user-preference",
+      "createdAt": "2026-04-29T06:13:28.872Z",
+      "updatedAt": "2026-04-29T06:13:28.872Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&screenName=PRODUCT_LIST",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.preference.pageSize",
+          "$.preference.screenName",
+          "$.screenName"
+        ],
+        "ignoreResponsePaths": [
+          "$.inviteId"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&screenName=PRODUCT_LIST",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "8edf1ffd-5e86-4b69-a4c7-873531cc6dbd"
+}
