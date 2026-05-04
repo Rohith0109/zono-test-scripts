@@ -1,0 +1,152 @@
+{
+  "version": 2,
+  "endpointKey": "GET /hub/orgs/api/department",
+  "module": "orgs",
+  "method": "GET",
+  "path": "/hub/orgs/api/department",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "d6d7bd18-cf52-4696-9032-42c491a97d12",
+      "name": "GET /hub/orgs/api/department",
+      "createdAt": "2026-05-04T07:25:38.651Z",
+      "updatedAt": "2026-05-04T07:25:38.651Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&page=1&pageSize=20",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.data[0].departmentName",
+          "$.data[0].departmentCode",
+          "$.data[0].teamMemberCount",
+          "$.page",
+          "$.pageSize",
+          "$.totalRecords",
+          "$.totalPages"
+        ],
+        "ignoreResponsePaths": [
+          "$.data[0].id",
+          "$.data[0].sellerWorkspaceId"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&page=1&pageSize=20",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "6118de36-dc28-4546-880e-2fdae54ab745",
+      "name": "GET /hub/orgs/api/department",
+      "createdAt": "2026-05-04T07:25:38.651Z",
+      "updatedAt": "2026-05-04T07:25:38.651Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&page=1&pageSize=20",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.data[0].departmentName",
+          "$.data[0].departmentCode",
+          "$.data[0].teamMemberCount",
+          "$.page",
+          "$.pageSize",
+          "$.totalRecords",
+          "$.totalPages"
+        ],
+        "ignoreResponsePaths": [
+          "$.data[0].id",
+          "$.data[0].sellerWorkspaceId"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&page=1&pageSize=20",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "b52c7c2d-b3f8-4902-9dc6-abd27f01a991",
+      "name": "GET /hub/orgs/api/department",
+      "createdAt": "2026-05-04T07:25:38.651Z",
+      "updatedAt": "2026-05-04T07:25:38.651Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&page=1&pageSize=20",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.data[0].departmentName",
+          "$.data[0].departmentCode",
+          "$.data[0].teamMemberCount",
+          "$.page",
+          "$.pageSize",
+          "$.totalRecords",
+          "$.totalPages"
+        ],
+        "ignoreResponsePaths": [
+          "$.data[0].id",
+          "$.data[0].sellerWorkspaceId"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&page=1&pageSize=20",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "d6d7bd18-cf52-4696-9032-42c491a97d12"
+}
