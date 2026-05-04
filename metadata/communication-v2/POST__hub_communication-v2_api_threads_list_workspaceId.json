@@ -1,0 +1,161 @@
+{
+  "version": 2,
+  "endpointKey": "POST /hub/communication-v2/api/threads/list/{workspaceId}",
+  "module": "communication-v2",
+  "method": "POST",
+  "path": "/hub/communication-v2/api/threads/list/{workspaceId}",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "bef066d4-006c-4423-b54c-b3bcd78fdad0",
+      "name": "POST /hub/communication-v2/api/threads/list/{workspaceId}",
+      "createdAt": "2026-05-04T08:04:18.871Z",
+      "updatedAt": "2026-05-04T08:04:18.871Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "filter": {
+            "channelType": [
+              "C",
+              "CUST"
+            ],
+            "teamMemberIds": [],
+            "divisionIds": [],
+            "cfaIds": [],
+            "status": {
+              "campaign": [],
+              "dispatch": [],
+              "invoice": [],
+              "order": [],
+              "payment": [],
+              "priceList": [],
+              "transactionType": []
+            },
+            "routes": [],
+            "customerSegment": [],
+            "customers": []
+          },
+          "searchAfterTimestamp": null,
+          "pageSize": 100
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "filter": {
+              "channelType": [
+                "C",
+                "CUST"
+              ],
+              "teamMemberIds": [],
+              "divisionIds": [],
+              "cfaIds": [],
+              "status": {
+                "campaign": [],
+                "dispatch": [],
+                "invoice": [],
+                "order": [],
+                "payment": [],
+                "priceList": [],
+                "transactionType": []
+              },
+              "routes": [],
+              "customerSegment": [],
+              "customers": []
+            },
+            "searchAfterTimestamp": null,
+            "pageSize": 100
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "2b7ad91b-080c-452a-857c-eb27f64dfaed",
+      "name": "POST /hub/communication-v2/api/threads/list/{workspaceId}",
+      "createdAt": "2026-05-04T08:04:18.872Z",
+      "updatedAt": "2026-05-04T08:04:18.872Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "filter": {
+            "channelType": [
+              "C",
+              "CUST"
+            ]
+          },
+          "searchAfterTimestamp": null,
+          "pageSize": 100
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "filter": {
+              "channelType": [
+                "C",
+                "CUST"
+              ]
+            },
+            "searchAfterTimestamp": null,
+            "pageSize": 100
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "bef066d4-006c-4423-b54c-b3bcd78fdad0"
+}

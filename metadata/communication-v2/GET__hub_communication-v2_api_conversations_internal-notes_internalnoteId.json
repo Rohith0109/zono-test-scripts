@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "endpointKey": "GET /hub/communication-v2/api/conversations/internal-notes/{internalnoteId}",
+  "module": "communication-v2",
+  "method": "GET",
+  "path": "/hub/communication-v2/api/conversations/internal-notes/{internalnoteId}",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "cb688ceb-150b-4034-8b33-7fda48c8bd28",
+      "name": "GET /hub/communication-v2/api/conversations/internal-notes/{internalnoteId}",
+      "createdAt": "2026-05-04T08:04:21.229Z",
+      "updatedAt": "2026-05-04T08:04:21.229Z",
+      "request": {
+        "pathParams": {
+          "internalnoteId": "4741b07c-9840-4def-bcdf-77eff8a510a9"
+        },
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.success",
+          "$.data.messages",
+          "$.message"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {
+          "success": true
+        },
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "internalnoteId": "4741b07c-9840-4def-bcdf-77eff8a510a9"
+          },
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "cb688ceb-150b-4034-8b33-7fda48c8bd28"
+}

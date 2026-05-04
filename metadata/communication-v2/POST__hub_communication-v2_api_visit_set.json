@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "endpointKey": "POST /hub/communication-v2/api/visit/set",
+  "module": "communication-v2",
+  "method": "POST",
+  "path": "/hub/communication-v2/api/visit/set",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "b6935712-6081-4a78-82f3-d111c09540e3",
+      "name": "POST /hub/communication-v2/api/visit/set",
+      "createdAt": "2026-05-04T08:04:21.537Z",
+      "updatedAt": "2026-05-04T08:04:21.537Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "channelIds": [
+            "ecc24cfb-b8f2-4728-ad9d-c6f6884115c6"
+          ]
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "channelIds": [
+              "ecc24cfb-b8f2-4728-ad9d-c6f6884115c6"
+            ]
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "b6935712-6081-4a78-82f3-d111c09540e3"
+}

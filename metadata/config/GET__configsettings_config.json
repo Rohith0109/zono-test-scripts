@@ -109,6 +109,60 @@
       },
       "tags": [],
       "status": "active"
+    },
+    {
+      "id": "7515d796-a4db-43b9-b550-6ac3834d95cd",
+      "name": "GET /configsettings/config",
+      "createdAt": "2026-05-04T08:04:17.440Z",
+      "updatedAt": "2026-05-04T08:04:17.440Z",
+      "request": {
+        "pathParams": {},
+        "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&module=Catalogue&rollback=false",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.config.catalogueView",
+          "$.config.displayOutOfStock",
+          "$.config.productDetailsPage",
+          "$.config.productDetailsView",
+          "$.config.displayCataloguePrices",
+          "$.config.displayPricesInCatalogue",
+          "$.config.displayOutOfStockTagIfStockIsNotAvailable",
+          "$.module"
+        ],
+        "ignoreResponsePaths": [
+          "$.id",
+          "$.createdDate",
+          "$.updatedDate",
+          "$.workspaceId",
+          "$.divisionId",
+          "$.customerGroupId",
+          "$.customerId",
+          "$.teamMemberId"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&module=Catalogue&rollback=false",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
     }
   ],
   "defaultTestcaseId": "22b1f02e-e8a2-4f32-b1ff-b5d5ec2dcc29"
