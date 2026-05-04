@@ -41,6 +41,42 @@
       },
       "tags": [],
       "status": "active"
+    },
+    {
+      "id": "853d199f-4c02-4465-b9ae-b4441873f83c",
+      "name": "GET /hub/communication-v2/api/communicate/messages",
+      "createdAt": "2026-05-04T08:13:58.054Z",
+      "updatedAt": "2026-05-04T08:13:58.054Z",
+      "request": {
+        "pathParams": {},
+        "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&channelId=0364b804-cbe7-41bd-8142-b1af249c061d&startTimeToken=0&endTimeToken=17778822729950000&limit=25&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&channelId=0364b804-cbe7-41bd-8142-b1af249c061d&startTimeToken=0&endTimeToken=17778822729950000&limit=25&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
     }
   ],
   "defaultTestcaseId": "ccc6fba3-f095-4f76-bbe9-1fc521865c7c"

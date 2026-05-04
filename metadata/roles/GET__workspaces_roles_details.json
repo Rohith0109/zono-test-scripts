@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "endpointKey": "GET /workspaces/roles/details",
+  "module": "roles",
+  "method": "GET",
+  "path": "/workspaces/roles/details",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "80d1b0d9-a106-4eb3-95b7-d38d2acfd3a1",
+      "name": "GET /workspaces/roles/details",
+      "createdAt": "2026-05-04T08:13:52.111Z",
+      "updatedAt": "2026-05-04T08:13:52.111Z",
+      "request": {
+        "pathParams": {},
+        "query": "",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "unknown": {
+          "pathParams": {},
+          "query": "",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "80d1b0d9-a106-4eb3-95b7-d38d2acfd3a1"
+}

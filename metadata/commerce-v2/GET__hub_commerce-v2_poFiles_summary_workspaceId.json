@@ -53,6 +53,54 @@
       },
       "tags": [],
       "status": "active"
+    },
+    {
+      "id": "b2739f8b-8e26-40bc-b5e8-403e67d19cf6",
+      "name": "GET /hub/commerce-v2/poFiles/summary/{workspaceId}",
+      "createdAt": "2026-05-04T08:13:56.519Z",
+      "updatedAt": "2026-05-04T08:13:56.519Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&customerId=a4800466-ba92-4687-a0b0-783063d62ae9",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.totalSKUCount",
+          "$.grossOrderValue",
+          "$.totalDiscount",
+          "$.totalTax",
+          "$.totalItemsCount",
+          "$.totalOrderValue",
+          "$.grossOrderNumber"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&customerId=a4800466-ba92-4687-a0b0-783063d62ae9",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
     }
   ],
   "defaultTestcaseId": "3106ee7a-d7b9-49fe-852f-f6da4ddf7d58"

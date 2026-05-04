@@ -104,6 +104,285 @@
       },
       "tags": [],
       "status": "active"
+    },
+    {
+      "id": "1c75b6da-af80-45e4-8d03-f31118b699d2",
+      "name": "POST /hub/commerce-v2/orders",
+      "createdAt": "2026-05-04T08:13:57.337Z",
+      "updatedAt": "2026-05-04T08:13:57.337Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "customerId": "a4800466-ba92-4687-a0b0-783063d62ae9",
+          "pageNo": 1,
+          "skip": 0,
+          "pageSize": 2,
+          "sortBy": "orderDate",
+          "sortDirection": "DESC",
+          "includeInvoice": true,
+          "includeStatus": true,
+          "startDate": "2026-04-04T08:11:13.095Z",
+          "endDate": "2026-05-04T08:11:13.095Z",
+          "searchKeyword": "",
+          "filterModel": {
+            "customerIds": [
+              "a4800466-ba92-4687-a0b0-783063d62ae9"
+            ]
+          }
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          400
+        ],
+        "requiredResponsePaths": [
+          "$.statusCode",
+          "$.message.method",
+          "$.message.body.pageNo",
+          "$.message.body.skip",
+          "$.message.body.pageSize",
+          "$.message.body.sortBy",
+          "$.message.body.sortDirection",
+          "$.message.body.includeInvoice",
+          "$.message.body.includeStatus",
+          "$.message.body.searchKeyword",
+          "$.message.body.filterModel",
+          "$.message.url",
+          "$.message.message"
+        ],
+        "ignoreResponsePaths": [
+          "$.message.body.workspaceId",
+          "$.message.body.customerId",
+          "$.message.body.startDate",
+          "$.message.body.endDate",
+          "$.message.query.sellerWorkspaceId",
+          "$.message.query.workspaceId",
+          "$.message.channelId",
+          "$.message.requestId",
+          "$.message.workspaceId",
+          "$.timestamp"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+            "customerId": "a4800466-ba92-4687-a0b0-783063d62ae9",
+            "pageNo": 1,
+            "skip": 0,
+            "pageSize": 2,
+            "sortBy": "orderDate",
+            "sortDirection": "DESC",
+            "includeInvoice": true,
+            "includeStatus": true,
+            "startDate": "2026-04-04T08:11:13.095Z",
+            "endDate": "2026-05-04T08:11:13.095Z",
+            "searchKeyword": "",
+            "filterModel": {
+              "customerIds": [
+                "a4800466-ba92-4687-a0b0-783063d62ae9"
+              ]
+            }
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "c8225bc0-7b81-40f4-af13-195d4f28a034",
+      "name": "POST /hub/commerce-v2/orders",
+      "createdAt": "2026-05-04T08:13:57.337Z",
+      "updatedAt": "2026-05-04T08:13:57.337Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "customerId": "",
+          "pageNo": 1,
+          "pageSize": 10,
+          "sortBy": "",
+          "sortDirection": "DESC",
+          "includeSummary": true,
+          "includeInvoice": true,
+          "includeCustomer": true,
+          "includeStatus": true,
+          "includeCFA": true,
+          "includeDivision": true,
+          "searchKeyword": "",
+          "startDate": "2026-04-27T13:41:43+05:30",
+          "endDate": "2026-05-04T13:41:43+05:30",
+          "filterModel": {
+            "cfaIds": [],
+            "status": [
+              "SubmittedByCustomer"
+            ],
+            "customerIds": [],
+            "tagIds": [],
+            "sourceFilter": ""
+          },
+          "skip": 1
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+            "customerId": "",
+            "pageNo": 1,
+            "pageSize": 10,
+            "sortBy": "",
+            "sortDirection": "DESC",
+            "includeSummary": true,
+            "includeInvoice": true,
+            "includeCustomer": true,
+            "includeStatus": true,
+            "includeCFA": true,
+            "includeDivision": true,
+            "searchKeyword": "",
+            "startDate": "2026-04-27T13:41:43+05:30",
+            "endDate": "2026-05-04T13:41:43+05:30",
+            "filterModel": {
+              "cfaIds": [],
+              "status": [
+                "SubmittedByCustomer"
+              ],
+              "customerIds": [],
+              "tagIds": [],
+              "sourceFilter": ""
+            },
+            "skip": 1
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "d447274d-0402-43cc-9c99-586763d780db",
+      "name": "POST /hub/commerce-v2/orders",
+      "createdAt": "2026-05-04T08:13:57.337Z",
+      "updatedAt": "2026-05-04T08:13:57.337Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "customerId": "",
+          "pageNo": 1,
+          "pageSize": 40,
+          "sortBy": "orderPlacedAt",
+          "sortDirection": "DESC",
+          "includeSummary": true,
+          "includeInvoice": true,
+          "includeCustomer": true,
+          "includeStatus": true,
+          "includeCFA": true,
+          "includeDivision": true,
+          "searchKeyword": "",
+          "startDate": "2026-04-27T13:41:43+05:30",
+          "endDate": "2026-05-04T13:41:43+05:30",
+          "filterModel": {
+            "headDivisionIds": [],
+            "divisionIds": [],
+            "cfaIds": [],
+            "status": [],
+            "customerIds": [],
+            "tagIds": [],
+            "sourceFilter": ""
+          },
+          "skip": 1
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+            "customerId": "",
+            "pageNo": 1,
+            "pageSize": 40,
+            "sortBy": "orderPlacedAt",
+            "sortDirection": "DESC",
+            "includeSummary": true,
+            "includeInvoice": true,
+            "includeCustomer": true,
+            "includeStatus": true,
+            "includeCFA": true,
+            "includeDivision": true,
+            "searchKeyword": "",
+            "startDate": "2026-04-27T13:41:43+05:30",
+            "endDate": "2026-05-04T13:41:43+05:30",
+            "filterModel": {
+              "headDivisionIds": [],
+              "divisionIds": [],
+              "cfaIds": [],
+              "status": [],
+              "customerIds": [],
+              "tagIds": [],
+              "sourceFilter": ""
+            },
+            "skip": 1
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
     }
   ],
   "defaultTestcaseId": "16a9c91f-125a-41f5-80bf-648c5db78b69"

@@ -163,6 +163,165 @@
       },
       "tags": [],
       "status": "active"
+    },
+    {
+      "id": "73e55412-d28b-4602-9ca9-c1fe0c69e1dc",
+      "name": "GET /configsettings/config",
+      "createdAt": "2026-05-04T08:13:52.730Z",
+      "updatedAt": "2026-05-04T08:13:52.730Z",
+      "request": {
+        "pathParams": {},
+        "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&module=Order&rollback=false",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.config.orderSplitBy",
+          "$.config.priceRoundOff",
+          "$.config.salesRepAutoAccept",
+          "$.config.cfaApprovalRequired",
+          "$.config.priceRoundOffStrategy",
+          "$.config.considerMoqWhenQtyNotFound",
+          "$.config.showCustomerOutstandingAndCreditLimitInCart",
+          "$.module"
+        ],
+        "ignoreResponsePaths": [
+          "$.id",
+          "$.createdDate",
+          "$.updatedDate",
+          "$.config.orderCutOffTime",
+          "$.workspaceId",
+          "$.divisionId",
+          "$.customerGroupId",
+          "$.customerId",
+          "$.teamMemberId"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&module=Order&rollback=false",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "b3118729-1bde-4d50-9038-e24ba14ecf6b",
+      "name": "GET /configsettings/config",
+      "createdAt": "2026-05-04T08:13:52.730Z",
+      "updatedAt": "2026-05-04T08:13:52.730Z",
+      "request": {
+        "pathParams": {},
+        "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&module=Catalogue&rollback=false",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.config.catalogueView",
+          "$.config.displayOutOfStock",
+          "$.config.productDetailsPage",
+          "$.config.productDetailsView",
+          "$.config.displayCataloguePrices",
+          "$.config.displayPricesInCatalogue",
+          "$.config.displayOutOfStockTagIfStockIsNotAvailable",
+          "$.module"
+        ],
+        "ignoreResponsePaths": [
+          "$.id",
+          "$.createdDate",
+          "$.updatedDate",
+          "$.workspaceId",
+          "$.divisionId",
+          "$.customerGroupId",
+          "$.customerId",
+          "$.teamMemberId"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&module=Catalogue&rollback=false",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "254c3701-7da0-445e-b398-d998093b5852",
+      "name": "GET /configsettings/config",
+      "createdAt": "2026-05-04T08:13:52.730Z",
+      "updatedAt": "2026-05-04T08:13:52.730Z",
+      "request": {
+        "pathParams": {},
+        "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&module=Turnover&rollback=false&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.config.schema_type",
+          "$.config.selection_type",
+          "$.config.slab_application_level",
+          "$.module"
+        ],
+        "ignoreResponsePaths": [
+          "$.id",
+          "$.createdDate",
+          "$.updatedDate",
+          "$.workspaceId",
+          "$.divisionId",
+          "$.customerGroupId",
+          "$.customerId",
+          "$.teamMemberId"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&module=Turnover&rollback=false&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
     }
   ],
   "defaultTestcaseId": "22b1f02e-e8a2-4f32-b1ff-b5d5ec2dcc29"

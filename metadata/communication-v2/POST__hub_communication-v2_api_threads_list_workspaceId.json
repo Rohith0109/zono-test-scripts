@@ -155,6 +155,156 @@
       },
       "tags": [],
       "status": "active"
+    },
+    {
+      "id": "08faa027-04a0-4a9d-9039-a1550431cbf9",
+      "name": "POST /hub/communication-v2/api/threads/list/{workspaceId}",
+      "createdAt": "2026-05-04T08:13:56.210Z",
+      "updatedAt": "2026-05-04T08:13:56.210Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "filter": {
+            "channelType": [
+              "C",
+              "CUST"
+            ],
+            "teamMemberIds": [],
+            "divisionIds": [],
+            "cfaIds": [],
+            "status": {
+              "campaign": [],
+              "dispatch": [],
+              "invoice": [],
+              "order": [],
+              "payment": [],
+              "priceList": [],
+              "transactionType": []
+            },
+            "routes": [],
+            "customerSegment": [],
+            "customers": []
+          },
+          "searchAfterTimestamp": null,
+          "pageSize": 100
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "filter": {
+              "channelType": [
+                "C",
+                "CUST"
+              ],
+              "teamMemberIds": [],
+              "divisionIds": [],
+              "cfaIds": [],
+              "status": {
+                "campaign": [],
+                "dispatch": [],
+                "invoice": [],
+                "order": [],
+                "payment": [],
+                "priceList": [],
+                "transactionType": []
+              },
+              "routes": [],
+              "customerSegment": [],
+              "customers": []
+            },
+            "searchAfterTimestamp": null,
+            "pageSize": 100
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "ccf8f08e-1399-467e-99f8-1b1c8d95c0ec",
+      "name": "POST /hub/communication-v2/api/threads/list/{workspaceId}",
+      "createdAt": "2026-05-04T08:13:56.210Z",
+      "updatedAt": "2026-05-04T08:13:56.210Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "filter": {
+            "channelType": [
+              "C",
+              "CUST"
+            ]
+          },
+          "searchAfterTimestamp": null,
+          "pageSize": 100
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "filter": {
+              "channelType": [
+                "C",
+                "CUST"
+              ]
+            },
+            "searchAfterTimestamp": null,
+            "pageSize": 100
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
     }
   ],
   "defaultTestcaseId": "bef066d4-006c-4423-b54c-b3bcd78fdad0"

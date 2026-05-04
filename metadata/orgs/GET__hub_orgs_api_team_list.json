@@ -41,6 +41,114 @@
       },
       "tags": [],
       "status": "active"
+    },
+    {
+      "id": "9093dee6-45d3-458b-b130-bd6ea9abf9e9",
+      "name": "GET /hub/orgs/api/team/list",
+      "createdAt": "2026-05-04T08:13:56.927Z",
+      "updatedAt": "2026-05-04T08:13:56.927Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeInactive=true&includePendingInvites=true&includeTeamCustomersMapping=true&userType=TeamOwner&userType=CFA&userType=M",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeInactive=true&includePendingInvites=true&includeTeamCustomersMapping=true&userType=TeamOwner&userType=CFA&userType=M",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "e44847ac-9239-4faa-b6e1-d62589f87e55",
+      "name": "GET /hub/orgs/api/team/list",
+      "createdAt": "2026-05-04T08:13:56.927Z",
+      "updatedAt": "2026-05-04T08:13:56.927Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&page=1&pageSize=20&includeInactive=false&includePendingInvites=false&includeTeamCustomersMapping=true&userType=TeamOwner&userType=CFA&userType=M",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&page=1&pageSize=20&includeInactive=false&includePendingInvites=false&includeTeamCustomersMapping=true&userType=TeamOwner&userType=CFA&userType=M",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "7cbff441-8f0c-45d1-99ae-296ffe428b5e",
+      "name": "GET /hub/orgs/api/team/list",
+      "createdAt": "2026-05-04T08:13:56.927Z",
+      "updatedAt": "2026-05-04T08:13:56.927Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&page=1&pageSize=20&includeTeamCustomersMapping=true&includePendingInvites=true&includeBeatPlanCount=true&includeCfaAndDivisions=true&includeInactive=true&userType=Sales",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&page=1&pageSize=20&includeTeamCustomersMapping=true&includePendingInvites=true&includeBeatPlanCount=true&includeCfaAndDivisions=true&includeInactive=true&userType=Sales",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
     }
   ],
   "defaultTestcaseId": "14eb67ed-dac4-4e0a-a83d-2d0720841c13"

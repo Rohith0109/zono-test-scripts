@@ -48,6 +48,110 @@
       },
       "tags": [],
       "status": "active"
+    },
+    {
+      "id": "5642d817-6056-4bc5-902c-e8bad5ce2544",
+      "name": "GET /invoiceservice/payments",
+      "createdAt": "2026-05-04T08:14:00.031Z",
+      "updatedAt": "2026-05-04T08:14:00.031Z",
+      "request": {
+        "pathParams": {},
+        "query": "?startDate=2026-04-04T08%3A11%3A13.097Z&endDate=2026-05-04T08%3A11%3A13.097Z&pageNo=1&pageSize=2&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeSettlement=false&inviteIds=a4800466-ba92-4687-a0b0-783063d62ae9",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.payments[0].customerName",
+          "$.payments[0].customerCode",
+          "$.payments[0].paymentRefCode",
+          "$.payments[0].paymentType",
+          "$.payments[0].paymentMode",
+          "$.payments[0].status",
+          "$.payments[0].subStatus",
+          "$.payments[0].currencyCode",
+          "$.payments[0].instrumentNumber",
+          "$.payments[0].bankName",
+          "$.payments[0].bankAccountNumber",
+          "$.payments[0].bankReference",
+          "$.payments[0].referenceTransactionNumber",
+          "$.payments[0].narration",
+          "$.payments[0].teamMemberName",
+          "$.payments[0].source",
+          "$.payments[0].invoices",
+          "$.payments[0].doctype"
+        ],
+        "ignoreResponsePaths": [
+          "$.payments[0].id",
+          "$.payments[0].paymentRequestId",
+          "$.payments[0].paymentDate",
+          "$.payments[0].amountPaid",
+          "$.payments[0].upiId",
+          "$.payments[0].inviteId",
+          "$.payments[0].sellerWorkspaceId",
+          "$.payments[0].buyerWorkspaceId",
+          "$.payments[0].createdDate",
+          "$.payments[0].updatedDate",
+          "$.payments[0].instrumentDate",
+          "$.payments[0].teamMemberId"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?startDate=2026-04-04T08%3A11%3A13.097Z&endDate=2026-05-04T08%3A11%3A13.097Z&pageNo=1&pageSize=2&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeSettlement=false&inviteIds=a4800466-ba92-4687-a0b0-783063d62ae9",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "b757dd39-8076-4313-8d82-207634565f8b",
+      "name": "GET /invoiceservice/payments",
+      "createdAt": "2026-05-04T08:14:00.031Z",
+      "updatedAt": "2026-05-04T08:14:00.031Z",
+      "request": {
+        "pathParams": {},
+        "query": "?endDate=2026-05-04%2023%3A59%3A59&startDate=2026-04-04%2000%3A00%3A00&pageNo=1&pageSize=20&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeSettlement=true",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?endDate=2026-05-04%2023%3A59%3A59&startDate=2026-04-04%2000%3A00%3A00&pageNo=1&pageSize=20&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeSettlement=true",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
     }
   ],
   "defaultTestcaseId": "4feea717-9caa-46fb-aa3f-f829927aa83b"

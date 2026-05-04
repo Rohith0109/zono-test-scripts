@@ -73,6 +73,74 @@
       },
       "tags": [],
       "status": "active"
+    },
+    {
+      "id": "c5b33b6a-ad29-48dd-b59c-170ad5276c9e",
+      "name": "GET /hub/orgs/api/customer/details",
+      "createdAt": "2026-05-04T08:13:59.729Z",
+      "updatedAt": "2026-05-04T08:13:59.729Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&inviteId=a4800466-ba92-4687-a0b0-783063d62ae9&includeInactive=true&includeCFA=false",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.name",
+          "$.email",
+          "$.companyName",
+          "$.gstin",
+          "$.businessPAN",
+          "$.distributorCode",
+          "$.postalCode",
+          "$.importSource",
+          "$.location.lat",
+          "$.location.lng",
+          "$.physicalAddress",
+          "$.shippingAddress.countryCode",
+          "$.shippingAddress.city",
+          "$.shippingAddress.state",
+          "$.shippingAddress.pincode",
+          "$.distributorChannel",
+          "$.CSTNumber",
+          "$.telephone",
+          "$.cityName",
+          "$.grossCreditLimit",
+          "$.creditLimitPeriod",
+          "$.tags",
+          "$.fulfillmentLocationCode"
+        ],
+        "ignoreResponsePaths": [
+          "$.id",
+          "$.inviteId",
+          "$.token",
+          "$.cityId",
+          "$.districtId",
+          "$.createdDate",
+          "$.updatedDate"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&inviteId=a4800466-ba92-4687-a0b0-783063d62ae9&includeInactive=true&includeCFA=false",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
     }
   ],
   "defaultTestcaseId": "ef4e4be4-5ebd-474b-8d53-95593765b523"

@@ -181,6 +181,50 @@
       },
       "tags": [],
       "status": "active"
+    },
+    {
+      "id": "8cafed8d-3d75-44d4-b6cf-8e26193adbc7",
+      "name": "GET /hub/communication-v2/api/centrifugo/token",
+      "createdAt": "2026-05-04T08:13:53.254Z",
+      "updatedAt": "2026-05-04T08:13:53.254Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.websocketUrl",
+          "$.subscriptions[0].channel"
+        ],
+        "ignoreResponsePaths": [
+          "$.userId",
+          "$.sellerWorkspaceId",
+          "$.token",
+          "$.subscriptions[0].token"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
     }
   ],
   "defaultTestcaseId": "6d7736bc-737d-498e-aebb-9a9b6bd9a221"
