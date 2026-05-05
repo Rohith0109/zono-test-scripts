@@ -1,0 +1,125 @@
+{
+  "version": 2,
+  "endpointKey": "POST /hub/reports/api/v1/field-ops/weekly-sales-report",
+  "module": "reports",
+  "method": "POST",
+  "path": "/hub/reports/api/v1/field-ops/weekly-sales-report",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "d4cb1f2d-2a86-47c9-8dc9-c6d28adbed28",
+      "name": "POST /hub/reports/api/v1/field-ops/weekly-sales-report",
+      "createdAt": "2026-05-04T08:14:08.258Z",
+      "updatedAt": "2026-05-04T08:14:08.258Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "month": "2026-05",
+          "routeId": "",
+          "dynamicSegmentId": ""
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.week[0].name",
+          "$.week[0].totalSalesValue",
+          "$.week[0].totalSales",
+          "$.week[0].meetingsPlanned",
+          "$.week[0].meetingsAchieved",
+          "$.week[0].totalFieldSales",
+          "$.week[0].totalInvoiceValue"
+        ],
+        "ignoreResponsePaths": [
+          "$.week[0].startDate",
+          "$.week[0].endDate"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "month": "2026-05",
+            "routeId": "",
+            "dynamicSegmentId": ""
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "73ad203f-8693-4581-ad23-0a4e49809932",
+      "name": "POST /hub/reports/api/v1/field-ops/weekly-sales-report",
+      "createdAt": "2026-05-04T08:14:08.258Z",
+      "updatedAt": "2026-05-04T08:14:08.258Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "month": "2026-05",
+          "routeId": "5464c80b-6b8c-408b-bfd7-c291d0447450",
+          "dynamicSegmentId": ""
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.week[0].name",
+          "$.week[0].totalSalesValue",
+          "$.week[0].totalSales",
+          "$.week[0].meetingsPlanned",
+          "$.week[0].meetingsAchieved",
+          "$.week[0].totalFieldSales",
+          "$.week[0].totalInvoiceValue"
+        ],
+        "ignoreResponsePaths": [
+          "$.week[0].startDate",
+          "$.week[0].endDate"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "month": "2026-05",
+            "routeId": "5464c80b-6b8c-408b-bfd7-c291d0447450",
+            "dynamicSegmentId": ""
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "d4cb1f2d-2a86-47c9-8dc9-c6d28adbed28"
+}

@@ -59,6 +59,60 @@
       },
       "tags": [],
       "status": "active"
+    },
+    {
+      "id": "3e81d541-bc94-47c9-81f0-0882505f5790",
+      "name": "POST /hub/commerce-v2/categories/{workspaceId}",
+      "createdAt": "2026-05-04T08:14:06.044Z",
+      "updatedAt": "2026-05-04T08:14:06.044Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "pageSize": 20,
+          "pageNo": 1,
+          "toplevelOnly": false,
+          "includeProductCount": true,
+          "sortOrder": ""
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "pageSize": 20,
+            "pageNo": 1,
+            "toplevelOnly": false,
+            "includeProductCount": true,
+            "sortOrder": ""
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
     }
   ],
   "defaultTestcaseId": "38e8b2c6-6946-4a78-a85e-314d4a0bf8ce"

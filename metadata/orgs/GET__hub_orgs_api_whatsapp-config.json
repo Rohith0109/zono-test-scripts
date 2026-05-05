@@ -1,0 +1,147 @@
+{
+  "version": 2,
+  "endpointKey": "GET /hub/orgs/api/whatsapp-config",
+  "module": "orgs",
+  "method": "GET",
+  "path": "/hub/orgs/api/whatsapp-config",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "ece243e0-7938-4118-823d-dae5cba4787c",
+      "name": "GET /hub/orgs/api/whatsapp-config",
+      "createdAt": "2026-05-04T08:04:17.850Z",
+      "updatedAt": "2026-05-04T08:04:17.850Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$[0].whatsappPhoneNo",
+          "$[0].provider",
+          "$[0].qualityRating",
+          "$[0].messageLimit",
+          "$[0].isDefault",
+          "$[0].isShared",
+          "$[0].isDeleted",
+          "$[0].deletedAt",
+          "$[0].status",
+          "$[0].displayName",
+          "$[0].authCode",
+          "$[0].profilePic",
+          "$[0].isCoexistence",
+          "$[0].branch",
+          "$[0].tag",
+          "$[0].info",
+          "$[0].isCatalogueSyncEnable",
+          "$[0].languages[0]"
+        ],
+        "ignoreResponsePaths": [
+          "$[0].id",
+          "$[0].createdDate",
+          "$[0].updatedDate",
+          "$[0].workspaceId",
+          "$[0].wabaId",
+          "$[0].whatsappPhoneNoId",
+          "$[0].namespaceId",
+          "$[0].metaBusinessToken",
+          "$[0].sid",
+          "$[0].projectId",
+          "$[0].esLinkID",
+          "$[0].fbmId"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "1356cafe-befb-411b-a7b8-09120223d0f4",
+      "name": "GET /hub/orgs/api/whatsapp-config",
+      "createdAt": "2026-05-04T08:13:55.491Z",
+      "updatedAt": "2026-05-04T08:13:55.491Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$[0].whatsappPhoneNo",
+          "$[0].provider",
+          "$[0].qualityRating",
+          "$[0].messageLimit",
+          "$[0].isDefault",
+          "$[0].isShared",
+          "$[0].isDeleted",
+          "$[0].deletedAt",
+          "$[0].status",
+          "$[0].displayName",
+          "$[0].authCode",
+          "$[0].profilePic",
+          "$[0].isCoexistence",
+          "$[0].branch",
+          "$[0].tag",
+          "$[0].info",
+          "$[0].isCatalogueSyncEnable",
+          "$[0].languages[0]"
+        ],
+        "ignoreResponsePaths": [
+          "$[0].id",
+          "$[0].createdDate",
+          "$[0].updatedDate",
+          "$[0].workspaceId",
+          "$[0].wabaId",
+          "$[0].whatsappPhoneNoId",
+          "$[0].namespaceId",
+          "$[0].metaBusinessToken",
+          "$[0].sid",
+          "$[0].projectId",
+          "$[0].esLinkID",
+          "$[0].fbmId"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "ece243e0-7938-4118-823d-dae5cba4787c"
+}

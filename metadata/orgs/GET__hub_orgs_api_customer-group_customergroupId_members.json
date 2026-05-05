@@ -1,0 +1,66 @@
+{
+  "version": 2,
+  "endpointKey": "GET /hub/orgs/api/customer-group/{customergroupId}/members",
+  "module": "orgs",
+  "method": "GET",
+  "path": "/hub/orgs/api/customer-group/{customergroupId}/members",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "36e65a8e-4b8f-4484-909c-0dbbf1cb6313",
+      "name": "GET /hub/orgs/api/customer-group/{customergroupId}/members",
+      "createdAt": "2026-05-04T08:14:04.910Z",
+      "updatedAt": "2026-05-04T08:14:04.910Z",
+      "request": {
+        "pathParams": {
+          "customergroupId": "12bea929-cc48-4f06-a9fa-275f5592bdcb"
+        },
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&pageNo=1&pageSize=20",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.customerGroupMembers[0].name",
+          "$.customerGroupMembers[0].companyName",
+          "$.customerGroupMembers[0].phone",
+          "$.customerGroupMembers[0].address",
+          "$.customerGroupMembers[0].divisionIds",
+          "$.customerGroupMembers[0].cfaIds",
+          "$.customerGroupMembers[0].visits",
+          "$.totalCount",
+          "$.startRecord",
+          "$.endRecord",
+          "$.totalPages"
+        ],
+        "ignoreResponsePaths": [
+          "$.customerGroupMembers[0].id",
+          "$.customerGroupMembers[0].customerId"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "customergroupId": "12bea929-cc48-4f06-a9fa-275f5592bdcb"
+          },
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&pageNo=1&pageSize=20",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "36e65a8e-4b8f-4484-909c-0dbbf1cb6313"
+}

@@ -1,0 +1,59 @@
+{
+  "version": 2,
+  "endpointKey": "GET /hub/orgs/api/customer-group/filters/{filterId}",
+  "module": "orgs",
+  "method": "GET",
+  "path": "/hub/orgs/api/customer-group/filters/{filterId}",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "87710682-ba7f-4c41-b2c4-90315ad7625a",
+      "name": "GET /hub/orgs/api/customer-group/filters/{filterId}",
+      "createdAt": "2026-05-04T08:14:05.323Z",
+      "updatedAt": "2026-05-04T08:14:05.323Z",
+      "request": {
+        "pathParams": {
+          "filterId": "12bea929-cc48-4f06-a9fa-275f5592bdcb"
+        },
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.cfas[0].name",
+          "$.divisions[0].name",
+          "$.divisions[0].code"
+        ],
+        "ignoreResponsePaths": [
+          "$.cfas[0].id",
+          "$.cfas[0].cfaId",
+          "$.divisions[0].id"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "filterId": "12bea929-cc48-4f06-a9fa-275f5592bdcb"
+          },
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "87710682-ba7f-4c41-b2c4-90315ad7625a"
+}

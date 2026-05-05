@@ -1,0 +1,251 @@
+{
+  "version": 2,
+  "endpointKey": "POST /hub/reports/api/v2/dashboard/segment-analysis/details",
+  "module": "reports",
+  "method": "POST",
+  "path": "/hub/reports/api/v2/dashboard/segment-analysis/details",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "d7ca0c35-b707-4d3e-8702-0c1ce69839df",
+      "name": "POST /hub/reports/api/v2/dashboard/segment-analysis/details",
+      "createdAt": "2026-05-04T08:13:54.508Z",
+      "updatedAt": "2026-05-04T08:13:54.508Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "startDate": "2026-05-03",
+          "endDate": "2026-05-09",
+          "compare": true,
+          "metric": "value",
+          "type": "category",
+          "filters": {},
+          "transactionType": "invoice"
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+            "startDate": "2026-05-03",
+            "endDate": "2026-05-09",
+            "compare": true,
+            "metric": "value",
+            "type": "category",
+            "filters": {},
+            "transactionType": "invoice"
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "a499ceca-05ba-44fb-af63-4f8f90000290",
+      "name": "POST /hub/reports/api/v2/dashboard/segment-analysis/details",
+      "createdAt": "2026-05-04T08:13:54.508Z",
+      "updatedAt": "2026-05-04T08:13:54.508Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "startDate": "2026-05-03",
+          "endDate": "2026-05-09",
+          "compare": true,
+          "metric": "value",
+          "type": "state",
+          "filters": {},
+          "transactionType": "invoice"
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+            "startDate": "2026-05-03",
+            "endDate": "2026-05-09",
+            "compare": true,
+            "metric": "value",
+            "type": "state",
+            "filters": {},
+            "transactionType": "invoice"
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "395f80e5-0fc2-4089-9adb-d84b7fa0b920",
+      "name": "POST /hub/reports/api/v2/dashboard/segment-analysis/details",
+      "createdAt": "2026-05-04T08:13:54.508Z",
+      "updatedAt": "2026-05-04T08:13:54.508Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "startDate": "2026-05-03",
+          "endDate": "2026-05-09",
+          "compare": true,
+          "metric": "value",
+          "type": "customer",
+          "filters": {},
+          "transactionType": "invoice"
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+            "startDate": "2026-05-03",
+            "endDate": "2026-05-09",
+            "compare": true,
+            "metric": "value",
+            "type": "customer",
+            "filters": {},
+            "transactionType": "invoice"
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "12cac54e-4b86-495a-83c9-b0423ffc5bd9",
+      "name": "POST /hub/reports/api/v2/dashboard/segment-analysis/details",
+      "createdAt": "2026-05-04T08:13:54.508Z",
+      "updatedAt": "2026-05-04T08:13:54.508Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "startDate": "2026-05-03",
+          "endDate": "2026-05-09",
+          "compare": true,
+          "metric": "value",
+          "type": "product",
+          "filters": {},
+          "transactionType": "invoice",
+          "drilldownBy": {
+            "type": "category",
+            "id": ""
+          }
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+            "startDate": "2026-05-03",
+            "endDate": "2026-05-09",
+            "compare": true,
+            "metric": "value",
+            "type": "product",
+            "filters": {},
+            "transactionType": "invoice",
+            "drilldownBy": {
+              "type": "category",
+              "id": ""
+            }
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "d7ca0c35-b707-4d3e-8702-0c1ce69839df"
+}

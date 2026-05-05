@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "endpointKey": "POST /invoiceservice/payments/filters",
+  "module": "payments",
+  "method": "POST",
+  "path": "/invoiceservice/payments/filters",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "967d4001-e46a-4ff4-8eab-01fea76e77fd",
+      "name": "POST /invoiceservice/payments/filters",
+      "createdAt": "2026-05-04T08:14:07.039Z",
+      "updatedAt": "2026-05-04T08:14:07.039Z",
+      "request": {
+        "pathParams": {},
+        "query": "",
+        "body": {
+          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.status[0]",
+          "$.docType[0]",
+          "$.paymentMode[0]",
+          "$.inviteIds[0].name",
+          "$.statusCode",
+          "$.responseStatus"
+        ],
+        "ignoreResponsePaths": [
+          "$.inviteIds[0].id"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "unknown": {
+          "pathParams": {},
+          "query": "",
+          "body": {
+            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "967d4001-e46a-4ff4-8eab-01fea76e77fd"
+}
