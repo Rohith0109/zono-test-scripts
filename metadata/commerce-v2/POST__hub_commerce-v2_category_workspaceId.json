@@ -1,0 +1,95 @@
+{
+  "version": 2,
+  "endpointKey": "POST /hub/commerce-v2/category/{workspaceId}",
+  "module": "commerce-v2",
+  "method": "POST",
+  "path": "/hub/commerce-v2/category/{workspaceId}",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "8a94e25e-db6c-4e79-9fe0-b814700ab128",
+      "name": "POST /hub/commerce-v2/category/{workspaceId}",
+      "createdAt": "2026-05-05T11:45:08.871Z",
+      "updatedAt": "2026-05-05T11:45:08.871Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "languageCode": "en",
+          "name": "Test Category 600",
+          "categoryCode": "2526562666",
+          "description": ""
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.translations[0].name",
+          "$.translations[0].languageCode",
+          "$.translations[0].categoryCode",
+          "$.translations[0].description",
+          "$.hierarchy",
+          "$.channel.code",
+          "$.channel.defaultLanguageCode",
+          "$.channel.currencyCode",
+          "$.channel.pricesIncludeTax",
+          "$.channel.applyTax",
+          "$.channel.customFields.workspaceName",
+          "$.channel.defaultShippingZone.name",
+          "$.channel.defaultTaxZone.name",
+          "$.parent.isRoot"
+        ],
+        "ignoreResponsePaths": [
+          "$.parentId",
+          "$.translations[0].createdAt",
+          "$.translations[0].updatedAt",
+          "$.translations[0].id",
+          "$.channel.token",
+          "$.channel.createdAt",
+          "$.channel.updatedAt",
+          "$.channel.id",
+          "$.channel.defaultShippingZone.createdAt",
+          "$.channel.defaultShippingZone.updatedAt",
+          "$.channel.defaultShippingZone.id",
+          "$.channel.defaultTaxZone.createdAt",
+          "$.channel.defaultTaxZone.updatedAt",
+          "$.channel.defaultTaxZone.id",
+          "$.parent.createdAt",
+          "$.parent.updatedAt"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "languageCode": "en",
+            "name": "Test Category 600",
+            "categoryCode": "2526562666",
+            "description": ""
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "8a94e25e-db6c-4e79-9fe0-b814700ab128"
+}
