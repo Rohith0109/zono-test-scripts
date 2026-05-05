@@ -149,6 +149,42 @@
       },
       "tags": [],
       "status": "active"
+    },
+    {
+      "id": "744260a6-2bc9-46a2-b40a-00e9fd696ed7",
+      "name": "GET /hub/orgs/api/team/list",
+      "createdAt": "2026-05-05T11:33:06.184Z",
+      "updatedAt": "2026-05-05T11:33:06.184Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeInactive=true&includePendingInvites=true&includeTeamCustomersMapping=true&includeCfaAndDivisions=true&page=1&pageSize=20&userType=TeamOwner&userType=CFA&userType=M",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeInactive=true&includePendingInvites=true&includeTeamCustomersMapping=true&includeCfaAndDivisions=true&page=1&pageSize=20&userType=TeamOwner&userType=CFA&userType=M",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
     }
   ],
   "defaultTestcaseId": "14eb67ed-dac4-4e0a-a83d-2d0720841c13"
