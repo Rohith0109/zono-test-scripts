@@ -1,0 +1,83 @@
+{
+  "version": 2,
+  "endpointKey": "GET /hub/orgs/api/team/details/{workspaceId}",
+  "module": "orgs",
+  "method": "GET",
+  "path": "/hub/orgs/api/team/details/{workspaceId}",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "1f876ceb-f1d7-48a0-82f6-0760b4fb512d",
+      "name": "GET /hub/orgs/api/team/details/{workspaceId}",
+      "createdAt": "2026-05-05T11:33:07.217Z",
+      "updatedAt": "2026-05-05T11:33:07.217Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?teamMemberId=be45b221-e715-491c-bf6a-1543a8e272c8&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.mobile",
+          "$.name",
+          "$.employeeCode",
+          "$.userRole[0].slug",
+          "$.userRole[0].title",
+          "$.inviteStatus",
+          "$.cityName",
+          "$.profilePic",
+          "$.address",
+          "$.email",
+          "$.inviteType",
+          "$.isActive",
+          "$.isArchive",
+          "$.userType",
+          "$.departmentCode",
+          "$.departmentName",
+          "$.cfas[0].isDefault",
+          "$.cfas[0].supCode",
+          "$.cfas[0].isActive"
+        ],
+        "ignoreResponsePaths": [
+          "$.id",
+          "$.userId",
+          "$.userRole[0].roleId",
+          "$.userRole[0].inviteId",
+          "$.userRole[0].invitedUserId",
+          "$.createdDate",
+          "$.updatedDate",
+          "$.departmentId",
+          "$.cfas[0].id",
+          "$.cfas[0].createdDate",
+          "$.cfas[0].updatedDate"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?teamMemberId=be45b221-e715-491c-bf6a-1543a8e272c8&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "1f876ceb-f1d7-48a0-82f6-0760b4fb512d"
+}

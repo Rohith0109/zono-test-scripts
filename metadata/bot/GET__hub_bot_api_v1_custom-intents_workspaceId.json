@@ -1,0 +1,60 @@
+{
+  "version": 2,
+  "endpointKey": "GET /hub/bot/api/v1/custom-intents/{workspaceId}",
+  "module": "bot",
+  "method": "GET",
+  "path": "/hub/bot/api/v1/custom-intents/{workspaceId}",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "6170419d-eda5-4efc-bc77-edf4aa8fcfb3",
+      "name": "GET /hub/bot/api/v1/custom-intents/{workspaceId}",
+      "createdAt": "2026-05-05T06:03:08.609Z",
+      "updatedAt": "2026-05-05T06:03:08.609Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$[0].name",
+          "$[0].prompt",
+          "$[0].isActive"
+        ],
+        "ignoreResponsePaths": [
+          "$[0].id",
+          "$[0].workspaceId",
+          "$[0].createdAt",
+          "$[0].updatedAt"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "6170419d-eda5-4efc-bc77-edf4aa8fcfb3"
+}
