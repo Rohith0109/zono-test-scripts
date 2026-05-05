@@ -1,19 +1,19 @@
 {
   "version": 2,
-  "endpointKey": "GET /hub/orgs/api/customers/filters",
-  "module": "orgs",
+  "endpointKey": "GET /hub/bot/api/v1/typebots",
+  "module": "bot",
   "method": "GET",
-  "path": "/hub/orgs/api/customers/filters",
+  "path": "/hub/bot/api/v1/typebots",
   "apiDomain": "https://api-qa.zotok.ai",
   "testcases": [
     {
-      "id": "644197e1-2dfa-448d-b79b-c2a5ba4fb0b9",
-      "name": "GET /hub/orgs/api/customers/filters",
-      "createdAt": "2026-05-04T08:14:03.169Z",
-      "updatedAt": "2026-05-04T08:14:03.169Z",
+      "id": "ed53d222-0de5-4e5b-bec1-eadcd454a72b",
+      "name": "GET /hub/bot/api/v1/typebots",
+      "createdAt": "2026-05-05T06:03:08.288Z",
+      "updatedAt": "2026-05-05T06:03:08.288Z",
       "request": {
         "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeAdditionalSettings=true&includeAnalytics=true&take=20&isPlatForm=true&skip=0",
         "body": null,
         "headers": {
           "authorization": "[REDACTED]"
@@ -32,7 +32,7 @@
       "workspaceScopes": {
         "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
           "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeAdditionalSettings=true&includeAnalytics=true&take=20&isPlatForm=true&skip=0",
           "body": null,
           "headers": {
             "authorization": "[REDACTED]"
@@ -43,13 +43,13 @@
       "status": "active"
     },
     {
-      "id": "eb18e94e-a1b5-40f5-a4aa-349bf6b820cc",
-      "name": "GET /hub/orgs/api/customers/filters",
-      "createdAt": "2026-05-05T06:03:10.621Z",
-      "updatedAt": "2026-05-05T06:03:10.621Z",
+      "id": "a8959877-fe09-49e9-a6f0-da1a6f51fffc",
+      "name": "GET /hub/bot/api/v1/typebots",
+      "createdAt": "2026-05-05T06:03:08.289Z",
+      "updatedAt": "2026-05-05T06:03:08.289Z",
       "request": {
         "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeAdditionalSettings=true&includeAnalytics=true&take=20&skip=0",
         "body": null,
         "headers": {
           "authorization": "[REDACTED]"
@@ -68,7 +68,7 @@
       "workspaceScopes": {
         "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
           "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeAdditionalSettings=true&includeAnalytics=true&take=20&skip=0",
           "body": null,
           "headers": {
             "authorization": "[REDACTED]"
@@ -79,5 +79,5 @@
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "644197e1-2dfa-448d-b79b-c2a5ba4fb0b9"
+  "defaultTestcaseId": "ed53d222-0de5-4e5b-bec1-eadcd454a72b"
 }

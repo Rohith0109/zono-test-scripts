@@ -1,0 +1,59 @@
+{
+  "version": 2,
+  "endpointKey": "POST /hub/orgs/api/docs/zo-file/list/{workspaceId}",
+  "module": "orgs",
+  "method": "POST",
+  "path": "/hub/orgs/api/docs/zo-file/list/{workspaceId}",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "675524bf-b69a-4cf4-b768-c82331b6088f",
+      "name": "POST /hub/orgs/api/docs/zo-file/list/{workspaceId}",
+      "createdAt": "2026-05-05T06:03:09.627Z",
+      "updatedAt": "2026-05-05T06:03:09.627Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "documentType": "knowledge"
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.data.files[0]"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "documentType": "knowledge"
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "675524bf-b69a-4cf4-b768-c82331b6088f"
+}
