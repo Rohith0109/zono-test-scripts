@@ -1,0 +1,53 @@
+{
+  "version": 2,
+  "endpointKey": "DELETE /hub/orgs/api/department/{departmentId}",
+  "module": "orgs",
+  "method": "DELETE",
+  "path": "/hub/orgs/api/department/{departmentId}",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "0c52ad68-3d6b-46c2-93e0-30ff9c28e0f7",
+      "name": "DELETE /hub/orgs/api/department/{departmentId}",
+      "createdAt": "2026-05-04T07:25:39.189Z",
+      "updatedAt": "2026-05-04T07:25:39.189Z",
+      "request": {
+        "pathParams": {
+          "departmentId": "71e8aa1b-2936-4b97-aef6-87e37eb6b560"
+        },
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.message"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "departmentId": "71e8aa1b-2936-4b97-aef6-87e37eb6b560"
+          },
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "0c52ad68-3d6b-46c2-93e0-30ff9c28e0f7"
+}

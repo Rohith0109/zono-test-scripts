@@ -1,0 +1,86 @@
+{
+  "version": 2,
+  "endpointKey": "POST /verifyotp",
+  "module": "verifyotp",
+  "method": "POST",
+  "path": "/verifyotp",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "e2e74134-3729-40d6-9bbb-8463c8809c64",
+      "name": "POST /verifyotp",
+      "createdAt": "2026-05-04T08:13:51.810Z",
+      "updatedAt": "2026-05-04T08:13:51.810Z",
+      "request": {
+        "pathParams": {},
+        "query": "",
+        "body": {
+          "mfaStatus": false,
+          "otp": "[REDACTED]",
+          "authChannel": "mobile",
+          "mobile": "+913203220232"
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.inviteUserType",
+          "$.mobile",
+          "$.firstName",
+          "$.lastName",
+          "$.email",
+          "$.role",
+          "$.profilePic",
+          "$.contentType",
+          "$.systemFirstName",
+          "$.systemLastName",
+          "$.city",
+          "$.subtitle",
+          "$.registeredOn",
+          "$.address",
+          "$.userType",
+          "$.isVerified",
+          "$.isEmailVerified",
+          "$.workspaceRoles[0]"
+        ],
+        "ignoreResponsePaths": [
+          "$.inviteId",
+          "$.id",
+          "$.token",
+          "$.refreshToken",
+          "$.integrationToken",
+          "$.workspaceId",
+          "$.isOtpValid"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "unknown": {
+          "pathParams": {},
+          "query": "",
+          "body": {
+            "mfaStatus": false,
+            "otp": "[REDACTED]",
+            "authChannel": "mobile",
+            "mobile": "+913203220232"
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "e2e74134-3729-40d6-9bbb-8463c8809c64"
+}

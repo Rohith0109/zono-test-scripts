@@ -1,0 +1,51 @@
+{
+  "version": 2,
+  "endpointKey": "GET /invoiceservice/dispatch/{workspaceId}",
+  "module": "dispatch",
+  "method": "GET",
+  "path": "/invoiceservice/dispatch/{workspaceId}",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "d6957d8d-c5d7-465c-a360-a51b2a3b15fc",
+      "name": "GET /invoiceservice/dispatch/{workspaceId}",
+      "createdAt": "2026-05-04T08:14:06.758Z",
+      "updatedAt": "2026-05-04T08:14:06.758Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?page=1&pageSize=20&sortBy=dispatchDate&sortDirection=DESC",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?page=1&pageSize=20&sortBy=dispatchDate&sortDirection=DESC",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "d6957d8d-c5d7-465c-a360-a51b2a3b15fc"
+}

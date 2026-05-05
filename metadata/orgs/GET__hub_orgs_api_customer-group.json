@@ -1,0 +1,169 @@
+{
+  "version": 2,
+  "endpointKey": "GET /hub/orgs/api/customer-group",
+  "module": "orgs",
+  "method": "GET",
+  "path": "/hub/orgs/api/customer-group",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "1a3f0c60-935b-463b-90d6-1bf63a7db42e",
+      "name": "GET /hub/orgs/api/customer-group",
+      "createdAt": "2026-05-04T08:14:04.604Z",
+      "updatedAt": "2026-05-04T08:14:04.604Z",
+      "request": {
+        "pathParams": {},
+        "query": "?customerGroupTypes[]=CUSTOMER_LIFE_CYCLE&customerGroupTypes[]=SEGMENT&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.19115379815337719",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?customerGroupTypes[]=CUSTOMER_LIFE_CYCLE&customerGroupTypes[]=SEGMENT&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.19115379815337719",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "5cff6bfb-af79-4d1f-a5d9-11d2b646a7a1",
+      "name": "GET /hub/orgs/api/customer-group",
+      "createdAt": "2026-05-04T08:14:04.604Z",
+      "updatedAt": "2026-05-04T08:14:04.604Z",
+      "request": {
+        "pathParams": {},
+        "query": "?customerGroupTypes[]=DYNAMIC_SEGMENT&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&pageNo=1&pageSize=10&random=0.6538208241687198",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$[0].groupType",
+          "$[0].supportsHierrarchy",
+          "$[0].folders",
+          "$[0].rootCustomerGroups[0]",
+          "$[0].totalCount",
+          "$[0].startRecord",
+          "$[0].endRecord",
+          "$[0].totalPages"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?customerGroupTypes[]=DYNAMIC_SEGMENT&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&pageNo=1&pageSize=10&random=0.6538208241687198",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "16b8d06f-d90f-4509-a52f-a6c45f15ffa1",
+      "name": "GET /hub/orgs/api/customer-group",
+      "createdAt": "2026-05-04T08:14:04.604Z",
+      "updatedAt": "2026-05-04T08:14:04.604Z",
+      "request": {
+        "pathParams": {},
+        "query": "?customerGroupTypes[]=DYNAMIC_SEGMENT&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&pageNo=1&pageSize=40&startDate=2026-01-01+00%3A00%3A00&endDate=2026-03-13+23%3A59%3A59&random=0.297289225061416",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?customerGroupTypes[]=DYNAMIC_SEGMENT&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&pageNo=1&pageSize=40&startDate=2026-01-01+00%3A00%3A00&endDate=2026-03-13+23%3A59%3A59&random=0.297289225061416",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "672eb525-6e74-4bd5-a842-75a51d79bf06",
+      "name": "GET /hub/orgs/api/customer-group",
+      "createdAt": "2026-05-04T08:14:04.604Z",
+      "updatedAt": "2026-05-04T08:14:04.604Z",
+      "request": {
+        "pathParams": {},
+        "query": "?customerGroupTypes[]=ROUTE&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.7295043077330464",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$[0].groupType",
+          "$[0].supportsHierrarchy",
+          "$[0].folders[0]",
+          "$[0].rootCustomerGroups"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?customerGroupTypes[]=ROUTE&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.7295043077330464",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "1a3f0c60-935b-463b-90d6-1bf63a7db42e"
+}

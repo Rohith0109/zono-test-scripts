@@ -1,0 +1,119 @@
+{
+  "version": 2,
+  "endpointKey": "POST /hub/commerce-v2/campaigns/list/{workspaceId}",
+  "module": "commerce-v2",
+  "method": "POST",
+  "path": "/hub/commerce-v2/campaigns/list/{workspaceId}",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "d1863150-2c85-4a5b-8afd-d1f6f9cc3961",
+      "name": "POST /hub/commerce-v2/campaigns/list/{workspaceId}",
+      "createdAt": "2026-05-04T08:14:02.253Z",
+      "updatedAt": "2026-05-04T08:14:02.253Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?pageNo=1&pageSize=10&startDate=2026-04-04+00%3A00%3A00&endDate=2026-05-04+23%3A59%3A59&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.4228165447916311",
+        "body": {
+          "imagePreview": [
+            "LIST",
+            "GALLERY",
+            "CUSTOM"
+          ]
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?pageNo=1&pageSize=10&startDate=2026-04-04+00%3A00%3A00&endDate=2026-05-04+23%3A59%3A59&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.4228165447916311",
+          "body": {
+            "imagePreview": [
+              "LIST",
+              "GALLERY",
+              "CUSTOM"
+            ]
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "214d09e5-4f17-45bc-b109-68ddcbf24a9a",
+      "name": "POST /hub/commerce-v2/campaigns/list/{workspaceId}",
+      "createdAt": "2026-05-04T08:14:02.253Z",
+      "updatedAt": "2026-05-04T08:14:02.253Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?pageNo=1&pageSize=40&startDate=2026-04-01+00%3A00%3A00&endDate=2026-04-24+23%3A59%3A59&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.0645730509008503",
+        "body": {
+          "imagePreview": [
+            "LIST",
+            "GALLERY",
+            "CUSTOM"
+          ]
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?pageNo=1&pageSize=40&startDate=2026-04-01+00%3A00%3A00&endDate=2026-04-24+23%3A59%3A59&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.0645730509008503",
+          "body": {
+            "imagePreview": [
+              "LIST",
+              "GALLERY",
+              "CUSTOM"
+            ]
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "d1863150-2c85-4a5b-8afd-d1f6f9cc3961"
+}

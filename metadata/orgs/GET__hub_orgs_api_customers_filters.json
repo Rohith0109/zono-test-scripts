@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "endpointKey": "GET /hub/orgs/api/customers/filters",
+  "module": "orgs",
+  "method": "GET",
+  "path": "/hub/orgs/api/customers/filters",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "644197e1-2dfa-448d-b79b-c2a5ba4fb0b9",
+      "name": "GET /hub/orgs/api/customers/filters",
+      "createdAt": "2026-05-04T08:14:03.169Z",
+      "updatedAt": "2026-05-04T08:14:03.169Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "644197e1-2dfa-448d-b79b-c2a5ba4fb0b9"
+}

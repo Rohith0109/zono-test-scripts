@@ -1,0 +1,54 @@
+{
+  "version": 2,
+  "endpointKey": "GET /invoiceservice/payments/aggregated",
+  "module": "payments",
+  "method": "GET",
+  "path": "/invoiceservice/payments/aggregated",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "7d22cb87-7ffe-45d7-8e16-f9ccb10fadc2",
+      "name": "GET /invoiceservice/payments/aggregated",
+      "createdAt": "2026-05-04T08:14:07.325Z",
+      "updatedAt": "2026-05-04T08:14:07.325Z",
+      "request": {
+        "pathParams": {},
+        "query": "?endDate=2026-05-04%2023%3A59%3A59&startDate=2026-04-04%2000%3A00%3A00&pageNo=1&pageSize=20&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeSettlement=true",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.successfulPaymentAmount",
+          "$.pendingPaymentAmount",
+          "$.failedPaymentAmount",
+          "$.currencyCode",
+          "$.statusCode",
+          "$.responseStatus"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?endDate=2026-05-04%2023%3A59%3A59&startDate=2026-04-04%2000%3A00%3A00&pageNo=1&pageSize=20&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeSettlement=true",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "7d22cb87-7ffe-45d7-8e16-f9ccb10fadc2"
+}

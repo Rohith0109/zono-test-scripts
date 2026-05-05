@@ -1,0 +1,138 @@
+{
+  "version": 2,
+  "endpointKey": "POST /hub/reports/api/v2/ledger-summary-report",
+  "module": "reports",
+  "method": "POST",
+  "path": "/hub/reports/api/v2/ledger-summary-report",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "8d09ce82-8196-4fcd-9911-cfb469a7b682",
+      "name": "POST /hub/reports/api/v2/ledger-summary-report",
+      "createdAt": "2026-05-04T08:04:20.164Z",
+      "updatedAt": "2026-05-04T08:04:20.164Z",
+      "request": {
+        "pathParams": {},
+        "query": "",
+        "body": {
+          "pageNo": 1,
+          "pageSize": 20,
+          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "inviteIds": [
+            "4741b07c-9840-4def-bcdf-77eff8a510a9"
+          ]
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.data",
+          "$.statusCode",
+          "$.totalRecords",
+          "$.startRecord",
+          "$.endRecord"
+        ],
+        "ignoreResponsePaths": [
+          "$.updatedAt"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "unknown": {
+          "pathParams": {},
+          "query": "",
+          "body": {
+            "pageNo": 1,
+            "pageSize": 20,
+            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+            "inviteIds": [
+              "4741b07c-9840-4def-bcdf-77eff8a510a9"
+            ]
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "e5f3bd80-fac0-472d-9024-7574977e30db",
+      "name": "POST /hub/reports/api/v2/ledger-summary-report",
+      "createdAt": "2026-05-04T08:13:57.663Z",
+      "updatedAt": "2026-05-04T08:13:57.663Z",
+      "request": {
+        "pathParams": {},
+        "query": "",
+        "body": {
+          "pageNo": 1,
+          "pageSize": 20,
+          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "inviteIds": [
+            "a4800466-ba92-4687-a0b0-783063d62ae9"
+          ]
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.data[0].creditLimit",
+          "$.data[0].outstandingAmt",
+          "$.data[0].overdueAmt",
+          "$.data[0].availableLimit",
+          "$.statusCode",
+          "$.totalRecords",
+          "$.startRecord",
+          "$.endRecord"
+        ],
+        "ignoreResponsePaths": [
+          "$.data[0].sellerWorkspaceId",
+          "$.data[0].inviteId",
+          "$.data[0].createdAt",
+          "$.data[0].updatedAt",
+          "$.updatedAt"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "unknown": {
+          "pathParams": {},
+          "query": "",
+          "body": {
+            "pageNo": 1,
+            "pageSize": 20,
+            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+            "inviteIds": [
+              "a4800466-ba92-4687-a0b0-783063d62ae9"
+            ]
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "8d09ce82-8196-4fcd-9911-cfb469a7b682"
+}
