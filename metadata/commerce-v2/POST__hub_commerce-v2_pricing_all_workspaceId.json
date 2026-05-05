@@ -1,0 +1,63 @@
+{
+  "version": 2,
+  "endpointKey": "POST /hub/commerce-v2/pricing/all/{workspaceId}",
+  "module": "commerce-v2",
+  "method": "POST",
+  "path": "/hub/commerce-v2/pricing/all/{workspaceId}",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "573fe4f0-6eff-4634-aa28-68e882b90ed6",
+      "name": "POST /hub/commerce-v2/pricing/all/{workspaceId}",
+      "createdAt": "2026-05-04T08:14:10.645Z",
+      "updatedAt": "2026-05-04T08:14:10.645Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "",
+        "body": {
+          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "pageNo": 1,
+          "pageSize": 20
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "",
+          "body": {
+            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+            "pageNo": 1,
+            "pageSize": 20
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "573fe4f0-6eff-4634-aa28-68e882b90ed6"
+}

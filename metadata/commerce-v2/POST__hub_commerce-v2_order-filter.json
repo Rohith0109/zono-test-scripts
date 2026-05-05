@@ -1,0 +1,91 @@
+{
+  "version": 2,
+  "endpointKey": "POST /hub/commerce-v2/order-filter",
+  "module": "commerce-v2",
+  "method": "POST",
+  "path": "/hub/commerce-v2/order-filter",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "6d156635-cd3c-4c00-a486-5f2bc835a507",
+      "name": "POST /hub/commerce-v2/order-filter",
+      "createdAt": "2026-05-04T08:14:06.391Z",
+      "updatedAt": "2026-05-04T08:14:06.391Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "customerId": "",
+          "startDate": "2026-04-27T13:41:43+05:30",
+          "endDate": "2026-05-04T13:41:43+05:30",
+          "filterModel": {
+            "divisionIds": [],
+            "headDivisionIds": [],
+            "cfaIds": [],
+            "status": [],
+            "customerIds": [],
+            "tagIds": []
+          }
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.status[0].status",
+          "$.status[0].statusCount",
+          "$.headDivisions[0].headDivisionName",
+          "$.fulfillments[0].cfaIds",
+          "$.fulfillments[0].cfaName",
+          "$.customers[0].customerName",
+          "$.tags",
+          "$.sourceFilter.selfService",
+          "$.sourceFilter.erpOrUploadFile",
+          "$.sourceFilter.campaign",
+          "$.sourceFilter.sales",
+          "$.sourceFilter.Agent"
+        ],
+        "ignoreResponsePaths": [
+          "$.headDivisions[0].headDivisionId",
+          "$.customers[0].customerId"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+            "customerId": "",
+            "startDate": "2026-04-27T13:41:43+05:30",
+            "endDate": "2026-05-04T13:41:43+05:30",
+            "filterModel": {
+              "divisionIds": [],
+              "headDivisionIds": [],
+              "cfaIds": [],
+              "status": [],
+              "customerIds": [],
+              "tagIds": []
+            }
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "6d156635-cd3c-4c00-a486-5f2bc835a507"
+}

@@ -47,6 +47,222 @@
       },
       "tags": [],
       "status": "active"
+    },
+    {
+      "id": "7ab51647-97aa-4fd3-824e-6fdfbe8db419",
+      "name": "GET /hub/orgs/api/user-preference",
+      "createdAt": "2026-05-04T08:14:00.720Z",
+      "updatedAt": "2026-05-04T08:14:00.720Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&screenName=CAMPAIGN_LIST",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.preference.pageSize",
+          "$.preference.screenName",
+          "$.screenName"
+        ],
+        "ignoreResponsePaths": [
+          "$.preference.dateRange.endDate",
+          "$.preference.dateRange.startDate",
+          "$.inviteId"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&screenName=CAMPAIGN_LIST",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "c029effc-d4e0-4567-b941-c0e2ee9284a2",
+      "name": "GET /hub/orgs/api/user-preference",
+      "createdAt": "2026-05-04T08:14:00.720Z",
+      "updatedAt": "2026-05-04T08:14:00.720Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&screenName=CUSTOMER_LIST",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.preference.screenName",
+          "$.screenName"
+        ],
+        "ignoreResponsePaths": [
+          "$.inviteId"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&screenName=CUSTOMER_LIST",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "1510fa2b-af49-41b8-a033-1e508d0e41e9",
+      "name": "GET /hub/orgs/api/user-preference",
+      "createdAt": "2026-05-04T08:14:00.720Z",
+      "updatedAt": "2026-05-04T08:14:00.720Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&screenName=DYNAMIC_SEGMENTS_LIST",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.preference.pageSize",
+          "$.preference.screenName",
+          "$.screenName"
+        ],
+        "ignoreResponsePaths": [
+          "$.preference.dateRange.endDate",
+          "$.preference.dateRange.startDate",
+          "$.inviteId"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&screenName=DYNAMIC_SEGMENTS_LIST",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "96c895b1-7389-4b95-8f74-72a1845e4023",
+      "name": "GET /hub/orgs/api/user-preference",
+      "createdAt": "2026-05-04T08:14:00.720Z",
+      "updatedAt": "2026-05-04T08:14:00.720Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&screenName=PRODUCT_LIST",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.preference.pageSize",
+          "$.preference.screenName",
+          "$.screenName"
+        ],
+        "ignoreResponsePaths": [
+          "$.inviteId"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&screenName=PRODUCT_LIST",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "8b402dd5-7f2e-4658-82a5-57a09a7d777d",
+      "name": "GET /hub/orgs/api/user-preference",
+      "createdAt": "2026-05-04T08:14:00.720Z",
+      "updatedAt": "2026-05-04T08:14:00.720Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&screenName=ORDER_LIST",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.preference.pageSize",
+          "$.preference.screenName",
+          "$.preference.additionalColumns[0]",
+          "$.screenName"
+        ],
+        "ignoreResponsePaths": [
+          "$.preference.dateRange.endDate",
+          "$.preference.dateRange.startDate",
+          "$.inviteId"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&screenName=ORDER_LIST",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
     }
   ],
   "defaultTestcaseId": "8edf1ffd-5e86-4b69-a4c7-873531cc6dbd"

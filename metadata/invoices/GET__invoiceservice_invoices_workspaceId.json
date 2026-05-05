@@ -1,0 +1,131 @@
+{
+  "version": 2,
+  "endpointKey": "GET /invoiceservice/invoices/{workspaceId}",
+  "module": "invoices",
+  "method": "GET",
+  "path": "/invoiceservice/invoices/{workspaceId}",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "142783a6-1d3b-44cc-89e8-fdfe06a01f20",
+      "name": "GET /invoiceservice/invoices/{workspaceId}",
+      "createdAt": "2026-05-04T08:04:22.559Z",
+      "updatedAt": "2026-05-04T08:04:22.559Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?startDate=2026-04-04%2000%3A00%3A00&endDate=2026-05-04%2023%3A59%3A59&pageNo=1&pageSize=2&sortBy=orderDate&sortDirection=DESC&inviteId=4741b07c-9840-4def-bcdf-77eff8a510a9",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?startDate=2026-04-04%2000%3A00%3A00&endDate=2026-05-04%2023%3A59%3A59&pageNo=1&pageSize=2&sortBy=orderDate&sortDirection=DESC&inviteId=4741b07c-9840-4def-bcdf-77eff8a510a9",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "f0e1b0bb-2b0e-4ec5-9205-53840e9591b6",
+      "name": "GET /invoiceservice/invoices/{workspaceId}",
+      "createdAt": "2026-05-04T08:14:00.406Z",
+      "updatedAt": "2026-05-04T08:14:00.406Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?startDate=2026-04-04%2000%3A00%3A00&endDate=2026-05-04%2023%3A59%3A59&pageNo=1&pageSize=2&sortBy=orderDate&sortDirection=DESC&inviteId=a4800466-ba92-4687-a0b0-783063d62ae9",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?startDate=2026-04-04%2000%3A00%3A00&endDate=2026-05-04%2023%3A59%3A59&pageNo=1&pageSize=2&sortBy=orderDate&sortDirection=DESC&inviteId=a4800466-ba92-4687-a0b0-783063d62ae9",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "79c72b44-f6e5-4222-995b-8dc613534622",
+      "name": "GET /invoiceservice/invoices/{workspaceId}",
+      "createdAt": "2026-05-04T08:14:00.406Z",
+      "updatedAt": "2026-05-04T08:14:00.406Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?endDate=2026-05-04%2023%3A59%3A59&startDate=2026-04-04%2000%3A00%3A00&pageNo=1&pageSize=20&sortBy=invoiceDate&sortDirection=DESC&dispatchFilter=true",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?endDate=2026-05-04%2023%3A59%3A59&startDate=2026-04-04%2000%3A00%3A00&pageNo=1&pageSize=20&sortBy=invoiceDate&sortDirection=DESC&dispatchFilter=true",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "142783a6-1d3b-44cc-89e8-fdfe06a01f20"
+}

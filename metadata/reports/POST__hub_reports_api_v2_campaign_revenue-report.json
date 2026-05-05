@@ -1,0 +1,62 @@
+{
+  "version": 2,
+  "endpointKey": "POST /hub/reports/api/v2/campaign/revenue-report",
+  "module": "reports",
+  "method": "POST",
+  "path": "/hub/reports/api/v2/campaign/revenue-report",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "9f3c0b63-d5b1-4c55-be7b-fb28eaafa218",
+      "name": "POST /hub/reports/api/v2/campaign/revenue-report",
+      "createdAt": "2026-05-04T08:14:01.736Z",
+      "updatedAt": "2026-05-04T08:14:01.736Z",
+      "request": {
+        "pathParams": {},
+        "query": "",
+        "body": {
+          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "startDate": "2026-04-04 00:00:00",
+          "endDate": "2026-05-04 23:59:59"
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.data[0].orderValue"
+        ],
+        "ignoreResponsePaths": [
+          "$.data[0].dateRange",
+          "$.updatedAt"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "unknown": {
+          "pathParams": {},
+          "query": "",
+          "body": {
+            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+            "startDate": "2026-04-04 00:00:00",
+            "endDate": "2026-05-04 23:59:59"
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "9f3c0b63-d5b1-4c55-be7b-fb28eaafa218"
+}
