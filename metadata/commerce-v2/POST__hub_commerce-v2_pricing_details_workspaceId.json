@@ -1,0 +1,93 @@
+{
+  "version": 2,
+  "endpointKey": "POST /hub/commerce-v2/pricing/details/{workspaceId}",
+  "module": "commerce-v2",
+  "method": "POST",
+  "path": "/hub/commerce-v2/pricing/details/{workspaceId}",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "455f89e8-7366-4141-bbe2-fea7d3b3cf30",
+      "name": "POST /hub/commerce-v2/pricing/details/{workspaceId}",
+      "createdAt": "2026-05-05T10:29:18.662Z",
+      "updatedAt": "2026-05-05T10:29:18.662Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?priceListId=5b3001b9-3d83-4d77-92b8-c6db0e7aa429&includeAllProducts=false",
+        "body": {
+          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "pageNo": 1,
+          "pageSize": 20
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.priceList[0].code",
+          "$.priceList[0].name",
+          "$.priceList[0].createdOn",
+          "$.priceList[0].type",
+          "$.priceList[0].criteria",
+          "$.priceList[0].status",
+          "$.priceList[0].isActive",
+          "$.priceList[0].isArchived",
+          "$.priceList[0].noOfProducts",
+          "$.priceList[0].filterBy",
+          "$.priceList[0].cfas",
+          "$.priceList[0].customers",
+          "$.priceList[0].segments",
+          "$.priceList[0].channelHierarchy",
+          "$.priceList[0].hasMoreCfas",
+          "$.priceList[0].hasMoreCustomers",
+          "$.priceList[0].hasMoreSegments",
+          "$.priceList[0].totalCount",
+          "$.priceList[0].products",
+          "$.products[0].parentSku",
+          "$.products[0].productAsset",
+          "$.products[0].source",
+          "$.products[0].preview",
+          "$.products[0].enabled",
+          "$.products[0].productVariants"
+        ],
+        "ignoreResponsePaths": [
+          "$.priceList[0].priceListId",
+          "$.priceList[0].startDate",
+          "$.priceList[0].endDate",
+          "$.products[0].id",
+          "$.products[0].channelId"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?priceListId=5b3001b9-3d83-4d77-92b8-c6db0e7aa429&includeAllProducts=false",
+          "body": {
+            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+            "pageNo": 1,
+            "pageSize": 20
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "455f89e8-7366-4141-bbe2-fea7d3b3cf30"
+}

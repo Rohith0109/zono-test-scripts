@@ -77,6 +77,78 @@
       },
       "tags": [],
       "status": "active"
+    },
+    {
+      "id": "d5c16ff0-55c1-4553-a9dd-6a29a71f228d",
+      "name": "GET /hub/orgs/api/cfa",
+      "createdAt": "2026-05-05T11:33:05.774Z",
+      "updatedAt": "2026-05-05T11:33:05.774Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&disablePagination=true",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&disablePagination=true",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "b1634364-6523-473a-8e71-25d972f726bb",
+      "name": "GET /hub/orgs/api/cfa",
+      "createdAt": "2026-05-05T11:33:05.775Z",
+      "updatedAt": "2026-05-05T11:33:05.775Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
     }
   ],
   "defaultTestcaseId": "d5a00c8b-6476-471e-aa8a-c1ab4a539596"

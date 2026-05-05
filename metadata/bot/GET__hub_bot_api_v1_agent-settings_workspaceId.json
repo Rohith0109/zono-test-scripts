@@ -1,0 +1,111 @@
+{
+  "version": 2,
+  "endpointKey": "GET /hub/bot/api/v1/agent-settings/{workspaceId}",
+  "module": "bot",
+  "method": "GET",
+  "path": "/hub/bot/api/v1/agent-settings/{workspaceId}",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "d3bdc70f-7f4d-4ee3-b264-63ccca7891c3",
+      "name": "GET /hub/bot/api/v1/agent-settings/{workspaceId}",
+      "createdAt": "2026-05-05T06:03:08.922Z",
+      "updatedAt": "2026-05-05T06:03:08.922Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeTasks=true",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.isBotEnabled",
+          "$.isAgentEnabled",
+          "$.muteOutOfScopeResponse",
+          "$.tasks[0].enabled"
+        ],
+        "ignoreResponsePaths": [
+          "$.id",
+          "$.workspaceId",
+          "$.createdAt",
+          "$.updatedAt",
+          "$.tasks[0].id"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeTasks=true",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "da187809-860d-485c-9c8a-ab64ea598f58",
+      "name": "GET /hub/bot/api/v1/agent-settings/{workspaceId}",
+      "createdAt": "2026-05-05T06:03:08.922Z",
+      "updatedAt": "2026-05-05T06:03:08.922Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.isBotEnabled",
+          "$.isAgentEnabled",
+          "$.muteOutOfScopeResponse"
+        ],
+        "ignoreResponsePaths": [
+          "$.id",
+          "$.workspaceId",
+          "$.createdAt",
+          "$.updatedAt"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "d3bdc70f-7f4d-4ee3-b264-63ccca7891c3"
+}
