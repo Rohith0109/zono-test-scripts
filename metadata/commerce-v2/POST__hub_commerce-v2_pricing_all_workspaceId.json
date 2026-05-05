@@ -57,6 +57,58 @@
       },
       "tags": [],
       "status": "active"
+    },
+    {
+      "id": "1aea6d0e-aeda-4c19-b2aa-0b176237ae52",
+      "name": "POST /hub/commerce-v2/pricing/all/{workspaceId}",
+      "createdAt": "2026-05-05T10:29:17.981Z",
+      "updatedAt": "2026-05-05T10:29:17.981Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "",
+        "body": {
+          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "pageNo": 1,
+          "pageSize": 20
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "",
+          "body": {
+            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+            "pageNo": 1,
+            "pageSize": 20
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
     }
   ],
   "defaultTestcaseId": "573fe4f0-6eff-4634-aa28-68e882b90ed6"
