@@ -1,0 +1,162 @@
+{
+  "id": "login-catalog-e2e-demo",
+  "name": "Login to Catalog — E2E Demo",
+  "description": "End-to-end QA demo: send OTP → verify OTP (extract token + workspaceId) → list workspaces → search products. Shows Sentinel flow variable chaining across 4 real API calls.",
+  "firstStepId": "step-send-otp",
+  "steps": [
+    {
+      "stepId": "step-send-otp",
+      "name": "Send OTP",
+      "method": "POST",
+      "path": "/sendotp",
+      "query": "",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "authChannel": "mobile",
+        "mobile": "+913203220232",
+        "doCreateUser": false
+      },
+      "assertions": {
+        "expectedStatus": [200],
+        "requiredResponsePaths": [
+          "$.mobile.otp",
+          "$.mobile.sendOtp",
+          "$.authChannel"
+        ],
+        "ignoreResponsePaths": [
+          "$.mobile.timeLeft",
+          "$.mobile.resendOtpCount",
+          "$.mobile.lastResendAttempt",
+          "$.mobile.attemptsLeft",
+          "$.mobile.resendAttemptsLeft",
+          "$.temptoken"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "extract": {
+        "otp": "mobile.otp"
+      },
+      "position": { "x": 100, "y": 300 },
+      "onPass": "step-verify-otp",
+      "onFail": "__end__"
+    },
+    {
+      "stepId": "step-verify-otp",
+      "name": "Verify OTP",
+      "method": "POST",
+      "path": "/verifyotp",
+      "query": "",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": {
+        "mfaStatus": false,
+        "otp": "{{otp}}",
+        "authChannel": "mobile",
+        "mobile": "+913203220232"
+      },
+      "assertions": {
+        "expectedStatus": [200],
+        "requiredResponsePaths": [
+          "$.token",
+          "$.mobile",
+          "$.workspaceRoles[0]"
+        ],
+        "ignoreResponsePaths": [
+          "$.refreshToken",
+          "$.integrationToken",
+          "$.id",
+          "$.inviteId",
+          "$.isOtpValid"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "extract": {
+        "token": "token",
+        "workspaceId": "workspaceRoles.0.workspaceId"
+      },
+      "position": { "x": 420, "y": 300 },
+      "onPass": "step-list-workspaces",
+      "onFail": "__end__"
+    },
+    {
+      "stepId": "step-list-workspaces",
+      "name": "List Workspaces",
+      "method": "GET",
+      "path": "/workspaces",
+      "query": "?includeBalance=true&includeWhatsAppConfigs=true",
+      "headers": {
+        "authorization": "Bearer {{token}}"
+      },
+      "body": null,
+      "assertions": {
+        "expectedStatus": [200],
+        "requiredResponsePaths": [
+          "$[0].spaceName",
+          "$[0].isBuyer",
+          "$[0].isSeller",
+          "$[0].defaultCurrencyCode"
+        ],
+        "ignoreResponsePaths": [
+          "$[0].id",
+          "$[0].userId",
+          "$[0].teamOwnerInviteId"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "extract": {},
+      "position": { "x": 740, "y": 300 },
+      "onPass": "step-search-products",
+      "onFail": "__end__"
+    },
+    {
+      "stepId": "step-search-products",
+      "name": "Search Products",
+      "method": "POST",
+      "path": "/hub/commerce-v2/products/search/{{workspaceId}}",
+      "query": "?pageNo=1&pageSize=10&sellerWorkspaceId={{workspaceId}}",
+      "headers": {
+        "authorization": "Bearer {{token}}",
+        "content-type": "application/json"
+      },
+      "body": {
+        "searchKey": "",
+        "includeFacets": true,
+        "includeDivisions": true,
+        "includeCategoryCodesList": true,
+        "includeCfas": true,
+        "skuCode": "",
+        "sortDirection": "ASC",
+        "sortBy": "sortOrder",
+        "groupByProduct": true,
+        "inventoryFilter": "",
+        "stockFilter": "",
+        "divisionIds": [],
+        "cfaIds": [],
+        "categoryCodes": [],
+        "statusFilter": "",
+        "collectionIds": []
+      },
+      "assertions": {
+        "expectedStatus": [201],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "extract": {},
+      "position": { "x": 1060, "y": 300 },
+      "onPass": "__end__",
+      "onFail": "__end__"
+    }
+  ]
+}
