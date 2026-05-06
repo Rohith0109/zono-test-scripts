@@ -1,0 +1,53 @@
+{
+  "version": 2,
+  "endpointKey": "GET /hub/orgs/api/team-member/customers",
+  "module": "orgs",
+  "method": "GET",
+  "path": "/hub/orgs/api/team-member/customers",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "843b5e3b-8c5e-4281-a0fa-254f16f645db",
+      "name": "GET /hub/orgs/api/team-member/customers",
+      "createdAt": "2026-05-05T11:33:06.575Z",
+      "updatedAt": "2026-05-05T11:33:06.575Z",
+      "request": {
+        "pathParams": {},
+        "query": "?teamMemberId=&includePendingInvites=true&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&pageSize=20&pageNo=1",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          400
+        ],
+        "requiredResponsePaths": [
+          "$.statusCode",
+          "$.path",
+          "$.message[0]"
+        ],
+        "ignoreResponsePaths": [
+          "$.timestamp"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?teamMemberId=&includePendingInvites=true&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&pageSize=20&pageNo=1",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "843b5e3b-8c5e-4281-a0fa-254f16f645db"
+}

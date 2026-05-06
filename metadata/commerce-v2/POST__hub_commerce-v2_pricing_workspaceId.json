@@ -1,0 +1,138 @@
+{
+  "version": 2,
+  "endpointKey": "POST /hub/commerce-v2/pricing/{workspaceId}",
+  "module": "commerce-v2",
+  "method": "POST",
+  "path": "/hub/commerce-v2/pricing/{workspaceId}",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "d0d2f902-fee7-4883-af22-0e43d237271a",
+      "name": "POST /hub/commerce-v2/pricing/{workspaceId}",
+      "createdAt": "2026-05-05T11:45:10.100Z",
+      "updatedAt": "2026-05-05T11:45:10.100Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "",
+        "body": {
+          "name": "Hyderabad Test Price list",
+          "code": "56250622",
+          "type": "",
+          "startDate": "2026-05-05",
+          "endDate": "2026-06-30",
+          "criteria": "cfa-price",
+          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "priceListItems": [
+            {
+              "productVariantId": 137002,
+              "pts": 32500,
+              "ptr": 0,
+              "adjustmentType": "Absolute"
+            },
+            {
+              "productVariantId": 137003,
+              "pts": 52000,
+              "ptr": 0,
+              "adjustmentType": "Absolute"
+            },
+            {
+              "productVariantId": 137004,
+              "pts": 24000,
+              "ptr": 0,
+              "adjustmentType": "Absolute"
+            },
+            {
+              "productVariantId": 138730,
+              "pts": 39000,
+              "ptr": 0,
+              "adjustmentType": "Absolute"
+            }
+          ],
+          "priceConditions": [
+            {
+              "criteria": "cfa-price",
+              "id": "e8193bc2-716e-4c93-9c26-60326dd47c8d"
+            }
+          ],
+          "doMerge": false
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.status",
+          "$.msg"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "",
+          "body": {
+            "name": "Hyderabad Test Price list",
+            "code": "56250622",
+            "type": "",
+            "startDate": "2026-05-05",
+            "endDate": "2026-06-30",
+            "criteria": "cfa-price",
+            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+            "priceListItems": [
+              {
+                "productVariantId": 137002,
+                "pts": 32500,
+                "ptr": 0,
+                "adjustmentType": "Absolute"
+              },
+              {
+                "productVariantId": 137003,
+                "pts": 52000,
+                "ptr": 0,
+                "adjustmentType": "Absolute"
+              },
+              {
+                "productVariantId": 137004,
+                "pts": 24000,
+                "ptr": 0,
+                "adjustmentType": "Absolute"
+              },
+              {
+                "productVariantId": 138730,
+                "pts": 39000,
+                "ptr": 0,
+                "adjustmentType": "Absolute"
+              }
+            ],
+            "priceConditions": [
+              {
+                "criteria": "cfa-price",
+                "id": "e8193bc2-716e-4c93-9c26-60326dd47c8d"
+              }
+            ],
+            "doMerge": false
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "d0d2f902-fee7-4883-af22-0e43d237271a"
+}
