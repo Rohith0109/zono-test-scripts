@@ -1,0 +1,81 @@
+{
+  "version": 2,
+  "endpointKey": "POST /hub/reports/api/v1/ledger",
+  "module": "reports",
+  "method": "POST",
+  "path": "/hub/reports/api/v1/ledger",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "715a8252-3fbb-400a-be27-4087a7a66ce2",
+      "name": "POST /hub/reports/api/v1/ledger",
+      "createdAt": "2026-05-04T08:14:07.676Z",
+      "updatedAt": "2026-05-04T08:14:07.676Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "filters": {
+            "inviteIds": []
+          },
+          "pageNo": 1,
+          "pageSize": 20,
+          "sortBy": "updatedDate",
+          "sortOrder": "DESC"
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.startRecord",
+          "$.endRecord",
+          "$.totalRecord",
+          "$.data[0].sNo",
+          "$.data[0].customerName",
+          "$.data[0].customerFirmName",
+          "$.data[0].customerPhone",
+          "$.data[0].customerCode",
+          "$.data[0].creditLimit",
+          "$.data[0].outstandingAmount"
+        ],
+        "ignoreResponsePaths": [
+          "$.data[0].inviteId",
+          "$.data[0].lastUpdatedDate"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+            "filters": {
+              "inviteIds": []
+            },
+            "pageNo": 1,
+            "pageSize": 20,
+            "sortBy": "updatedDate",
+            "sortOrder": "DESC"
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "715a8252-3fbb-400a-be27-4087a7a66ce2"
+}

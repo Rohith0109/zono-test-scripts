@@ -1,0 +1,95 @@
+{
+  "version": 2,
+  "endpointKey": "GET /hub/orgs/api/customers/{workspaceId}",
+  "module": "orgs",
+  "method": "GET",
+  "path": "/hub/orgs/api/customers/{workspaceId}",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "8d4d2b43-beaf-4c0b-bb94-35c4abadc1d1",
+      "name": "GET /hub/orgs/api/customers/{workspaceId}",
+      "createdAt": "2026-05-04T08:14:02.543Z",
+      "updatedAt": "2026-05-04T08:14:02.543Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?includeCustomerGroupAssignments=1&includeWorkspaceMembers=1&includeTeamCustomersMapping=true&pageNo=1&pageSize=20&includeTeamCustomerCount=true&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]",
+          "cache-control": "no-cache"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?includeCustomerGroupAssignments=1&includeWorkspaceMembers=1&includeTeamCustomersMapping=true&pageNo=1&pageSize=20&includeTeamCustomerCount=true&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]",
+            "cache-control": "no-cache"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "4b7c5eb8-4623-4d89-a657-895df0778680",
+      "name": "GET /hub/orgs/api/customers/{workspaceId}",
+      "createdAt": "2026-05-05T11:33:06.906Z",
+      "updatedAt": "2026-05-05T11:33:06.906Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?includeCustomerGroupAssignments=1&includeWorkspaceMembers=1&includeTeamCustomersMapping=true&pageNo=1&pageSize=20&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]",
+          "cache-control": "no-cache"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?includeCustomerGroupAssignments=1&includeWorkspaceMembers=1&includeTeamCustomersMapping=true&pageNo=1&pageSize=20&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]",
+            "cache-control": "no-cache"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "8d4d2b43-beaf-4c0b-bb94-35c4abadc1d1"
+}

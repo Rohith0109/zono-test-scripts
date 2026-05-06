@@ -1,0 +1,79 @@
+{
+  "version": 2,
+  "endpointKey": "GET /workspaces",
+  "module": "workspaces",
+  "method": "GET",
+  "path": "/workspaces",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "e39e233a-1c2f-4b64-a7e3-55441f4f6f3d",
+      "name": "GET /workspaces",
+      "createdAt": "2026-05-04T08:13:52.421Z",
+      "updatedAt": "2026-05-04T08:13:52.421Z",
+      "request": {
+        "pathParams": {},
+        "query": "?includeBalance=true&includeWhatsAppConfigs=true",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$[0].spaceName",
+          "$[0].code",
+          "$[0].location",
+          "$[0].address.address1",
+          "$[0].address.address2",
+          "$[0].address.city",
+          "$[0].address.state",
+          "$[0].address.pincode",
+          "$[0].profilePic",
+          "$[0].isBuyer",
+          "$[0].isSeller",
+          "$[0].businessCategory",
+          "$[0].industry",
+          "$[0].defaultCurrencyCode",
+          "$[0].isoLanguageCode",
+          "$[0].isoCountryCode",
+          "$[0].businessDetails.companyName",
+          "$[0].businessDetails.referenceCode",
+          "$[0].businessDetails.companyEmail",
+          "$[0].businessDetails.gstin",
+          "$[0].businessDetails.businessPAN",
+          "$[0].businessDetails.mobile",
+          "$[0].businessDetails.physicalAddress",
+          "$[0].businessDetails.gstPortalUserName",
+          "$[0].businessDetails.gstPortalPassword"
+        ],
+        "ignoreResponsePaths": [
+          "$[0].id",
+          "$[0].teamOwnerInviteId",
+          "$[0].userId",
+          "$[0].timeZone",
+          "$[0].businessDetails.id"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "unknown": {
+          "pathParams": {},
+          "query": "?includeBalance=true&includeWhatsAppConfigs=true",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "e39e233a-1c2f-4b64-a7e3-55441f4f6f3d"
+}

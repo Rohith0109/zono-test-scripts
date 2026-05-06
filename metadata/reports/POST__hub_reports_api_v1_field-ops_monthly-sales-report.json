@@ -1,0 +1,151 @@
+{
+  "version": 2,
+  "endpointKey": "POST /hub/reports/api/v1/field-ops/monthly-sales-report",
+  "module": "reports",
+  "method": "POST",
+  "path": "/hub/reports/api/v1/field-ops/monthly-sales-report",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "92d7396f-8cbb-42f5-a852-36161a3bacbf",
+      "name": "POST /hub/reports/api/v1/field-ops/monthly-sales-report",
+      "createdAt": "2026-05-04T08:14:07.986Z",
+      "updatedAt": "2026-05-04T08:14:07.986Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "month": "2026-05"
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.route.name",
+          "$.route.route[0]",
+          "$.route.metrics.totalSales",
+          "$.route.metrics.totalSalesPercentInc",
+          "$.route.metrics.totalSalesValue",
+          "$.route.metrics.totalSalesValuePercentInc",
+          "$.route.metrics.totalFieldSales",
+          "$.route.metrics.totalFieldSalesPercentInc",
+          "$.route.metrics.totalFieldSalesValue",
+          "$.route.metrics.totalFieldSalesValuePercentInc",
+          "$.route.metrics.totalInvoices",
+          "$.route.metrics.totalInvoicesPercentInc",
+          "$.route.metrics.totalInvoiceValue",
+          "$.route.metrics.totalInvoiceValuePercentInc",
+          "$.route.metrics.meetingsPlanned",
+          "$.route.metrics.meetingsPlannedPercentInc",
+          "$.route.metrics.meetingsAchieved",
+          "$.route.metrics.meetingsAchievedPercentInc",
+          "$.route.metrics.prevTotalSales",
+          "$.route.metrics.prevTotalSalesValue",
+          "$.route.metrics.prevTotalFieldSales",
+          "$.route.metrics.prevTotalFieldSalesValue",
+          "$.route.metrics.prevTotalInvoices",
+          "$.route.metrics.prevTotalInvoiceValue",
+          "$.route.metrics.prevMeetingsPlanned",
+          "$.route.metrics.prevMeetingsAchieved"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "month": "2026-05"
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "db802059-aa87-47ab-b016-fd72f965c49a",
+      "name": "POST /hub/reports/api/v1/field-ops/monthly-sales-report",
+      "createdAt": "2026-05-04T08:14:07.986Z",
+      "updatedAt": "2026-05-04T08:14:07.986Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "month": "2026-05",
+          "routeId": "5464c80b-6b8c-408b-bfd7-c291d0447450"
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.route.name",
+          "$.route.route[0]",
+          "$.route.metrics.totalSales",
+          "$.route.metrics.totalSalesPercentInc",
+          "$.route.metrics.totalSalesValue",
+          "$.route.metrics.totalSalesValuePercentInc",
+          "$.route.metrics.totalFieldSales",
+          "$.route.metrics.totalFieldSalesPercentInc",
+          "$.route.metrics.totalFieldSalesValue",
+          "$.route.metrics.totalFieldSalesValuePercentInc",
+          "$.route.metrics.totalInvoices",
+          "$.route.metrics.totalInvoicesPercentInc",
+          "$.route.metrics.totalInvoiceValue",
+          "$.route.metrics.totalInvoiceValuePercentInc",
+          "$.route.metrics.meetingsPlanned",
+          "$.route.metrics.meetingsPlannedPercentInc",
+          "$.route.metrics.meetingsAchieved",
+          "$.route.metrics.meetingsAchievedPercentInc",
+          "$.route.metrics.prevTotalSales",
+          "$.route.metrics.prevTotalSalesValue",
+          "$.route.metrics.prevTotalFieldSales",
+          "$.route.metrics.prevTotalFieldSalesValue",
+          "$.route.metrics.prevTotalInvoices",
+          "$.route.metrics.prevTotalInvoiceValue",
+          "$.route.metrics.prevMeetingsPlanned",
+          "$.route.metrics.prevMeetingsAchieved"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "month": "2026-05",
+            "routeId": "5464c80b-6b8c-408b-bfd7-c291d0447450"
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "92d7396f-8cbb-42f5-a852-36161a3bacbf"
+}

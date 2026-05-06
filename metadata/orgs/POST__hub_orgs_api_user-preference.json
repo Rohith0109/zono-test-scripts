@@ -1,0 +1,137 @@
+{
+  "version": 2,
+  "endpointKey": "POST /hub/orgs/api/user-preference",
+  "module": "orgs",
+  "method": "POST",
+  "path": "/hub/orgs/api/user-preference",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "df63cacc-2001-41a5-b3ad-4af64e14c268",
+      "name": "POST /hub/orgs/api/user-preference",
+      "createdAt": "2026-05-04T08:14:02.862Z",
+      "updatedAt": "2026-05-04T08:14:02.862Z",
+      "request": {
+        "pathParams": {},
+        "query": "",
+        "body": {
+          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "preference": [
+            {
+              "screenName": "CUSTOMER_LIST"
+            }
+          ]
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.message"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "unknown": {
+          "pathParams": {},
+          "query": "",
+          "body": {
+            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+            "preference": [
+              {
+                "screenName": "CUSTOMER_LIST"
+              }
+            ]
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "85bdcf0c-3872-47c7-b185-ad62d2db569a",
+      "name": "POST /hub/orgs/api/user-preference",
+      "createdAt": "2026-05-04T08:14:02.862Z",
+      "updatedAt": "2026-05-04T08:14:02.862Z",
+      "request": {
+        "pathParams": {},
+        "query": "",
+        "body": {
+          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "preference": [
+            {
+              "pageSize": 40,
+              "screenName": "ORDER_LIST",
+              "additionalColumns": [
+                "subTotal",
+                "totalOrderValue"
+              ],
+              "dateRange": {
+                "startDate": "Mon Apr 27 2026 13:41:43 GMT+0530 (India Standard Time)",
+                "endDate": "Mon May 04 2026 13:41:43 GMT+0530 (India Standard Time)"
+              }
+            }
+          ]
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.message"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "unknown": {
+          "pathParams": {},
+          "query": "",
+          "body": {
+            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+            "preference": [
+              {
+                "pageSize": 40,
+                "screenName": "ORDER_LIST",
+                "additionalColumns": [
+                  "subTotal",
+                  "totalOrderValue"
+                ],
+                "dateRange": {
+                  "startDate": "Mon Apr 27 2026 13:41:43 GMT+0530 (India Standard Time)",
+                  "endDate": "Mon May 04 2026 13:41:43 GMT+0530 (India Standard Time)"
+                }
+              }
+            ]
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "df63cacc-2001-41a5-b3ad-4af64e14c268"
+}
