@@ -7,15 +7,15 @@
   "apiDomain": "https://api-qa.zotok.ai",
   "testcases": [
     {
-      "id": "bef066d4-006c-4423-b54c-b3bcd78fdad0",
+      "id": "9f41f226-d10c-4690-8dc1-9403dcfd05e3",
       "name": "POST /hub/communication-v2/api/threads/list/{workspaceId}",
-      "createdAt": "2026-05-04T08:04:18.871Z",
-      "updatedAt": "2026-05-04T08:04:18.871Z",
+      "createdAt": "2026-05-06T12:29:50.051Z",
+      "updatedAt": "2026-05-06T12:29:50.051Z",
       "request": {
         "pathParams": {
           "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
         },
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "query": "?sellerWorkspaceId=%24sellerWorkspaceId",
         "body": {
           "filter": {
             "channelType": [
@@ -42,7 +42,7 @@
           "pageSize": 100
         },
         "headers": {
-          "authorization": "[REDACTED]",
+          "authorization": "Bearer $token",
           "content-type": "application/json"
         }
       },
@@ -61,7 +61,7 @@
           "pathParams": {
             "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
           },
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "query": "?sellerWorkspaceId=%24sellerWorkspaceId",
           "body": {
             "filter": {
               "channelType": [
@@ -88,7 +88,7 @@
             "pageSize": 100
           },
           "headers": {
-            "authorization": "[REDACTED]",
+            "authorization": "Bearer $token",
             "content-type": "application/json"
           }
         }
@@ -97,15 +97,15 @@
       "status": "active"
     },
     {
-      "id": "2b7ad91b-080c-452a-857c-eb27f64dfaed",
+      "id": "7a32ea0d-57cb-4322-89e9-5c3882065bbc",
       "name": "POST /hub/communication-v2/api/threads/list/{workspaceId}",
-      "createdAt": "2026-05-04T08:04:18.872Z",
-      "updatedAt": "2026-05-04T08:04:18.872Z",
+      "createdAt": "2026-05-06T12:29:50.052Z",
+      "updatedAt": "2026-05-06T12:29:50.052Z",
       "request": {
         "pathParams": {
           "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
         },
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "query": "?sellerWorkspaceId=%24sellerWorkspaceId",
         "body": {
           "filter": {
             "channelType": [
@@ -117,7 +117,7 @@
           "pageSize": 100
         },
         "headers": {
-          "authorization": "[REDACTED]",
+          "authorization": "Bearer $token",
           "content-type": "application/json"
         }
       },
@@ -136,7 +136,7 @@
           "pathParams": {
             "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
           },
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "query": "?sellerWorkspaceId=%24sellerWorkspaceId",
           "body": {
             "filter": {
               "channelType": [
@@ -148,157 +148,7 @@
             "pageSize": 100
           },
           "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
-      },
-      "tags": [],
-      "status": "active"
-    },
-    {
-      "id": "08faa027-04a0-4a9d-9039-a1550431cbf9",
-      "name": "POST /hub/communication-v2/api/threads/list/{workspaceId}",
-      "createdAt": "2026-05-04T08:13:56.210Z",
-      "updatedAt": "2026-05-04T08:13:56.210Z",
-      "request": {
-        "pathParams": {
-          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-        },
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": {
-          "filter": {
-            "channelType": [
-              "C",
-              "CUST"
-            ],
-            "teamMemberIds": [],
-            "divisionIds": [],
-            "cfaIds": [],
-            "status": {
-              "campaign": [],
-              "dispatch": [],
-              "invoice": [],
-              "order": [],
-              "payment": [],
-              "priceList": [],
-              "transactionType": []
-            },
-            "routes": [],
-            "customerSegment": [],
-            "customers": []
-          },
-          "searchAfterTimestamp": null,
-          "pageSize": 100
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
-      },
-      "assertions": {
-        "expectedStatus": [
-          201
-        ],
-        "requiredResponsePaths": [],
-        "ignoreResponsePaths": [],
-        "equals": {},
-        "contains": {},
-        "regex": {}
-      },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {
-            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-          },
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": {
-            "filter": {
-              "channelType": [
-                "C",
-                "CUST"
-              ],
-              "teamMemberIds": [],
-              "divisionIds": [],
-              "cfaIds": [],
-              "status": {
-                "campaign": [],
-                "dispatch": [],
-                "invoice": [],
-                "order": [],
-                "payment": [],
-                "priceList": [],
-                "transactionType": []
-              },
-              "routes": [],
-              "customerSegment": [],
-              "customers": []
-            },
-            "searchAfterTimestamp": null,
-            "pageSize": 100
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
-      },
-      "tags": [],
-      "status": "active"
-    },
-    {
-      "id": "ccf8f08e-1399-467e-99f8-1b1c8d95c0ec",
-      "name": "POST /hub/communication-v2/api/threads/list/{workspaceId}",
-      "createdAt": "2026-05-04T08:13:56.210Z",
-      "updatedAt": "2026-05-04T08:13:56.210Z",
-      "request": {
-        "pathParams": {
-          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-        },
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": {
-          "filter": {
-            "channelType": [
-              "C",
-              "CUST"
-            ]
-          },
-          "searchAfterTimestamp": null,
-          "pageSize": 100
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
-      },
-      "assertions": {
-        "expectedStatus": [
-          201
-        ],
-        "requiredResponsePaths": [],
-        "ignoreResponsePaths": [],
-        "equals": {},
-        "contains": {},
-        "regex": {}
-      },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {
-            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-          },
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": {
-            "filter": {
-              "channelType": [
-                "C",
-                "CUST"
-              ]
-            },
-            "searchAfterTimestamp": null,
-            "pageSize": 100
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
+            "authorization": "Bearer $token",
             "content-type": "application/json"
           }
         }
@@ -307,5 +157,5 @@
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "bef066d4-006c-4423-b54c-b3bcd78fdad0"
+  "defaultTestcaseId": "9f41f226-d10c-4690-8dc1-9403dcfd05e3"
 }

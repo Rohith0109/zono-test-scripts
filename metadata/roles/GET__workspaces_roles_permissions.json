@@ -7,16 +7,16 @@
   "apiDomain": "https://api-qa.zotok.ai",
   "testcases": [
     {
-      "id": "8f7c038b-4e7b-4c2c-8f8e-8e0145b09d86",
+      "id": "48cf1567-88d5-4c1a-a230-8235ab64f24b",
       "name": "GET /workspaces/roles/permissions",
-      "createdAt": "2026-05-04T08:04:18.154Z",
-      "updatedAt": "2026-05-04T08:04:18.154Z",
+      "createdAt": "2026-05-06T12:29:49.312Z",
+      "updatedAt": "2026-05-06T12:29:49.312Z",
       "request": {
         "pathParams": {},
         "query": "?isSeller=true",
         "body": null,
         "headers": {
-          "authorization": "[REDACTED]"
+          "authorization": "Bearer $token"
         }
       },
       "assertions": {
@@ -42,136 +42,7 @@
           "query": "?isSeller=true",
           "body": null,
           "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
-      },
-      "tags": [],
-      "status": "active"
-    },
-    {
-      "id": "a62b3a82-48e9-4975-ac60-4d677ba9d153",
-      "name": "GET /workspaces/roles/permissions",
-      "createdAt": "2026-05-04T08:13:55.188Z",
-      "updatedAt": "2026-05-04T08:13:55.188Z",
-      "request": {
-        "pathParams": {},
-        "query": "?isSeller=true",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
-      },
-      "assertions": {
-        "expectedStatus": [
-          200
-        ],
-        "requiredResponsePaths": [
-          "$.roles[0].title",
-          "$.roles[0].slug",
-          "$.roles[0].description",
-          "$.roles[0].permissions"
-        ],
-        "ignoreResponsePaths": [
-          "$.roles[0].id"
-        ],
-        "equals": {},
-        "contains": {},
-        "regex": {}
-      },
-      "workspaceScopes": {
-        "unknown": {
-          "pathParams": {},
-          "query": "?isSeller=true",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
-      },
-      "tags": [],
-      "status": "active"
-    },
-    {
-      "id": "74644cce-d38a-428a-b1c3-f64042c6c721",
-      "name": "GET /workspaces/roles/permissions",
-      "createdAt": "2026-05-05T11:33:04.952Z",
-      "updatedAt": "2026-05-05T11:33:04.952Z",
-      "request": {
-        "pathParams": {},
-        "query": "?isSeller=true",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
-      },
-      "assertions": {
-        "expectedStatus": [
-          200
-        ],
-        "requiredResponsePaths": [
-          "$.roles[0].title",
-          "$.roles[0].slug",
-          "$.roles[0].description",
-          "$.roles[0].permissions"
-        ],
-        "ignoreResponsePaths": [
-          "$.roles[0].id"
-        ],
-        "equals": {},
-        "contains": {},
-        "regex": {}
-      },
-      "workspaceScopes": {
-        "unknown": {
-          "pathParams": {},
-          "query": "?isSeller=true",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
-      },
-      "tags": [],
-      "status": "active"
-    },
-    {
-      "id": "26829714-7977-4731-a17b-712c651c10be",
-      "name": "GET /workspaces/roles/permissions",
-      "createdAt": "2026-05-05T11:33:04.952Z",
-      "updatedAt": "2026-05-05T11:33:04.952Z",
-      "request": {
-        "pathParams": {},
-        "query": "",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
-      },
-      "assertions": {
-        "expectedStatus": [
-          200
-        ],
-        "requiredResponsePaths": [
-          "$.roles[0].title",
-          "$.roles[0].slug",
-          "$.roles[0].description",
-          "$.roles[0].permissions"
-        ],
-        "ignoreResponsePaths": [
-          "$.roles[0].id"
-        ],
-        "equals": {},
-        "contains": {},
-        "regex": {}
-      },
-      "workspaceScopes": {
-        "unknown": {
-          "pathParams": {},
-          "query": "",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
+            "authorization": "Bearer $token"
           }
         }
       },
@@ -179,5 +50,5 @@
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "8f7c038b-4e7b-4c2c-8f8e-8e0145b09d86"
+  "defaultTestcaseId": "48cf1567-88d5-4c1a-a230-8235ab64f24b"
 }

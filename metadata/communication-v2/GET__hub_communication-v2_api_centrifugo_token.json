@@ -7,16 +7,16 @@
   "apiDomain": "https://api-qa.zotok.ai",
   "testcases": [
     {
-      "id": "6d7736bc-737d-498e-aebb-9a9b6bd9a221",
+      "id": "ac5f959e-c131-45a3-8cce-50d5baa33dca",
       "name": "GET /hub/communication-v2/api/centrifugo/token",
-      "createdAt": "2026-04-29T06:13:26.929Z",
-      "updatedAt": "2026-04-29T06:13:26.929Z",
+      "createdAt": "2026-05-06T12:29:48.177Z",
+      "updatedAt": "2026-05-06T12:29:48.177Z",
       "request": {
         "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "query": "?sellerWorkspaceId=%24sellerWorkspaceId",
         "body": null,
         "headers": {
-          "authorization": "[REDACTED]"
+          "authorization": "Bearer $token"
         }
       },
       "assertions": {
@@ -40,186 +40,10 @@
       "workspaceScopes": {
         "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
           "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "query": "?sellerWorkspaceId=%24sellerWorkspaceId",
           "body": null,
           "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
-      },
-      "tags": [],
-      "status": "active"
-    },
-    {
-      "id": "27d31014-88aa-4262-8138-4f614c980ffd",
-      "name": "GET /hub/communication-v2/api/centrifugo/token",
-      "createdAt": "2026-04-29T06:13:26.929Z",
-      "updatedAt": "2026-04-29T06:13:26.929Z",
-      "request": {
-        "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
-      },
-      "assertions": {
-        "expectedStatus": [
-          200
-        ],
-        "requiredResponsePaths": [
-          "$.websocketUrl",
-          "$.subscriptions[0].channel"
-        ],
-        "ignoreResponsePaths": [
-          "$.userId",
-          "$.sellerWorkspaceId",
-          "$.token",
-          "$.subscriptions[0].token"
-        ],
-        "equals": {},
-        "contains": {},
-        "regex": {}
-      },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
-      },
-      "tags": [],
-      "status": "active"
-    },
-    {
-      "id": "bd9f53f2-101a-4e5e-bbea-ca2b30a56eb4",
-      "name": "GET /hub/communication-v2/api/centrifugo/token",
-      "createdAt": "2026-05-04T08:04:17.037Z",
-      "updatedAt": "2026-05-04T08:04:17.037Z",
-      "request": {
-        "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
-      },
-      "assertions": {
-        "expectedStatus": [
-          200
-        ],
-        "requiredResponsePaths": [
-          "$.websocketUrl",
-          "$.subscriptions[0].channel"
-        ],
-        "ignoreResponsePaths": [
-          "$.userId",
-          "$.sellerWorkspaceId",
-          "$.token",
-          "$.subscriptions[0].token"
-        ],
-        "equals": {},
-        "contains": {},
-        "regex": {}
-      },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
-      },
-      "tags": [],
-      "status": "active"
-    },
-    {
-      "id": "6169b7aa-861f-469d-b42d-6f5fc10f24ad",
-      "name": "GET /hub/communication-v2/api/centrifugo/token",
-      "createdAt": "2026-05-04T08:04:17.038Z",
-      "updatedAt": "2026-05-04T08:04:17.038Z",
-      "request": {
-        "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
-      },
-      "assertions": {
-        "expectedStatus": [
-          200
-        ],
-        "requiredResponsePaths": [
-          "$.websocketUrl",
-          "$.subscriptions[0].channel"
-        ],
-        "ignoreResponsePaths": [
-          "$.userId",
-          "$.sellerWorkspaceId",
-          "$.token",
-          "$.subscriptions[0].token"
-        ],
-        "equals": {},
-        "contains": {},
-        "regex": {}
-      },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
-      },
-      "tags": [],
-      "status": "active"
-    },
-    {
-      "id": "8cafed8d-3d75-44d4-b6cf-8e26193adbc7",
-      "name": "GET /hub/communication-v2/api/centrifugo/token",
-      "createdAt": "2026-05-04T08:13:53.254Z",
-      "updatedAt": "2026-05-04T08:13:53.254Z",
-      "request": {
-        "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
-      },
-      "assertions": {
-        "expectedStatus": [
-          200
-        ],
-        "requiredResponsePaths": [
-          "$.websocketUrl",
-          "$.subscriptions[0].channel"
-        ],
-        "ignoreResponsePaths": [
-          "$.userId",
-          "$.sellerWorkspaceId",
-          "$.token",
-          "$.subscriptions[0].token"
-        ],
-        "equals": {},
-        "contains": {},
-        "regex": {}
-      },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
+            "authorization": "Bearer $token"
           }
         }
       },
@@ -227,5 +51,5 @@
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "6d7736bc-737d-498e-aebb-9a9b6bd9a221"
+  "defaultTestcaseId": "ac5f959e-c131-45a3-8cce-50d5baa33dca"
 }
