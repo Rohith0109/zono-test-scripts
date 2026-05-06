@@ -1,31 +1,35 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "POST /hub/reports/api/v2/dashboard/business-summary",
   "module": "reports",
   "method": "POST",
   "path": "/hub/reports/api/v2/dashboard/business-summary",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [],
+    "query": [],
+    "body": [
+      "sellerWorkspaceId"
+    ],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "e64b3178-7622-4103-bae2-6190c4782324",
-      "name": "POST /hub/reports/api/v2/dashboard/business-summary",
+      "id": "e64b3178-7622-4103-bae2-6190c4782324-unknown",
+      "name": "POST /hub/reports/api/v2/dashboard/business-summary (unknown)",
       "createdAt": "2026-05-04T08:13:54.241Z",
       "updatedAt": "2026-05-04T08:13:54.241Z",
-      "request": {
-        "pathParams": {},
-        "query": "",
-        "body": {
-          "startDate": "2026-05-03",
-          "endDate": "2026-05-09",
-          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "compare": true,
-          "report": "noOfInvoicesSent",
-          "filters": {}
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {},
+      "queryParams": {},
+      "body": {
+        "startDate": "2026-05-03",
+        "endDate": "2026-05-09",
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "compare": true,
+        "report": "noOfInvoicesSent",
+        "filters": {}
       },
       "assertions": {
         "expectedStatus": [
@@ -46,48 +50,24 @@
         "equals": {},
         "contains": {},
         "regex": {}
-      },
-      "workspaceScopes": {
-        "unknown": {
-          "pathParams": {},
-          "query": "",
-          "body": {
-            "startDate": "2026-05-03",
-            "endDate": "2026-05-09",
-            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-            "compare": true,
-            "report": "noOfInvoicesSent",
-            "filters": {}
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
       },
       "tags": [],
       "status": "active"
     },
     {
-      "id": "7979ea1d-8a37-4937-afa5-5d8ea778f560",
-      "name": "POST /hub/reports/api/v2/dashboard/business-summary",
+      "id": "7979ea1d-8a37-4937-afa5-5d8ea778f560-unknown",
+      "name": "POST /hub/reports/api/v2/dashboard/business-summary (unknown)",
       "createdAt": "2026-05-04T08:13:54.242Z",
       "updatedAt": "2026-05-04T08:13:54.242Z",
-      "request": {
-        "pathParams": {},
-        "query": "",
-        "body": {
-          "startDate": "2026-05-03",
-          "endDate": "2026-05-09",
-          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "compare": true,
-          "report": "totalOutstanding",
-          "filters": {}
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {},
+      "queryParams": {},
+      "body": {
+        "startDate": "2026-05-03",
+        "endDate": "2026-05-09",
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "compare": true,
+        "report": "totalOutstanding",
+        "filters": {}
       },
       "assertions": {
         "expectedStatus": [
@@ -108,48 +88,24 @@
         "equals": {},
         "contains": {},
         "regex": {}
-      },
-      "workspaceScopes": {
-        "unknown": {
-          "pathParams": {},
-          "query": "",
-          "body": {
-            "startDate": "2026-05-03",
-            "endDate": "2026-05-09",
-            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-            "compare": true,
-            "report": "totalOutstanding",
-            "filters": {}
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
       },
       "tags": [],
       "status": "active"
     },
     {
-      "id": "e1a40beb-19fc-4dfc-857c-5d67c10fa2a6",
-      "name": "POST /hub/reports/api/v2/dashboard/business-summary",
+      "id": "e1a40beb-19fc-4dfc-857c-5d67c10fa2a6-unknown",
+      "name": "POST /hub/reports/api/v2/dashboard/business-summary (unknown)",
       "createdAt": "2026-05-04T08:13:54.242Z",
       "updatedAt": "2026-05-04T08:13:54.242Z",
-      "request": {
-        "pathParams": {},
-        "query": "",
-        "body": {
-          "startDate": "2026-05-03",
-          "endDate": "2026-05-09",
-          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "compare": true,
-          "report": "totalRevenue",
-          "filters": {}
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {},
+      "queryParams": {},
+      "body": {
+        "startDate": "2026-05-03",
+        "endDate": "2026-05-09",
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "compare": true,
+        "report": "totalRevenue",
+        "filters": {}
       },
       "assertions": {
         "expectedStatus": [
@@ -170,48 +126,24 @@
         "equals": {},
         "contains": {},
         "regex": {}
-      },
-      "workspaceScopes": {
-        "unknown": {
-          "pathParams": {},
-          "query": "",
-          "body": {
-            "startDate": "2026-05-03",
-            "endDate": "2026-05-09",
-            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-            "compare": true,
-            "report": "totalRevenue",
-            "filters": {}
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
       },
       "tags": [],
       "status": "active"
     },
     {
-      "id": "8df4631b-4421-40c1-8944-0762955d905c",
-      "name": "POST /hub/reports/api/v2/dashboard/business-summary",
+      "id": "8df4631b-4421-40c1-8944-0762955d905c-unknown",
+      "name": "POST /hub/reports/api/v2/dashboard/business-summary (unknown)",
       "createdAt": "2026-05-04T08:13:54.242Z",
       "updatedAt": "2026-05-04T08:13:54.242Z",
-      "request": {
-        "pathParams": {},
-        "query": "",
-        "body": {
-          "startDate": "2026-05-03",
-          "endDate": "2026-05-09",
-          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "compare": true,
-          "report": "totalPaymentsReceived",
-          "filters": {}
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {},
+      "queryParams": {},
+      "body": {
+        "startDate": "2026-05-03",
+        "endDate": "2026-05-09",
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "compare": true,
+        "report": "totalPaymentsReceived",
+        "filters": {}
       },
       "assertions": {
         "expectedStatus": [
@@ -232,48 +164,24 @@
         "equals": {},
         "contains": {},
         "regex": {}
-      },
-      "workspaceScopes": {
-        "unknown": {
-          "pathParams": {},
-          "query": "",
-          "body": {
-            "startDate": "2026-05-03",
-            "endDate": "2026-05-09",
-            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-            "compare": true,
-            "report": "totalPaymentsReceived",
-            "filters": {}
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
       },
       "tags": [],
       "status": "active"
     },
     {
-      "id": "a91c0cd6-8f19-40d4-bdd9-d9247c750b4d",
-      "name": "POST /hub/reports/api/v2/dashboard/business-summary",
+      "id": "a91c0cd6-8f19-40d4-bdd9-d9247c750b4d-unknown",
+      "name": "POST /hub/reports/api/v2/dashboard/business-summary (unknown)",
       "createdAt": "2026-05-04T08:13:54.242Z",
       "updatedAt": "2026-05-04T08:13:54.242Z",
-      "request": {
-        "pathParams": {},
-        "query": "",
-        "body": {
-          "startDate": "2026-05-03",
-          "endDate": "2026-05-09",
-          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "compare": true,
-          "report": "totalInvoiceAmount",
-          "filters": {}
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {},
+      "queryParams": {},
+      "body": {
+        "startDate": "2026-05-03",
+        "endDate": "2026-05-09",
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "compare": true,
+        "report": "totalInvoiceAmount",
+        "filters": {}
       },
       "assertions": {
         "expectedStatus": [
@@ -294,28 +202,10 @@
         "equals": {},
         "contains": {},
         "regex": {}
-      },
-      "workspaceScopes": {
-        "unknown": {
-          "pathParams": {},
-          "query": "",
-          "body": {
-            "startDate": "2026-05-03",
-            "endDate": "2026-05-09",
-            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-            "compare": true,
-            "report": "totalInvoiceAmount",
-            "filters": {}
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
       },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "e64b3178-7622-4103-bae2-6190c4782324"
+  "defaultTestcaseId": "e64b3178-7622-4103-bae2-6190c4782324-unknown"
 }

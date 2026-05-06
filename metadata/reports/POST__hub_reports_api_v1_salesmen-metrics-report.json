@@ -1,27 +1,33 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "POST /hub/reports/api/v1/salesmen-metrics-report",
   "module": "reports",
   "method": "POST",
   "path": "/hub/reports/api/v1/salesmen-metrics-report",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [],
+    "query": [
+      "sellerWorkspaceId"
+    ],
+    "body": [],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "72301e4e-0df3-42ae-94ba-7023b79da1a1",
-      "name": "POST /hub/reports/api/v1/salesmen-metrics-report",
+      "id": "72301e4e-0df3-42ae-94ba-7023b79da1a1-be436b63",
+      "name": "POST /hub/reports/api/v1/salesmen-metrics-report (be436b63)",
       "createdAt": "2026-05-04T08:14:08.602Z",
       "updatedAt": "2026-05-04T08:14:08.602Z",
-      "request": {
-        "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": {
-          "teamMemberId": [],
-          "period": "30"
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {},
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "body": {
+        "teamMemberId": [],
+        "period": "30"
       },
       "assertions": {
         "expectedStatus": [
@@ -35,59 +41,41 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": {
-            "teamMemberId": [],
-            "period": "30"
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     },
     {
-      "id": "505e99e1-d84a-4860-940d-4ba743f27834",
-      "name": "POST /hub/reports/api/v1/salesmen-metrics-report",
+      "id": "505e99e1-d84a-4860-940d-4ba743f27834-be436b63",
+      "name": "POST /hub/reports/api/v1/salesmen-metrics-report (be436b63)",
       "createdAt": "2026-05-04T08:14:08.602Z",
       "updatedAt": "2026-05-04T08:14:08.602Z",
-      "request": {
-        "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": {
-          "teamMemberId": [
-            "04c8af5b-ad4a-46ed-af58-e924796cd696",
-            "64d0d159-665a-4161-8655-6269e9b9b615",
-            "5cca6fad-76f6-43bc-a1f1-02935a951676",
-            "8b6003a8-6db2-4efa-8d97-aeb2c2a3a744",
-            "1472788e-a20e-4c00-9861-12fac82b08d4",
-            "2f5ab109-f5b4-4da5-8355-41e7ad54ee9f",
-            "6ed81370-9fcb-4a4a-8f1b-c8eab47d4c3e",
-            "6ab6a3b0-4841-42f7-9fd2-2e1b1721b85b",
-            "6790b8b2-9eb3-4699-b12e-0e3a96413fd2",
-            "cbe2f0f8-f3d5-43d1-a043-d8e2e551961f",
-            "58d9cc8c-9e32-45b0-8b04-ce65c873c773",
-            "4da6d2f0-ccdb-44a8-abbd-154d68a8e208",
-            "1675f614-48c2-4d75-b16b-abbc69739cbf",
-            "d62406f7-7b29-49a8-a577-150da963e6cb",
-            "ec13eff5-74c7-407e-a4b9-77e0734bec16",
-            "fa677d8c-d58c-490b-a1c0-4ca30eae6e49",
-            "6187d4d7-50bd-4032-b07f-48dbc6b9ae4e",
-            "ba3571a8-b409-40cd-a73e-847ed530b464",
-            "6a62bc9e-3113-443f-9570-fb738ec3322e",
-            "179b6c78-2071-45fc-a81d-d3dd56471bdf"
-          ]
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {},
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "body": {
+        "teamMemberId": [
+          "04c8af5b-ad4a-46ed-af58-e924796cd696",
+          "64d0d159-665a-4161-8655-6269e9b9b615",
+          "5cca6fad-76f6-43bc-a1f1-02935a951676",
+          "8b6003a8-6db2-4efa-8d97-aeb2c2a3a744",
+          "1472788e-a20e-4c00-9861-12fac82b08d4",
+          "2f5ab109-f5b4-4da5-8355-41e7ad54ee9f",
+          "6ed81370-9fcb-4a4a-8f1b-c8eab47d4c3e",
+          "6ab6a3b0-4841-42f7-9fd2-2e1b1721b85b",
+          "6790b8b2-9eb3-4699-b12e-0e3a96413fd2",
+          "cbe2f0f8-f3d5-43d1-a043-d8e2e551961f",
+          "58d9cc8c-9e32-45b0-8b04-ce65c873c773",
+          "4da6d2f0-ccdb-44a8-abbd-154d68a8e208",
+          "1675f614-48c2-4d75-b16b-abbc69739cbf",
+          "d62406f7-7b29-49a8-a577-150da963e6cb",
+          "ec13eff5-74c7-407e-a4b9-77e0734bec16",
+          "fa677d8c-d58c-490b-a1c0-4ca30eae6e49",
+          "6187d4d7-50bd-4032-b07f-48dbc6b9ae4e",
+          "ba3571a8-b409-40cd-a73e-847ed530b464",
+          "6a62bc9e-3113-443f-9570-fb738ec3322e",
+          "179b6c78-2071-45fc-a81d-d3dd56471bdf"
+        ]
       },
       "assertions": {
         "expectedStatus": [
@@ -108,43 +96,9 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": {
-            "teamMemberId": [
-              "04c8af5b-ad4a-46ed-af58-e924796cd696",
-              "64d0d159-665a-4161-8655-6269e9b9b615",
-              "5cca6fad-76f6-43bc-a1f1-02935a951676",
-              "8b6003a8-6db2-4efa-8d97-aeb2c2a3a744",
-              "1472788e-a20e-4c00-9861-12fac82b08d4",
-              "2f5ab109-f5b4-4da5-8355-41e7ad54ee9f",
-              "6ed81370-9fcb-4a4a-8f1b-c8eab47d4c3e",
-              "6ab6a3b0-4841-42f7-9fd2-2e1b1721b85b",
-              "6790b8b2-9eb3-4699-b12e-0e3a96413fd2",
-              "cbe2f0f8-f3d5-43d1-a043-d8e2e551961f",
-              "58d9cc8c-9e32-45b0-8b04-ce65c873c773",
-              "4da6d2f0-ccdb-44a8-abbd-154d68a8e208",
-              "1675f614-48c2-4d75-b16b-abbc69739cbf",
-              "d62406f7-7b29-49a8-a577-150da963e6cb",
-              "ec13eff5-74c7-407e-a4b9-77e0734bec16",
-              "fa677d8c-d58c-490b-a1c0-4ca30eae6e49",
-              "6187d4d7-50bd-4032-b07f-48dbc6b9ae4e",
-              "ba3571a8-b409-40cd-a73e-847ed530b464",
-              "6a62bc9e-3113-443f-9570-fb738ec3322e",
-              "179b6c78-2071-45fc-a81d-d3dd56471bdf"
-            ]
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "72301e4e-0df3-42ae-94ba-7023b79da1a1"
+  "defaultTestcaseId": "72301e4e-0df3-42ae-94ba-7023b79da1a1-be436b63"
 }

@@ -1,24 +1,31 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "GET /hub/orgs/api/cfa",
   "module": "orgs",
   "method": "GET",
   "path": "/hub/orgs/api/cfa",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [],
+    "query": [
+      "sellerWorkspaceId"
+    ],
+    "body": [],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "d5a00c8b-6476-471e-aa8a-c1ab4a539596",
-      "name": "GET /hub/orgs/api/cfa",
+      "id": "d5a00c8b-6476-471e-aa8a-c1ab4a539596-be436b63",
+      "name": "GET /hub/orgs/api/cfa (be436b63)",
       "createdAt": "2026-05-04T08:04:18.580Z",
       "updatedAt": "2026-05-04T08:04:18.580Z",
-      "request": {
-        "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
+      "pathParams": {},
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
       },
+      "body": null,
       "assertions": {
         "expectedStatus": [
           200
@@ -28,33 +35,20 @@
         "equals": {},
         "contains": {},
         "regex": {}
-      },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
       },
       "tags": [],
       "status": "active"
     },
     {
-      "id": "15b0b439-6649-426f-91be-2554ac582bf3",
-      "name": "GET /hub/orgs/api/cfa",
+      "id": "15b0b439-6649-426f-91be-2554ac582bf3-be436b63",
+      "name": "GET /hub/orgs/api/cfa (be436b63)",
       "createdAt": "2026-05-04T08:13:55.804Z",
       "updatedAt": "2026-05-04T08:13:55.804Z",
-      "request": {
-        "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
+      "pathParams": {},
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
       },
+      "body": null,
       "assertions": {
         "expectedStatus": [
           200
@@ -64,16 +58,6 @@
         "equals": {},
         "contains": {},
         "regex": {}
-      },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
       },
       "tags": [],
       "status": "active"
@@ -151,5 +135,5 @@
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "d5a00c8b-6476-471e-aa8a-c1ab4a539596"
+  "defaultTestcaseId": "d5a00c8b-6476-471e-aa8a-c1ab4a539596-be436b63"
 }

@@ -1,30 +1,41 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "POST /hub/commerce-v2/pricing/details/{workspaceId}",
   "module": "commerce-v2",
   "method": "POST",
   "path": "/hub/commerce-v2/pricing/details/{workspaceId}",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [
+      "workspaceId"
+    ],
+    "query": [
+      "priceListId"
+    ],
+    "body": [
+      "sellerWorkspaceId"
+    ],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "455f89e8-7366-4141-bbe2-fea7d3b3cf30",
-      "name": "POST /hub/commerce-v2/pricing/details/{workspaceId}",
+      "id": "455f89e8-7366-4141-bbe2-fea7d3b3cf30-be436b63",
+      "name": "POST /hub/commerce-v2/pricing/details/{workspaceId} (be436b63)",
       "createdAt": "2026-05-05T10:29:18.662Z",
       "updatedAt": "2026-05-05T10:29:18.662Z",
-      "request": {
-        "pathParams": {
-          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-        },
-        "query": "?priceListId=5b3001b9-3d83-4d77-92b8-c6db0e7aa429&includeAllProducts=false",
-        "body": {
-          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "pageNo": 1,
-          "pageSize": 20
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "queryParams": {
+        "priceListId": "5b3001b9-3d83-4d77-92b8-c6db0e7aa429",
+        "includeAllProducts": "false"
+      },
+      "body": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "pageNo": 1,
+        "pageSize": 20
       },
       "assertions": {
         "expectedStatus": [
@@ -68,26 +79,9 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {
-            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-          },
-          "query": "?priceListId=5b3001b9-3d83-4d77-92b8-c6db0e7aa429&includeAllProducts=false",
-          "body": {
-            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-            "pageNo": 1,
-            "pageSize": 20
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "455f89e8-7366-4141-bbe2-fea7d3b3cf30"
+  "defaultTestcaseId": "455f89e8-7366-4141-bbe2-fea7d3b3cf30-be436b63"
 }

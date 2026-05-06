@@ -1,26 +1,35 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "GET /hub/commerce-v2/scheme/filters/{workspaceId}",
   "module": "commerce-v2",
   "method": "GET",
   "path": "/hub/commerce-v2/scheme/filters/{workspaceId}",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [
+      "workspaceId"
+    ],
+    "query": [
+      "sellerWorkspaceId"
+    ],
+    "body": [],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "a8654b2c-5466-43d7-84cb-77ded933dde3",
-      "name": "GET /hub/commerce-v2/scheme/filters/{workspaceId}",
+      "id": "a8654b2c-5466-43d7-84cb-77ded933dde3-be436b63",
+      "name": "GET /hub/commerce-v2/scheme/filters/{workspaceId} (be436b63)",
       "createdAt": "2026-05-04T08:14:09.007Z",
       "updatedAt": "2026-05-04T08:14:09.007Z",
-      "request": {
-        "pathParams": {
-          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-        },
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
       },
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "body": null,
       "assertions": {
         "expectedStatus": [
           200
@@ -43,21 +52,9 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {
-            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-          },
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "a8654b2c-5466-43d7-84cb-77ded933dde3"
+  "defaultTestcaseId": "a8654b2c-5466-43d7-84cb-77ded933dde3-be436b63"
 }

@@ -1,24 +1,36 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "GET /hub/communication-v2/api/channel/member",
   "module": "communication-v2",
   "method": "GET",
   "path": "/hub/communication-v2/api/channel/member",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [],
+    "query": [
+      "workspaceId",
+      "id",
+      "sellerWorkspaceId"
+    ],
+    "body": [],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "a15dced3-94cb-41da-9021-04dd397408d6",
-      "name": "GET /hub/communication-v2/api/channel/member",
+      "id": "a15dced3-94cb-41da-9021-04dd397408d6-be436b63",
+      "name": "GET /hub/communication-v2/api/channel/member (be436b63)",
       "createdAt": "2026-04-29T06:13:28.050Z",
       "updatedAt": "2026-04-29T06:13:28.050Z",
-      "request": {
-        "pathParams": {},
-        "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=a0da988c-b196-4c15-b406-be981e6c29f1&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.47484388183706183",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
+      "pathParams": {},
+      "queryParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "id": "a0da988c-b196-4c15-b406-be981e6c29f1",
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "random": "0.47484388183706183"
       },
+      "body": null,
       "assertions": {
         "expectedStatus": [
           200
@@ -29,32 +41,22 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=a0da988c-b196-4c15-b406-be981e6c29f1&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.47484388183706183",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     },
     {
-      "id": "7a354920-6e34-466a-a0e2-7e095277d32e",
-      "name": "GET /hub/communication-v2/api/channel/member",
+      "id": "7a354920-6e34-466a-a0e2-7e095277d32e-be436b63",
+      "name": "GET /hub/communication-v2/api/channel/member (be436b63)",
       "createdAt": "2026-05-04T08:04:20.832Z",
       "updatedAt": "2026-05-04T08:04:20.832Z",
-      "request": {
-        "pathParams": {},
-        "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=ecc24cfb-b8f2-4728-ad9d-c6f6884115c6&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.46860651047780033",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
+      "pathParams": {},
+      "queryParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "id": "ecc24cfb-b8f2-4728-ad9d-c6f6884115c6",
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "random": "0.46860651047780033"
       },
+      "body": null,
       "assertions": {
         "expectedStatus": [
           200
@@ -64,33 +66,23 @@
         "equals": {},
         "contains": {},
         "regex": {}
-      },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=ecc24cfb-b8f2-4728-ad9d-c6f6884115c6&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.46860651047780033",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
       },
       "tags": [],
       "status": "active"
     },
     {
-      "id": "e740b87f-a020-4e99-a859-cd85ac12f3cd",
-      "name": "GET /hub/communication-v2/api/channel/member",
+      "id": "e740b87f-a020-4e99-a859-cd85ac12f3cd-be436b63",
+      "name": "GET /hub/communication-v2/api/channel/member (be436b63)",
       "createdAt": "2026-05-04T08:13:58.421Z",
       "updatedAt": "2026-05-04T08:13:58.421Z",
-      "request": {
-        "pathParams": {},
-        "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=0364b804-cbe7-41bd-8142-b1af249c061d&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.8425360971909879",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
+      "pathParams": {},
+      "queryParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "id": "0364b804-cbe7-41bd-8142-b1af249c061d",
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "random": "0.8425360971909879"
       },
+      "body": null,
       "assertions": {
         "expectedStatus": [
           200
@@ -100,20 +92,10 @@
         "equals": {},
         "contains": {},
         "regex": {}
-      },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&id=0364b804-cbe7-41bd-8142-b1af249c061d&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&random=0.8425360971909879",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
       },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "a15dced3-94cb-41da-9021-04dd397408d6"
+  "defaultTestcaseId": "a15dced3-94cb-41da-9021-04dd397408d6-be436b63"
 }

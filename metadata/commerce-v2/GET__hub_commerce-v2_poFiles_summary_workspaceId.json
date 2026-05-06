@@ -1,26 +1,37 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "GET /hub/commerce-v2/poFiles/summary/{workspaceId}",
   "module": "commerce-v2",
   "method": "GET",
   "path": "/hub/commerce-v2/poFiles/summary/{workspaceId}",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [
+      "workspaceId"
+    ],
+    "query": [
+      "sellerWorkspaceId",
+      "customerId"
+    ],
+    "body": [],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "3106ee7a-d7b9-49fe-852f-f6da4ddf7d58",
-      "name": "GET /hub/commerce-v2/poFiles/summary/{workspaceId}",
+      "id": "3106ee7a-d7b9-49fe-852f-f6da4ddf7d58-be436b63",
+      "name": "GET /hub/commerce-v2/poFiles/summary/{workspaceId} (be436b63)",
       "createdAt": "2026-05-04T08:04:19.176Z",
       "updatedAt": "2026-05-04T08:04:19.176Z",
-      "request": {
-        "pathParams": {
-          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-        },
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&customerId=4741b07c-9840-4def-bcdf-77eff8a510a9",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
       },
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "customerId": "4741b07c-9840-4def-bcdf-77eff8a510a9"
+      },
+      "body": null,
       "assertions": {
         "expectedStatus": [
           200
@@ -38,37 +49,23 @@
         "equals": {},
         "contains": {},
         "regex": {}
-      },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {
-            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-          },
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&customerId=4741b07c-9840-4def-bcdf-77eff8a510a9",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
       },
       "tags": [],
       "status": "active"
     },
     {
-      "id": "b2739f8b-8e26-40bc-b5e8-403e67d19cf6",
-      "name": "GET /hub/commerce-v2/poFiles/summary/{workspaceId}",
+      "id": "b2739f8b-8e26-40bc-b5e8-403e67d19cf6-be436b63",
+      "name": "GET /hub/commerce-v2/poFiles/summary/{workspaceId} (be436b63)",
       "createdAt": "2026-05-04T08:13:56.519Z",
       "updatedAt": "2026-05-04T08:13:56.519Z",
-      "request": {
-        "pathParams": {
-          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-        },
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&customerId=a4800466-ba92-4687-a0b0-783063d62ae9",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
       },
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "customerId": "a4800466-ba92-4687-a0b0-783063d62ae9"
+      },
+      "body": null,
       "assertions": {
         "expectedStatus": [
           200
@@ -87,21 +84,9 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {
-            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-          },
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&customerId=a4800466-ba92-4687-a0b0-783063d62ae9",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "3106ee7a-d7b9-49fe-852f-f6da4ddf7d58"
+  "defaultTestcaseId": "3106ee7a-d7b9-49fe-852f-f6da4ddf7d58-be436b63"
 }

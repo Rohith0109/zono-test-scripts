@@ -1,24 +1,40 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "GET /hub/communication-v2/api/communicate/messages",
   "module": "communication-v2",
   "method": "GET",
   "path": "/hub/communication-v2/api/communicate/messages",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [],
+    "query": [
+      "workspaceId",
+      "channelId",
+      "startTimeToken",
+      "endTimeToken",
+      "sellerWorkspaceId"
+    ],
+    "body": [],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "ccc6fba3-f095-4f76-bbe9-1fc521865c7c",
-      "name": "GET /hub/communication-v2/api/communicate/messages",
+      "id": "ccc6fba3-f095-4f76-bbe9-1fc521865c7c-be436b63",
+      "name": "GET /hub/communication-v2/api/communicate/messages (be436b63)",
       "createdAt": "2026-05-04T08:04:20.519Z",
       "updatedAt": "2026-05-04T08:04:20.519Z",
-      "request": {
-        "pathParams": {},
-        "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&channelId=ecc24cfb-b8f2-4728-ad9d-c6f6884115c6&startTimeToken=0&endTimeToken=17778818437690000&limit=25&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
+      "pathParams": {},
+      "queryParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "channelId": "ecc24cfb-b8f2-4728-ad9d-c6f6884115c6",
+        "startTimeToken": "0",
+        "endTimeToken": "17778818437690000",
+        "limit": "25",
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
       },
+      "body": null,
       "assertions": {
         "expectedStatus": [
           200
@@ -28,33 +44,25 @@
         "equals": {},
         "contains": {},
         "regex": {}
-      },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&channelId=ecc24cfb-b8f2-4728-ad9d-c6f6884115c6&startTimeToken=0&endTimeToken=17778818437690000&limit=25&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
       },
       "tags": [],
       "status": "active"
     },
     {
-      "id": "853d199f-4c02-4465-b9ae-b4441873f83c",
-      "name": "GET /hub/communication-v2/api/communicate/messages",
+      "id": "853d199f-4c02-4465-b9ae-b4441873f83c-be436b63",
+      "name": "GET /hub/communication-v2/api/communicate/messages (be436b63)",
       "createdAt": "2026-05-04T08:13:58.054Z",
       "updatedAt": "2026-05-04T08:13:58.054Z",
-      "request": {
-        "pathParams": {},
-        "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&channelId=0364b804-cbe7-41bd-8142-b1af249c061d&startTimeToken=0&endTimeToken=17778822729950000&limit=25&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
+      "pathParams": {},
+      "queryParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "channelId": "0364b804-cbe7-41bd-8142-b1af249c061d",
+        "startTimeToken": "0",
+        "endTimeToken": "17778822729950000",
+        "limit": "25",
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
       },
+      "body": null,
       "assertions": {
         "expectedStatus": [
           200
@@ -65,19 +73,9 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&channelId=0364b804-cbe7-41bd-8142-b1af249c061d&startTimeToken=0&endTimeToken=17778822729950000&limit=25&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "ccc6fba3-f095-4f76-bbe9-1fc521865c7c"
+  "defaultTestcaseId": "ccc6fba3-f095-4f76-bbe9-1fc521865c7c-be436b63"
 }

@@ -1,38 +1,42 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "POST /hub/orgs/api/customers/create",
   "module": "orgs",
   "method": "POST",
   "path": "/hub/orgs/api/customers/create",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [],
+    "query": [],
+    "body": [],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "ebaf318d-9e7a-42a4-bc29-07611bd76936",
-      "name": "POST /hub/orgs/api/customers/create",
+      "id": "ebaf318d-9e7a-42a4-bc29-07611bd76936-be436b63",
+      "name": "POST /hub/orgs/api/customers/create (be436b63)",
       "createdAt": "2026-05-06T07:27:55.833Z",
       "updatedAt": "2026-05-06T07:27:55.833Z",
-      "request": {
-        "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": {
-          "senderWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "phone": "912335852503",
-          "customerDetails": {
-            "name": "Autotest Cust1",
-            "companyName": "Autotest cust1",
-            "telephone": "912335852503",
-            "customerCode": "652601",
-            "shippingAddress": {
-              "countryCode": "IN"
-            },
+      "pathParams": {},
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "body": {
+        "senderWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "phone": "912335852503",
+        "customerDetails": {
+          "name": "Autotest Cust1",
+          "companyName": "Autotest cust1",
+          "telephone": "912335852503",
+          "customerCode": "652601",
+          "shippingAddress": {
             "countryCode": "IN"
           },
-          "contacts": []
+          "countryCode": "IN"
         },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+        "contacts": []
       },
       "assertions": {
         "expectedStatus": [
@@ -76,34 +80,9 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": {
-            "senderWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-            "phone": "912335852503",
-            "customerDetails": {
-              "name": "Autotest Cust1",
-              "companyName": "Autotest cust1",
-              "telephone": "912335852503",
-              "customerCode": "652601",
-              "shippingAddress": {
-                "countryCode": "IN"
-              },
-              "countryCode": "IN"
-            },
-            "contacts": []
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "ebaf318d-9e7a-42a4-bc29-07611bd76936"
+  "defaultTestcaseId": "ebaf318d-9e7a-42a4-bc29-07611bd76936-be436b63"
 }
