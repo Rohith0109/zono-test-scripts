@@ -89,6 +89,120 @@
       },
       "tags": [],
       "status": "active"
+    },
+    {
+      "id": "ebeec2fb-e785-42bb-a4f6-80a8d6a9bae5",
+      "name": "GET /hub/orgs/api/customers/{workspaceId}",
+      "createdAt": "2026-05-06T07:27:55.544Z",
+      "updatedAt": "2026-05-06T07:27:55.544Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?includeCustomerGroupAssignments=1&includeWorkspaceMembers=1&includeTeamCustomersMapping=true&pageNo=1&pageSize=20&includeTeamCustomerCount=true&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]",
+          "cache-control": "no-cache"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?includeCustomerGroupAssignments=1&includeWorkspaceMembers=1&includeTeamCustomersMapping=true&pageNo=1&pageSize=20&includeTeamCustomerCount=true&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]",
+            "cache-control": "no-cache"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "a0cc2df1-b745-47f4-bed6-60ae64a5afde",
+      "name": "GET /hub/orgs/api/customers/{workspaceId}",
+      "createdAt": "2026-05-06T07:27:55.545Z",
+      "updatedAt": "2026-05-06T07:27:55.545Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?includeCustomerGroupAssignments=1&includeWorkspaceMembers=1&searchKey=autotest&includeTeamCustomersMapping=true&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.customers[0].name",
+          "$.customers[0].mobile",
+          "$.customers[0].phone",
+          "$.customers[0].status",
+          "$.customers[0].isActive",
+          "$.customers[0].gstin",
+          "$.customers[0].wgstin",
+          "$.customers[0].businessPAN",
+          "$.customers[0].distributorCode",
+          "$.customers[0].postalCode",
+          "$.customers[0].physicalAddress",
+          "$.customers[0].companyName",
+          "$.customers[0].cityName",
+          "$.customers[0].email",
+          "$.customers[0].grossCreditLimit",
+          "$.customers[0].creditLimitPeriod",
+          "$.customers[0].telephone",
+          "$.customers[0].CSTNumber",
+          "$.customers[0].distributorChannel",
+          "$.customers[0].stateName",
+          "$.customers[0].stateCode",
+          "$.customers[0].cityCode"
+        ],
+        "ignoreResponsePaths": [
+          "$.customers[0].id",
+          "$.customers[0].senderUserId",
+          "$.customers[0].senderWorkspaceId",
+          "$.customers[0].invitedWorkspaceId",
+          "$.customers[0].createdDate",
+          "$.customers[0].updatedDate",
+          "$.customers[0].stateId",
+          "$.customers[0].countryId"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?includeCustomerGroupAssignments=1&includeWorkspaceMembers=1&searchKey=autotest&includeTeamCustomersMapping=true&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
     }
   ],
   "defaultTestcaseId": "8d4d2b43-beaf-4c0b-bb94-35c4abadc1d1"
