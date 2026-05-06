@@ -141,6 +141,74 @@
       },
       "tags": [],
       "status": "active"
+    },
+    {
+      "id": "045c727c-0a5a-4aba-8453-4c89df31e62c",
+      "name": "GET /hub/orgs/api/customer/details",
+      "createdAt": "2026-05-06T07:27:56.278Z",
+      "updatedAt": "2026-05-06T07:27:56.278Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&inviteId=2dffdf60-785c-4977-88ee-18b2db64a7b0&includeInactive=true&includeCFA=true&customerCode=652601&includeTeamMembers=true&includeAttributes=true",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.name",
+          "$.email",
+          "$.companyName",
+          "$.gstin",
+          "$.businessPAN",
+          "$.distributorCode",
+          "$.postalCode",
+          "$.importSource",
+          "$.location.lat",
+          "$.location.lng",
+          "$.physicalAddress",
+          "$.shippingAddress.countryCode",
+          "$.shippingAddress.city",
+          "$.shippingAddress.state",
+          "$.shippingAddress.pincode",
+          "$.distributorChannel",
+          "$.CSTNumber",
+          "$.telephone",
+          "$.cityName",
+          "$.grossCreditLimit",
+          "$.creditLimitPeriod",
+          "$.tags",
+          "$.fulfillmentLocationCode"
+        ],
+        "ignoreResponsePaths": [
+          "$.id",
+          "$.inviteId",
+          "$.token",
+          "$.cityId",
+          "$.districtId",
+          "$.createdDate",
+          "$.updatedDate"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&inviteId=2dffdf60-785c-4977-88ee-18b2db64a7b0&includeInactive=true&includeCFA=true&customerCode=652601&includeTeamMembers=true&includeAttributes=true",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
     }
   ],
   "defaultTestcaseId": "ef4e4be4-5ebd-474b-8d53-95593765b523"
