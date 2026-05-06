@@ -1,29 +1,51 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "POST /hub/commerce-v2/scheme/{workspaceId}",
   "module": "commerce-v2",
   "method": "POST",
   "path": "/hub/commerce-v2/scheme/{workspaceId}",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [
+      "workspaceId"
+    ],
+    "query": [
+      "sellerWorkspaceId",
+      "skuCode"
+    ],
+    "body": [],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "cfc75fa8-f02c-4ca1-8336-a328b2a8bf29",
-      "name": "POST /hub/commerce-v2/scheme/{workspaceId}",
+      "id": "cfc75fa8-f02c-4ca1-8336-a328b2a8bf29-be436b63",
+      "name": "POST /hub/commerce-v2/scheme/{workspaceId} (be436b63)",
       "createdAt": "2026-05-04T08:14:09.314Z",
       "updatedAt": "2026-05-04T08:14:09.314Z",
-      "request": {
-        "pathParams": {
-          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-        },
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&pageNo=1&pageSize=20&skuCode=&sortDirection=&sortBy=&includeCFA=true&includeProducts=true&triggerCondition=AT_CART&startDate=&endDate=&dispatchFilters=false&status=&promotionType=",
-        "body": {
-          "cfaFilter": [],
-          "divisionFilter": []
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "pageNo": "1",
+        "pageSize": "20",
+        "skuCode": "",
+        "sortDirection": "",
+        "sortBy": "",
+        "includeCFA": "true",
+        "includeProducts": "true",
+        "triggerCondition": "AT_CART",
+        "startDate": "",
+        "endDate": "",
+        "dispatchFilters": "false",
+        "status": "",
+        "promotionType": ""
+      },
+      "body": {
+        "cfaFilter": [],
+        "divisionFilter": []
       },
       "assertions": {
         "expectedStatus": [
@@ -34,44 +56,37 @@
         "equals": {},
         "contains": {},
         "regex": {}
-      },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {
-            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-          },
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&pageNo=1&pageSize=20&skuCode=&sortDirection=&sortBy=&includeCFA=true&includeProducts=true&triggerCondition=AT_CART&startDate=&endDate=&dispatchFilters=false&status=&promotionType=",
-          "body": {
-            "cfaFilter": [],
-            "divisionFilter": []
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
       },
       "tags": [],
       "status": "active"
     },
     {
-      "id": "63165777-2a9d-4336-a042-bfc2b71d1320",
-      "name": "POST /hub/commerce-v2/scheme/{workspaceId}",
+      "id": "63165777-2a9d-4336-a042-bfc2b71d1320-be436b63",
+      "name": "POST /hub/commerce-v2/scheme/{workspaceId} (be436b63)",
       "createdAt": "2026-05-04T08:14:09.314Z",
       "updatedAt": "2026-05-04T08:14:09.314Z",
-      "request": {
-        "pathParams": {
-          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-        },
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&pageNo=1&pageSize=20&skuCode=&sortDirection=&sortBy=&includeCFA=true&includeProducts=true&triggerCondition=USER_PREFERENCE_AT_CHECKOUT&startDate=&endDate=&dispatchFilters=false&status=&promotionType=",
-        "body": {
-          "cfaFilter": [],
-          "divisionFilter": []
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "pageNo": "1",
+        "pageSize": "20",
+        "skuCode": "",
+        "sortDirection": "",
+        "sortBy": "",
+        "includeCFA": "true",
+        "includeProducts": "true",
+        "triggerCondition": "USER_PREFERENCE_AT_CHECKOUT",
+        "startDate": "",
+        "endDate": "",
+        "dispatchFilters": "false",
+        "status": "",
+        "promotionType": ""
+      },
+      "body": {
+        "cfaFilter": [],
+        "divisionFilter": []
       },
       "assertions": {
         "expectedStatus": [
@@ -83,25 +98,9 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {
-            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-          },
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&pageNo=1&pageSize=20&skuCode=&sortDirection=&sortBy=&includeCFA=true&includeProducts=true&triggerCondition=USER_PREFERENCE_AT_CHECKOUT&startDate=&endDate=&dispatchFilters=false&status=&promotionType=",
-          "body": {
-            "cfaFilter": [],
-            "divisionFilter": []
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "cfc75fa8-f02c-4ca1-8336-a328b2a8bf29"
+  "defaultTestcaseId": "cfc75fa8-f02c-4ca1-8336-a328b2a8bf29-be436b63"
 }

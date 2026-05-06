@@ -1,27 +1,36 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "POST /hub/orgs/api/department",
   "module": "orgs",
   "method": "POST",
   "path": "/hub/orgs/api/department",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [],
+    "query": [
+      "sellerWorkspaceId"
+    ],
+    "body": [
+      "departmentCode",
+      "id"
+    ],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "f14525a2-34f5-4568-9cfb-915d1427ecda",
-      "name": "POST /hub/orgs/api/department",
+      "id": "f14525a2-34f5-4568-9cfb-915d1427ecda-be436b63",
+      "name": "POST /hub/orgs/api/department (be436b63)",
       "createdAt": "2026-05-04T07:25:38.924Z",
       "updatedAt": "2026-05-04T07:25:38.924Z",
-      "request": {
-        "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": {
-          "departmentName": "Electronics",
-          "departmentCode": "ELECT5608"
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {},
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "body": {
+        "departmentName": "Electronics",
+        "departmentCode": "ELECT5608"
       },
       "assertions": {
         "expectedStatus": [
@@ -39,39 +48,21 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": {
-            "departmentName": "Electronics",
-            "departmentCode": "ELECT5608"
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     },
     {
-      "id": "bb97b099-a6b0-42c5-bdb1-1dff39b959b7",
-      "name": "POST /hub/orgs/api/department",
+      "id": "bb97b099-a6b0-42c5-bdb1-1dff39b959b7-be436b63",
+      "name": "POST /hub/orgs/api/department (be436b63)",
       "createdAt": "2026-05-04T07:25:38.924Z",
       "updatedAt": "2026-05-04T07:25:38.924Z",
-      "request": {
-        "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": {
-          "departmentName": "Electronicsss",
-          "departmentCode": "ELECT5608s"
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {},
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "body": {
+        "departmentName": "Electronicsss",
+        "departmentCode": "ELECT5608s"
       },
       "assertions": {
         "expectedStatus": [
@@ -91,40 +82,22 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": {
-            "departmentName": "Electronicsss",
-            "departmentCode": "ELECT5608s"
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     },
     {
-      "id": "442c58ab-b809-488a-b7a4-aaf00d0db9d3",
-      "name": "POST /hub/orgs/api/department",
+      "id": "442c58ab-b809-488a-b7a4-aaf00d0db9d3-be436b63",
+      "name": "POST /hub/orgs/api/department (be436b63)",
       "createdAt": "2026-05-04T07:25:38.924Z",
       "updatedAt": "2026-05-04T07:25:38.924Z",
-      "request": {
-        "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": {
-          "departmentName": "Sales",
-          "departmentCode": "SAL5",
-          "id": "6ccfcebf-4e29-4376-b441-bd1d42e1a6f1"
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {},
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "body": {
+        "departmentName": "Sales",
+        "departmentCode": "SAL5",
+        "id": "6ccfcebf-4e29-4376-b441-bd1d42e1a6f1"
       },
       "assertions": {
         "expectedStatus": [
@@ -144,24 +117,9 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": {
-            "departmentName": "Sales",
-            "departmentCode": "SAL5",
-            "id": "6ccfcebf-4e29-4376-b441-bd1d42e1a6f1"
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "f14525a2-34f5-4568-9cfb-915d1427ecda"
+  "defaultTestcaseId": "f14525a2-34f5-4568-9cfb-915d1427ecda-be436b63"
 }

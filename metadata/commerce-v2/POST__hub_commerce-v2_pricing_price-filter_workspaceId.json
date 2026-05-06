@@ -1,36 +1,43 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "POST /hub/commerce-v2/pricing/price-filter/{workspaceId}",
   "module": "commerce-v2",
   "method": "POST",
   "path": "/hub/commerce-v2/pricing/price-filter/{workspaceId}",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [
+      "workspaceId"
+    ],
+    "query": [],
+    "body": [
+      "sellerWorkspaceId",
+      "workspaceId"
+    ],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "cc256419-6f60-476d-86a1-db3863b49973",
-      "name": "POST /hub/commerce-v2/pricing/price-filter/{workspaceId}",
+      "id": "cc256419-6f60-476d-86a1-db3863b49973-be436b63",
+      "name": "POST /hub/commerce-v2/pricing/price-filter/{workspaceId} (be436b63)",
       "createdAt": "2026-05-04T08:14:10.952Z",
       "updatedAt": "2026-05-04T08:14:10.952Z",
-      "request": {
-        "pathParams": {
-          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-        },
-        "query": "",
-        "body": {
-          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "cfaIds": [],
-          "customerIds": [],
-          "criteria": [],
-          "pageNo": 0,
-          "pageSize": 0,
-          "sortBy": "createdDate",
-          "sortDirection": "ASC"
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "queryParams": {},
+      "body": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "cfaIds": [],
+        "customerIds": [],
+        "criteria": [],
+        "pageNo": 0,
+        "pageSize": 0,
+        "sortBy": "createdDate",
+        "sortDirection": "ASC"
       },
       "assertions": {
         "expectedStatus": [
@@ -50,58 +57,29 @@
         "equals": {},
         "contains": {},
         "regex": {}
-      },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {
-            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-          },
-          "query": "",
-          "body": {
-            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-            "cfaIds": [],
-            "customerIds": [],
-            "criteria": [],
-            "pageNo": 0,
-            "pageSize": 0,
-            "sortBy": "createdDate",
-            "sortDirection": "ASC"
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
       },
       "tags": [],
       "status": "active"
     },
     {
-      "id": "cacf186e-f7b2-4e73-8420-9f035256b1a1",
-      "name": "POST /hub/commerce-v2/pricing/price-filter/{workspaceId}",
+      "id": "cacf186e-f7b2-4e73-8420-9f035256b1a1-be436b63",
+      "name": "POST /hub/commerce-v2/pricing/price-filter/{workspaceId} (be436b63)",
       "createdAt": "2026-05-05T10:29:18.319Z",
       "updatedAt": "2026-05-05T10:29:18.319Z",
-      "request": {
-        "pathParams": {
-          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-        },
-        "query": "",
-        "body": {
-          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "cfaIds": [],
-          "customerIds": [],
-          "criteria": [],
-          "pageNo": 0,
-          "pageSize": 0,
-          "sortBy": "createdDate",
-          "sortDirection": "ASC"
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "queryParams": {},
+      "body": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "cfaIds": [],
+        "customerIds": [],
+        "criteria": [],
+        "pageNo": 0,
+        "pageSize": 0,
+        "sortBy": "createdDate",
+        "sortDirection": "ASC"
       },
       "assertions": {
         "expectedStatus": [
@@ -122,32 +100,9 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {
-            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-          },
-          "query": "",
-          "body": {
-            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-            "cfaIds": [],
-            "customerIds": [],
-            "criteria": [],
-            "pageNo": 0,
-            "pageSize": 0,
-            "sortBy": "createdDate",
-            "sortDirection": "ASC"
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "cc256419-6f60-476d-86a1-db3863b49973"
+  "defaultTestcaseId": "cc256419-6f60-476d-86a1-db3863b49973-be436b63"
 }

@@ -1,26 +1,35 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "GET /hub/communication-v2/api/conversations/internal-notes/{internalnoteId}",
   "module": "communication-v2",
   "method": "GET",
   "path": "/hub/communication-v2/api/conversations/internal-notes/{internalnoteId}",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [
+      "internalnoteId"
+    ],
+    "query": [
+      "sellerWorkspaceId"
+    ],
+    "body": [],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "cb688ceb-150b-4034-8b33-7fda48c8bd28",
-      "name": "GET /hub/communication-v2/api/conversations/internal-notes/{internalnoteId}",
+      "id": "cb688ceb-150b-4034-8b33-7fda48c8bd28-be436b63",
+      "name": "GET /hub/communication-v2/api/conversations/internal-notes/{internalnoteId} (be436b63)",
       "createdAt": "2026-05-04T08:04:21.229Z",
       "updatedAt": "2026-05-04T08:04:21.229Z",
-      "request": {
-        "pathParams": {
-          "internalnoteId": "4741b07c-9840-4def-bcdf-77eff8a510a9"
-        },
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
+      "pathParams": {
+        "internalnoteId": "4741b07c-9840-4def-bcdf-77eff8a510a9"
       },
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "body": null,
       "assertions": {
         "expectedStatus": [
           200
@@ -37,36 +46,21 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {
-            "internalnoteId": "4741b07c-9840-4def-bcdf-77eff8a510a9"
-          },
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     },
     {
-      "id": "f8d4f4db-1fc7-419c-b38c-f3f426c168ca",
-      "name": "GET /hub/communication-v2/api/conversations/internal-notes/{internalnoteId}",
+      "id": "f8d4f4db-1fc7-419c-b38c-f3f426c168ca-be436b63",
+      "name": "GET /hub/communication-v2/api/conversations/internal-notes/{internalnoteId} (be436b63)",
       "createdAt": "2026-05-04T08:13:59.428Z",
       "updatedAt": "2026-05-04T08:13:59.428Z",
-      "request": {
-        "pathParams": {
-          "internalnoteId": "a4800466-ba92-4687-a0b0-783063d62ae9"
-        },
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
+      "pathParams": {
+        "internalnoteId": "a4800466-ba92-4687-a0b0-783063d62ae9"
       },
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "body": null,
       "assertions": {
         "expectedStatus": [
           200
@@ -83,21 +77,9 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {
-            "internalnoteId": "a4800466-ba92-4687-a0b0-783063d62ae9"
-          },
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "cb688ceb-150b-4034-8b33-7fda48c8bd28"
+  "defaultTestcaseId": "cb688ceb-150b-4034-8b33-7fda48c8bd28-be436b63"
 }

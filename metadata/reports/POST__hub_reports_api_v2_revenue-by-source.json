@@ -1,29 +1,33 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "POST /hub/reports/api/v2/revenue-by-source",
   "module": "reports",
   "method": "POST",
   "path": "/hub/reports/api/v2/revenue-by-source",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [],
+    "query": [],
+    "body": [
+      "sellerWorkspaceId"
+    ],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "d67ce5b7-64e1-467c-a8cd-4ab5372443da",
-      "name": "POST /hub/reports/api/v2/revenue-by-source",
+      "id": "d67ce5b7-64e1-467c-a8cd-4ab5372443da-unknown",
+      "name": "POST /hub/reports/api/v2/revenue-by-source (unknown)",
       "createdAt": "2026-05-04T08:14:01.436Z",
       "updatedAt": "2026-05-04T08:14:01.436Z",
-      "request": {
-        "pathParams": {},
-        "query": "",
-        "body": {
-          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "startDate": "2026-04-04 00:00:00",
-          "endDate": "2026-05-04 23:59:59",
-          "groupBy": "overall"
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {},
+      "queryParams": {},
+      "body": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "startDate": "2026-04-04 00:00:00",
+        "endDate": "2026-05-04 23:59:59",
+        "groupBy": "overall"
       },
       "assertions": {
         "expectedStatus": [
@@ -40,44 +44,22 @@
         "equals": {},
         "contains": {},
         "regex": {}
-      },
-      "workspaceScopes": {
-        "unknown": {
-          "pathParams": {},
-          "query": "",
-          "body": {
-            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-            "startDate": "2026-04-04 00:00:00",
-            "endDate": "2026-05-04 23:59:59",
-            "groupBy": "overall"
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
       },
       "tags": [],
       "status": "active"
     },
     {
-      "id": "a3e0eaac-fbc8-4a86-9d4a-b71becc5b98a",
-      "name": "POST /hub/reports/api/v2/revenue-by-source",
+      "id": "a3e0eaac-fbc8-4a86-9d4a-b71becc5b98a-unknown",
+      "name": "POST /hub/reports/api/v2/revenue-by-source (unknown)",
       "createdAt": "2026-05-04T08:14:01.436Z",
       "updatedAt": "2026-05-04T08:14:01.436Z",
-      "request": {
-        "pathParams": {},
-        "query": "",
-        "body": {
-          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "startDate": "2026-04-27 00:00:00",
-          "endDate": "2026-05-04 23:59:59",
-          "groupBy": "dateRange"
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {},
+      "queryParams": {},
+      "body": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "startDate": "2026-04-27 00:00:00",
+        "endDate": "2026-05-04 23:59:59",
+        "groupBy": "dateRange"
       },
       "assertions": {
         "expectedStatus": [
@@ -95,25 +77,9 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "unknown": {
-          "pathParams": {},
-          "query": "",
-          "body": {
-            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-            "startDate": "2026-04-27 00:00:00",
-            "endDate": "2026-05-04 23:59:59",
-            "groupBy": "dateRange"
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "d67ce5b7-64e1-467c-a8cd-4ab5372443da"
+  "defaultTestcaseId": "d67ce5b7-64e1-467c-a8cd-4ab5372443da-unknown"
 }

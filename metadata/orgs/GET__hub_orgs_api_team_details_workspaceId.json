@@ -1,26 +1,34 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "GET /hub/orgs/api/team/details/{workspaceId}",
   "module": "orgs",
   "method": "GET",
   "path": "/hub/orgs/api/team/details/{workspaceId}",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [
+      "workspaceId"
+    ],
+    "query": [],
+    "body": [],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "1f876ceb-f1d7-48a0-82f6-0760b4fb512d",
-      "name": "GET /hub/orgs/api/team/details/{workspaceId}",
+      "id": "1f876ceb-f1d7-48a0-82f6-0760b4fb512d-be436b63",
+      "name": "GET /hub/orgs/api/team/details/{workspaceId} (be436b63)",
       "createdAt": "2026-05-05T11:33:07.217Z",
       "updatedAt": "2026-05-05T11:33:07.217Z",
-      "request": {
-        "pathParams": {
-          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-        },
-        "query": "?teamMemberId=be45b221-e715-491c-bf6a-1543a8e272c8&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
       },
+      "queryParams": {
+        "teamMemberId": "be45b221-e715-491c-bf6a-1543a8e272c8",
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "body": null,
       "assertions": {
         "expectedStatus": [
           200
@@ -63,21 +71,9 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {
-            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-          },
-          "query": "?teamMemberId=be45b221-e715-491c-bf6a-1543a8e272c8&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "1f876ceb-f1d7-48a0-82f6-0760b4fb512d"
+  "defaultTestcaseId": "1f876ceb-f1d7-48a0-82f6-0760b4fb512d-be436b63"
 }

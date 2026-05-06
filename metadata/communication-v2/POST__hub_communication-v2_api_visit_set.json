@@ -1,28 +1,34 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "POST /hub/communication-v2/api/visit/set",
   "module": "communication-v2",
   "method": "POST",
   "path": "/hub/communication-v2/api/visit/set",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [],
+    "query": [
+      "sellerWorkspaceId"
+    ],
+    "body": [],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "b6935712-6081-4a78-82f3-d111c09540e3",
-      "name": "POST /hub/communication-v2/api/visit/set",
+      "id": "b6935712-6081-4a78-82f3-d111c09540e3-be436b63",
+      "name": "POST /hub/communication-v2/api/visit/set (be436b63)",
       "createdAt": "2026-05-04T08:04:21.537Z",
       "updatedAt": "2026-05-04T08:04:21.537Z",
-      "request": {
-        "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": {
-          "channelIds": [
-            "ecc24cfb-b8f2-4728-ad9d-c6f6884115c6"
-          ]
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {},
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "body": {
+        "channelIds": [
+          "ecc24cfb-b8f2-4728-ad9d-c6f6884115c6"
+        ]
       },
       "assertions": {
         "expectedStatus": [
@@ -33,42 +39,23 @@
         "equals": {},
         "contains": {},
         "regex": {}
-      },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": {
-            "channelIds": [
-              "ecc24cfb-b8f2-4728-ad9d-c6f6884115c6"
-            ]
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
       },
       "tags": [],
       "status": "active"
     },
     {
-      "id": "5c5147ed-50ee-4a80-9120-b719cdfc7028",
-      "name": "POST /hub/communication-v2/api/visit/set",
+      "id": "5c5147ed-50ee-4a80-9120-b719cdfc7028-be436b63",
+      "name": "POST /hub/communication-v2/api/visit/set (be436b63)",
       "createdAt": "2026-05-04T08:13:59.137Z",
       "updatedAt": "2026-05-04T08:13:59.137Z",
-      "request": {
-        "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": {
-          "channelIds": [
-            "0364b804-cbe7-41bd-8142-b1af249c061d"
-          ]
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {},
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "body": {
+        "channelIds": [
+          "0364b804-cbe7-41bd-8142-b1af249c061d"
+        ]
       },
       "assertions": {
         "expectedStatus": [
@@ -79,42 +66,23 @@
         "equals": {},
         "contains": {},
         "regex": {}
-      },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": {
-            "channelIds": [
-              "0364b804-cbe7-41bd-8142-b1af249c061d"
-            ]
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
       },
       "tags": [],
       "status": "active"
     },
     {
-      "id": "988bebed-ca42-4560-a2f0-42982e4ead22",
-      "name": "POST /hub/communication-v2/api/visit/set",
+      "id": "988bebed-ca42-4560-a2f0-42982e4ead22-be436b63",
+      "name": "POST /hub/communication-v2/api/visit/set (be436b63)",
       "createdAt": "2026-05-04T08:13:59.137Z",
       "updatedAt": "2026-05-04T08:13:59.137Z",
-      "request": {
-        "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": {
-          "channelIds": [
-            "0364b804-cbe7-41bd-8142-b1af249c061d"
-          ]
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {},
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "body": {
+        "channelIds": [
+          "0364b804-cbe7-41bd-8142-b1af249c061d"
+        ]
       },
       "assertions": {
         "expectedStatus": [
@@ -125,25 +93,10 @@
         "equals": {},
         "contains": {},
         "regex": {}
-      },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": {
-            "channelIds": [
-              "0364b804-cbe7-41bd-8142-b1af249c061d"
-            ]
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
       },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "b6935712-6081-4a78-82f3-d111c09540e3"
+  "defaultTestcaseId": "b6935712-6081-4a78-82f3-d111c09540e3-be436b63"
 }

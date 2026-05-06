@@ -1,24 +1,36 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "GET /invoiceservice/payments/aggregated",
   "module": "payments",
   "method": "GET",
   "path": "/invoiceservice/payments/aggregated",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [],
+    "query": [
+      "sellerWorkspaceId"
+    ],
+    "body": [],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "7d22cb87-7ffe-45d7-8e16-f9ccb10fadc2",
-      "name": "GET /invoiceservice/payments/aggregated",
+      "id": "7d22cb87-7ffe-45d7-8e16-f9ccb10fadc2-be436b63",
+      "name": "GET /invoiceservice/payments/aggregated (be436b63)",
       "createdAt": "2026-05-04T08:14:07.325Z",
       "updatedAt": "2026-05-04T08:14:07.325Z",
-      "request": {
-        "pathParams": {},
-        "query": "?endDate=2026-05-04%2023%3A59%3A59&startDate=2026-04-04%2000%3A00%3A00&pageNo=1&pageSize=20&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeSettlement=true",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
+      "pathParams": {},
+      "queryParams": {
+        "endDate": "2026-05-04 23:59:59",
+        "startDate": "2026-04-04 00:00:00",
+        "pageNo": "1",
+        "pageSize": "20",
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "includeSettlement": "true"
       },
+      "body": null,
       "assertions": {
         "expectedStatus": [
           200
@@ -36,19 +48,9 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?endDate=2026-05-04%2023%3A59%3A59&startDate=2026-04-04%2000%3A00%3A00&pageNo=1&pageSize=20&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeSettlement=true",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "7d22cb87-7ffe-45d7-8e16-f9ccb10fadc2"
+  "defaultTestcaseId": "7d22cb87-7ffe-45d7-8e16-f9ccb10fadc2-be436b63"
 }
