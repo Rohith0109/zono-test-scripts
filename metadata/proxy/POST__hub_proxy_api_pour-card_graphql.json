@@ -513,6 +513,564 @@
       },
       "tags": [],
       "status": "active"
+    },
+    {
+      "id": "26dcb9c5-d01c-4eb9-a790-4fa8172244c4",
+      "name": "POST /hub/proxy/api/pour-card/graphql",
+      "createdAt": "2026-05-06T08:05:58.704Z",
+      "updatedAt": "2026-05-06T08:05:58.704Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=a67007b6-76b1-40df-97e5-2070c54b1348",
+        "body": {
+          "query": "\n            query ($v1: master_fields_bool_exp!) {\n              master_fields(\n                where: $v1\n                order_by: { item_name: asc }\n              ) {\n                item_name\n              }\n            }\n          ",
+          "variables": {
+            "v1": {
+              "workspace_id": {
+                "_eq": "a67007b6-76b1-40df-97e5-2070c54b1348"
+              },
+              "master_field": {
+                "_eq": "Level"
+              },
+              "is_active": {
+                "_eq": true
+              }
+            }
+          }
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.data.master_fields[0]"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "a67007b6-76b1-40df-97e5-2070c54b1348": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=a67007b6-76b1-40df-97e5-2070c54b1348",
+          "body": {
+            "query": "\n            query ($v1: master_fields_bool_exp!) {\n              master_fields(\n                where: $v1\n                order_by: { item_name: asc }\n              ) {\n                item_name\n              }\n            }\n          ",
+            "variables": {
+              "v1": {
+                "workspace_id": {
+                  "_eq": "a67007b6-76b1-40df-97e5-2070c54b1348"
+                },
+                "master_field": {
+                  "_eq": "Level"
+                },
+                "is_active": {
+                  "_eq": true
+                }
+              }
+            }
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "0ea4dec3-da23-4906-b890-123b58508ffb",
+      "name": "POST /hub/proxy/api/pour-card/graphql",
+      "createdAt": "2026-05-06T08:05:58.704Z",
+      "updatedAt": "2026-05-06T08:05:58.704Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=a67007b6-76b1-40df-97e5-2070c54b1348",
+        "body": {
+          "query": "\n            query ($v1: master_fields_bool_exp!) {\n              master_fields(\n                where: $v1\n                order_by: { item_name: asc }\n              ) {\n                item_name\n              }\n            }\n          ",
+          "variables": {
+            "v1": {
+              "workspace_id": {
+                "_eq": "a67007b6-76b1-40df-97e5-2070c54b1348"
+              },
+              "master_field": {
+                "_eq": "Inspect"
+              },
+              "is_active": {
+                "_eq": true
+              }
+            }
+          }
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.data.master_fields[0]"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "a67007b6-76b1-40df-97e5-2070c54b1348": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=a67007b6-76b1-40df-97e5-2070c54b1348",
+          "body": {
+            "query": "\n            query ($v1: master_fields_bool_exp!) {\n              master_fields(\n                where: $v1\n                order_by: { item_name: asc }\n              ) {\n                item_name\n              }\n            }\n          ",
+            "variables": {
+              "v1": {
+                "workspace_id": {
+                  "_eq": "a67007b6-76b1-40df-97e5-2070c54b1348"
+                },
+                "master_field": {
+                  "_eq": "Inspect"
+                },
+                "is_active": {
+                  "_eq": true
+                }
+              }
+            }
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "099f4744-9bd1-49ed-a1be-27cac06efa49",
+      "name": "POST /hub/proxy/api/pour-card/graphql",
+      "createdAt": "2026-05-06T08:05:58.704Z",
+      "updatedAt": "2026-05-06T08:05:58.704Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=a67007b6-76b1-40df-97e5-2070c54b1348",
+        "body": {
+          "query": "\n            query ($v1: master_fields_bool_exp!) {\n              master_fields(\n                where: $v1\n                order_by: { item_name: asc }\n              ) {\n                item_name\n              }\n            }\n          ",
+          "variables": {
+            "v1": {
+              "workspace_id": {
+                "_eq": "a67007b6-76b1-40df-97e5-2070c54b1348"
+              },
+              "master_field": {
+                "_eq": "Concrete Grade"
+              },
+              "is_active": {
+                "_eq": true
+              }
+            }
+          }
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.data.master_fields[0]"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "a67007b6-76b1-40df-97e5-2070c54b1348": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=a67007b6-76b1-40df-97e5-2070c54b1348",
+          "body": {
+            "query": "\n            query ($v1: master_fields_bool_exp!) {\n              master_fields(\n                where: $v1\n                order_by: { item_name: asc }\n              ) {\n                item_name\n              }\n            }\n          ",
+            "variables": {
+              "v1": {
+                "workspace_id": {
+                  "_eq": "a67007b6-76b1-40df-97e5-2070c54b1348"
+                },
+                "master_field": {
+                  "_eq": "Concrete Grade"
+                },
+                "is_active": {
+                  "_eq": true
+                }
+              }
+            }
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "09ffd60b-6322-4921-b2d4-5a06ae60c120",
+      "name": "POST /hub/proxy/api/pour-card/graphql",
+      "createdAt": "2026-05-06T08:05:58.704Z",
+      "updatedAt": "2026-05-06T08:05:58.704Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=a67007b6-76b1-40df-97e5-2070c54b1348",
+        "body": {
+          "query": "\n            query ($v1: master_fields_bool_exp!) {\n              master_fields(\n                where: $v1\n                order_by: { item_name: asc }\n              ) {\n                item_name\n              }\n            }\n          ",
+          "variables": {
+            "v1": {
+              "workspace_id": {
+                "_eq": "a67007b6-76b1-40df-97e5-2070c54b1348"
+              },
+              "master_field": {
+                "_eq": "Structure"
+              },
+              "is_active": {
+                "_eq": true
+              }
+            }
+          }
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.data.master_fields[0]"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "a67007b6-76b1-40df-97e5-2070c54b1348": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=a67007b6-76b1-40df-97e5-2070c54b1348",
+          "body": {
+            "query": "\n            query ($v1: master_fields_bool_exp!) {\n              master_fields(\n                where: $v1\n                order_by: { item_name: asc }\n              ) {\n                item_name\n              }\n            }\n          ",
+            "variables": {
+              "v1": {
+                "workspace_id": {
+                  "_eq": "a67007b6-76b1-40df-97e5-2070c54b1348"
+                },
+                "master_field": {
+                  "_eq": "Structure"
+                },
+                "is_active": {
+                  "_eq": true
+                }
+              }
+            }
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "b037029b-a657-4dce-a331-91d8ae621a13",
+      "name": "POST /hub/proxy/api/pour-card/graphql",
+      "createdAt": "2026-05-06T08:05:58.704Z",
+      "updatedAt": "2026-05-06T08:05:58.704Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=a67007b6-76b1-40df-97e5-2070c54b1348",
+        "body": {
+          "query": "\n            query ($v1: master_fields_bool_exp!) {\n              master_fields(\n                where: $v1\n                order_by: { item_name: asc }\n              ) {\n                item_name\n              }\n            }\n          ",
+          "variables": {
+            "v1": {
+              "workspace_id": {
+                "_eq": "a67007b6-76b1-40df-97e5-2070c54b1348"
+              },
+              "master_field": {
+                "_eq": "Location"
+              },
+              "is_active": {
+                "_eq": true
+              }
+            }
+          }
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.data.master_fields[0]"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "a67007b6-76b1-40df-97e5-2070c54b1348": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=a67007b6-76b1-40df-97e5-2070c54b1348",
+          "body": {
+            "query": "\n            query ($v1: master_fields_bool_exp!) {\n              master_fields(\n                where: $v1\n                order_by: { item_name: asc }\n              ) {\n                item_name\n              }\n            }\n          ",
+            "variables": {
+              "v1": {
+                "workspace_id": {
+                  "_eq": "a67007b6-76b1-40df-97e5-2070c54b1348"
+                },
+                "master_field": {
+                  "_eq": "Location"
+                },
+                "is_active": {
+                  "_eq": true
+                }
+              }
+            }
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "4ca90f50-1af2-4a5f-a174-a0d6926b7191",
+      "name": "POST /hub/proxy/api/pour-card/graphql",
+      "createdAt": "2026-05-06T08:05:58.704Z",
+      "updatedAt": "2026-05-06T08:05:58.704Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=a67007b6-76b1-40df-97e5-2070c54b1348",
+        "body": {
+          "query": "\n            mutation CreatePourCard($object: pour_card_insert_input!) {\n              insert_pour_card_one(object: $object) {\n                \n  id\n  pour_card_no\n  project_name\n  project_code\n  jmr_number\n  log_number\n  department_number\n  member_id\n  structure_type\n  pour_card_type\n  specific_location\n  chargeable_to\n  remarks\n  attachment_doc_number\n  attachment_url\n  status\n  approval_status\n  created_by_user_id\n  created_by_inviteId\n  workspace_id\n  created_at\n  updated_at\n\n                pour_details { \n  id\n  pour_card_id\n  level\n  pouring_date\n  concrete_grade\n  concrete_quantity\n  mix_design_reference\n  slump_test_performed\n  samples_prepared\n  concrete_temperature_registered\n  temperature_value\n  weather_condition\n  duration_hours\n  weather_staging_checked\n  cooling_arrangement_checked\n  site_inspection_form\n  inspected_structure_type\n  drg_reference\n  tech_specification\n  inspection_accepted\n  chargeable_to_enabled\n  non_conformance_flag\n  non_conformance_doc_number\n  non_conformance_url\n  created_at\n  updated_at\n }\n              }\n            }\n          ",
+          "variables": {
+            "object": {
+              "pour_card_no": "[REDACTED]",
+              "project_name": "Project Vikram",
+              "project_code": "PRJ-001",
+              "jmr_number": "JMR-TEST-001",
+              "log_number": "LOG-001",
+              "department_number": "DEPT-01",
+              "member_id": "MBR-001",
+              "structure_type": "Beam",
+              "pour_card_type": "[REDACTED]",
+              "specific_location": "Block B",
+              "chargeable_to": "Test Client",
+              "remarks": "Test pour card",
+              "attachment_url": "",
+              "workspace_id": "a67007b6-76b1-40df-97e5-2070c54b1348",
+              "created_by_user_id": "9d7c1c04-edb1-4855-bc09-eafbf1739fc9",
+              "created_by_inviteId": "96694e19-c9d8-4c97-bce5-d94c200f323a",
+              "status": "Draft",
+              "approval_status": "Pending",
+              "pour_details": {
+                "data": [
+                  {
+                    "level": "Basement",
+                    "pouring_date": "2026-05-06",
+                    "concrete_grade": "M25",
+                    "concrete_quantity": 10,
+                    "mix_design_reference": "MIX-001",
+                    "slump_test_performed": true,
+                    "samples_prepared": true,
+                    "concrete_temperature_registered": true,
+                    "temperature_value": 28,
+                    "weather_condition": "Sun",
+                    "duration_hours": 4,
+                    "weather_staging_checked": true,
+                    "cooling_arrangement_checked": true,
+                    "site_inspection_form": "SIF-001",
+                    "inspected_structure_type": "Beam",
+                    "drg_reference": "DRG-REF-001",
+                    "tech_specification": "Tech spec text",
+                    "inspection_accepted": true,
+                    "chargeable_to_enabled": true,
+                    "non_conformance_flag": false,
+                    "communication_channel_id": "2f03bb95-477a-42cc-bd52-cba37bc63001"
+                  }
+                ]
+              },
+              "structure_details": {
+                "data": [
+                  {
+                    "structure_name": "Beam"
+                  }
+                ]
+              },
+              "pourcard_approval_system": "[REDACTED]"
+            }
+          }
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.data.insert_pour_card_one"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "a67007b6-76b1-40df-97e5-2070c54b1348": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=a67007b6-76b1-40df-97e5-2070c54b1348",
+          "body": {
+            "query": "\n            mutation CreatePourCard($object: pour_card_insert_input!) {\n              insert_pour_card_one(object: $object) {\n                \n  id\n  pour_card_no\n  project_name\n  project_code\n  jmr_number\n  log_number\n  department_number\n  member_id\n  structure_type\n  pour_card_type\n  specific_location\n  chargeable_to\n  remarks\n  attachment_doc_number\n  attachment_url\n  status\n  approval_status\n  created_by_user_id\n  created_by_inviteId\n  workspace_id\n  created_at\n  updated_at\n\n                pour_details { \n  id\n  pour_card_id\n  level\n  pouring_date\n  concrete_grade\n  concrete_quantity\n  mix_design_reference\n  slump_test_performed\n  samples_prepared\n  concrete_temperature_registered\n  temperature_value\n  weather_condition\n  duration_hours\n  weather_staging_checked\n  cooling_arrangement_checked\n  site_inspection_form\n  inspected_structure_type\n  drg_reference\n  tech_specification\n  inspection_accepted\n  chargeable_to_enabled\n  non_conformance_flag\n  non_conformance_doc_number\n  non_conformance_url\n  created_at\n  updated_at\n }\n              }\n            }\n          ",
+            "variables": {
+              "object": {
+                "pour_card_no": "[REDACTED]",
+                "project_name": "Project Vikram",
+                "project_code": "PRJ-001",
+                "jmr_number": "JMR-TEST-001",
+                "log_number": "LOG-001",
+                "department_number": "DEPT-01",
+                "member_id": "MBR-001",
+                "structure_type": "Beam",
+                "pour_card_type": "[REDACTED]",
+                "specific_location": "Block B",
+                "chargeable_to": "Test Client",
+                "remarks": "Test pour card",
+                "attachment_url": "",
+                "workspace_id": "a67007b6-76b1-40df-97e5-2070c54b1348",
+                "created_by_user_id": "9d7c1c04-edb1-4855-bc09-eafbf1739fc9",
+                "created_by_inviteId": "96694e19-c9d8-4c97-bce5-d94c200f323a",
+                "status": "Draft",
+                "approval_status": "Pending",
+                "pour_details": {
+                  "data": [
+                    {
+                      "level": "Basement",
+                      "pouring_date": "2026-05-06",
+                      "concrete_grade": "M25",
+                      "concrete_quantity": 10,
+                      "mix_design_reference": "MIX-001",
+                      "slump_test_performed": true,
+                      "samples_prepared": true,
+                      "concrete_temperature_registered": true,
+                      "temperature_value": 28,
+                      "weather_condition": "Sun",
+                      "duration_hours": 4,
+                      "weather_staging_checked": true,
+                      "cooling_arrangement_checked": true,
+                      "site_inspection_form": "SIF-001",
+                      "inspected_structure_type": "Beam",
+                      "drg_reference": "DRG-REF-001",
+                      "tech_specification": "Tech spec text",
+                      "inspection_accepted": true,
+                      "chargeable_to_enabled": true,
+                      "non_conformance_flag": false,
+                      "communication_channel_id": "2f03bb95-477a-42cc-bd52-cba37bc63001"
+                    }
+                  ]
+                },
+                "structure_details": {
+                  "data": [
+                    {
+                      "structure_name": "Beam"
+                    }
+                  ]
+                },
+                "pourcard_approval_system": "[REDACTED]"
+              }
+            }
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "adb6993d-ffa6-476a-998a-5171b48d3e34",
+      "name": "POST /hub/proxy/api/pour-card/graphql",
+      "createdAt": "2026-05-06T08:05:58.704Z",
+      "updatedAt": "2026-05-06T08:05:58.704Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=a67007b6-76b1-40df-97e5-2070c54b1348",
+        "body": {
+          "query": "\n            query GetPourCardById($id: uuid!) {\n              pour_card_by_pk(id: $id) {\n                \n  id\n  pour_card_no\n  project_name\n  project_code\n  jmr_number\n  log_number\n  department_number\n  member_id\n  structure_type\n  pour_card_type\n  specific_location\n  chargeable_to\n  remarks\n  attachment_doc_number\n  attachment_url\n  status\n  approval_status\n  created_by_user_id\n  created_by_inviteId\n  workspace_id\n  created_at\n  updated_at\n\n                pour_details { \n  id\n  pour_card_id\n  level\n  pouring_date\n  concrete_grade\n  concrete_quantity\n  mix_design_reference\n  slump_test_performed\n  samples_prepared\n  concrete_temperature_registered\n  temperature_value\n  weather_condition\n  duration_hours\n  weather_staging_checked\n  cooling_arrangement_checked\n  site_inspection_form\n  inspected_structure_type\n  drg_reference\n  tech_specification\n  inspection_accepted\n  chargeable_to_enabled\n  non_conformance_flag\n  non_conformance_doc_number\n  non_conformance_url\n  created_at\n  updated_at\n }\n                pour_card_checklist { \n  id\n  status\n  remarks\n  checklist_item_id\n  checklist_items_master {\n    id\n    item_name\n    display_order\n    checklist_section {\n      id\n      name\n      checklist_category {\n        id\n        name\n      }\n    }\n  }\n }\n                pour_card_approval_system {\n                  id\n                  department_code\n                  user_id\n                  team_member_id\n                  status\n                }\n              }\n            }\n          ",
+          "variables": {
+            "id": "c6608fb2-b965-48b9-8b8b-5466aba67cac"
+          }
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.data.pour_card_by_pk"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "a67007b6-76b1-40df-97e5-2070c54b1348": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=a67007b6-76b1-40df-97e5-2070c54b1348",
+          "body": {
+            "query": "\n            query GetPourCardById($id: uuid!) {\n              pour_card_by_pk(id: $id) {\n                \n  id\n  pour_card_no\n  project_name\n  project_code\n  jmr_number\n  log_number\n  department_number\n  member_id\n  structure_type\n  pour_card_type\n  specific_location\n  chargeable_to\n  remarks\n  attachment_doc_number\n  attachment_url\n  status\n  approval_status\n  created_by_user_id\n  created_by_inviteId\n  workspace_id\n  created_at\n  updated_at\n\n                pour_details { \n  id\n  pour_card_id\n  level\n  pouring_date\n  concrete_grade\n  concrete_quantity\n  mix_design_reference\n  slump_test_performed\n  samples_prepared\n  concrete_temperature_registered\n  temperature_value\n  weather_condition\n  duration_hours\n  weather_staging_checked\n  cooling_arrangement_checked\n  site_inspection_form\n  inspected_structure_type\n  drg_reference\n  tech_specification\n  inspection_accepted\n  chargeable_to_enabled\n  non_conformance_flag\n  non_conformance_doc_number\n  non_conformance_url\n  created_at\n  updated_at\n }\n                pour_card_checklist { \n  id\n  status\n  remarks\n  checklist_item_id\n  checklist_items_master {\n    id\n    item_name\n    display_order\n    checklist_section {\n      id\n      name\n      checklist_category {\n        id\n        name\n      }\n    }\n  }\n }\n                pour_card_approval_system {\n                  id\n                  department_code\n                  user_id\n                  team_member_id\n                  status\n                }\n              }\n            }\n          ",
+            "variables": {
+              "id": "c6608fb2-b965-48b9-8b8b-5466aba67cac"
+            }
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
     }
   ],
   "defaultTestcaseId": "b2f4d7e7-a563-4dc2-8f35-b1907822b5aa"
