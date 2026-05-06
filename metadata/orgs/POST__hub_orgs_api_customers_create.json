@@ -1,0 +1,109 @@
+{
+  "version": 2,
+  "endpointKey": "POST /hub/orgs/api/customers/create",
+  "module": "orgs",
+  "method": "POST",
+  "path": "/hub/orgs/api/customers/create",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "ebaf318d-9e7a-42a4-bc29-07611bd76936",
+      "name": "POST /hub/orgs/api/customers/create",
+      "createdAt": "2026-05-06T07:27:55.833Z",
+      "updatedAt": "2026-05-06T07:27:55.833Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "senderWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "phone": "912335852503",
+          "customerDetails": {
+            "name": "Autotest Cust1",
+            "companyName": "Autotest cust1",
+            "telephone": "912335852503",
+            "customerCode": "652601",
+            "shippingAddress": {
+              "countryCode": "IN"
+            },
+            "countryCode": "IN"
+          },
+          "contacts": []
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.statusCode",
+          "$.message",
+          "$.data.priceListCriteria",
+          "$.data.phone",
+          "$.data.customerDetails.name",
+          "$.data.customerDetails.companyName",
+          "$.data.customerDetails.telephone",
+          "$.data.customerDetails.customerCode",
+          "$.data.customerDetails.shippingAddress",
+          "$.data.customerDetails.countryCode",
+          "$.data.customerDetails.languageCode",
+          "$.data.contacts",
+          "$.data.distributorCode",
+          "$.data.workspace.spaceName",
+          "$.data.workspace.location",
+          "$.data.workspace.address",
+          "$.data.workspace.profilePic",
+          "$.data.workspace.defaultCurrencyCode",
+          "$.data.workspace.isoLanguageCode",
+          "$.data.workspace.isSelfOnboarded"
+        ],
+        "ignoreResponsePaths": [
+          "$.data.senderWorkspaceId",
+          "$.data.senderUserId",
+          "$.data.cfaWithId[0]",
+          "$.data.inviteId",
+          "$.data.workspace.id",
+          "$.data.workspace.createdDate",
+          "$.data.workspace.updatedDate",
+          "$.data.workspace.userId",
+          "$.data.workspace.updatedBy",
+          "$.data.workspace.timeZone"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "senderWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+            "phone": "912335852503",
+            "customerDetails": {
+              "name": "Autotest Cust1",
+              "companyName": "Autotest cust1",
+              "telephone": "912335852503",
+              "customerCode": "652601",
+              "shippingAddress": {
+                "countryCode": "IN"
+              },
+              "countryCode": "IN"
+            },
+            "contacts": []
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "ebaf318d-9e7a-42a4-bc29-07611bd76936"
+}
