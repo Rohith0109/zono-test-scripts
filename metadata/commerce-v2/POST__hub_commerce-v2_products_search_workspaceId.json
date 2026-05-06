@@ -309,6 +309,198 @@
       },
       "tags": [],
       "status": "active"
+    },
+    {
+      "id": "423089bf-9ab1-431f-9cc6-d12e38957fd1",
+      "name": "POST /hub/commerce-v2/products/search/{workspaceId}",
+      "createdAt": "2026-05-05T11:45:09.814Z",
+      "updatedAt": "2026-05-05T11:45:09.814Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?pageNo=1&pageSize=40&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "searchKey": "",
+          "includeFacets": true,
+          "includeDivisions": true,
+          "includeCfas": true,
+          "includeCategoryCodesList": true,
+          "skuCode": "",
+          "sortDirection": "ASC",
+          "sortBy": "sortOrder",
+          "groupByProduct": true,
+          "inventoryFilter": "",
+          "stockFilter": "",
+          "divisionIds": [],
+          "cfaIds": [],
+          "categoryCodes": [],
+          "statusFilter": "",
+          "collectionIds": []
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?pageNo=1&pageSize=40&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "searchKey": "",
+            "includeFacets": true,
+            "includeDivisions": true,
+            "includeCfas": true,
+            "includeCategoryCodesList": true,
+            "skuCode": "",
+            "sortDirection": "ASC",
+            "sortBy": "sortOrder",
+            "groupByProduct": true,
+            "inventoryFilter": "",
+            "stockFilter": "",
+            "divisionIds": [],
+            "cfaIds": [],
+            "categoryCodes": [],
+            "statusFilter": "",
+            "collectionIds": []
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "68fabff6-59ea-48c2-a4f6-7074d8394083",
+      "name": "POST /hub/commerce-v2/products/search/{workspaceId}",
+      "createdAt": "2026-05-05T11:45:09.814Z",
+      "updatedAt": "2026-05-05T11:45:09.814Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?pageNo=1&pageSize=40&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "searchKey": "",
+          "includeFacets": true,
+          "includeDivisions": true,
+          "includeCfas": true,
+          "includeCategoryCodesList": true,
+          "skuCode": "",
+          "sortDirection": "ASC",
+          "sortBy": "sortOrder",
+          "groupByProduct": true,
+          "statusFilter": "",
+          "inventoryFilter": "",
+          "stockFilter": "",
+          "divisionIds": [],
+          "categoryCodes": [],
+          "segmentIds": [],
+          "cfaIds": [
+            "e8193bc2-716e-4c93-9c26-60326dd47c8d"
+          ],
+          "schemeType": [],
+          "collectionIds": []
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.total",
+          "$.startRecord",
+          "$.endRecord",
+          "$.products[0].parentSku",
+          "$.products[0].productAsset",
+          "$.products[0].source",
+          "$.products[0].preview",
+          "$.products[0].enabled",
+          "$.products[0].productVariants",
+          "$.segmentsSummary",
+          "$.divisionSummary[0].divisionCode",
+          "$.divisionSummary[0].name",
+          "$.divisionSummary[0].headDivision",
+          "$.divisionSummary[0].isDefault",
+          "$.facets",
+          "$.cfaSummary[0].cfaCode",
+          "$.cfaSummary[0].supplierName",
+          "$.cfaSummary[0].isDefault",
+          "$.cfaSummary[0].minOrderQty",
+          "$.status",
+          "$.statusCode",
+          "$.input.groupByProduct",
+          "$.input.skip",
+          "$.input.sort.sortOrder"
+        ],
+        "ignoreResponsePaths": [
+          "$.products[0].id",
+          "$.products[0].channelId",
+          "$.products[0].workspaceId",
+          "$.divisionSummary[0].divisionId",
+          "$.divisionSummary[0].headDivisionId",
+          "$.cfaSummary[0].cfaId"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?pageNo=1&pageSize=40&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "searchKey": "",
+            "includeFacets": true,
+            "includeDivisions": true,
+            "includeCfas": true,
+            "includeCategoryCodesList": true,
+            "skuCode": "",
+            "sortDirection": "ASC",
+            "sortBy": "sortOrder",
+            "groupByProduct": true,
+            "statusFilter": "",
+            "inventoryFilter": "",
+            "stockFilter": "",
+            "divisionIds": [],
+            "categoryCodes": [],
+            "segmentIds": [],
+            "cfaIds": [
+              "e8193bc2-716e-4c93-9c26-60326dd47c8d"
+            ],
+            "schemeType": [],
+            "collectionIds": []
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
     }
   ],
   "defaultTestcaseId": "a9d3abec-8ad0-4c59-8c0c-89182a45501d"
