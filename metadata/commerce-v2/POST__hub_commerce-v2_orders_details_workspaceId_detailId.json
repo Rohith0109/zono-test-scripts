@@ -1,0 +1,111 @@
+{
+  "version": 2,
+  "endpointKey": "POST /hub/commerce-v2/orders/details/{workspaceId}/{detailId}",
+  "module": "commerce-v2",
+  "method": "POST",
+  "path": "/hub/commerce-v2/orders/details/{workspaceId}/{detailId}",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "01b92465-dd90-46dd-9aca-1d002dffcb8e",
+      "name": "POST /hub/commerce-v2/orders/details/{workspaceId}/{detailId}",
+      "createdAt": "2026-05-07T09:48:15.490Z",
+      "updatedAt": "2026-05-07T09:48:15.490Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "detailId": "54270"
+        },
+        "query": "?includeInvoice=true&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "filter": {
+            "divisionIds": []
+          },
+          "searchKey": "",
+          "includeInvoice": true,
+          "includeTax": true,
+          "includePromotions": true,
+          "sortDirection": "DESC",
+          "sortBy": "",
+          "customerId": "92eb6a3e-3a9e-4433-8ded-7379eff70ac0",
+          "includePromotionData": true
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [
+          "$.tags",
+          "$.status",
+          "$.importSource",
+          "$.createdBy",
+          "$.shippingAddress",
+          "$.deliveryTerms",
+          "$.createdByName",
+          "$.userType",
+          "$.distributorName",
+          "$.distributorFirmName",
+          "$.subTotal",
+          "$.subTotalWithTax",
+          "$.taxAmount",
+          "$.total",
+          "$.totalWithTax",
+          "$.cfaName",
+          "$.refOrderNumber",
+          "$.splitBy",
+          "$.notes",
+          "$.includePaymentLink",
+          "$.skucount"
+        ],
+        "ignoreResponsePaths": [
+          "$.id",
+          "$.documentDate",
+          "$.customerId",
+          "$.divisionId",
+          "$.headDivisionId",
+          "$.fullFillmentLocationId",
+          "$.communicationChannelId",
+          "$.createdAt",
+          "$.updatedAt"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+            "detailId": "54270"
+          },
+          "query": "?includeInvoice=true&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "filter": {
+              "divisionIds": []
+            },
+            "searchKey": "",
+            "includeInvoice": true,
+            "includeTax": true,
+            "includePromotions": true,
+            "sortDirection": "DESC",
+            "sortBy": "",
+            "customerId": "92eb6a3e-3a9e-4433-8ded-7379eff70ac0",
+            "includePromotionData": true
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "01b92465-dd90-46dd-9aca-1d002dffcb8e"
+}

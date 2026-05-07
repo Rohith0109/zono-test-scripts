@@ -1,27 +1,24 @@
 {
-  "version": 3,
+  "version": 2,
   "endpointKey": "GET /workspaces/roles/details",
   "module": "roles",
   "method": "GET",
   "path": "/workspaces/roles/details",
   "apiDomain": "https://api-qa.zotok.ai",
-  "dynamicParams": {
-    "path": [],
-    "query": [],
-    "body": [],
-    "headers": [
-      "token"
-    ]
-  },
   "testcases": [
     {
-      "id": "80d1b0d9-a106-4eb3-95b7-d38d2acfd3a1-unknown",
-      "name": "GET /workspaces/roles/details (unknown)",
-      "createdAt": "2026-05-04T08:13:52.111Z",
-      "updatedAt": "2026-05-04T08:13:52.111Z",
-      "pathParams": {},
-      "queryParams": {},
-      "body": null,
+      "id": "69fc342d-53dd-4ec9-814a-bf1a92de42c6",
+      "name": "GET /workspaces/roles/details",
+      "createdAt": "2026-05-07T09:48:20.335Z",
+      "updatedAt": "2026-05-07T09:48:20.335Z",
+      "request": {
+        "pathParams": {},
+        "query": "",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
       "assertions": {
         "expectedStatus": [
           200
@@ -32,9 +29,19 @@
         "contains": {},
         "regex": {}
       },
+      "workspaceScopes": {
+        "unknown": {
+          "pathParams": {},
+          "query": "",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "80d1b0d9-a106-4eb3-95b7-d38d2acfd3a1-unknown"
+  "defaultTestcaseId": "69fc342d-53dd-4ec9-814a-bf1a92de42c6"
 }

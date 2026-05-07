@@ -1,0 +1,63 @@
+{
+  "version": 2,
+  "endpointKey": "GET /hub/commerce-v2/orders/metaSchema/{workspaceId}",
+  "module": "commerce-v2",
+  "method": "GET",
+  "path": "/hub/commerce-v2/orders/metaSchema/{workspaceId}",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "8afae8ac-f7a6-444f-8c3b-9c65b5c6e76f",
+      "name": "GET /hub/commerce-v2/orders/metaSchema/{workspaceId}",
+      "createdAt": "2026-05-07T09:48:16.194Z",
+      "updatedAt": "2026-05-07T09:48:16.194Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.orderNoteSchema.type",
+          "$.orderNoteSchema.required[0]",
+          "$.orderNoteSchema.properties.remarks",
+          "$.orderNoteSchema.properties.orderType"
+        ],
+        "ignoreResponsePaths": [
+          "$.createdAt",
+          "$.updatedAt",
+          "$.channelId",
+          "$.orderNoteSchema.properties.estimatedDeliveryDate",
+          "$.orderNoteSchema.properties.Estimated Delivery Date",
+          "$.id"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "8afae8ac-f7a6-444f-8c3b-9c65b5c6e76f"
+}

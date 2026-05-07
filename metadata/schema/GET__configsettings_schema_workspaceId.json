@@ -1,0 +1,82 @@
+{
+  "version": 2,
+  "endpointKey": "GET /configsettings/schema/{workspaceId}",
+  "module": "schema",
+  "method": "GET",
+  "path": "/configsettings/schema/{workspaceId}",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "2c7fb2ae-e12c-4789-aa8b-4f20917b86c2",
+      "name": "GET /configsettings/schema/{workspaceId}",
+      "createdAt": "2026-05-07T09:48:04.727Z",
+      "updatedAt": "2026-05-07T09:48:04.727Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?module=Integrations&workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$[0].invoices.description",
+          "$[0].invoices.type",
+          "$[0].invoices.inputType",
+          "$[0].invoices.options",
+          "$[0].invoices.hierarchy",
+          "$[0].invoices.default",
+          "$[0].invoices.required",
+          "$[0].payments.description",
+          "$[0].payments.type",
+          "$[0].payments.inputType",
+          "$[0].payments.options",
+          "$[0].payments.hierarchy",
+          "$[0].payments.default",
+          "$[0].payments.required",
+          "$[0].creditNote.description",
+          "$[0].creditNote.type",
+          "$[0].creditNote.inputType",
+          "$[0].creditNote.options",
+          "$[0].creditNote.hierarchy",
+          "$[0].creditNote.default",
+          "$[0].creditNote.required",
+          "$[0].debitNote.description",
+          "$[0].debitNote.type",
+          "$[0].debitNote.inputType",
+          "$[0].debitNote.options",
+          "$[0].debitNote.hierarchy",
+          "$[0].debitNote.default",
+          "$[0].debitNote.required",
+          "$[0].dispatchNote.description",
+          "$[0].dispatchNote.type"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?module=Integrations&workspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "2c7fb2ae-e12c-4789-aa8b-4f20917b86c2"
+}

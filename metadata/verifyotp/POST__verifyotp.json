@@ -1,33 +1,29 @@
 {
-  "version": 3,
+  "version": 2,
   "endpointKey": "POST /verifyotp",
   "module": "verifyotp",
   "method": "POST",
   "path": "/verifyotp",
   "apiDomain": "https://api-qa.zotok.ai",
-  "dynamicParams": {
-    "path": [],
-    "query": [],
-    "body": [
-      "otp"
-    ],
-    "headers": [
-      "token"
-    ]
-  },
   "testcases": [
     {
-      "id": "e2e74134-3729-40d6-9bbb-8463c8809c64-unknown",
-      "name": "POST /verifyotp (unknown)",
-      "createdAt": "2026-05-04T08:13:51.810Z",
-      "updatedAt": "2026-05-04T08:13:51.810Z",
-      "pathParams": {},
-      "queryParams": {},
-      "body": {
-        "mfaStatus": false,
-        "otp": "[REDACTED]",
-        "authChannel": "mobile",
-        "mobile": "+913203220232"
+      "id": "4744f39b-dd77-4aa2-ab84-b8b332a23380",
+      "name": "POST /verifyotp",
+      "createdAt": "2026-05-07T09:48:19.465Z",
+      "updatedAt": "2026-05-07T09:48:19.465Z",
+      "request": {
+        "pathParams": {},
+        "query": "",
+        "body": {
+          "mfaStatus": false,
+          "otp": "[REDACTED]",
+          "authChannel": "mobile",
+          "mobile": "+913203220232"
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
       },
       "assertions": {
         "expectedStatus": [
@@ -66,9 +62,25 @@
         "contains": {},
         "regex": {}
       },
+      "workspaceScopes": {
+        "unknown": {
+          "pathParams": {},
+          "query": "",
+          "body": {
+            "mfaStatus": false,
+            "otp": "[REDACTED]",
+            "authChannel": "mobile",
+            "mobile": "+913203220232"
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "e2e74134-3729-40d6-9bbb-8463c8809c64-unknown"
+  "defaultTestcaseId": "4744f39b-dd77-4aa2-ab84-b8b332a23380"
 }

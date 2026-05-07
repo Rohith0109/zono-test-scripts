@@ -1,21 +1,21 @@
 {
   "version": 2,
-  "endpointKey": "GET /hub/commerce-v2/poFiles/summary/{workspaceId}",
+  "endpointKey": "GET /hub/commerce-v2/poFiles/{workspaceId}",
   "module": "commerce-v2",
   "method": "GET",
-  "path": "/hub/commerce-v2/poFiles/summary/{workspaceId}",
+  "path": "/hub/commerce-v2/poFiles/{workspaceId}",
   "apiDomain": "https://api-qa.zotok.ai",
   "testcases": [
     {
-      "id": "e61337f4-54f7-4117-b5c9-f252c5af8257",
-      "name": "GET /hub/commerce-v2/poFiles/summary/{workspaceId}",
-      "createdAt": "2026-05-07T09:48:14.308Z",
-      "updatedAt": "2026-05-07T09:48:14.308Z",
+      "id": "a21d1cd8-f451-41e2-899d-863089497a23",
+      "name": "GET /hub/commerce-v2/poFiles/{workspaceId}",
+      "createdAt": "2026-05-07T09:48:14.679Z",
+      "updatedAt": "2026-05-07T09:48:14.679Z",
       "request": {
         "pathParams": {
           "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
         },
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&customerId=92eb6a3e-3a9e-4433-8ded-7379eff70ac0",
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&customerId=92eb6a3e-3a9e-4433-8ded-7379eff70ac0&includeActiveOrders=true&includeSummary=true&random=0.4500794297827654",
         "body": null,
         "headers": {
           "authorization": "[REDACTED]"
@@ -26,13 +26,10 @@
           200
         ],
         "requiredResponsePaths": [
-          "$.totalSKUCount",
-          "$.grossOrderValue",
-          "$.totalDiscount",
-          "$.totalTax",
-          "$.totalItemsCount",
-          "$.totalOrderValue",
-          "$.grossOrderNumber"
+          "$.files",
+          "$.status",
+          "$.statusCode",
+          "$.totalRecords"
         ],
         "ignoreResponsePaths": [],
         "equals": {},
@@ -44,7 +41,7 @@
           "pathParams": {
             "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
           },
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&customerId=92eb6a3e-3a9e-4433-8ded-7379eff70ac0",
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&customerId=92eb6a3e-3a9e-4433-8ded-7379eff70ac0&includeActiveOrders=true&includeSummary=true&random=0.4500794297827654",
           "body": null,
           "headers": {
             "authorization": "[REDACTED]"
@@ -55,5 +52,5 @@
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "e61337f4-54f7-4117-b5c9-f252c5af8257"
+  "defaultTestcaseId": "a21d1cd8-f451-41e2-899d-863089497a23"
 }
