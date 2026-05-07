@@ -1,24 +1,31 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "GET /hub/orgs/api/customer-group/life-cycle-transitions",
   "module": "orgs",
   "method": "GET",
   "path": "/hub/orgs/api/customer-group/life-cycle-transitions",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [],
+    "query": [
+      "sellerWorkspaceId"
+    ],
+    "body": [],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "5950eb40-9049-4880-a226-452da93e6bbd",
-      "name": "GET /hub/orgs/api/customer-group/life-cycle-transitions",
+      "id": "5950eb40-9049-4880-a226-452da93e6bbd-be436b63",
+      "name": "GET /hub/orgs/api/customer-group/life-cycle-transitions (be436b63)",
       "createdAt": "2026-05-04T08:14:04.194Z",
       "updatedAt": "2026-05-04T08:14:04.194Z",
-      "request": {
-        "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
+      "pathParams": {},
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
       },
+      "body": null,
       "assertions": {
         "expectedStatus": [
           200
@@ -37,19 +44,9 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "5950eb40-9049-4880-a226-452da93e6bbd"
+  "defaultTestcaseId": "5950eb40-9049-4880-a226-452da93e6bbd-be436b63"
 }

@@ -1,26 +1,36 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "GET /invoiceservice/dispatch/{workspaceId}",
   "module": "dispatch",
   "method": "GET",
   "path": "/invoiceservice/dispatch/{workspaceId}",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [
+      "workspaceId"
+    ],
+    "query": [],
+    "body": [],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "d6957d8d-c5d7-465c-a360-a51b2a3b15fc",
-      "name": "GET /invoiceservice/dispatch/{workspaceId}",
+      "id": "d6957d8d-c5d7-465c-a360-a51b2a3b15fc-be436b63",
+      "name": "GET /invoiceservice/dispatch/{workspaceId} (be436b63)",
       "createdAt": "2026-05-04T08:14:06.758Z",
       "updatedAt": "2026-05-04T08:14:06.758Z",
-      "request": {
-        "pathParams": {
-          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-        },
-        "query": "?page=1&pageSize=20&sortBy=dispatchDate&sortDirection=DESC",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
       },
+      "queryParams": {
+        "page": "1",
+        "pageSize": "20",
+        "sortBy": "dispatchDate",
+        "sortDirection": "DESC"
+      },
+      "body": null,
       "assertions": {
         "expectedStatus": [
           200
@@ -31,21 +41,9 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {
-            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-          },
-          "query": "?page=1&pageSize=20&sortBy=dispatchDate&sortDirection=DESC",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "d6957d8d-c5d7-465c-a360-a51b2a3b15fc"
+  "defaultTestcaseId": "d6957d8d-c5d7-465c-a360-a51b2a3b15fc-be436b63"
 }

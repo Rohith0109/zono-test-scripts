@@ -1,31 +1,37 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "POST /hub/commerce-v2/category/{workspaceId}",
   "module": "commerce-v2",
   "method": "POST",
   "path": "/hub/commerce-v2/category/{workspaceId}",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [
+      "workspaceId"
+    ],
+    "query": [],
+    "body": [],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "8a94e25e-db6c-4e79-9fe0-b814700ab128",
-      "name": "POST /hub/commerce-v2/category/{workspaceId}",
+      "id": "8a94e25e-db6c-4e79-9fe0-b814700ab128-be436b63",
+      "name": "POST /hub/commerce-v2/category/{workspaceId} (be436b63)",
       "createdAt": "2026-05-05T11:45:08.871Z",
       "updatedAt": "2026-05-05T11:45:08.871Z",
-      "request": {
-        "pathParams": {
-          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-        },
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": {
-          "languageCode": "en",
-          "name": "Test Category 600",
-          "categoryCode": "2526562666",
-          "description": ""
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "body": {
+        "languageCode": "en",
+        "name": "Test Category 600",
+        "categoryCode": "2526562666",
+        "description": ""
       },
       "assertions": {
         "expectedStatus": [
@@ -69,27 +75,9 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {
-            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-          },
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": {
-            "languageCode": "en",
-            "name": "Test Category 600",
-            "categoryCode": "2526562666",
-            "description": ""
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "8a94e25e-db6c-4e79-9fe0-b814700ab128"
+  "defaultTestcaseId": "8a94e25e-db6c-4e79-9fe0-b814700ab128-be436b63"
 }

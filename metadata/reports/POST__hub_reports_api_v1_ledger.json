@@ -1,33 +1,41 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "POST /hub/reports/api/v1/ledger",
   "module": "reports",
   "method": "POST",
   "path": "/hub/reports/api/v1/ledger",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [],
+    "query": [
+      "sellerWorkspaceId"
+    ],
+    "body": [
+      "sellerWorkspaceId"
+    ],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "715a8252-3fbb-400a-be27-4087a7a66ce2",
-      "name": "POST /hub/reports/api/v1/ledger",
+      "id": "715a8252-3fbb-400a-be27-4087a7a66ce2-be436b63",
+      "name": "POST /hub/reports/api/v1/ledger (be436b63)",
       "createdAt": "2026-05-04T08:14:07.676Z",
       "updatedAt": "2026-05-04T08:14:07.676Z",
-      "request": {
-        "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": {
-          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "filters": {
-            "inviteIds": []
-          },
-          "pageNo": 1,
-          "pageSize": 20,
-          "sortBy": "updatedDate",
-          "sortOrder": "DESC"
+      "pathParams": {},
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "body": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "filters": {
+          "inviteIds": []
         },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+        "pageNo": 1,
+        "pageSize": 20,
+        "sortBy": "updatedDate",
+        "sortOrder": "DESC"
       },
       "assertions": {
         "expectedStatus": [
@@ -53,29 +61,9 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": {
-            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-            "filters": {
-              "inviteIds": []
-            },
-            "pageNo": 1,
-            "pageSize": 20,
-            "sortBy": "updatedDate",
-            "sortOrder": "DESC"
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "715a8252-3fbb-400a-be27-4087a7a66ce2"
+  "defaultTestcaseId": "715a8252-3fbb-400a-be27-4087a7a66ce2-be436b63"
 }

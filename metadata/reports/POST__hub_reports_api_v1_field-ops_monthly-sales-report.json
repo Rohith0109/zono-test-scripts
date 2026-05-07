@@ -1,26 +1,34 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "POST /hub/reports/api/v1/field-ops/monthly-sales-report",
   "module": "reports",
   "method": "POST",
   "path": "/hub/reports/api/v1/field-ops/monthly-sales-report",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [],
+    "query": [
+      "sellerWorkspaceId"
+    ],
+    "body": [
+      "routeId"
+    ],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "92d7396f-8cbb-42f5-a852-36161a3bacbf",
-      "name": "POST /hub/reports/api/v1/field-ops/monthly-sales-report",
+      "id": "92d7396f-8cbb-42f5-a852-36161a3bacbf-be436b63",
+      "name": "POST /hub/reports/api/v1/field-ops/monthly-sales-report (be436b63)",
       "createdAt": "2026-05-04T08:14:07.986Z",
       "updatedAt": "2026-05-04T08:14:07.986Z",
-      "request": {
-        "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": {
-          "month": "2026-05"
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {},
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "body": {
+        "month": "2026-05"
       },
       "assertions": {
         "expectedStatus": [
@@ -58,39 +66,22 @@
         "equals": {},
         "contains": {},
         "regex": {}
-      },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": {
-            "month": "2026-05"
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
       },
       "tags": [],
       "status": "active"
     },
     {
-      "id": "db802059-aa87-47ab-b016-fd72f965c49a",
-      "name": "POST /hub/reports/api/v1/field-ops/monthly-sales-report",
+      "id": "db802059-aa87-47ab-b016-fd72f965c49a-be436b63",
+      "name": "POST /hub/reports/api/v1/field-ops/monthly-sales-report (be436b63)",
       "createdAt": "2026-05-04T08:14:07.986Z",
       "updatedAt": "2026-05-04T08:14:07.986Z",
-      "request": {
-        "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": {
-          "month": "2026-05",
-          "routeId": "5464c80b-6b8c-408b-bfd7-c291d0447450"
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {},
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "body": {
+        "month": "2026-05",
+        "routeId": "5464c80b-6b8c-408b-bfd7-c291d0447450"
       },
       "assertions": {
         "expectedStatus": [
@@ -129,23 +120,9 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": {
-            "month": "2026-05",
-            "routeId": "5464c80b-6b8c-408b-bfd7-c291d0447450"
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "92d7396f-8cbb-42f5-a852-36161a3bacbf"
+  "defaultTestcaseId": "92d7396f-8cbb-42f5-a852-36161a3bacbf-be436b63"
 }

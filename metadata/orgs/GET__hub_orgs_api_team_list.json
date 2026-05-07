@@ -1,24 +1,39 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "GET /hub/orgs/api/team/list",
   "module": "orgs",
   "method": "GET",
   "path": "/hub/orgs/api/team/list",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [],
+    "query": [
+      "sellerWorkspaceId"
+    ],
+    "body": [],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "14eb67ed-dac4-4e0a-a83d-2d0720841c13",
-      "name": "GET /hub/orgs/api/team/list",
+      "id": "14eb67ed-dac4-4e0a-a83d-2d0720841c13-be436b63",
+      "name": "GET /hub/orgs/api/team/list (be436b63)",
       "createdAt": "2026-05-04T08:04:19.451Z",
       "updatedAt": "2026-05-04T08:04:19.451Z",
-      "request": {
-        "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeInactive=true&includePendingInvites=true&includeTeamCustomersMapping=true&userType=TeamOwner&userType=CFA&userType=M",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
+      "pathParams": {},
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "includeInactive": "true",
+        "includePendingInvites": "true",
+        "includeTeamCustomersMapping": "true",
+        "userType": [
+          "TeamOwner",
+          "CFA",
+          "M"
+        ]
       },
+      "body": null,
       "assertions": {
         "expectedStatus": [
           200
@@ -28,33 +43,28 @@
         "equals": {},
         "contains": {},
         "regex": {}
-      },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeInactive=true&includePendingInvites=true&includeTeamCustomersMapping=true&userType=TeamOwner&userType=CFA&userType=M",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
       },
       "tags": [],
       "status": "active"
     },
     {
-      "id": "9093dee6-45d3-458b-b130-bd6ea9abf9e9",
-      "name": "GET /hub/orgs/api/team/list",
+      "id": "9093dee6-45d3-458b-b130-bd6ea9abf9e9-be436b63",
+      "name": "GET /hub/orgs/api/team/list (be436b63)",
       "createdAt": "2026-05-04T08:13:56.927Z",
       "updatedAt": "2026-05-04T08:13:56.927Z",
-      "request": {
-        "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeInactive=true&includePendingInvites=true&includeTeamCustomersMapping=true&userType=TeamOwner&userType=CFA&userType=M",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
+      "pathParams": {},
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "includeInactive": "true",
+        "includePendingInvites": "true",
+        "includeTeamCustomersMapping": "true",
+        "userType": [
+          "TeamOwner",
+          "CFA",
+          "M"
+        ]
       },
+      "body": null,
       "assertions": {
         "expectedStatus": [
           200
@@ -64,33 +74,30 @@
         "equals": {},
         "contains": {},
         "regex": {}
-      },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeInactive=true&includePendingInvites=true&includeTeamCustomersMapping=true&userType=TeamOwner&userType=CFA&userType=M",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
       },
       "tags": [],
       "status": "active"
     },
     {
-      "id": "e44847ac-9239-4faa-b6e1-d62589f87e55",
-      "name": "GET /hub/orgs/api/team/list",
+      "id": "e44847ac-9239-4faa-b6e1-d62589f87e55-be436b63",
+      "name": "GET /hub/orgs/api/team/list (be436b63)",
       "createdAt": "2026-05-04T08:13:56.927Z",
       "updatedAt": "2026-05-04T08:13:56.927Z",
-      "request": {
-        "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&page=1&pageSize=20&includeInactive=false&includePendingInvites=false&includeTeamCustomersMapping=true&userType=TeamOwner&userType=CFA&userType=M",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
+      "pathParams": {},
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "page": "1",
+        "pageSize": "20",
+        "includeInactive": "false",
+        "includePendingInvites": "false",
+        "includeTeamCustomersMapping": "true",
+        "userType": [
+          "TeamOwner",
+          "CFA",
+          "M"
+        ]
       },
+      "body": null,
       "assertions": {
         "expectedStatus": [
           200
@@ -100,33 +107,28 @@
         "equals": {},
         "contains": {},
         "regex": {}
-      },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&page=1&pageSize=20&includeInactive=false&includePendingInvites=false&includeTeamCustomersMapping=true&userType=TeamOwner&userType=CFA&userType=M",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
       },
       "tags": [],
       "status": "active"
     },
     {
-      "id": "7cbff441-8f0c-45d1-99ae-296ffe428b5e",
-      "name": "GET /hub/orgs/api/team/list",
+      "id": "7cbff441-8f0c-45d1-99ae-296ffe428b5e-be436b63",
+      "name": "GET /hub/orgs/api/team/list (be436b63)",
       "createdAt": "2026-05-04T08:13:56.927Z",
       "updatedAt": "2026-05-04T08:13:56.927Z",
-      "request": {
-        "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&page=1&pageSize=20&includeTeamCustomersMapping=true&includePendingInvites=true&includeBeatPlanCount=true&includeCfaAndDivisions=true&includeInactive=true&userType=Sales",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
+      "pathParams": {},
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "page": "1",
+        "pageSize": "20",
+        "includeTeamCustomersMapping": "true",
+        "includePendingInvites": "true",
+        "includeBeatPlanCount": "true",
+        "includeCfaAndDivisions": "true",
+        "includeInactive": "true",
+        "userType": "Sales"
       },
+      "body": null,
       "assertions": {
         "expectedStatus": [
           200
@@ -136,16 +138,6 @@
         "equals": {},
         "contains": {},
         "regex": {}
-      },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&page=1&pageSize=20&includeTeamCustomersMapping=true&includePendingInvites=true&includeBeatPlanCount=true&includeCfaAndDivisions=true&includeInactive=true&userType=Sales",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
       },
       "tags": [],
       "status": "active"
@@ -187,5 +179,5 @@
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "14eb67ed-dac4-4e0a-a83d-2d0720841c13"
+  "defaultTestcaseId": "14eb67ed-dac4-4e0a-a83d-2d0720841c13-be436b63"
 }

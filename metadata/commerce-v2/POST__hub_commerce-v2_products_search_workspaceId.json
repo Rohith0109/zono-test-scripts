@@ -1,43 +1,58 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "POST /hub/commerce-v2/products/search/{workspaceId}",
   "module": "commerce-v2",
   "method": "POST",
   "path": "/hub/commerce-v2/products/search/{workspaceId}",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [
+      "workspaceId"
+    ],
+    "query": [
+      "customerId",
+      "sellerWorkspaceId"
+    ],
+    "body": [
+      "searchKey",
+      "skuCode"
+    ],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "a9d3abec-8ad0-4c59-8c0c-89182a45501d",
-      "name": "POST /hub/commerce-v2/products/search/{workspaceId}",
+      "id": "a9d3abec-8ad0-4c59-8c0c-89182a45501d-be436b63",
+      "name": "POST /hub/commerce-v2/products/search/{workspaceId} (be436b63)",
       "createdAt": "2026-04-29T06:13:29.279Z",
       "updatedAt": "2026-04-29T06:13:29.279Z",
-      "request": {
-        "pathParams": {
-          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-        },
-        "query": "?pageNo=1&pageSize=10&customerId=&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": {
-          "searchKey": "",
-          "includeFacets": true,
-          "includeDivisions": true,
-          "includeCategoryCodesList": true,
-          "includeCfas": true,
-          "skuCode": "",
-          "sortDirection": "ASC",
-          "sortBy": "sortOrder",
-          "groupByProduct": true,
-          "inventoryFilter": "",
-          "stockFilter": "",
-          "divisionIds": [],
-          "cfaIds": [],
-          "categoryCodes": [],
-          "statusFilter": "",
-          "collectionIds": []
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "queryParams": {
+        "pageNo": "1",
+        "pageSize": "10",
+        "customerId": "",
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "body": {
+        "searchKey": "",
+        "includeFacets": true,
+        "includeDivisions": true,
+        "includeCategoryCodesList": true,
+        "includeCfas": true,
+        "skuCode": "",
+        "sortDirection": "ASC",
+        "sortBy": "sortOrder",
+        "groupByProduct": true,
+        "inventoryFilter": "",
+        "stockFilter": "",
+        "divisionIds": [],
+        "cfaIds": [],
+        "categoryCodes": [],
+        "statusFilter": "",
+        "collectionIds": []
       },
       "assertions": {
         "expectedStatus": [
@@ -49,71 +64,39 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {
-            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-          },
-          "query": "?pageNo=1&pageSize=10&customerId=&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": {
-            "searchKey": "",
-            "includeFacets": true,
-            "includeDivisions": true,
-            "includeCategoryCodesList": true,
-            "includeCfas": true,
-            "skuCode": "",
-            "sortDirection": "ASC",
-            "sortBy": "sortOrder",
-            "groupByProduct": true,
-            "inventoryFilter": "",
-            "stockFilter": "",
-            "divisionIds": [],
-            "cfaIds": [],
-            "categoryCodes": [],
-            "statusFilter": "",
-            "collectionIds": []
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     },
     {
-      "id": "8cf8cadb-ba95-4650-bb34-7656ed547e92",
-      "name": "POST /hub/commerce-v2/products/search/{workspaceId}",
+      "id": "8cf8cadb-ba95-4650-bb34-7656ed547e92-be436b63",
+      "name": "POST /hub/commerce-v2/products/search/{workspaceId} (be436b63)",
       "createdAt": "2026-04-29T06:13:29.279Z",
       "updatedAt": "2026-04-29T06:13:29.279Z",
-      "request": {
-        "pathParams": {
-          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-        },
-        "query": "?pageNo=1&pageSize=40&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": {
-          "searchKey": "",
-          "includeFacets": true,
-          "includeDivisions": true,
-          "includeCfas": true,
-          "includeCategoryCodesList": true,
-          "skuCode": "",
-          "sortDirection": "ASC",
-          "sortBy": "sortOrder",
-          "groupByProduct": true,
-          "inventoryFilter": "",
-          "stockFilter": "",
-          "divisionIds": [],
-          "cfaIds": [],
-          "categoryCodes": [],
-          "statusFilter": "",
-          "collectionIds": []
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "queryParams": {
+        "pageNo": "1",
+        "pageSize": "40",
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "body": {
+        "searchKey": "",
+        "includeFacets": true,
+        "includeDivisions": true,
+        "includeCfas": true,
+        "includeCategoryCodesList": true,
+        "skuCode": "",
+        "sortDirection": "ASC",
+        "sortBy": "sortOrder",
+        "groupByProduct": true,
+        "inventoryFilter": "",
+        "stockFilter": "",
+        "divisionIds": [],
+        "cfaIds": [],
+        "categoryCodes": [],
+        "statusFilter": "",
+        "collectionIds": []
       },
       "assertions": {
         "expectedStatus": [
@@ -124,72 +107,40 @@
         "equals": {},
         "contains": {},
         "regex": {}
-      },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {
-            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-          },
-          "query": "?pageNo=1&pageSize=40&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": {
-            "searchKey": "",
-            "includeFacets": true,
-            "includeDivisions": true,
-            "includeCfas": true,
-            "includeCategoryCodesList": true,
-            "skuCode": "",
-            "sortDirection": "ASC",
-            "sortBy": "sortOrder",
-            "groupByProduct": true,
-            "inventoryFilter": "",
-            "stockFilter": "",
-            "divisionIds": [],
-            "cfaIds": [],
-            "categoryCodes": [],
-            "statusFilter": "",
-            "collectionIds": []
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
       },
       "tags": [],
       "status": "active"
     },
     {
-      "id": "f728d763-d0d3-4b48-9885-2b1819df032f",
-      "name": "POST /hub/commerce-v2/products/search/{workspaceId}",
+      "id": "f728d763-d0d3-4b48-9885-2b1819df032f-be436b63",
+      "name": "POST /hub/commerce-v2/products/search/{workspaceId} (be436b63)",
       "createdAt": "2026-05-04T08:14:05.736Z",
       "updatedAt": "2026-05-04T08:14:05.736Z",
-      "request": {
-        "pathParams": {
-          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-        },
-        "query": "?pageNo=1&pageSize=10&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": {
-          "searchKey": "",
-          "includeFacets": true,
-          "includeDivisions": true,
-          "includeCfas": true,
-          "includeCategoryCodesList": true,
-          "skuCode": "",
-          "sortDirection": "ASC",
-          "sortBy": "sortOrder",
-          "groupByProduct": true,
-          "inventoryFilter": "",
-          "stockFilter": "",
-          "divisionIds": [],
-          "cfaIds": [],
-          "categoryCodes": [],
-          "statusFilter": "",
-          "collectionIds": []
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "queryParams": {
+        "pageNo": "1",
+        "pageSize": "10",
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "body": {
+        "searchKey": "",
+        "includeFacets": true,
+        "includeDivisions": true,
+        "includeCfas": true,
+        "includeCategoryCodesList": true,
+        "skuCode": "",
+        "sortDirection": "ASC",
+        "sortBy": "sortOrder",
+        "groupByProduct": true,
+        "inventoryFilter": "",
+        "stockFilter": "",
+        "divisionIds": [],
+        "cfaIds": [],
+        "categoryCodes": [],
+        "statusFilter": "",
+        "collectionIds": []
       },
       "assertions": {
         "expectedStatus": [
@@ -200,72 +151,40 @@
         "equals": {},
         "contains": {},
         "regex": {}
-      },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {
-            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-          },
-          "query": "?pageNo=1&pageSize=10&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": {
-            "searchKey": "",
-            "includeFacets": true,
-            "includeDivisions": true,
-            "includeCfas": true,
-            "includeCategoryCodesList": true,
-            "skuCode": "",
-            "sortDirection": "ASC",
-            "sortBy": "sortOrder",
-            "groupByProduct": true,
-            "inventoryFilter": "",
-            "stockFilter": "",
-            "divisionIds": [],
-            "cfaIds": [],
-            "categoryCodes": [],
-            "statusFilter": "",
-            "collectionIds": []
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
       },
       "tags": [],
       "status": "active"
     },
     {
-      "id": "7dcc4138-7270-4bd8-977f-7fd030874867",
-      "name": "POST /hub/commerce-v2/products/search/{workspaceId}",
+      "id": "7dcc4138-7270-4bd8-977f-7fd030874867-be436b63",
+      "name": "POST /hub/commerce-v2/products/search/{workspaceId} (be436b63)",
       "createdAt": "2026-05-04T08:14:05.736Z",
       "updatedAt": "2026-05-04T08:14:05.736Z",
-      "request": {
-        "pathParams": {
-          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-        },
-        "query": "?pageNo=1&pageSize=40&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": {
-          "searchKey": "",
-          "includeFacets": true,
-          "includeDivisions": true,
-          "includeCfas": true,
-          "includeCategoryCodesList": true,
-          "skuCode": "",
-          "sortDirection": "ASC",
-          "sortBy": "sortOrder",
-          "groupByProduct": true,
-          "inventoryFilter": "",
-          "stockFilter": "",
-          "divisionIds": [],
-          "cfaIds": [],
-          "categoryCodes": [],
-          "statusFilter": "",
-          "collectionIds": []
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "queryParams": {
+        "pageNo": "1",
+        "pageSize": "40",
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "body": {
+        "searchKey": "",
+        "includeFacets": true,
+        "includeDivisions": true,
+        "includeCfas": true,
+        "includeCategoryCodesList": true,
+        "skuCode": "",
+        "sortDirection": "ASC",
+        "sortBy": "sortOrder",
+        "groupByProduct": true,
+        "inventoryFilter": "",
+        "stockFilter": "",
+        "divisionIds": [],
+        "cfaIds": [],
+        "categoryCodes": [],
+        "statusFilter": "",
+        "collectionIds": []
       },
       "assertions": {
         "expectedStatus": [
@@ -276,36 +195,6 @@
         "equals": {},
         "contains": {},
         "regex": {}
-      },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {
-            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-          },
-          "query": "?pageNo=1&pageSize=40&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": {
-            "searchKey": "",
-            "includeFacets": true,
-            "includeDivisions": true,
-            "includeCfas": true,
-            "includeCategoryCodesList": true,
-            "skuCode": "",
-            "sortDirection": "ASC",
-            "sortBy": "sortOrder",
-            "groupByProduct": true,
-            "inventoryFilter": "",
-            "stockFilter": "",
-            "divisionIds": [],
-            "cfaIds": [],
-            "categoryCodes": [],
-            "statusFilter": "",
-            "collectionIds": []
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
       },
       "tags": [],
       "status": "active"
@@ -503,5 +392,5 @@
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "a9d3abec-8ad0-4c59-8c0c-89182a45501d"
+  "defaultTestcaseId": "a9d3abec-8ad0-4c59-8c0c-89182a45501d-be436b63"
 }

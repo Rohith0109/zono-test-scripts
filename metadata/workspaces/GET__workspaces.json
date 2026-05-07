@@ -1,24 +1,30 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "GET /workspaces",
   "module": "workspaces",
   "method": "GET",
   "path": "/workspaces",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [],
+    "query": [],
+    "body": [],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "e39e233a-1c2f-4b64-a7e3-55441f4f6f3d",
-      "name": "GET /workspaces",
+      "id": "e39e233a-1c2f-4b64-a7e3-55441f4f6f3d-unknown",
+      "name": "GET /workspaces (unknown)",
       "createdAt": "2026-05-04T08:13:52.421Z",
       "updatedAt": "2026-05-04T08:13:52.421Z",
-      "request": {
-        "pathParams": {},
-        "query": "?includeBalance=true&includeWhatsAppConfigs=true",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]"
-        }
+      "pathParams": {},
+      "queryParams": {
+        "includeBalance": "true",
+        "includeWhatsAppConfigs": "true"
       },
+      "body": null,
       "assertions": {
         "expectedStatus": [
           200
@@ -61,19 +67,9 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "unknown": {
-          "pathParams": {},
-          "query": "?includeBalance=true&includeWhatsAppConfigs=true",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "e39e233a-1c2f-4b64-a7e3-55441f4f6f3d"
+  "defaultTestcaseId": "e39e233a-1c2f-4b64-a7e3-55441f4f6f3d-unknown"
 }

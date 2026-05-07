@@ -1,31 +1,37 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "POST /hub/commerce-v2/category/modify-assignment-to-products/{workspaceId}",
   "module": "commerce-v2",
   "method": "POST",
   "path": "/hub/commerce-v2/category/modify-assignment-to-products/{workspaceId}",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [
+      "workspaceId"
+    ],
+    "query": [],
+    "body": [],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "96d82de0-28fc-4828-8311-84b06540d191",
-      "name": "POST /hub/commerce-v2/category/modify-assignment-to-products/{workspaceId}",
+      "id": "96d82de0-28fc-4828-8311-84b06540d191-be436b63",
+      "name": "POST /hub/commerce-v2/category/modify-assignment-to-products/{workspaceId} (be436b63)",
       "createdAt": "2026-05-05T11:45:09.499Z",
       "updatedAt": "2026-05-05T11:45:09.499Z",
-      "request": {
-        "pathParams": {
-          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-        },
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": {
-          "productIds": [
-            137154
-          ],
-          "categoryIds": []
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "body": {
+        "productIds": [
+          137154
+        ],
+        "categoryIds": []
       },
       "assertions": {
         "expectedStatus": [
@@ -43,27 +49,9 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {
-            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-          },
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": {
-            "productIds": [
-              137154
-            ],
-            "categoryIds": []
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "96d82de0-28fc-4828-8311-84b06540d191"
+  "defaultTestcaseId": "96d82de0-28fc-4828-8311-84b06540d191-be436b63"
 }

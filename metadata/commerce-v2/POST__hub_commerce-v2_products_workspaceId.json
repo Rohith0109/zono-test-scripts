@@ -1,83 +1,89 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "POST /hub/commerce-v2/products/{workspaceId}",
   "module": "commerce-v2",
   "method": "POST",
   "path": "/hub/commerce-v2/products/{workspaceId}",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [
+      "workspaceId"
+    ],
+    "query": [],
+    "body": [],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "39c22c0c-35bf-495f-9c51-12ac807cdc8c",
-      "name": "POST /hub/commerce-v2/products/{workspaceId}",
+      "id": "39c22c0c-35bf-495f-9c51-12ac807cdc8c-be436b63",
+      "name": "POST /hub/commerce-v2/products/{workspaceId} (be436b63)",
       "createdAt": "2026-05-05T11:45:09.209Z",
       "updatedAt": "2026-05-05T11:45:09.209Z",
-      "request": {
-        "pathParams": {
-          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-        },
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": {
-          "parentSku": "559656",
-          "name": "Black Cargo Pant",
-          "productVariants": [
-            {
-              "name": "Black Cargo Pant",
-              "sku": "559656",
-              "sortOrder": 0,
-              "shortName": "Black Cargo Pant",
-              "shortDescription": "",
-              "taxCategoryCode": "",
-              "hsnCode": "",
-              "baseUom": "",
-              "packSize": 0,
-              "minOrderQty": 1,
-              "maxOrderQty": 0,
-              "qtyMultiplier": 0,
-              "materialWeight": 0,
-              "netWeight": 0,
-              "volume": 0,
-              "warrentyInformation": "",
-              "condition": "",
-              "facets": [],
-              "MRP": 0,
-              "price": 40000,
-              "PTR": 0,
-              "upcCode": "",
-              "stock": 0,
-              "ZINS": false,
-              "listPrice": 0,
-              "sales": 0,
-              "minRemShelfLife": 0,
-              "expiryDate": "",
-              "manufacturingDate": "",
-              "bestBeforeOrAfter": "",
-              "bestAfter": "",
-              "caseSize": 0,
-              "additionalUOM": "",
-              "weightUOM": "",
-              "pricingStrategy": "STANDARD",
-              "stockOnHand": 1
-            }
-          ],
-          "customFields": {},
-          "productAttributes": [
-            {
-              "baseUom": "",
-              "packSize": 0
-            }
-          ],
-          "divisionCFACodes": [
-            {
-              "divisionCode": "1451200",
-              "cfaCode": "212154",
-              "isActive": true
-            }
-          ]
-        },
-        "headers": {
-          "authorization": "[REDACTED]",
-          "content-type": "application/json"
-        }
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "queryParams": {
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "body": {
+        "parentSku": "559656",
+        "name": "Black Cargo Pant",
+        "productVariants": [
+          {
+            "name": "Black Cargo Pant",
+            "sku": "559656",
+            "sortOrder": 0,
+            "shortName": "Black Cargo Pant",
+            "shortDescription": "",
+            "taxCategoryCode": "",
+            "hsnCode": "",
+            "baseUom": "",
+            "packSize": 0,
+            "minOrderQty": 1,
+            "maxOrderQty": 0,
+            "qtyMultiplier": 0,
+            "materialWeight": 0,
+            "netWeight": 0,
+            "volume": 0,
+            "warrentyInformation": "",
+            "condition": "",
+            "facets": [],
+            "MRP": 0,
+            "price": 40000,
+            "PTR": 0,
+            "upcCode": "",
+            "stock": 0,
+            "ZINS": false,
+            "listPrice": 0,
+            "sales": 0,
+            "minRemShelfLife": 0,
+            "expiryDate": "",
+            "manufacturingDate": "",
+            "bestBeforeOrAfter": "",
+            "bestAfter": "",
+            "caseSize": 0,
+            "additionalUOM": "",
+            "weightUOM": "",
+            "pricingStrategy": "STANDARD",
+            "stockOnHand": 1
+          }
+        ],
+        "customFields": {},
+        "productAttributes": [
+          {
+            "baseUom": "",
+            "packSize": 0
+          }
+        ],
+        "divisionCFACodes": [
+          {
+            "divisionCode": "1451200",
+            "cfaCode": "212154",
+            "isActive": true
+          }
+        ]
       },
       "assertions": {
         "expectedStatus": [
@@ -94,79 +100,9 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {
-            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-          },
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": {
-            "parentSku": "559656",
-            "name": "Black Cargo Pant",
-            "productVariants": [
-              {
-                "name": "Black Cargo Pant",
-                "sku": "559656",
-                "sortOrder": 0,
-                "shortName": "Black Cargo Pant",
-                "shortDescription": "",
-                "taxCategoryCode": "",
-                "hsnCode": "",
-                "baseUom": "",
-                "packSize": 0,
-                "minOrderQty": 1,
-                "maxOrderQty": 0,
-                "qtyMultiplier": 0,
-                "materialWeight": 0,
-                "netWeight": 0,
-                "volume": 0,
-                "warrentyInformation": "",
-                "condition": "",
-                "facets": [],
-                "MRP": 0,
-                "price": 40000,
-                "PTR": 0,
-                "upcCode": "",
-                "stock": 0,
-                "ZINS": false,
-                "listPrice": 0,
-                "sales": 0,
-                "minRemShelfLife": 0,
-                "expiryDate": "",
-                "manufacturingDate": "",
-                "bestBeforeOrAfter": "",
-                "bestAfter": "",
-                "caseSize": 0,
-                "additionalUOM": "",
-                "weightUOM": "",
-                "pricingStrategy": "STANDARD",
-                "stockOnHand": 1
-              }
-            ],
-            "customFields": {},
-            "productAttributes": [
-              {
-                "baseUom": "",
-                "packSize": 0
-              }
-            ],
-            "divisionCFACodes": [
-              {
-                "divisionCode": "1451200",
-                "cfaCode": "212154",
-                "isActive": true
-              }
-            ]
-          },
-          "headers": {
-            "authorization": "[REDACTED]",
-            "content-type": "application/json"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "39c22c0c-35bf-495f-9c51-12ac807cdc8c"
+  "defaultTestcaseId": "39c22c0c-35bf-495f-9c51-12ac807cdc8c-be436b63"
 }

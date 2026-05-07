@@ -1,27 +1,41 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "GET /hub/orgs/api/customers/{workspaceId}",
   "module": "orgs",
   "method": "GET",
   "path": "/hub/orgs/api/customers/{workspaceId}",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [
+      "workspaceId"
+    ],
+    "query": [
+      "sellerWorkspaceId"
+    ],
+    "body": [],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "8d4d2b43-beaf-4c0b-bb94-35c4abadc1d1",
-      "name": "GET /hub/orgs/api/customers/{workspaceId}",
+      "id": "8d4d2b43-beaf-4c0b-bb94-35c4abadc1d1-be436b63",
+      "name": "GET /hub/orgs/api/customers/{workspaceId} (be436b63)",
       "createdAt": "2026-05-04T08:14:02.543Z",
       "updatedAt": "2026-05-04T08:14:02.543Z",
-      "request": {
-        "pathParams": {
-          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-        },
-        "query": "?includeCustomerGroupAssignments=1&includeWorkspaceMembers=1&includeTeamCustomersMapping=true&pageNo=1&pageSize=20&includeTeamCustomerCount=true&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "body": null,
-        "headers": {
-          "authorization": "[REDACTED]",
-          "cache-control": "no-cache"
-        }
+      "pathParams": {
+        "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
       },
+      "queryParams": {
+        "includeCustomerGroupAssignments": "1",
+        "includeWorkspaceMembers": "1",
+        "includeTeamCustomersMapping": "true",
+        "pageNo": "1",
+        "pageSize": "20",
+        "includeTeamCustomerCount": "true",
+        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+      },
+      "body": null,
       "assertions": {
         "expectedStatus": [
           200
@@ -31,19 +45,6 @@
         "equals": {},
         "contains": {},
         "regex": {}
-      },
-      "workspaceScopes": {
-        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
-          "pathParams": {
-            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
-          },
-          "query": "?includeCustomerGroupAssignments=1&includeWorkspaceMembers=1&includeTeamCustomersMapping=true&pageNo=1&pageSize=20&includeTeamCustomerCount=true&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-          "body": null,
-          "headers": {
-            "authorization": "[REDACTED]",
-            "cache-control": "no-cache"
-          }
-        }
       },
       "tags": [],
       "status": "active"
@@ -205,5 +206,5 @@
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "8d4d2b43-beaf-4c0b-bb94-35c4abadc1d1"
+  "defaultTestcaseId": "8d4d2b43-beaf-4c0b-bb94-35c4abadc1d1-be436b63"
 }

@@ -1,27 +1,30 @@
 {
-  "version": 2,
+  "version": 3,
   "endpointKey": "POST /sendotp",
   "module": "sendotp",
   "method": "POST",
   "path": "/sendotp",
   "apiDomain": "https://api-qa.zotok.ai",
+  "dynamicParams": {
+    "path": [],
+    "query": [],
+    "body": [],
+    "headers": [
+      "token"
+    ]
+  },
   "testcases": [
     {
-      "id": "a6f39900-b309-411d-ae25-f576a31e1127",
-      "name": "POST /sendotp",
+      "id": "a6f39900-b309-411d-ae25-f576a31e1127-unknown",
+      "name": "POST /sendotp (unknown)",
       "createdAt": "2026-05-04T08:13:51.504Z",
       "updatedAt": "2026-05-04T08:13:51.504Z",
-      "request": {
-        "pathParams": {},
-        "query": "",
-        "body": {
-          "authChannel": "mobile",
-          "mobile": "+913203220232",
-          "doCreateUser": false
-        },
-        "headers": {
-          "content-type": "application/json"
-        }
+      "pathParams": {},
+      "queryParams": {},
+      "body": {
+        "authChannel": "mobile",
+        "mobile": "+913203220232",
+        "doCreateUser": false
       },
       "assertions": {
         "expectedStatus": [
@@ -50,23 +53,9 @@
         "contains": {},
         "regex": {}
       },
-      "workspaceScopes": {
-        "unknown": {
-          "pathParams": {},
-          "query": "",
-          "body": {
-            "authChannel": "mobile",
-            "mobile": "+913203220232",
-            "doCreateUser": false
-          },
-          "headers": {
-            "content-type": "application/json"
-          }
-        }
-      },
       "tags": [],
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "a6f39900-b309-411d-ae25-f576a31e1127"
+  "defaultTestcaseId": "a6f39900-b309-411d-ae25-f576a31e1127-unknown"
 }
