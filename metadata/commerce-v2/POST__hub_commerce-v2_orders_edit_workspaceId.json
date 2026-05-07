@@ -1,0 +1,231 @@
+{
+  "version": 2,
+  "endpointKey": "POST /hub/commerce-v2/orders/edit/{workspaceId}",
+  "module": "commerce-v2",
+  "method": "POST",
+  "path": "/hub/commerce-v2/orders/edit/{workspaceId}",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "6c620702-ed7d-4dd3-b19f-58c571946da4",
+      "name": "POST /hub/commerce-v2/orders/edit/{workspaceId}",
+      "createdAt": "2026-05-07T09:48:16.511Z",
+      "updatedAt": "2026-05-07T09:48:16.511Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "orderId": 54270,
+          "customerId": "92eb6a3e-3a9e-4433-8ded-7379eff70ac0",
+          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "lines": [
+            {
+              "quantity": 17,
+              "unitPrice": "20900.00",
+              "orderId": 54270,
+              "customerId": "92eb6a3e-3a9e-4433-8ded-7379eff70ac0"
+            }
+          ],
+          "notes": {
+            "remarks": "This is expected entry",
+            "orderType": "Regular",
+            "estimatedDeliveryDate": "2026-05-15",
+            "Estimated Delivery Date": "2026-05-15"
+          },
+          "deliveryTerms": "not needed",
+          "includePaymentLink": true,
+          "poNumber": "0804902",
+          "shippingAddress": {
+            "streetLine1": "Nanded"
+          }
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          422
+        ],
+        "requiredResponsePaths": [
+          "$.statusCode",
+          "$.message.method",
+          "$.message.body.lines",
+          "$.message.body.notes",
+          "$.message.body.deliveryTerms",
+          "$.message.body.includePaymentLink",
+          "$.message.body.poNumber",
+          "$.message.body.shippingAddress",
+          "$.message.url",
+          "$.message.message"
+        ],
+        "ignoreResponsePaths": [
+          "$.message.body.orderId",
+          "$.message.body.customerId",
+          "$.message.body.sellerWorkspaceId",
+          "$.message.query.sellerWorkspaceId",
+          "$.message.channelId",
+          "$.message.requestId",
+          "$.message.workspaceId",
+          "$.timestamp"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "orderId": 54270,
+            "customerId": "92eb6a3e-3a9e-4433-8ded-7379eff70ac0",
+            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+            "lines": [
+              {
+                "quantity": 17,
+                "unitPrice": "20900.00",
+                "orderId": 54270,
+                "customerId": "92eb6a3e-3a9e-4433-8ded-7379eff70ac0"
+              }
+            ],
+            "notes": {
+              "remarks": "This is expected entry",
+              "orderType": "Regular",
+              "estimatedDeliveryDate": "2026-05-15",
+              "Estimated Delivery Date": "2026-05-15"
+            },
+            "deliveryTerms": "not needed",
+            "includePaymentLink": true,
+            "poNumber": "0804902",
+            "shippingAddress": {
+              "streetLine1": "Nanded"
+            }
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    },
+    {
+      "id": "acabdbac-9b2f-4fa3-a7ab-f55a511faee0",
+      "name": "POST /hub/commerce-v2/orders/edit/{workspaceId}",
+      "createdAt": "2026-05-07T09:48:16.511Z",
+      "updatedAt": "2026-05-07T09:48:16.511Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "orderId": 54270,
+          "customerId": "92eb6a3e-3a9e-4433-8ded-7379eff70ac0",
+          "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "lines": [
+            {
+              "quantity": 17,
+              "unitPrice": "20900.00",
+              "orderId": 54270,
+              "customerId": "92eb6a3e-3a9e-4433-8ded-7379eff70ac0"
+            }
+          ],
+          "notes": {
+            "remarks": "This is expected entry",
+            "orderType": "Regular",
+            "estimatedDeliveryDate": "2026-05-15",
+            "Estimated Delivery Date": "2026-05-15"
+          },
+          "deliveryTerms": "not needed",
+          "includePaymentLink": false,
+          "poNumber": "0804902",
+          "shippingAddress": {
+            "streetLine1": "Nanded"
+          }
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          422
+        ],
+        "requiredResponsePaths": [
+          "$.statusCode",
+          "$.message.method",
+          "$.message.body.lines",
+          "$.message.body.notes",
+          "$.message.body.deliveryTerms",
+          "$.message.body.includePaymentLink",
+          "$.message.body.poNumber",
+          "$.message.body.shippingAddress",
+          "$.message.url",
+          "$.message.message"
+        ],
+        "ignoreResponsePaths": [
+          "$.message.body.orderId",
+          "$.message.body.customerId",
+          "$.message.body.sellerWorkspaceId",
+          "$.message.query.sellerWorkspaceId",
+          "$.message.channelId",
+          "$.message.requestId",
+          "$.message.workspaceId",
+          "$.timestamp"
+        ],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "orderId": 54270,
+            "customerId": "92eb6a3e-3a9e-4433-8ded-7379eff70ac0",
+            "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+            "lines": [
+              {
+                "quantity": 17,
+                "unitPrice": "20900.00",
+                "orderId": 54270,
+                "customerId": "92eb6a3e-3a9e-4433-8ded-7379eff70ac0"
+              }
+            ],
+            "notes": {
+              "remarks": "This is expected entry",
+              "orderType": "Regular",
+              "estimatedDeliveryDate": "2026-05-15",
+              "Estimated Delivery Date": "2026-05-15"
+            },
+            "deliveryTerms": "not needed",
+            "includePaymentLink": false,
+            "poNumber": "0804902",
+            "shippingAddress": {
+              "streetLine1": "Nanded"
+            }
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "6c620702-ed7d-4dd3-b19f-58c571946da4"
+}

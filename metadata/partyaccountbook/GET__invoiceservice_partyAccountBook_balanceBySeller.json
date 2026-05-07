@@ -1,0 +1,51 @@
+{
+  "version": 2,
+  "endpointKey": "GET /invoiceservice/partyAccountBook/balanceBySeller",
+  "module": "partyaccountbook",
+  "method": "GET",
+  "path": "/invoiceservice/partyAccountBook/balanceBySeller",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "507759fe-f539-4f2c-97fb-ed12db66c1d6",
+      "name": "GET /invoiceservice/partyAccountBook/balanceBySeller",
+      "createdAt": "2026-05-07T09:48:15.835Z",
+      "updatedAt": "2026-05-07T09:48:15.835Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&inviteId=92eb6a3e-3a9e-4433-8ded-7379eff70ac0&startDate=2026-04-07&endDate=2026-05-07&divisionId=636c981d-5a3b-407c-9b1e-86d7dc923313&searchKey=&includeOpeningBalance=true&includeOverDue=true",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.outStandingBalance",
+          "$.totalDebit",
+          "$.totalCredit"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&inviteId=92eb6a3e-3a9e-4433-8ded-7379eff70ac0&startDate=2026-04-07&endDate=2026-05-07&divisionId=636c981d-5a3b-407c-9b1e-86d7dc923313&searchKey=&includeOpeningBalance=true&includeOverDue=true",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "507759fe-f539-4f2c-97fb-ed12db66c1d6"
+}

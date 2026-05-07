@@ -1,155 +1,19 @@
 {
-  "version": 3,
+  "version": 2,
   "endpointKey": "GET /hub/orgs/api/team/list",
   "module": "orgs",
   "method": "GET",
   "path": "/hub/orgs/api/team/list",
   "apiDomain": "https://api-qa.zotok.ai",
-  "dynamicParams": {
-    "path": [],
-    "query": [
-      "sellerWorkspaceId"
-    ],
-    "body": [],
-    "headers": [
-      "token"
-    ]
-  },
   "testcases": [
     {
-      "id": "14eb67ed-dac4-4e0a-a83d-2d0720841c13-be436b63",
-      "name": "GET /hub/orgs/api/team/list (be436b63)",
-      "createdAt": "2026-05-04T08:04:19.451Z",
-      "updatedAt": "2026-05-04T08:04:19.451Z",
-      "pathParams": {},
-      "queryParams": {
-        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "includeInactive": "true",
-        "includePendingInvites": "true",
-        "includeTeamCustomersMapping": "true",
-        "userType": [
-          "TeamOwner",
-          "CFA",
-          "M"
-        ]
-      },
-      "body": null,
-      "assertions": {
-        "expectedStatus": [
-          200
-        ],
-        "requiredResponsePaths": [],
-        "ignoreResponsePaths": [],
-        "equals": {},
-        "contains": {},
-        "regex": {}
-      },
-      "tags": [],
-      "status": "active"
-    },
-    {
-      "id": "9093dee6-45d3-458b-b130-bd6ea9abf9e9-be436b63",
-      "name": "GET /hub/orgs/api/team/list (be436b63)",
-      "createdAt": "2026-05-04T08:13:56.927Z",
-      "updatedAt": "2026-05-04T08:13:56.927Z",
-      "pathParams": {},
-      "queryParams": {
-        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "includeInactive": "true",
-        "includePendingInvites": "true",
-        "includeTeamCustomersMapping": "true",
-        "userType": [
-          "TeamOwner",
-          "CFA",
-          "M"
-        ]
-      },
-      "body": null,
-      "assertions": {
-        "expectedStatus": [
-          200
-        ],
-        "requiredResponsePaths": [],
-        "ignoreResponsePaths": [],
-        "equals": {},
-        "contains": {},
-        "regex": {}
-      },
-      "tags": [],
-      "status": "active"
-    },
-    {
-      "id": "e44847ac-9239-4faa-b6e1-d62589f87e55-be436b63",
-      "name": "GET /hub/orgs/api/team/list (be436b63)",
-      "createdAt": "2026-05-04T08:13:56.927Z",
-      "updatedAt": "2026-05-04T08:13:56.927Z",
-      "pathParams": {},
-      "queryParams": {
-        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "page": "1",
-        "pageSize": "20",
-        "includeInactive": "false",
-        "includePendingInvites": "false",
-        "includeTeamCustomersMapping": "true",
-        "userType": [
-          "TeamOwner",
-          "CFA",
-          "M"
-        ]
-      },
-      "body": null,
-      "assertions": {
-        "expectedStatus": [
-          200
-        ],
-        "requiredResponsePaths": [],
-        "ignoreResponsePaths": [],
-        "equals": {},
-        "contains": {},
-        "regex": {}
-      },
-      "tags": [],
-      "status": "active"
-    },
-    {
-      "id": "7cbff441-8f0c-45d1-99ae-296ffe428b5e-be436b63",
-      "name": "GET /hub/orgs/api/team/list (be436b63)",
-      "createdAt": "2026-05-04T08:13:56.927Z",
-      "updatedAt": "2026-05-04T08:13:56.927Z",
-      "pathParams": {},
-      "queryParams": {
-        "sellerWorkspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
-        "page": "1",
-        "pageSize": "20",
-        "includeTeamCustomersMapping": "true",
-        "includePendingInvites": "true",
-        "includeBeatPlanCount": "true",
-        "includeCfaAndDivisions": "true",
-        "includeInactive": "true",
-        "userType": "Sales"
-      },
-      "body": null,
-      "assertions": {
-        "expectedStatus": [
-          200
-        ],
-        "requiredResponsePaths": [],
-        "ignoreResponsePaths": [],
-        "equals": {},
-        "contains": {},
-        "regex": {}
-      },
-      "tags": [],
-      "status": "active"
-    },
-    {
-      "id": "744260a6-2bc9-46a2-b40a-00e9fd696ed7",
+      "id": "e25f7a53-33d3-4dba-bbba-1cfe436aabfa",
       "name": "GET /hub/orgs/api/team/list",
-      "createdAt": "2026-05-05T11:33:06.184Z",
-      "updatedAt": "2026-05-05T11:33:06.184Z",
+      "createdAt": "2026-05-07T09:48:12.463Z",
+      "updatedAt": "2026-05-07T09:48:12.463Z",
       "request": {
         "pathParams": {},
-        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeInactive=true&includePendingInvites=true&includeTeamCustomersMapping=true&includeCfaAndDivisions=true&page=1&pageSize=20&userType=TeamOwner&userType=CFA&userType=M",
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&page=1&pageSize=20&includeInactive=false&includePendingInvites=false&includeTeamCustomersMapping=true&userType=TeamOwner&userType=CFA&userType=M",
         "body": null,
         "headers": {
           "authorization": "[REDACTED]"
@@ -168,7 +32,7 @@
       "workspaceScopes": {
         "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
           "pathParams": {},
-          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&includeInactive=true&includePendingInvites=true&includeTeamCustomersMapping=true&includeCfaAndDivisions=true&page=1&pageSize=20&userType=TeamOwner&userType=CFA&userType=M",
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&page=1&pageSize=20&includeInactive=false&includePendingInvites=false&includeTeamCustomersMapping=true&userType=TeamOwner&userType=CFA&userType=M",
           "body": null,
           "headers": {
             "authorization": "[REDACTED]"
@@ -179,5 +43,5 @@
       "status": "active"
     }
   ],
-  "defaultTestcaseId": "14eb67ed-dac4-4e0a-a83d-2d0720841c13-be436b63"
+  "defaultTestcaseId": "e25f7a53-33d3-4dba-bbba-1cfe436aabfa"
 }

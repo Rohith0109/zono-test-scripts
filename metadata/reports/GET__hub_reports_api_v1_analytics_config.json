@@ -1,0 +1,51 @@
+{
+  "version": 2,
+  "endpointKey": "GET /hub/reports/api/v1/analytics/config",
+  "module": "reports",
+  "method": "GET",
+  "path": "/hub/reports/api/v1/analytics/config",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "1a8e64f6-0cc3-43a9-964b-405a6f30230b",
+      "name": "GET /hub/reports/api/v1/analytics/config",
+      "createdAt": "2026-05-07T09:48:21.650Z",
+      "updatedAt": "2026-05-07T09:48:21.650Z",
+      "request": {
+        "pathParams": {},
+        "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&view=sales",
+        "body": null,
+        "headers": {
+          "authorization": "[REDACTED]"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          200
+        ],
+        "requiredResponsePaths": [
+          "$.config.salesView.tiles",
+          "$.config.salesView.widgets",
+          "$.config.salesView.options"
+        ],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {},
+          "query": "?sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375&view=sales",
+          "body": null,
+          "headers": {
+            "authorization": "[REDACTED]"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "1a8e64f6-0cc3-43a9-964b-405a6f30230b"
+}

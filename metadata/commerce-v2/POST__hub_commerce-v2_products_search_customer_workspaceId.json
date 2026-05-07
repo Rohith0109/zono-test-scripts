@@ -1,0 +1,81 @@
+{
+  "version": 2,
+  "endpointKey": "POST /hub/commerce-v2/products/search/customer/{workspaceId}",
+  "module": "commerce-v2",
+  "method": "POST",
+  "path": "/hub/commerce-v2/products/search/customer/{workspaceId}",
+  "apiDomain": "https://api-qa.zotok.ai",
+  "testcases": [
+    {
+      "id": "3b854a42-2bcb-4709-bdc5-1ef314543e2b",
+      "name": "POST /hub/commerce-v2/products/search/customer/{workspaceId}",
+      "createdAt": "2026-05-07T09:48:15.051Z",
+      "updatedAt": "2026-05-07T09:48:15.051Z",
+      "request": {
+        "pathParams": {
+          "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+        },
+        "query": "?pageNo=1&pageSize=20&customerId=92eb6a3e-3a9e-4433-8ded-7379eff70ac0&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+        "body": {
+          "includeFacets": true,
+          "includeDivisions": true,
+          "includeCfas": true,
+          "skuCode": "",
+          "sortDirection": "ASC",
+          "sortBy": "sortOrder",
+          "inventoryFilter": "",
+          "stockFilter": "",
+          "divisionIds": [],
+          "cfaIds": [],
+          "statusFilter": "",
+          "collectionIds": [],
+          "customerId": "92eb6a3e-3a9e-4433-8ded-7379eff70ac0"
+        },
+        "headers": {
+          "authorization": "[REDACTED]",
+          "content-type": "application/json"
+        }
+      },
+      "assertions": {
+        "expectedStatus": [
+          201
+        ],
+        "requiredResponsePaths": [],
+        "ignoreResponsePaths": [],
+        "equals": {},
+        "contains": {},
+        "regex": {}
+      },
+      "workspaceScopes": {
+        "be436b63-64ba-4f94-bfcf-3e3e0bc4e375": {
+          "pathParams": {
+            "workspaceId": "be436b63-64ba-4f94-bfcf-3e3e0bc4e375"
+          },
+          "query": "?pageNo=1&pageSize=20&customerId=92eb6a3e-3a9e-4433-8ded-7379eff70ac0&sellerWorkspaceId=be436b63-64ba-4f94-bfcf-3e3e0bc4e375",
+          "body": {
+            "includeFacets": true,
+            "includeDivisions": true,
+            "includeCfas": true,
+            "skuCode": "",
+            "sortDirection": "ASC",
+            "sortBy": "sortOrder",
+            "inventoryFilter": "",
+            "stockFilter": "",
+            "divisionIds": [],
+            "cfaIds": [],
+            "statusFilter": "",
+            "collectionIds": [],
+            "customerId": "92eb6a3e-3a9e-4433-8ded-7379eff70ac0"
+          },
+          "headers": {
+            "authorization": "[REDACTED]",
+            "content-type": "application/json"
+          }
+        }
+      },
+      "tags": [],
+      "status": "active"
+    }
+  ],
+  "defaultTestcaseId": "3b854a42-2bcb-4709-bdc5-1ef314543e2b"
+}
